@@ -1,0 +1,15 @@
+services:
+  apis:
+    build: .
+    image: apis
+    container_name: apis-container
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    develop:
+      watch:
+        - path: .
+          action: sync
+          target: /app
+    command: ["--reload"]
