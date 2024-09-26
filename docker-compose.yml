@@ -7,9 +7,23 @@ services:
       - "7860:7860"
     env_file:
       - .env
+    environment:
+      - MONGO_HOST=mongodb
     develop:
       watch:
         - path: .
           action: sync
           target: /app
     command: ["--reload"]
+
+  mongodb:
+    image: mongodb/mongodb-community-server:latest
+    container_name: mongodb-container
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb-data:/data/db
+
+volumes:
+  mongodb-data:
+    driver: local
