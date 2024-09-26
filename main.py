@@ -3,11 +3,12 @@ import dotenv
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.configs.dotenv import load_enviroment_variables
 from app.configs.docs import FASTAPI_DOC_CONFIG
 from app.routes import router
 
 # Load environment variables
-dotenv.load_dotenv(dotenv.find_dotenv())
+load_enviroment_variables()
 
 # Define app instance
 app = FastAPI(**FASTAPI_DOC_CONFIG)
