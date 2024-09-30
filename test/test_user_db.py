@@ -11,9 +11,6 @@ class UserDbTestCase(unittest.TestCase):
         user = UserSchema(
             username="test_user",
             password="test_password",
-            name="Test User",
-            data_info_id="test_data_info_id",
-            is_admin=False
         )
         user.create()
         # Test if user is created
@@ -26,6 +23,11 @@ class UserDbTestCase(unittest.TestCase):
     def __find_user(self, username: str):
         # Find the user by username
         user = UserSchema.find_by_username(username)
+        self.assertIsNotNone(user)
+
+    def __find_user_by_id(self, id: str):
+        # Find the user by id
+        user = UserSchema.find_by_id(id)
         self.assertIsNotNone(user)
 
     def __update_user(self, user: UserSchema):
