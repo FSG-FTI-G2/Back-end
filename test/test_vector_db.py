@@ -1,7 +1,7 @@
 import sys
 import os
 sys.path.append("P:\FA24\Dev\Back-end\\app\providers")
-from db import QdrantProvider
+from app.providers.vector_db import QdrantProvider
 
 collection_name = 'Qdrants_Test'
 qdrant = QdrantProvider()
