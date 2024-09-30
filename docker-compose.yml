@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   apis:
     build: .
@@ -9,6 +11,7 @@ services:
       - .env
     environment:
       - MONGO_HOST=mongodb
+      - QDRANT_HOST=qdrant
     develop:
       watch:
         - path: .
@@ -24,6 +27,20 @@ services:
     volumes:
       - mongodb-data:/data/db
 
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant-container
+    ports:
+      - "6333:6333"
+      - "6334:6334" 
+    volumes:
+      - qdrant-storage:/qdrant/storage
+    environment:
+      QDRANT__HTTP__PORT: 6333
+      QDRANT__GRPC__PORT: 6335
+
 volumes:
   mongodb-data:
+    driver: local
+  qdrant-storage:
     driver: local
