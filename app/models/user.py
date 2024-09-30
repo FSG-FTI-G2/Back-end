@@ -1,15 +1,13 @@
-from typing import Union
-from pydantic import BaseModel, Field
+from typing import Optional, Union
+from pydantic import Field
+from app.models.base import BaseSchema
 from app.providers import user_db
 
 
-class UserSchema(BaseModel):
-    id: str = Field(None, alias="_id")
+class UserSchema(BaseSchema):
     username: str = Field(None, alias="username")
     password: str = Field(None, alias="password")
-    name: str = Field(None, alias="name")
-    data_info_id: str = Field(None, alias="data_info_id")
-    is_admin: bool = Field(None, alias="is_admin")
+    name: Optional[str] = Field(None, alias="name")
 
     @staticmethod
     def find_by_username(username: str) -> Union['UserSchema', None]:
@@ -32,12 +30,18 @@ class UserSchema(BaseModel):
         return UserSchema.model_validate(data)
 
     def create(self):
+        # Modify the created_at and updated_at
+        super().create()
+        # Create the user
         created_id = user_db.create(self.model_dump(
             exclude_none=True, mode="json", by_alias=True))
         self.id = created_id
         return self
 
     def update(self) -> int:
+        # Modify the updated_at
+        super().update()
+        # Update the user
         return user_db.update(
             self.id, self.model_dump(
                 exclude={"id"}, exclude_none=True, mode="json", by_alias=True
