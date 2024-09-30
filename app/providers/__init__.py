@@ -4,6 +4,6 @@
 # user_db = DatabaseProvider("users")
 
 
-from app.providers.db import QdrantProvider
+from app.providers.vector_db import QdrantProvider
 
 user_db = QdrantProvider("users")
