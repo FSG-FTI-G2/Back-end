@@ -1,120 +1,104 @@
-import sys
-import os
-import requests
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import json
+from app.configs.qdrant_vector_db import qdrant_client
+from qdrant_client.http import models
+
 
 class QdrantProvider:
-    def __init__(self, host='http://localhost:6333'):
-        self.host = host
+    def __init__(self, collection_name):
+        self.collection_name = collection_name
 
-    def create_collection(self, collection_name):
-        url = f"{self.host}/collections/{collection_name}"
-        response = requests.get(url)
+    def create_collection(self, vector_size=4, distance="Cosine"):
+        try:
+            collections = qdrant_client.get_collections()
+            if self.collection_name in [col.name for col in collections.collections]:
+                print(f"Collection '{self.collection_name}' already exists.")
+                return
 
-        if response.status_code == 200:
-            print(f"Collection '{collection_name}' already exists.")
-            return response.json()
-        else:
-            payload = {
-                "vectors": {
-                    
-                        "size": 4,  # Use "size" instead of "vector_size"
-                        "distance": "Cosine"  # Use "Cosine" as a distance metric
-                    
-                }
-            }
-            response = requests.put(url, json=payload)
+            qdrant_client.create_collection(
+                collection_name=self.collection_name,
+                vectors_config=models.VectorParams(
+                    size=vector_size,
+                    distance=models.Distance[distance.upper()]
+                )
+            )
+            print(f"Collection '{self.collection_name}' created successfully.")
+        except Exception as e:
+            print(f"Error creating collection: {e}")
 
-            if response.status_code == 200 or response.status_code == 201:
-                print(f"Collection '{collection_name}' created successfully.")
-                return response.json()
-            else:
-                print(f"Error creating collection: {response.status_code} - {response.text}")
-                return None
+    def add_vectors(self, vectors, payloads):
+        try:
+            points = [
+                models.PointStruct(id=i + 1, vector=vector, payload=payload)
+                for i, (vector, payload) in enumerate(zip(vectors, payloads))
+            ]
+            qdrant_client.upsert(collection_name=self.collection_name, points=points)
+            print(f"Vectors added successfully to collection '{self.collection_name}'.")
+        except Exception as e:
+            print(f"Error adding vectors: {e}")
 
-    def add_vector(self, collection_name, vector, payload, point_id=None):
-        url = f"{self.host}/collections/{collection_name}/points"
-        points = []
-        
-        for i, vector in enumerate(vector):
-            point = {
-                "id": i + 1,  # Unique ID for each vector
-                "vector": vector,
-                "payload": payload[i]
-            }
-            points.append(point)
-
-        data = {"points": points}
-        response = requests.put(url, json=data)
-
-        if response.status_code == 200:
-            return response.json()
-        else:
-            print(f"Error adding vector: {response.status_code} - {response.text}")
-            return None
-        
-    def drop_collection(self, collection_name):
-        url = f"{self.host}/collections/{collection_name}"
-        response = requests.delete(url)
-        if response.status_code == 204:
-            print(f"Collection '{collection_name}' dropped successfully.")
-        else:
-            print(f"Failed to drop collection: {response.status_code} - {response.text}")
-
-
-    def search_vector(self, collection_name, query_vector, limit=3, with_payload=False):
-        url = f"{self.host}/collections/{collection_name}/points/search"
-        payload = {
-            "vector": query_vector,
-            "limit": limit,
-            "with_payload": with_payload
-        }
-        response = requests.post(url, json=payload)
-
-        if response.status_code == 200:
-            return response.json()
-        else:
-            print(f"Error during search: {response.status_code} - {response.text}")
+    def search_vector(self, query_vector, limit=3, with_payload=False):
+        try:
+            search_result = qdrant_client.search(
+                collection_name=self.collection_name,
+                query_vector=query_vector,
+                limit=limit,
+                with_payload=with_payload
+            )
+            return search_result
+        except Exception as e:
+            print(f"Error during search: {e}")
             return None
 
     def list_collections(self):
-        url = f"{self.host}/collections"
-        response = requests.get(url)
-        if response.status_code == 200:
-            return response.json()
-        else:
-            print(f"Error fetching collections: {response.status_code} - {response.text}")
+        try:
+            collections = qdrant_client.get_collections()
+            return [col.name for col in collections.collections]
+        except Exception as e:
+            print(f"Error fetching collections: {e}")
             return None
 
-    def drop_collection(self, collection_name):
-        url = f"{self.host}/collections/{collection_name}"
-        response = requests.delete(url)
-        if response.status_code == 200:  # Check if the status indicates success
-            print(f"Collection '{collection_name}' dropped successfully.")
-        else:
-            print(f"Failed to drop collection: {response.status_code} - {response.text}")
+    def drop_collection(self):
+        try:
+            qdrant_client.delete_collection(self.collection_name)
+            print(f"Collection '{self.collection_name}' dropped successfully.")
+        except Exception as e:
+            print(f"Error dropping collection: {e}")
 
-    def update_vector(self, collection_name, point_id, vector, payload):
-        url = f"{self.host}/collections/{collection_name}/points/{point_id}"
-        data = {
-            "vector": vector,
-            "payload": payload
-        }
-        response = requests.put(url, json=data)
-        return response.json()
+    def update_vector(self, point_id, vector, payload=None):
+        try:
+            point_struct = models.PointStruct(id=point_id, vector=vector, payload=payload)
+            qdrant_client.upsert(
+                collection_name=self.collection_name,
+                points=[point_struct]
+            )
+            print(f"Vector with ID '{point_id}' updated successfully.")
+        except Exception as e:
+            print(f"Error updating vector: {e}")
 
-    def delete_vector(self, collection_name, point_id):
-        url = f"{self.host}/collections/{collection_name}/points/{point_id}"
-        response = requests.delete(url)
-        return response.json()
+    def delete_vector(self, point_id):
+        try:
+            qdrant_client.delete_points(
+                collection_name=self.collection_name,
+                point_ids=[point_id]
+            )
+            print(f"Vector with ID '{point_id}' deleted successfully.")
+        except Exception as e:
+            print(f"Error deleting vector: {e}")
 
-    def get_all_vectors(self, collection_name):
-        url = f"{self.host}/collections/{collection_name}/points"
-        response = requests.get(url)
-        return response.json()
+    def get_all_vectors(self):
+        try:
+            points, _ = qdrant_client.scroll(collection_name=self.collection_name)
+            return points
+        except Exception as e:
+            print(f"Error fetching all vectors: {e}")
+            return None
 
-    def get_vector_by_id(self, collection_name, point_id):
-        url = f"{self.host}/collections/{collection_name}/points/{point_id}"
-        response = requests.get(url)
-        return response.json()
+    def get_vector_by_id(self, point_id):
+        try:
+            point = qdrant_client.retrieve(
+                collection_name=self.collection_name,
+                ids=[point_id]
+            )
+            return point
+        except Exception as e:
+            print(f"Error fetching vector by ID '{point_id}': {e}")
+            return None
