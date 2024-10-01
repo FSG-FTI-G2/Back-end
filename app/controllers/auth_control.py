@@ -45,7 +45,7 @@ def create_mock_admin():
 async def authenticate_user(username: str, password: str):
     user = UserSchema.find_by_username(username)
     if not user or not verify_password(password, user.password):
-        return False
+        return None
     return user
 
 # Verify password

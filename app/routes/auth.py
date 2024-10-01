@@ -23,6 +23,3 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
 async def read_users_me(current_user: UserSchema = Depends(get_current_user)):
     return current_user
 
-@router.get("/admin-dashboard")
-async def admin_dashboard(admin=Depends(get_current_admin_user)):
-    return {"message": f"Welcome, {admin.username}. You have admin access."}
