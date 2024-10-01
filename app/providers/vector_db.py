@@ -1,14 +1,15 @@
+from typing import Literal
 from app.configs.qdrant_vector_db import qdrant_client
 from qdrant_client.http import models
 
 VECTOR_SIZE = 4
-
+DISTANCE = "cosine"
 
 class QdrantProvider:
     def __init__(self, collection_name):
         self.collection_name = collection_name
 
-    def create_collection(self, vector_size=VECTOR_SIZE, distance="Cosine"):
+    def create_collection(self, vector_size=VECTOR_SIZE, distance: Literal["cosine", "dot"] = DISTANCE):
         try:
             collections = qdrant_client.get_collections()
             if self.collection_name in [col.name for col in collections.collections]:
@@ -22,6 +23,7 @@ class QdrantProvider:
                     distance=models.Distance[distance.upper()]
                 )
             )
+
             print(f"Collection '{self.collection_name}' created successfully.")
         except Exception as e:
             print(f"Error creating collection: {e}")

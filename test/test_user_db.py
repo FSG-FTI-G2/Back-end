@@ -50,6 +50,8 @@ class UserDbTestCase(unittest.TestCase):
         user = self.__create_user()
         # Find the user by username
         self.__find_user(user.username)
+        # Find user by ID
+        self.__find_user_by_id(user.id)
         # Update the user
         self.__update_user(user)
         # Delete the user
