@@ -7,6 +7,7 @@ from app.providers import user_db
 class UserSchema(BaseSchema):
     username: str = Field(None, alias="username")
     password: str = Field(None, alias="password")
+    is_admin: bool = False
     name: Optional[str] = Field(None, alias="name")
 
     @staticmethod

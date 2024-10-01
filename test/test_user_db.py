@@ -1,6 +1,6 @@
 import unittest
 from app.models.user import UserSchema
-
+from app.controllers.auth_control import create_mock_admin
 
 class UserDbTestCase(unittest.TestCase):
     def __init__(self, *args, **kwargs) -> None:
@@ -54,3 +54,8 @@ class UserDbTestCase(unittest.TestCase):
         self.__update_user(user)
         # Delete the user
         self.__delete_user(user)
+        
+    def test_admin_user_creation(self):
+        admin = create_mock_admin()
+        self.assertEqual(admin.is_admin, True)
+        self.assertEqual(admin.username, "admin")
