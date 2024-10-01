@@ -1,39 +1,45 @@
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+import unittest
 from app.providers.vector_db import QdrantProvider
 
 collection_name = 'Qdrants_Vector_Database'
 
-qdrant = QdrantProvider(collection_name)
+# qdrant = QdrantProvider
 
-qdrant.create_collection()
+# qdrant.create_collection()
 
-def test_qdrant():
+class Qdrant_Test_Case(unittest.TestCase):
     
-    vectors = [
-        [0.05, 0.61, 0.76, 0.74],
-        [0.19, 0.81, 0.75, 0.11],
-        [0.36, 0.55, 0.47, 0.94],
-        [0.18, 0.01, 0.85, 0.80],
-        [0.24, 0.18, 0.22, 0.44],
-        [0.35, 0.08, 0.11, 0.44]
-    ]
-    payloads = [
-        {"city": "Berlin"},
-        {"city": "London"},
-        {"city": "Moscow"},
-        {"city": "New York"},
-        {"city": "Beijing"},
-        {"city": "Mumbai"}
-    ]
-    qdrant.add_vectors(vectors=vectors, payloads=payloads)
+    def __init__(self, *args, **kwargs):
+        super(Qdrant_Test_Case, self).__init__(*args, **kwargs)
+        self.qdrant = QdrantProvider(collection_name)
 
-    query_vector = [0.05, 0.61, 0.76, 0.74]
-    search_result = qdrant.search_vector(query_vector=query_vector, limit=3, with_payload=True)
-    print("Search results:", search_result)
+    def test_qdrant(self):
+        self.qdrant.create_collection()
+        vectors = [
+            [0.05, 0.61, 0.76, 0.74],
+            [0.19, 0.81, 0.75, 0.11],
+            [0.36, 0.55, 0.47, 0.94],
+            [0.18, 0.01, 0.85, 0.80],
+            [0.24, 0.18, 0.22, 0.44],
+            [0.35, 0.08, 0.11, 0.44]
+        ]
+        payloads = [
+            {"city": "Berlin"},
+            {"city": "London"},
+            {"city": "Moscow"},
+            {"city": "New York"},
+            {"city": "Beijing"},
+            {"city": "Mumbai"}
+        ]
+        self.qdrant.add_vectors(vectors=vectors, payloads=payloads)
 
-    collections = qdrant.list_collections()
-    print("Current collections:", collections)
+        query_vector = [0.05, 0.61, 0.76, 0.74]
+        search_result = self.qdrant.search_vector(query_vector=query_vector, limit=3, with_payload=True)
+        
+        highest_score_point = max(search_result, key=lambda point: point.score)
+        
+        self.assertEqual(highest_score_point.payload['city'], 'Berlin')
     
-test_qdrant()

@@ -1,12 +1,14 @@
 from app.configs.qdrant_vector_db import qdrant_client
 from qdrant_client.http import models
 
+VECTOR_SIZE = 4
+
 
 class QdrantProvider:
     def __init__(self, collection_name):
         self.collection_name = collection_name
 
-    def create_collection(self, vector_size=4, distance="Cosine"):
+    def create_collection(self, vector_size=VECTOR_SIZE, distance="Cosine"):
         try:
             collections = qdrant_client.get_collections()
             if self.collection_name in [col.name for col in collections.collections]:
@@ -23,6 +25,21 @@ class QdrantProvider:
             print(f"Collection '{self.collection_name}' created successfully.")
         except Exception as e:
             print(f"Error creating collection: {e}")
+            
+    def list_collections(self):
+        try:
+            collections = qdrant_client.get_collections()
+            return [col.name for col in collections.collections]
+        except Exception as e:
+            print(f"Error fetching collections: {e}")
+            return None
+
+    def drop_collection(self):
+        try:
+            qdrant_client.delete_collection(self.collection_name)
+            print(f"Collection '{self.collection_name}' dropped successfully.")
+        except Exception as e:
+            print(f"Error dropping collection: {e}")
 
     def add_vectors(self, vectors, payloads):
         try:
@@ -47,21 +64,6 @@ class QdrantProvider:
         except Exception as e:
             print(f"Error during search: {e}")
             return None
-
-    def list_collections(self):
-        try:
-            collections = qdrant_client.get_collections()
-            return [col.name for col in collections.collections]
-        except Exception as e:
-            print(f"Error fetching collections: {e}")
-            return None
-
-    def drop_collection(self):
-        try:
-            qdrant_client.delete_collection(self.collection_name)
-            print(f"Collection '{self.collection_name}' dropped successfully.")
-        except Exception as e:
-            print(f"Error dropping collection: {e}")
 
     def update_vector(self, point_id, vector, payload=None):
         try:
