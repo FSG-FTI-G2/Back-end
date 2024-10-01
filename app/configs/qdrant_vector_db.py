@@ -6,5 +6,3 @@ qdrant_client = QdrantClient(
     port=int(os.environ.get("QDRANT_PORT", 6333)), 
 )
 
-# # Ví dụ: Tạo một collection
-collection_name = os.environ.get("QDRANT_COLLECTION", "test_Qdrants_3")
