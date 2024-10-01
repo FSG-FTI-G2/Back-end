@@ -5,12 +5,12 @@ from app.providers.vector_db import QdrantProvider
 
 collection_name = 'Qdrants_Vector_Database'
 
+qdrant = QdrantProvider(collection_name)
+
+qdrant.create_collection()
+
 def test_qdrant():
-    collection_name = 'Qdrants_Vector_Database'
-    qdrant = QdrantProvider(collection_name)
-
-    qdrant.create_collection()
-
+    
     vectors = [
         [0.05, 0.61, 0.76, 0.74],
         [0.19, 0.81, 0.75, 0.11],
