@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from fastapi.security import OAuth2PasswordRequestForm
 from app.models.user import UserSchema
-from app.controllers.auth_control import get_current_admin_user 
+from app.utils.respone import response  
 from app.controllers.auth_control import (
     authenticate_user,
     create_access_token,
@@ -17,9 +17,9 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
         raise HTTPException(status_code=400, detail="Incorrect username or password")
     
     access_token = create_access_token(data={"sub": user.username}) 
-    return {"access_token": access_token, "token_type": "bearer"}
+    return response(code=400, message="Login successful", data={"access_token": access_token})
 
-@router.get("/users/me")
-async def read_users_me(current_user: UserSchema = Depends(get_current_user)):
+
+@router.get("/me")
+async def read_users_me(current_user: dict = Depends(get_current_user)):
     return current_user
-
