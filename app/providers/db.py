@@ -28,6 +28,13 @@ class DatabaseProvider:
         '''
         return self.running_count // page_size
 
+    def create_index(self, field: str, unique: bool = False):
+        '''
+        Creates an index for a field in the collection
+        '''
+        # Create index for the field
+        self.collection.create_index(field, unique=unique)
+
     def get_all(
         self,
         page_size: int = DEFAULT_PAGE_SIZE,
