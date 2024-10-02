@@ -1,19 +1,30 @@
 from typing import AnyStr, Dict
 import os
 from fastapi import HTTPException, status
+import bcrypt
 from jose import jwt, JWTError
-from dotenv import load_dotenv
 
-load_dotenv()
 
-class JWTProvider:
+class EncryptionProvider:
     '''
-    Perform JWT encoding and decoding
+    Perform hash, encrypt, and decrypt operations
     '''
 
     def __init__(self):
         self.secret = os.getenv("JWT_SECRET")
-        self.algorithm = "HS256"  
+        self.algorithm = "HS256"
+
+    def hash(self, data: AnyStr) -> AnyStr:
+        '''
+        Hash data using bcrypt
+        '''
+        return bcrypt.hashpw(data.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+
+    def match_hash(self, data: AnyStr, hashed_data: AnyStr) -> bool:
+        '''
+        Compare hashed data with original data
+        '''
+        return bcrypt.checkpw(data.encode('utf-8'), hashed_data.encode('utf-8'))
 
     def encrypt(self, data: Dict) -> AnyStr:
         '''

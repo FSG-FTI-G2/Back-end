@@ -2,17 +2,16 @@ from typing import Annotated
 import datetime
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
-from app.models.user import UserSchema  
+from app.models.user import UserSchema
 from jose import JWTError, jwt
-from app.controllers.auth_control import SECRET_KEY, ALGORITHM
-
+from app.providers import encryptor
 
 
 security = HTTPBearer()
- 
 
-#Get user by token
-def get_current_user_from_token(credentials: Annotated[HTTPAuthorizationCredentials, Depends(security)]):
+
+# Get user by token
+def auth_user_middleware(credentials: Annotated[HTTPAuthorizationCredentials, Depends(security)]):
 
     token = credentials.credentials
 
@@ -22,16 +21,10 @@ def get_current_user_from_token(credentials: Annotated[HTTPAuthorizationCredenti
             detail="Authorization Token is required",
         )
 
-    try:
-        data = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-    except JWTError:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid Token",
-        )
+    data = encryptor.decrypt(token)
 
-    #Get id and expeir time
-    username = data.get("sub") 
+    # Get id and expired time
+    user_id = data.get("uid")
     exp = data.get("exp")
 
     if datetime.datetime.fromtimestamp(exp, tz=datetime.timezone.utc) < datetime.datetime.now(tz=datetime.timezone.utc):
@@ -41,7 +34,7 @@ def get_current_user_from_token(credentials: Annotated[HTTPAuthorizationCredenti
         )
 
     # Get info user
-    user = UserSchema.find_by_username(username)
+    user = UserSchema.find_by_id(user_id)
 
     if not user:
         raise HTTPException(

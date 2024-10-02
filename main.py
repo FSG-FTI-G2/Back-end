@@ -29,14 +29,11 @@ app.include_router(router)
 
 @app.exception_handler(HTTPException)
 async def http_exception_handler(_, exc):
-    return ORJSONResponse(
-        status_code=exc.status_code,
-        content=response(
-            code=exc.status_code,
-            message=str(exc.detail),
-            data=None,
-            error=exc.detail if exc.status_code == 404 else None
-        )
+    return response(
+        code=exc.status_code,
+        message=str(exc.detail),
+        data=None,
+        error=exc.detail if exc.status_code == 404 else None
     )
 
 
