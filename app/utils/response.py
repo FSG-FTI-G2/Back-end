@@ -1,6 +1,7 @@
 import time
 from typing import Optional, Any
 from pydantic import BaseModel, Field
+from fastapi.responses import ORJSONResponse
 
 
 class ResponseModel(BaseModel):
@@ -12,10 +13,13 @@ class ResponseModel(BaseModel):
 
 
 def response(code: int, message: str, data: Optional[Any] = None, error: Optional[Any] = None) -> dict:
-    return ResponseModel(
-        code=code,
-        message=message,
-        data=data,
-        error=error,
-        timestamp=int(time.time())
+    return ORJSONResponse(
+        status_code=code,
+        content={
+            "code": code,
+            "message": message,
+            "data": data,
+            "errors": error,
+            "timestamp": int(time.time())
+        }
     )
