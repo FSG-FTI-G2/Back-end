@@ -5,11 +5,6 @@ import unittest
 from app.providers.vector_db import QdrantProvider
 
 collection_name = 'Qdrants_Vector_Database'
-
-# qdrant = QdrantProvider
-
-# qdrant.create_collection()
-
 class Qdrant_Test_Case(unittest.TestCase):
     
     def __init__(self, *args, **kwargs):
