@@ -12,6 +12,7 @@ services:
     environment:
       - MONGO_HOST=mongodb
       - QDRANT_HOST=qdrant
+      - MINIO_HOST=minio
     develop:
       watch:
         - path: .
@@ -19,6 +20,20 @@ services:
           target: /app
     command: ["--reload"]
 
+  minio:
+    image: minio/minio
+    container_name: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - ./storage:/data
+    environment:
+      MINIO_ROOT_USER: user
+      MINIO_ROOT_PASSWORD: user_123123
+    command: server --console-address ":9001" /data
+
+  
   mongodb:
     image: mongodb/mongodb-community-server:latest
     container_name: mongodb-container
