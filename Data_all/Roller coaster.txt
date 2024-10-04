@@ -1,0 +1,446 @@
+# Roller coaster
+Rail-based amusement park ride
+
+A roller coaster is a type of amusement ride employing a form of elevated railroad track that carries passengers on a train through tight turns, steep slopes, and other elements usually designed to produce a thrilling experience.[1][2] Trains consist of open cars connected in a single line, and the rides are often found in theme parks around the world. Roller coasters first appeared in the 17th century, and LaMarcus Adna Thompson obtained one of the first known patents for a roller coaster design in 1885, based on the Switchback Railway which opened a year earlier at Coney Island.[3][4]
+
+Tracks are typically built and designed as a complete circuit in which trains depart from and return to the same loading station. One variation, a shuttle roller coaster, reverses at some point throughout the course of the ride to traverse the same track backwards.
+
+## History
+### The Russian Mountains and the Aerial Promenades
+
+
+The oldest roller coasters are believed to have originated from the so-called "Russian Mountains", specially constructed hills of ice located in the area that is now Saint Petersburg, Russia.[5] Built in the 17th century, the slides were built to a height of between 21 and 24 m (70 and 80 feet), had a 50-degree drop, and were reinforced by wooden supports. Later, in 1784, Catherine the Great is said to have constructed a sledding hill in the gardens of her palace at Oranienbaum in St. Petersburg.[6]
+
+The Riding Mountain (a.k.a. La Grande Glisade) entertainment pavilion designed by Bartolomeo Francesco Rastrelli for Tsarskoye Selo royal residence was built in 1754–1757. In Russian it was known as Katalnaya gora (Катальная гора, literally "Mountain for riding")[7] It was a huge building in the shape of rotunda. It had a trail with five hills which can be covered with ice in winter. In the summer time the trails used trolleys on wheels secured in the steel grooves mounted on the wooden trails. Due to a pendulum-like motion based on inertia all five hills could be traversed in one ride.[8] The ride was engineered by Russian scientist Andrey Nartov.[7] The Anglican clergyman John Glen King mentioned that some Englishmen visiting Russia called them "Flying Mountains" and described them as follows:
+
+You will observe that there are five mounts of unequal height: the first and the highest is full thirty feet perpendicular altitude; the momentum with which they descend this carries them over the second, which is about five or six feet lower, just sufficient to allow for the friction and resistance; and so on to the last, from which they are conveyed by a gentle descent, with nearly same velocity, over a piece of water into a little island. These slides, which are about a furlong and a half in length, are made of wood, that may be used in summer as well as in winter. The process is, two of four persons fit in a little carriage and one stands behind, for more there are in it the greater the swiftness with which it goes; it runs on castors and in grooves to keep it on its right direction, and it descends with a wonderful rapidity. Under the hill, is a machine worked by horses for drawing the carriages back again, with the company in them. Such a work as this would have been enormous in most countries for the labour and expense in cost, as well as the vast quantity of wood used in it. At the same place, there is another artificial mount which goes in a spiral line, and in my opinion, for I have tried it also, is very disagreable; as it seems always leaning on one side, and the person feels in danger of falling out of seat.
+[9]
+
+Katalnaya gora was dismantled in 1792–1795. Currently in its place is the Granite Terrace in the Catherine Park.[7]
+
+Two roller-coasters were built in France in 1817.[10] Les Montagnes de Belleville (Les Montagnes Russes à Belleville) in Belleville, Paris had wheels attached to carriages and locked on tracks.[11]
+The Promenades Aériennes, opened in Parc Beaujon in Paris on July 8, 1817[12] had  wheeled cars securely locked to the track, guide rails to keep them on course, and higher speeds.[13] It spawned half a dozen imitators, but their popularity soon declined.
+
+However, during the Belle Epoque they returned to fashion. In 1887, Spanish entrepreneur Joseph Oller, co-founder of the Moulin Rouge music hall, constructed the Montagnes Russes de Belleville, "Russian Mountains of Belleville" with 656 feet (200 m) of track laid out in a double-eight, later enlarged to four figure-eight-shaped loops.[14]
+
+### Scenic railways
+In 1827, a mining company in Summit Hill, Pennsylvania constructed the Mauch Chunk Switchback Railway, a downhill gravity railroad used to deliver coal to Mauch Chunk, Pennsylvania – now known as Jim Thorpe.[15] By the 1850s, the "Gravity Road" (as it became known) was selling rides to thrill seekers. Railway companies used similar tracks to provide amusement on days when ridership was low.
+
+Using this idea as a basis, LaMarcus Adna Thompson began work on a gravity Switchback Railway that opened at Coney Island in Brooklyn, New York, in 1884.[16] Passengers climbed to the top of a platform and rode a bench-like car down the 600-foot (183 m) track up to the top of another tower where the vehicle was switched to a return track and the passengers took the return trip.[17] This track design was soon replaced with an oval complete circuit.[13] In 1885, Phillip Hinkle introduced the first full-circuit coaster with a lift hill, the Gravity Pleasure Road, which became the most popular attraction at Coney Island.[13] Not to be outdone, in 1886 Thompson patented his design of roller coaster that included dark tunnels with painted scenery. "Scenic railways" were soon found in amusement parks across the county.[13]
+
+### Popularity, decline, and revival
+By 1919, the first underfriction roller coaster had been developed by John Miller.[18] Over the next decade, roller coasters spread to amusement parks around the world and began an era in the industry often referred to as the "Golden Age". One of the most well known from the period is the historical Cyclone that opened at Coney Island in 1927. The onset of the Great Depression in the 1930s, however, significantly impacted the amusement park industry and brought an end to the rapid growth experienced during the Golden Age. This aside, roller coasters were still built with varying success from location to location. In May 1932, the Scene Railway witnessed somewhat of a revival in the UK, including the opening of the roller coaster at Great Yarmouth. Today it is one of only two scenic railways still in operation in the UK.[19]
+
+In 1959, Disneyland introduced a design breakthrough with Matterhorn Bobsleds, the first permanent roller coaster to use a tubular steel track. Designed by Arrow Development, the tubular track was unlike standard rail design on wooden coasters, allowing the track to bend in sharper angles in any direction, leading to the incorporation of loops, corkscrews, and inversion elements into track layouts. A little more than a decade later, the immediate success of The Racer at Kings Island in 1972 sparked a new era of roller coaster enthusiasm, which led to a resurgence across the amusement park industry over the next several decades.[citation needed]
+
+## Etymology
+There are several explanations for the name roller coaster. It is said to have originated from an early American design where slides or ramps were fitted with rollers over which a sled would coast.[13] This design was abandoned in favor of fitting the wheels to the sled or other vehicles, but the name endured.
+
+Another explanation is that the phrase originated from a ride located in a roller skating rink in Haverhill, Massachusetts in 1887. A toboggan-like sled was raised to the top of a track which consisted of hundreds of rollers. This Roller Toboggan then took off down gently rolling hills to the floor. The inventors of this ride, Stephen E. Jackman and Byron B. Floyd, claim that they were the first to use the term "roller coaster".[17]
+
+The term jet coaster is used for roller coasters in Japan, where such amusement park rides are very popular.[20]
+
+In many languages, the name refers to "Russian mountains". Contrastingly, in Russian, they are called "Американские горки" (Amerikanskiye gorki, "American hills"). In the Scandinavian languages, the roller coaster is referred as "mountain-and-valley railway". German knows the word "Achterbahn", stemming from "Figur-8-Bahn", like Dutch "Achtbaan", relating to the form of the number 8 ("acht" in German and also Dutch).
+
+## Mechanics
+Roller coaster trains are not typically powered. Most are pulled up a lift hill by a chain or cable and released downhill. The potential energy accumulated by the rise in height is transferred to kinetic energy, which is then converted back into potential energy as the train rises up the next hill. Changes in elevation become smaller throughout the track's course, as some mechanical energy is lost to friction and air drag. A properly-designed, outdoor track will result in a train having enough kinetic energy to complete the entire course under a variety of stressful weather conditions.
+
+Not all coasters feature a lift hill, however. A train may also be set into motion by a launch mechanism such as a flywheel, linear induction motor (LIM), linear synchronous motor (LSM), hydraulic launch, or drive tire. Some launched roller coasters are capable of reaching greater speeds using less track when compared to traditional coasters that rely on a conventional lift hill.
+
+A brake run at the end of the circuit is the most common method of stopping a roller coaster train as it returns to the station. One notable exception is a powered roller coaster, which instead of relying on gravity uses one or more motors to propel the trains along the course.
+
+In 2006, NASA announced that it would build a system using principles similar to those of a roller coaster to help astronauts escape the Ares I launch pad in an emergency,[21] although this has since been scrapped along with the rest of the Ares program.
+
+## Safety
+Some sources have shown concern over the ability of roller coasters to cause head trauma and serious injury such as the tearing of axons and damaging of blood vessels.[22][23]
+
+### Safety mechanisms and technology
+A variety of safety mechanisms protect riders on roller coasters. One of these is the block system. Most large roller coasters have the ability to run two or more trains at once, and the block system prevents these trains from colliding. In this system, the track is divided into two or more sections known as blocks. Only one train is permitted in each block at any given time. There is a section of track at the end of each block where a train can be stopped if necessary, such as preventing dispatch from the station, stopping a lift, or applying brakes. Sensors detect when a train passes so that the system's computer is aware of which blocks are occupied. If a train attempts to enter an occupied block, the stopping mechanisms in all blocks are engaged.[citation needed]
+
+Restraints are another critical aspect to roller coaster safety. Roller coasters usually have two different types: Over-the-shoulder-restraints and lap bar restraints. With both, either hydraulic or mechanical  safety mechanisms are used within the restraints. Mechanical restraints use a system known as a ratchet and pawl. When riding a roller coaster with a ratchet and pawl system, the sound of clicks can be heard when pulling down the restraint.[24] Hydraulic restraints use a piston and cylinder. Unlike mechanical restraints, there is no feeling of physical or sound of clicks from the restraint being locked in place.[25] Most modern day roller coasters have sensors that are used to make sure each restraint is locked. If all the restraints are locked, it will send a signal to the ride computer letting it know that it is clear for dispatch. If all restraints are not locked, the train will not be able to move out of the station until each restraint is locked.[26]
+
+Braking systems such as pivoting pawls are used on the bottom of the train and on the inclined lift hill. While the cart goes up the lift hill, it is usually pulled by a chain. The pawl moves over bumps that are separated closely apart. In the event that the train ever becomes disconnected from the chain, the anti roll-back system will engage and it will fall back into the nearest downhill stop preventing the train from falling down the lift hill.[27]
+
+Another key to safety is the programmable logic controller (PLC), an essential component of a roller coaster's computer system. Multiple PLCs work together to detect faults associated with operation and automate decisions to engage various elements (e.g. lift, brakes, etc.). Periodic maintenance and visual inspection by ride engineers are also important to verify that structures and materials are within expected wear tolerances and functioning correctly. Effective operating procedures further enhance safety.[28]
+
+### Roller coaster design and statistics
+Roller coaster design is another important aspect that requires a working knowledge of basic physics to enhance ride comfort and avoid harmful strain to the rider. Ride designers must carefully analyze the movement a ride subjects its riders to, ensuring it is within a reasonable tolerance. The human body needs sufficient time to react to sudden changes in force in order to control muscle tension and avoid harmful consequences such as whiplash. Designers typically stay in the range of 4–6Gs (40–60 m s−2) as a maximum for positive g-force acceleration, which increases the feeling of weight and pushes riders downward into their seat. For negative g-force, or the feeling of weightlessness, the target is 1.5–2Gs (15–20 m s−2) as a maximum. These fall into a range considered safe to a majority of the population. Lateral acceleration is also typically kept under 2Gs using various techniques including the banking of curves.[29]
+
+Wheels are a critical part in rollercoaster design. The purpose of wheels is to keep the train on the track and to prevent it from flying off. A majority of roller coaster wheels are made from polyurethane. There are 3 kinds of roller coaster wheels which include road wheels, side friction wheels, and up-stop wheels. Road wheels ride on top of the track. Side friction wheels ride on the side of the track to keep the train on the track throughout turns. Up-stop wheels ride below the track and prevent the train from lifting off the track.[30]
+
+Roller coasters are statistically very safe when compared to other activities, but despite all the safety measures in place, accidents still occur. The International Association of Amusement Parks and Attractions (IAAPA) reports that a rider has one chance in 15.5 million of being injured on a ride. Also, "In a typical year, more than 385 million guests enjoyed in excess of 1.7 billion rides at approximately 400 North American fixed-site facilities". IAAPA is required to report annual ride incidents to the National Safety Council.[31][32]
+
+## Types
+Roller coasters are divided into two main categories: steel roller coasters and wooden roller coasters. Steel coasters have tubular steel tracks, and compared to wooden coasters, they are typically known for offering a smoother ride and their ability to turn riders upside-down. Wooden coasters have flat steel tracks, and are typically renowned for producing "air time" through the use of negative G-forces when reaching the crest of some hill elements. Newer types of track, such as I-Box and Topper introduced by Rocky Mountain Construction (RMC), improve the ride experience on wooden coasters, lower maintenance costs, and add the ability to invert riders.
+
+A third classification type is often referred to as a hybrid roller coaster, which utilize a mixture of wood and steel elements for the track and structure. Many, for example, have a track made out of steel and a support structure made from wood.[33][34][35] RMC has notably redesigned wood coasters that have either deteriorated from age or been deemed by parks as too costly to maintain.[35][36] RMC often replaces the wood track with their patented steel I-Box track design, while reusing much of the ride's wooden structure, resulting in a smoother ride with the incorporation of new design elements, such as inversions, sharper turns, and steeper drops.[36][37]
+
+Although the term wasn't widely used or accepted until the 21st century, one of the oldest examples is Cyclone at Luna Park, which opened in 1927.[38] It features a wood track and steel structure.[39] Other older examples include mine train roller coasters, many of which were built by Arrow Dynamics.[40][41] The term hybrid became more prominent after the introduction of New Texas Giant at Six Flags Over Texas in 2011.[42] Many in the industry, however, continue to classify coasters strictly by their track type only, labeling them either steel or wood.[33][43]
+
+Modern roller coasters are constantly evolving to provide a variety of different experiences. More focus is being placed on the position of riders in relation to the overall experience. Traditionally, riders sit facing forward, but newer variations such as stand-up and flying models position the rider in different ways to change the experiences. A flying model, for example, is a suspended roller coaster where the riders lie facing forward and down with their chests and feet strapped in. Other ways of enhancing the experience involve removing the floor beneath passengers riding above the track, as featured in floorless roller coasters. New track elements, such as inversions, are often introduced to provide entirely new experiences.
+
+### By height
+Several height classifications have been used by parks and manufacturers in marketing their roller coasters, as well as enthusiasts within the industry. One classification, the kiddie coaster, is a roller coaster specifically designed for younger riders. Following World War II, parks began pushing for more of them to be built in contrast to the height and age restrictions of standard designs at the time. Companies like Philadelphia Toboggan Company (PTC) developed scaled-down versions of their larger models to accommodate the demand. These typically featured lift hills smaller than 25 feet (7.6 m), and still do today. The rise of kiddie coasters soon led to the development of "junior" models that had lift hills up to 45 feet (14 m). A notable example of a junior coaster is the Sea Dragon – the oldest operating roller coaster from PTC's legendary designer John Allen – which opened at Wyandot Lake in 1956 near Powell, Ohio.[17]
+
+A hypercoaster, occasionally stylized as hyper coaster, is a type of roller coaster with a height or drop of at least 200 feet (61 m). Moonsault Scramble, which debuted at Fuji-Q Highland in 1984, was the first to break this barrier, though the term hypercoaster was first coined by Cedar Point and Arrow Dynamics with the opening of Magnum XL-200 in 1989.[44][45] Hypercoasters have become one of the most predominant types of roller coasters in the world, now led by manufacturers Bolliger & Mabillard and Intamin.
+
+A giga coaster is a type of roller coaster with a height or drop of at least 300 feet (91 m).[46] The term was coined during the construction of the  Millennium Force, a roller coaster built by Intamin on Cedar Point amusement park.[47][48] Although Morgan and Bolliger & Mabillard have not used the term giga,[49] both have also produced roller coasters in this class.
+
+A strata coaster is a type of roller coaster with a height or drop of at least 400 feet (120 m).[46] As with the other two height classifications, the term strata was first introduced by Cedar Point with the release of Top Thrill Dragster, a 420-foot-tall (130 m) roller coaster that opened in 2003.[58] Kingda Ka was the second strata coaster, and it opened at Six Flags Great Adventure in 2005 as the tallest roller coaster in the world with a height of 456 feet (139 m). Top Thrill Dragster closed in 2021 following a serious incident in which a bracket came off the top of the ride and hit a woman in the head while she was waiting in line. The woman did not die, and she reached a settlement with Cedar Point amusement park in 2023.[59] The ride was subsequently refurbished and modified, and it reopened in 2024 as Top Thrill 2.[60]
+
+Superman: Escape From Krypton, a 415-foot (126 m) coaster, opened in 1997 at Six Flags Magic Mountain. It is not typically classified as a strata coaster due to its shuttle coaster design, where trains do not travel a complete circuit.[58][61]
+
+An exa coaster is a type of roller coaster with a height or drop of at least 600 feet (180 m).[62] The term exa was first introduced by Intamin for Falcon's Flight, a 640-foot (200 m) coaster expected to open at Six Flags Qiddiya in October 2024.[63][64] Upon completion, it will be the tallest roller coaster in the world.[65]
+
+
+
+
+
+## Major roller coaster manufacturers
+- Allan Herschell Company (defunct, merged with Chance Rides)
+- Arrow Development (acquired by Huss Trading Corporation, formed into Arrow-Huss)
+- Arrow Dynamics (defunct, assets bought by S&S Arrow)
+- ART Engineering
+- Arrow-Huss (defunct, reformed as Arrow Dynamics)
+- B.A. Schiff & Associates
+- Bolliger & Mabillard
+- Bradley and Kaye (defunct)
+- Chance Morgan
+- Chance Rides
+- Custom Coasters International (defunct)
+- D. H. Morgan Manufacturing (acquired by Michael Chance, formed into Chance Morgan)
+- Dinn Corporation (defunct)
+- Dynamic Structures
+- E&F Miler Industries
+- Fabbri Group
+- Gerstlauer
+- Giovanola (defunct)
+- The Gravity Group
+- Great Coasters International
+- Hopkins Rides
+- Intamin
+- Jinma Rides
+- Mack Rides
+- Maurer AG
+- Martin & Vleminckx
+- Philadelphia Toboggan Coasters
+- Pinfari (defunct)
+- Premier Rides
+- Preston & Barbieri
+- Reverchon Industries (defunct)
+- Ride Engineers Switzerland
+- Rocky Mountain Construction
+- Roller Coaster Corporation of America (defunct)
+- Sansei Technologies
+- S&S - Sansei Technologies (formerly known as S&S Worldwide)
+- SBF Visa Group
+- Schwarzkopf (defunct)
+- TOGO (defunct)
+- Vekoma
+- Zamperla
+- Zierer
+## Gallery
+- Roller Coasters
+- 
+
+Tornado, located at Särkänniemi in Tampere, Pirkanmaa, Finland
+
+- 
+
+Hypersonic XLC, the world's first production Thrust Air 2000 (now defunct)
+
+- 
+
+Top Thrill Dragster at Cedar Point was the first strata coaster ever built.
+
+- 
+
+Riding Expedition GeForce at Holiday Park, Germany
+
+- 
+
+Raptor, a steel inverted coaster, is located at Cedar Point in Sandusky, Ohio, United States.
+
+- 
+
+New Texas Giant at Six Flags Over Texas before being refurbished into a hybrid steel-wood coaster.
+
+- 
+
+Lightning Racer at Hersheypark is a racing, dueling roller coaster made by GCI.
+
+- 
+
+This all-wooden roller coaster, built in 1951, dominates the Linnanmäki amusement park in Helsinki, Finland.
+
+- 
+
+Coney Island Cyclone in Brooklyn, New York was built in 1927 and refurbished in 1975.
+
+- 
+
+Son of Beast in Kings Island was the only wooden coaster to have a vertical loop.
+
+- 
+
+Jack Rabbit at Kennywood Park outside of Pittsburgh, Pennsylvania, United States was built in 1920.
+
+- 
+
+Phoenix, built in 1947, at Knoebels Amusement Resort in Elysburg, Pennsylvania, United States.
+
+- 
+
+Baron 1898 at Efteling in Kaatsheuvel, The Netherlands
+
+- 
+
+Griffon splashing down into a pool at Busch Gardens Williamsburg, US.
+
+- 
+
+Great Bear is the first steel inverted coaster in Pennsylvania, located at Hersheypark.
+
+- 
+
+Behemoth, at Canada's Wonderland, at one point the highest and fastest coaster in Canada
+
+- 
+
+"Montu", a popular inverted roller coaster at Busch Gardens Tampa Bay, US
+
+- 
+
+Millennium Force
+
+- 
+
+Black Mamba at Phantasialand, Germany
+
+- 
+
+Euro-Mir, a spinning roller coaster at Europa-Park in Rust, Germany
+
+- 
+
+Dragon Khan at PortAventura Park in Salou (Tarragona), Spain
+
+- 
+
+Thunderbolt at Kennywood outside of Pittsburgh, Pennsylvania, US was built in 1968.
+
+- 
+
+Leviathan at Canada's Wonderland, the tallest coaster in Canada (93 m or 306 ft, 148 km/h or 92 mph)
+
+- 
+
+Kingda Ka is the world's tallest roller coaster and is the second strata coaster in the world after Top Thrill Dragster.
+
+- 
+
+Expedition Everest, a roller coaster at Disney's Animal Kingdom in Walt Disney World
+
+- 
+
+A small roller coaster at a local festival in Čakovec, Croatia
+
+- 
+
+Hyperion at Energylandia in Zator, Lesser Poland Voivodeship, Poland
+
+- 
+
+Fury 325 at Carowinds is the tallest roller coaster to use a traditional chain lift.
+
+- 
+
+Superman The Ride at Six Flags Great Adventure
+
+- 
+
+The Cyclone, Revere Beach, Massachusetts, USA
+
+## See also
+- Amusement park (Lists of amusement parks)
+- Fear of roller coasters
+- List of roller coaster elements
+- List of roller coaster rankings
+- List of theme park management video games
+- Roller coaster train
+## Notes
+1. ^ Originally built in 2003 by Intamin and later renovated by Zamperla in 2024.
+
+## References
+1. ^ "Definition of roller coaster". Merriam-Webster. Archived from the original on August 6, 2023. Retrieved August 6, 2023.
+
+2. ^ Pescovitz, David. "Roller coaster: Definition, History, & Facts". Encyclopædia Britannica. Archived from the original on August 6, 2023. Retrieved August 6, 2023.
+
+3. ^ "Gravity switch-back railway; US patent# 332762". Retrieved May 28, 2017.
+
+4. ^ "First roller coaster in America opens - Jun 16, 1884 - HISTORY.com". HISTORY.com. Retrieved 2016-12-30.
+
+5. ^ Coker, Robert (2002). Roller Coasters: A Thrill Seeker's Guide to the Ultimate Scream Machines.  New York: Metrobooks.  14.  ISBN 9781586631727.
+
+6. ^ Bennett, David (1998). Roller Coaster: Wooden and Steel Coasters, Twisters and Corkscrews.  Edison, New Jersey: Chartwell Books. 9. ISBN 9780785808855.
+
+7. ^ a b c "ГРАНИТНАЯ ТЕРРАСА"
+
+8. ^ Agata Pietrzak, Chopin na rollercoasterze
+
+9. ^ John Glen King, A Letter to the Right Reverend the Lord Bishop of Durham: Containing Some Observations on the Climate of Russia and the Northern Countries, with a View of the Flying Mountains at Zarsko Sello Near St. Petersbourg, pp. 18,19
+
+10. ^ The World's First Roller Coasters
+
+11. ^ "Seven record-setting roller coasters around the world"
+
+12. ^ Fierro, Alfred, Histoire et Dictionnaire de Paris p. 613
+
+13. ^ a b c d e Urbanowicz, Steven J. (2002). The Roller Coaster Lover's Companion; Kensington, New YorK: Citadel Press. ISBN 9780806523095.
+
+14. ^ Valérie RANSON-ENGUIALE, " Promenades aériennes ", Histoire par l'image [en ligne], consulté le 26 Mai 2017. URL : http://www.histoire-image.org/etudes/promenades-aeriennes
+
+15. ^ "Roller Coaster History: Early Years In America". Retrieved on July 26, 2007.
+
+16. ^ Chris Sheedy (2007-01-07). "Icons – In the Beginning... Roller-Coaster". The Sun-Herald Sunday Life (Weekly Supplement). John Fairfax Publications Pty Ltd. p. 10.
+
+17. ^ a b c Rutherford, Scott (2004). The American Roller Coaster. MBI. ISBN 0760319294.
+
+18. ^ "Patent Images". patimg2.uspto.gov.
+
+19. ^ East England theme parks during COVID-19. RideRater. 13 June 2021. Retrieved 7 March 2023.
+
+20. ^ Robb and Elissa Alvey. "Theme Park Review: Japan 2004", themeparkreview.com.  Retrieved on March 18, 2008.
+
+21. ^ Chris Bergin (November 3, 2006). "NASA will build Rollercoaster for Ares I escape". NASA Spaceflight.com. Archived from the original on 2006-11-15. Retrieved 2007-01-08.
+
+22. ^ "The link between roller coasters and headaches". Medical News Today. 2023-06-15. Retrieved 2024-02-07.
+
+23. ^ Kuo, Calvin; Wu, Lyndia C.; Ye, Patrick P.; Laksari, Kaveh; Camarillo, David B.; Kuhl, Ellen (2017). "Pilot Findings of Brain Displacements and Deformations during Roller Coaster Rides". Journal of Neurotrauma. 34 (22): 3198–3205. doi:10.1089/neu.2016.4893. PMC 6436029. PMID 28683585.
+
+24. ^ "Griffin Schobel - Rollercoaster Restraint System (2019)". griffinschobel.com. Retrieved 2022-05-02.
+
+25. ^ Hoebiger (2017). Personal restraint hydraulic lock LE. Alabama: Hoebiger.
+
+26. ^ Väisänen, Antti (2018). Design of Roller Coasters. Espoo, Finland: Aalto University School of Engineering. p. 11.
+
+27. ^ US5715756A, Weigand, Frank K.; Black, Alan & Drobnis, Nick, "Ride attraction anti-roll back system", issued 1998-02-10 
+
+28. ^ Fairgrounds and amusement parks: Guidance on safe practice. Health and Safety Executive. November 2017. Retrieved 7 March 2023.
+
+29. ^ "CoasterForce". CoasterForce. Retrieved 9 May 2022.
+
+30. ^ Hunt, Kristen (May 2018). Design Analysis of Roller Coasters. Worcester, MA: Worcester Polytechnic Institute. p. 11.
+
+31. ^ National Safety Council (August 2021). "North America Fixed-Site Amusement Ride Injury Survey, 2020 Update". International Association of Amusement Parks and Attractions Orlando, FL. pp. 1–14.
+
+32. ^ "Amusement Ride Safety | IAAPA". www.iaapa.org. Retrieved 2022-05-02.
+
+33. ^ a b Weisenberger, Nick (2012). Coasters 101: An Engineer's Guide to Roller Coaster Design (Paperback) (1st ed.). United States: Createspace Independent Publishing. p. 18. ISBN 9781468013559.
+
+34. ^ Throgmorton, Todd H.; Throgmorton, Samantha K. (April 30, 2016). Coasters: United States and Canada (E-book) (4th ed.). McFarland, Incorporated, Publishers. pp. 21, 49, 116, 223, 231. ISBN 9781476622118.
+
+35. ^ a b "What Is a Hybrid Wooden and Steel Roller Coaster?". TripSavvy. Retrieved 2021-04-26.
+
+36. ^ a b "What Is A Hybrid Roller Coaster?". coastercritic.com. 29 October 2019. Retrieved 2021-04-26.
+
+37. ^ "State of the Arts: A New Kind of Wooden Coaster Twists and Turns at Cedar Point". WKSU. 2018-05-04. Retrieved 2021-04-26.
+
+38. ^ "Cyclone - Luna Park (Brooklyn, New York, United States)". rcdb.com. Retrieved 2021-04-26.
+
+39. ^ "The Cyclone" (PDF). nyc.gov.
+
+40. ^ "Arrow Dynamics - Coasterforce". Coasterforce. 17 October 2016.
+
+41. ^ "Roller Coaster Search Results". rcdb.com. Retrieved 2021-04-27.
+
+42. ^ "Roller Coaster Search Results". rcdb.com. Retrieved 2021-04-28.
+
+43. ^ "New Texas Giant Roller Coaster". Guide to Six Flags over Texas. Retrieved 2021-04-28.
+
+44. ^ Meskil, Paul (August 6, 1989). "A Rolling Revival". New York Daily News. Retrieved August 16, 2017.
+
+45. ^ "Coaster Landmark Award: Magnum XL-200". American Coaster Enthusiasts. Retrieved August 16, 2017.
+
+46. ^ a b Murphy, Mekado (August 17, 2015). "Just How Tall Can Roller Coasters Get?". The New York Times. Archived from the original on August 17, 2015. Retrieved May 3, 2018.
+
+47. ^ "310-Foot-Tall "Giga-Coaster" Nears End of Construction". UltimateRollercoaster.com. March 9, 2000. Retrieved May 3, 2018.
+
+48. ^ "Millennium Force". Cedar Point. Retrieved May 3, 2018.
+
+49. ^ "Bolliger & Mabillard – Products". Archived from the original on 21 June 2012. Retrieved 13 February 2012.
+
+50. ^ "Millennium Force-Cedar Point". rcdb.com.
+
+51. ^ "Steel Dragon 2000-Nagashima Spa Land". rcdb.com.
+
+52. ^ "Project 305-Kings Dominion". rcdb.com.
+
+53. ^ "Leviathan-Canada's Wonderland". rcdb.com.
+
+54. ^ "Carowinds reopens Fury 325 rollercoaster, closed for over a month". WRAL. August 10, 2023. Retrieved August 10, 2023.
+
+55. ^ "Fury325-Carowinds". rcdb.com.
+
+56. ^ "Red Force – Ferrari Land (Salou, Tarragona, Spain)". rcdb.com.
+
+57. ^ "Orion – Kings Island (Mason, Ohio)". rcdb.com.
+
+58. ^ a b "National Roller Coaster Day: Ten incredible records for every thrill seeker". guinnessworldrecords.com. August 16, 2016. Retrieved May 3, 2018.
+
+59. ^ "Settlement reached after Michigan woman hurt in 2021 Top Thrill Dragster accident at Cedar Point: Read a statement from the park". wkyc.com. 2024-04-15. Retrieved 2024-08-02.
+
+60. ^ Glaser, Susan (August 1, 2023). "Cedar Point's Top Thrill 2 will replace Top Thrill Dragster coaster, with second 420-foot tower and 120 mph top speed". Cleveland.com. Archived from the original on August 1, 2023. Retrieved August 10, 2023.
+
+61. ^ "Watch the plunge from this new 325-foot roller coaster". USA Today. March 6, 2015. Retrieved May 3, 2018.
+
+62. ^ Cost, Ben (17 November 2023). "Six Flags unveils world's tallest, fastest roller coaster that sends riders speeding 150 mph off a 600-foot cliff". New York Post. Retrieved 11 December 2023.
+
+63. ^ Anwar, Shaheera. "Six Flags Qiddiya eyes an October 2024 opening". Fact Magazines. Retrieved 11 December 2023.
+
+64. ^ Malayil, Jijo (20 November 2023). "World's tallest, longest & fastest rollercoaster to debut in Saudi Arabia". Interesting Engineering. Retrieved 11 December 2023.
+
+65. ^ Stilwell, Andrew (14 November 2023). "Intamin Reveals Falcon's Flight Details". Coaster101. Retrieved 11 December 2023.
+
+## Further reading
+- Bennett, David (1998). Roller Coaster: Wooden and Steel Coasters, Twisters and Corkscrews.  Edison, New Jersey: Chartwell Books. 9. ISBN 9780786508853.
+- Brady, Matthew K.; Knight, David Alan (2001). Rollercoaster Tycoon (Paperback). Prima Games. p. 40. ISBN 9780761537656.
+- Cartmell, Robert (1987). The Incredible Scream Machine: A History of the Roller Coaster (Paperback). Amusement Park Books. ISBN 9780879723422.
+- Coker, Robert (2002). Roller Coasters: A Thrill Seeker's Guide to the Ultimate Scream Machines.  New York: Metrobooks.  14.  ISBN 9781586631727.
+- Francis, David W.; Francis, Diane DeMali (2002). Ohio's Amusement Parks in Vintage Postcards (Paperback). Arcadia Publishing. ISBN 9780738519975.
+- Romero, Pedro (2007). Night+Day Mexico City - Pedro Romero. ASDavis Media. ISBN 9780977624560. Retrieved 2013-07-26.
+- Rutherford, Scott (2004). The American Roller Coaster (Paperback). Motorbooks International. ISBN 9780760319291.
+- Sphinx Fine Art; Strachan, Edward; Bolton, Roy (2008). Russia and Europe in the Nineteenth Century - Edward Strachan, Roy Bolton. Sphinx Fine Art. ISBN 9781907200021. Retrieved 2013-07-26.
+- Urbanowicz, Steven J. (2002). The Roller Coaster Lover's Companion: A Thrill Seeker's Guide to the World's Best Coasters (Paperback). Kensington Publishing Corporation, Citadel Press. ISBN 9780806523095. ISBN 9780806523095
+- Weisenberger, Nick (September 2, 2014). The 50 Most Terrifying Roller Coasters Ever Built (Paperback). Createspace Independent Publishing. ISBN 9781500699963.
+## External links
+- Definitions from Wiktionary
+- Media from Commons
+- News from Wikinews
+- Quotations from Wikiquote
+- Texts from Wikisource
+- Textbooks from Wikibooks
+- Resources from Wikiversity
+- Roller Coaster Glossary
+- Roller Coaster History – History of the roller coaster
+- Roller Coaster Database – Information, statistics and photos for over 3700 roller coasters throughout the world
+- Roller Coaster Patents – With links to the U.S. Patent office
+- Roller Coaster Physics Archived 2016-03-16 at the Wayback Machine – Classic physics explained in terms of roller coasters
+- How Roller Coasters Work
+- 3D Animated Roller Coaster in MS Excel
+- Magic Mountain Announces ‘Twisted’ Plans for Iconic Colossus Roller Coaster
+- National Roller Coaster Museum & Archives – Collection of historic ride vehicles
+- Roller coasters
+- 17th-century introductions
+- Russian inventions
+- French inventions
+- Articles with short description
+- Short description is different from Wikidata
+- All articles with unsourced statements
+- Articles with unsourced statements from July 2018
+- Articles needing additional references from March 2009
+- All articles needing additional references
+- Articles with unsourced statements from August 2023
+- Pages using Sister project links with default search
+- Webarchive template wayback links
+- Articles containing video clips

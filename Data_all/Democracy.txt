@@ -1,0 +1,1077 @@
+# Democracy
+Form of government
+
+
+
+Democracy (from Ancient Greek: δημοκρατία, romanized: dēmokratía, dēmos 'people' and kratos 'rule')[1] is a system of government in which state power is vested in the people or the general population of a state.[2][3][4] Under a minimalist definition of democracy, rulers are elected through competitive elections while more expansive definitions link democracy to guarantees of civil liberties and human rights in addition to competitive elections.[5][6][4]
+
+In a direct democracy, the people have the direct authority to deliberate and decide legislation. In a representative democracy, the people choose governing officials through elections to do so. Who is considered part of "the people" and how authority is shared among or delegated by the people has changed over time and at different rates in different countries. Features of democracy oftentimes include freedom of assembly, association, personal property, freedom of religion and speech, citizenship, consent of the governed, voting rights, freedom from unwarranted governmental deprivation of the right to life and liberty, and minority rights.
+
+The notion of democracy has evolved considerably over time. Throughout history, one can find evidence of direct democracy, in which communities make decisions through popular assembly. Today, the dominant form of democracy is representative democracy, where citizens elect government officials to govern on their behalf such as in a parliamentary or presidential democracy. Most democracies apply in most cases majority rule,[7][8] but in some cases plurality rule, supermajority rule (e.g. constitution) or consensus rule (e.g. Switzerland) are applied. They serve the crucial purpose of inclusiveness and broader legitimacy on sensitive issues—counterbalancing majoritarianism—and therefore mostly take precedence on a constitutional level. In the common variant of liberal democracy, the powers of the majority are exercised within the framework of a representative democracy, but a constitution and supreme court limit the majority and protect the minority—usually through securing the enjoyment by all of certain individual rights, such as freedom of speech or freedom of association.[9][10]
+
+The term appeared in the 5th century BC in Greek city-states, notably Classical Athens, to mean "rule of the people", in contrast to aristocracy (ἀριστοκρατία, aristokratía), meaning "rule of an elite".[11] Western democracy, as distinct from that which existed in antiquity, is generally considered to have originated in city-states such as those in Classical Athens and the Roman Republic, where various degrees of enfranchisement of the free male population were observed. In virtually all democratic governments throughout ancient and modern history, democratic citizenship was initially restricted to an elite class, which was later extended to all adult citizens. In most modern democracies, this was achieved through the suffrage movements of the 19th and 20th centuries.
+
+Democracy contrasts with forms of government where power is not vested in the general population of a state, such as authoritarian systems. World public opinion strongly favors democratic systems of government.[12] According to the V-Dem Democracy indices and The Economist Democracy Index, less than half the world's population lives in a democracy as of 2022[update].[13][14]
+
+## Characteristics
+Although democracy is generally understood to be defined by voting,[1][10] no consensus exists on a precise definition of democracy.[15] Karl Popper says that the "classical" view of democracy is, "in brief, the theory that democracy is the rule of the people, and that the people have a right to rule".[16] One study identified 2,234 adjectives used to describe democracy in the English language.[17]
+
+Democratic principles are reflected in all eligible citizens being equal before the law and having equal access to legislative processes.[18] For example, in a representative democracy, every vote has (in theory) equal weight, and the freedom of eligible citizens is secured by legitimised rights and liberties which are typically enshrined in a constitution,[19][20] while other uses of "democracy" may encompass direct democracy, in which citizens vote on issues directly. According to the United Nations, democracy "provides an environment that respects human rights and fundamental freedoms, and in which the freely expressed will of people is exercised."[21]
+
+One theory holds that democracy requires three fundamental principles: upward control (sovereignty residing at the lowest levels of authority), political equality, and social norms by which individuals and institutions only consider acceptable acts that reflect the first two principles of upward control and political equality.[22] Legal equality, political freedom and rule of law[23] are often identified by commentators as foundational characteristics for a well-functioning democracy.[15]
+
+In some countries, notably in the United Kingdom (which originated the Westminster system), the dominant principle is that of parliamentary sovereignty, while maintaining judicial independence.[24][25] In India, parliamentary sovereignty is subject to the Constitution of India which includes judicial review.[26] Though the term "democracy" is typically used in the context of a  political state, the principles also are potentially applicable to private organisations, such as clubs, societies and firms.
+
+Democracies may use many different decision-making methods, but majority rule is the dominant form. Without compensation, like legal protections of individual or group rights,  political minorities can be oppressed by the "tyranny of the majority". Majority rule involves a competitive approach, opposed to consensus democracy, creating the need that elections, and generally deliberation, be substantively and procedurally "fair"," i.e. just and equitable. In some countries, freedom of political expression, freedom of speech, and freedom of the press are considered important to ensure that voters are well informed, enabling them to vote according to their own interests and beliefs.[27][28]
+
+It has also been suggested that a basic feature of democracy is the capacity of all voters to participate freely and fully in the life of their society.[29] With its emphasis on notions of social contract and the  collective will of all the voters, democracy can also be characterised as a form of political collectivism because it is defined as a form of government in which all eligible citizens have an equal say in lawmaking.[30]
+
+Republics, though often popularly associated with democracy because of the shared principle of rule by consent of the governed, are not necessarily democracies, as republicanism does not specify how the people are to rule.[31]
+Classically the term "republic" encompassed both democracies and aristocracies.[32][33] In a modern sense the republican form of government is a form of government without a monarch. Because of this, democracies can be republics or  constitutional monarchies, such as the United Kingdom.
+
+## History
+Democratic assemblies are as old as the human species and are found throughout human history,[35] but up until the nineteenth century, major political figures have largely opposed democracy.[36] Republican theorists linked democracy to small size: as political units grew in size, the likelihood increased that the government would turn despotic.[37][38] At the same time, small political units were vulnerable to conquest.[37] Montesquieu wrote, "If a republic be small, it is destroyed by a foreign force; if it be large, it is ruined by an internal imperfection."[39] According to Johns Hopkins University political scientist Daniel Deudney, the creation of the United States, with its large size and its system of checks and balances, was a solution to the dual problems of size.[37][pages needed] Forms of democracy occurred organically in societies around the world that had no contact with each other.[40][41]
+
+Retrospectively different polities, outside of declared democracies, have been described as proto-democratic.[citation needed]
+
+### Origins
+The term democracy first appeared in ancient Greek political and philosophical thought in the city-state of Athens during classical antiquity.[42][43] The word comes from dêmos '(common) people' and krátos 'force/might'.[44] Under Cleisthenes, what is generally held as the first example of a type of democracy in 508–507 BC was established in Athens. Cleisthenes is referred to as "the father of Athenian democracy".[45] The first attested use of the word democracy is found in prose works of the 430s BC, such as Herodotus' Histories, but its usage was older by several decades, as two Athenians born in the 470s were named Democrates, a new political name—likely in support of democracy—given at a time of debates over constitutional issues in Athens. Aeschylus also strongly alludes to the word in his play The Suppliants, staged in c.463 BC, where he mentions "the demos's ruling hand" [demou kratousa cheir]. Before that time, the word used to define the new political system of Cleisthenes was probably isonomia, meaning political equality.[46]
+
+Athenian democracy took the form of a direct democracy, and it had two distinguishing features: the random selection of ordinary citizens to fill the few existing government administrative and judicial offices,[47] and a legislative assembly consisting of all Athenian citizens.[48] All eligible citizens were allowed to speak and vote in the assembly, which set the laws of the city state. However, Athenian citizenship excluded women, slaves, foreigners (μέτοικοι / métoikoi), and youths below the age of military service.[49][50][contradictory] Effectively, only 1 in 4 residents in Athens qualified as citizens. Owning land was not a requirement for citizenship.[51] The exclusion of large parts of the population from the citizen body is closely related to the ancient understanding of citizenship. In most of antiquity the benefit of citizenship was tied to the obligation to fight war campaigns.[52]
+
+Athenian democracy was not only direct in the sense that decisions were made by the assembled people, but also the most direct in the sense that the people through the assembly, boule and courts of law controlled the entire political process and a large proportion of citizens were involved constantly in the public business.[53] Even though the rights of the individual were not secured by the Athenian constitution in the modern sense (the ancient Greeks had no word for "rights"[54]), those who were citizens of Athens enjoyed their liberties not in opposition to the government but by living in a city that was not subject to another power and by not being subjects themselves to the rule of another person.[55]
+
+Range voting appeared in Sparta as early as 700 BC. The Spartan ecclesia was an assembly of the people, held once a month, in which every male citizen of at least 20 years of age could participate. In the assembly, Spartans elected leaders and cast votes by range voting and shouting (the vote is then decided on how loudly the crowd shouts). Aristotle called this "childish", as compared with the stone voting ballots used by the Athenian citizenry. Sparta adopted it because of its simplicity, and to prevent any biased voting, buying, or cheating that was predominant in the early democratic elections.[56]
+
+Even though the Roman Republic contributed significantly to many aspects of democracy, only a minority of Romans were citizens with votes in elections for representatives. The votes of the powerful were given more weight through a system of weighted voting, so most high officials, including members of the Senate, came from a few wealthy and noble families.[57] In addition, the overthrow of the Roman Kingdom was the first case in the Western world of a polity being formed with the explicit purpose of being a republic, although it didn't have much of a democracy. The Roman model of governance inspired many political thinkers over the centuries.[58]
+
+Vaishali, capital city of the Vajjika League (Vrijji mahajanapada) of India, is considered one of the first examples of a republic around the 6th century BC.[59][60][61]
+
+Other cultures, such as the Iroquois in the Americas also developed a form of democratic society between 1450 and 1660 (and possibly in 1142[62]), well before contact with the Europeans. This democracy continues to the present day and is the world's oldest standing representative democracy.[63][64]
+
+### Middle Ages
+While most regions in Europe during the Middle Ages were ruled by clergy or feudal lords, there existed various systems involving elections or assemblies, although often only involving a small part of the population. In Scandinavia, bodies known as things consisted of freemen presided by a lawspeaker. These deliberative bodies were responsible for settling political questions, and variants included the Althing in Iceland and the Løgting in the Faeroe Islands.[65][66] The veche, found in Eastern Europe, was a similar body to the Scandinavian thing. In the Roman Catholic Church, the pope has been elected by a papal conclave composed of cardinals since 1059. The first documented parliamentary body in Europe was the Cortes of León. Established by Alfonso IX in 1188, the Cortes had authority over setting taxation, foreign affairs and legislating, though the exact nature of its role remains disputed.[67] The Republic of Ragusa, established in 1358 and centered around the city of Dubrovnik, provided representation and voting rights to its male aristocracy only. Various Italian city-states and polities had republic forms of government. For instance, the Republic of Florence, established in 1115, was led by the Signoria whose members were chosen by sortition. In 10th–15th century Frisia, a distinctly non-feudal society, the right to vote on local matters and on county officials was based on land size. The Kouroukan Fouga divided the Mali Empire into ruling clans (lineages) that were represented at a great assembly called the Gbara. However, the charter made Mali more similar to a constitutional monarchy than a democratic republic.[citation needed]
+
+The Parliament of England had its roots in the restrictions on the power of kings written into Magna Carta (1215), which explicitly protected certain rights of the King's subjects and implicitly supported what became the English writ of habeas corpus, safeguarding individual freedom against unlawful imprisonment with right to appeal.[68][69] The first representative national assembly in England was Simon de Montfort's Parliament in 1265.[70][71] The emergence of petitioning is some of the earliest evidence of parliament being used as a forum to address the general grievances of ordinary people. However, the power to call parliament remained at the pleasure of the monarch.[72]
+
+Studies have linked the emergence of parliamentary institutions in Europe during the medieval period to urban agglomeration and the creation of new classes, such as artisans,[73] as well as the presence of nobility and religious elites.[74] Scholars have also linked the emergence of representative government to Europe's relative political fragmentation.[75] Political scientist David Stasavage links the fragmentation of Europe, and its subsequent democratization, to the manner in which the Roman Empire collapsed: Roman territory was conquered by small fragmented groups of Germanic tribes, thus leading to the creation of small political units where rulers were relatively weak and needed the consent of the governed to ward off foreign threats.[76]
+
+In Poland, noble democracy was characterized by an increase in the activity of the middle nobility, which wanted to increase their share in exercising power at the expense of the magnates. Magnates dominated the most important offices in the state (secular and ecclesiastical) and sat on the royal council, later the senate. The growing importance of the middle nobility had an impact on the establishment of the institution of the land sejmik (local assembly), which subsequently obtained more rights. During the fifteenth and first half of the sixteenth century, sejmiks received more and more powers and became the most important institutions of local power. In 1454, Casimir IV Jagiellon granted the sejmiks the right to decide on taxes and to convene a mass mobilization in the Nieszawa Statutes. He also pledged not to create new laws without their consent.[77]
+
+### Modern era
+In 17th century England, there was renewed interest in Magna Carta.[78] The Parliament of England passed the Petition of Right in 1628 which established certain liberties for subjects. The English Civil War (1642–1651) was fought between the King and an oligarchic but elected Parliament,[79][80] during which the idea of a political party took form with groups debating rights to political representation during the Putney Debates of 1647.[81] Subsequently, the Protectorate (1653–59) and the English Restoration (1660) restored more autocratic rule, although Parliament passed the Habeas Corpus Act in 1679 which strengthened the convention that forbade detention lacking sufficient cause or evidence. After the Glorious Revolution of 1688, the Bill of Rights was enacted in 1689 which codified certain rights and liberties and is still in effect. The Bill set out the requirement for regular elections, rules for freedom of speech in Parliament and limited the power of the monarch, ensuring that, unlike much of Europe at the time, royal absolutism would not prevail.[82][83] Economic historians Douglass North and Barry Weingast have characterized the institutions implemented in the Glorious Revolution as a resounding success in terms of restraining the government and ensuring protection for property rights.[84]
+
+Renewed interest in the Magna Carta, the English Civil War, and the Glorious Revolution in the 17th century prompted the growth of political philosophy on the British Isles. Thomas Hobbes was the first philosopher to articulate a detailed social contract theory. Writing in the Leviathan (1651), Hobbes theorized that individuals living in the state of nature led lives that were "solitary, poor, nasty, brutish and short" and constantly waged a war of all against all. In order to prevent the occurrence of an anarchic state of nature, Hobbes reasoned that individuals ceded their rights to a strong, authoritarian power. In other words, Hobbes advocated for an absolute monarchy which, in his opinion, was the best form of government. Later, philosopher and physician John Locke would posit a different interpretation of social contract theory. Writing in his Two Treatises of Government (1689), Locke posited that all individuals possessed the inalienable rights to life, liberty and estate (property).[85] According to Locke, individuals would voluntarily come together to form a state for the purposes of defending their rights. Particularly important for Locke were property rights, whose protection Locke deemed to be a government's primary purpose.[86] Furthermore, Locke asserted that governments were legitimate only if they held the consent of the governed. For Locke, citizens had the right to revolt against a government that acted against their interest or became tyrannical. Although they were not widely read during his lifetime, Locke's works are considered the founding documents of liberal thought and profoundly influenced the leaders of the American Revolution and later the French Revolution.[87] His liberal democratic framework of governance remains the preeminent form of democracy in the world.
+
+In the Cossack republics of Ukraine in the 16th and 17th centuries, the Cossack Hetmanate and Zaporizhian Sich, the holder of the highest post of Hetman was elected by the representatives from the country's districts.
+
+In North America, representative government began in Jamestown, Virginia, with the election of the House of Burgesses (forerunner of the Virginia General Assembly) in 1619. English Puritans who migrated from 1620 established colonies in New England whose local governance was democratic;[88] although these local assemblies had some small amounts of devolved power, the ultimate authority was held by the Crown and the English Parliament. The Puritans (Pilgrim Fathers), Baptists, and Quakers who founded these colonies applied the democratic organisation of their congregations also to the administration of their communities in worldly matters.[89][90][91]
+
+The first Parliament of Great Britain was established in 1707, after the merger of the Kingdom of England and the Kingdom of Scotland under the Acts of Union. Two key documents of the UK's uncodified constitution, the English Declaration of Right, 1689 (restated in the Bill of Rights 1689) and the Scottish Claim of Right 1689, had both cemented Parliament's position as the supreme law-making body, and said that the "election of members of Parliament ought to be free".[93] However, Parliament was only elected by male property owners, which amounted to 3% of the population in 1780.[94] The first known British person of African heritage to vote in a general election, Ignatius Sancho, voted in 1774 and 1780.[95]
+
+During the Age of Liberty in Sweden (1718–1772), civil rights were expanded and power shifted from the monarch to parliament.[96] The taxed peasantry was represented in parliament, although with little influence, but commoners without taxed property had no suffrage.
+
+The creation of the short-lived Corsican Republic in 1755 was an early attempt to adopt a democratic constitution (all men and women above age of 25 could vote).[97] This Corsican Constitution was the first based on Enlightenment principles and included female suffrage, something that was not included in most other democracies until the 20th century.
+
+Colonial America had similar property qualifications as Britain, and in the period before 1776 the abundance and availability of land meant that large numbers of colonists met such requirements with at least 60 per cent of adult white males able to vote.[98] The great majority of white men were farmers who met the property ownership or taxpaying requirements. With few exceptions no blacks or women could vote. Vermont, which, on declaring independence of Great Britain in 1777, adopted a constitution modelled on Pennsylvania's with citizenship and democratic suffrage for males with or without property.[99] The United States Constitution of 1787 is the oldest surviving, still active, governmental codified constitution. The Constitution provided for an elected government and protected civil rights and liberties, but did not end slavery nor extend voting rights in the United States, instead leaving the issue of suffrage to the individual states.[100] Generally, states limited suffrage to white male property owners and taxpayers.[101] At the time of the first Presidential election in 1789, about 6% of the population was eligible to vote.[102] The Naturalization Act of 1790 limited U.S. citizenship to whites only.[103] The Bill of Rights in 1791 set limits on government power to protect personal freedoms but had little impact on judgements by the courts for the first 130 years after ratification.[104]
+
+In 1789, Revolutionary France adopted the Declaration of the Rights of Man and of the Citizen and, although short-lived, the National Convention was elected by all men in 1792.[105] The Polish-Lithuanian Constitution of 3 May 1791 sought to implement a more effective constitutional monarchy, introduced political equality between townspeople and nobility, and placed the peasants under the protection of the government, mitigating the worst abuses of serfdom. In force for less than 19 months, it was declared null and void by the Grodno Sejm that met in 1793.[106][107] Nonetheless, the 1791 Constitution helped keep alive Polish aspirations for the eventual restoration of the country's sovereignty over a century later.
+
+In the United States, the 1828 presidential election was the first in which non-property-holding white males could vote in the vast majority of states. Voter turnout soared during the 1830s, reaching about 80% of the adult white male population in the 1840 presidential election.[108] North Carolina was the last state to abolish property qualification in 1856 resulting in a close approximation to universal white male suffrage (however tax-paying requirements remained in five states in 1860 and survived in two states until the 20th century).[109][110][111] In the 1860 United States Census, the slave population had grown to four million,[112] and in Reconstruction after the Civil War, three constitutional amendments were passed: the 13th Amendment (1865) that ended slavery; the 14th Amendment (1869) that gave black people citizenship, and the 15th Amendment (1870) that gave black males a nominal right to vote.[113][114][nb 1] Full enfranchisement of citizens was not secured until after the civil rights movement gained passage by the US Congress of the Voting Rights Act of 1965.[115][116]
+
+The voting franchise in the United Kingdom was expanded and made more uniform in a series of reforms that began with the Reform Act 1832 and continued into the 20th century, notably with the Representation of the People Act 1918 and the Equal Franchise Act 1928. Universal male suffrage was established in France in March 1848 in the wake of the French Revolution of 1848.[117] During that year, several revolutions broke out in Europe as rulers were confronted with popular demands for liberal constitutions and more democratic government.[118]
+
+In 1876, the Ottoman Empire transitioned from an absolute monarchy to a constitutional one, and held two elections the next year to elect members to her newly formed parliament.[119] Provisional Electoral Regulations were issued, stating that the elected members of the Provincial Administrative Councils would elect members to the first Parliament. Later that year, a new constitution was promulgated, which provided for a bicameral Parliament with a Senate appointed by the Sultan and a popularly elected Chamber of Deputies. Only men above the age of 30 who were competent in Turkish and had full civil rights were allowed to stand for election. Reasons for disqualification included holding dual citizenship, being employed by a foreign government, being bankrupt, employed as a servant, or having "notoriety for ill deeds". Full universal suffrage was achieved in 1934.[120]
+
+In 1893, the self-governing colony New Zealand became the first country in the world (except for the short-lived 18th-century Corsican Republic) to establish active universal suffrage by recognizing women as having the right to vote.[121]
+
+20th-century transitions to liberal democracy have come in successive "waves of democracy", variously resulting from wars, revolutions, decolonisation, and religious and economic circumstances.[122] Global waves of "democratic regression" reversing democratization, have also occurred in the 1920s and 30s, in the 1960s and 1970s, and in the 2010s.[123][124]
+
+World War I and the dissolution of the autocratic Ottoman and Austro-Hungarian empires resulted in the creation of new nation-states in Europe, most of them at least nominally democratic. In the 1920s democratic movements flourished and women's suffrage advanced, but the Great Depression brought disenchantment and most of the countries of Europe, Latin America, and Asia turned to strong-man rule or dictatorships. Fascism and dictatorships flourished in Nazi Germany, Italy, Spain and Portugal, as well as non-democratic governments in the Baltics, the Balkans, Brazil, Cuba, China, and Japan, among others.[125]
+
+World War II brought a definitive reversal of this trend in western Europe. The democratisation of the American, British, and French sectors of occupied Germany (disputed[126]), Austria, Italy, and the occupied Japan served as a model for the later theory of government change. However, most of Eastern Europe, including the Soviet sector of Germany fell into the non-democratic Soviet-dominated bloc.
+
+The war was followed by decolonisation, and again most of the new independent states had nominally democratic constitutions. India emerged as the world's largest democracy and continues to be so.[127] Countries that were once part of the British Empire often adopted the British Westminster system.[128][129]
+
+In 1948, the Universal Declaration of Human Rights mandated democracy:
+
+3. The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures.
+
+By 1960, the vast majority of country-states were nominally democracies, although most of the world's populations lived in nominal democracies that experienced sham elections, and other forms of subterfuge (particularly in "Communist" states and the former colonies). A subsequent wave of democratisation brought substantial gains toward true liberal democracy for many states, dubbed "third wave of democracy". Portugal, Spain, and several of the military dictatorships in South America returned to civilian rule in the 1970s and 1980s.[nb 2] This was followed by countries in East and South Asia by the mid-to-late 1980s. Economic malaise in the 1980s, along with resentment of Soviet oppression, contributed to the collapse of the Soviet Union, the associated end of the Cold War, and the democratisation and liberalisation of the former Eastern bloc countries. The most successful of the new democracies were those geographically and culturally closest to western Europe, and they are now either part of the European Union or candidate states. In 1986, after the toppling of the most prominent Asian dictatorship, the only democratic state of its kind at the time emerged in the Philippines with the rise of Corazon Aquino, who would later be known as the mother of Asian democracy.
+
+The liberal trend spread to some states in Africa in the 1990s, most prominently in South Africa. Some recent examples of attempts of liberalisation include the Indonesian Revolution of 1998, the Bulldozer Revolution in Yugoslavia, the Rose Revolution in Georgia, the Orange Revolution in Ukraine, the Cedar Revolution in Lebanon, the Tulip Revolution in Kyrgyzstan, and the Jasmine Revolution in Tunisia.
+
+According to Freedom House, in 2007 there were 123 electoral democracies (up from 40 in 1972).[131] According to World Forum on Democracy, electoral democracies now represent 120 of the 192 existing countries and constitute 58.2 per cent of the world's population. At the same time liberal democracies i.e. countries Freedom House regards as free and respectful of basic human rights and the rule of law are 85 in number and represent 38 per cent of the global population.[132] Also in 2007 the United Nations declared 15 September the International Day of Democracy.[133]
+
+Many countries reduced their voting age to 18 years; the major democracies began to do so in the 1970s starting in Western Europe and North America.[134][failed verification][135][136] Most electoral democracies continue to exclude those younger than 18 from voting.[137] The voting age has been lowered to 16 for national elections in a number of countries, including Brazil, Austria, Cuba, and Nicaragua. In California, a 2004 proposal to permit a quarter vote at 14 and a half vote at 16 was ultimately defeated. In 2008, the German parliament proposed but shelved a bill that would grant the vote to each citizen at birth, to be used by a parent until the child claims it for themselves.
+
+According to Freedom House, starting in 2005, there have been 17 consecutive years in which declines in political rights and civil liberties throughout the world have outnumbered improvements,[138][139] as populist and nationalist political forces have gained ground everywhere from Poland (under the Law and Justice Party) to the Philippines (under Rodrigo Duterte).[138][123] In a Freedom House report released in 2018, Democracy Scores for most countries declined for the 12th consecutive year.[140] The Christian Science Monitor reported that nationalist and populist political ideologies were gaining ground, at the expense of rule of law, in countries like Poland, Turkey and Hungary. For example, in Poland, the President appointed 27 new Supreme Court judges over legal objections from the European Commission. In Turkey, thousands of judges were removed from their positions following a failed coup attempt during a government crackdown .[141]
+
+"Democratic backsliding" in the 2010s were attributed to economic inequality and social discontent,[143] personalism,[144] poor government's management of the COVID-19 pandemic,[145][146] as well as other factors such as manipulation of civil society, "toxic polarization", foreign disinformation campaigns,[147] racism and nativism, excessive executive power,[148][149][150] and decreased power of the opposition.[151] Within English-speaking Western democracies, "protection-based" attitudes combining cultural conservatism and leftist economic attitudes were the strongest predictor of support for authoritarian modes of governance.[152]
+
+## Theory
+### Early theory
+Aristotle contrasted rule by the many (democracy/timocracy), with rule by the few (oligarchy/aristocracy), and with rule by a single person (tyranny or today autocracy/absolute monarchy). He also thought that there was a good and a bad variant of each system (he considered democracy to be the degenerate counterpart to timocracy).[153][154]
+
+A common view among early and renaissance Republican theorists was that democracy could only survive in small political communities.[155] Heeding the lessons of the Roman Republic's shift to monarchism as it grew larger or smaller, these Republican theorists held that the expansion of territory and population inevitably led to tyranny.[155] Democracy was therefore highly fragile and rare historically, as it could only survive in small political units, which due to their size were vulnerable to conquest by larger political units.[155] Montesquieu famously said, "if a republic is small, it is destroyed by an outside force; if it is large, it is destroyed by an internal vice."[155] Rousseau asserted, "It is, therefore the natural property of small states to be governed as a republic, of middling ones to be subject to a monarch, and of large empires to be swayed by a despotic prince."[155]
+
+### Contemporary theory
+Among modern political theorists, there are three contending conceptions of democracy: aggregative democracy, deliberative democracy, and radical democracy.[156]
+
+The theory of aggregative democracy claims that the aim of the democratic processes is to solicit citizens' preferences and aggregate them together to determine what social policies society should adopt. Therefore, proponents of this view hold that democratic participation should primarily focus on voting, where the policy with the most votes gets implemented.
+
+Different variants of aggregative democracy exist. Under minimalism, democracy is a system of government in which citizens have given teams of political leaders the right to rule in periodic elections. According to this minimalist conception, citizens cannot and should not "rule" because, for example, on most issues, most of the time, they have no clear views or their views are not well-founded. Joseph Schumpeter articulated this view most famously in his book Capitalism, Socialism, and Democracy.[157] Contemporary proponents of minimalism include William H. Riker, Adam Przeworski, Richard Posner.
+
+According to the theory of direct democracy, on the other hand, citizens should vote directly, not through their representatives, on legislative proposals. Proponents of direct democracy offer varied reasons to support this view. Political activity can be valuable in itself, it socialises and educates citizens, and popular participation can check powerful elites. Most importantly, citizens do not rule themselves unless they directly decide laws and policies.
+
+Governments will tend to produce laws and policies that are close to the views of the median voter—with half to their left and the other half to their right. This is not a desirable outcome as it represents the action of self-interested and somewhat unaccountable political elites competing for votes. Anthony Downs suggests that ideological political parties are necessary to act as a mediating broker between individual and governments. Downs laid out this view in his 1957 book An Economic Theory of Democracy.[158]
+
+Robert A. Dahl argues that the fundamental democratic principle is that, when it comes to binding collective decisions, each person in a political community is entitled to have his/her interests be given equal consideration (not necessarily that all people are equally satisfied by the collective decision). He uses the term polyarchy to refer to societies in which there exists a certain set of institutions and procedures which are perceived as leading to such democracy. First and foremost among these institutions is the regular occurrence of free and open elections which are used to select representatives who then manage all or most of the public policy of the society. However, these polyarchic procedures may not create a full democracy if, for example, poverty prevents political participation.[159] Similarly, Ronald Dworkin argues that "democracy is a substantive, not a merely procedural, ideal."[160]
+
+Deliberative democracy is based on the notion that democracy is government by deliberation. Unlike aggregative democracy, deliberative democracy holds that, for a democratic decision to be legitimate, it must be preceded by authentic deliberation, not merely the aggregation of preferences that occurs in voting. Authentic deliberation is deliberation among decision-makers that is free from distortions of unequal political power, such as power a decision-maker obtained through economic wealth or the support of interest groups.[161][162][163] If the decision-makers cannot reach consensus after authentically deliberating on a proposal, then they vote on the proposal using a form of majority rule. Citizens assemblies are considered by many scholars as practical examples of deliberative democracy,[164][165][166] with a recent OECD report identifying citizens assemblies as an increasingly popular mechanism to involve citizens in governmental decision-making.[167]
+
+Radical democracy is based on the idea that there are hierarchical and oppressive power relations that exist in society. Democracy's role is to make visible and challenge those relations by allowing for difference, dissent and antagonisms in decision-making processes.
+
+## Measurement of democracy
+
+
+### Democracy indices
+Democracy indices are quantitative and comparative assessments of the state of democracy[168] for different countries according to various definitions of democracy.[169]
+
+The democracies indices differ in whether they are categorical, such as classifying countries into democracies, hybrid regimes, and autocracies,[170][171] or continuous values.[172] The qualitative nature of democracy indices enables data analytical approaches for studying causal mechanisms of regime transformation processes.
+
+## Types of governmental democracies
+Democracy has taken a number of forms, both in theory and practice. Some varieties of democracy provide better representation and more freedom for their citizens than others.[181][182] However, if any democracy is not structured to prohibit the government from excluding the people from the legislative process, or any branch of government from altering the separation of powers in its favour, then a branch of the system can accumulate too much power and destroy the democracy.[183][184][185]
+
+The following kinds of democracy are not exclusive of one another: many specify details of aspects that are independent of one another and can co-exist in a single system.
+
+### Basic forms
+Several variants of democracy exist, but there are two basic forms, both of which concern how the whole body of all eligible citizens executes its will. One form of democracy is direct democracy, in which all eligible citizens have active participation in the political decision making, for example voting on policy initiatives directly.[186] In most modern democracies, the whole body of eligible citizens remain the sovereign power but political power is exercised indirectly through elected representatives; this is called a representative democracy.
+
+Direct democracy is a political system where the citizens participate in the decision-making personally, contrary to relying on intermediaries or representatives. A direct democracy gives the voting population the power to:
+
+- Change constitutional laws,
+- Put forth initiatives, referendums and suggestions for laws
+Within modern-day representative governments, certain electoral tools like referendums, citizens' initiatives and recall elections are referred to as forms of direct democracy.[187] However, some advocates of direct democracy argue for local assemblies of face-to-face discussion. Direct democracy as a government system currently exists in the Swiss cantons of Appenzell Innerrhoden and Glarus,[188] the Rebel Zapatista Autonomous Municipalities,[189] communities affiliated with the CIPO-RFM,[190] the Bolivian city councils of FEJUVE,[191] and Kurdish cantons of Rojava.[192]
+
+Some modern democracies that are predominantly representative in nature also heavily rely upon forms of political action that are directly democratic. These democracies, which combine elements of representative democracy and direct democracy, are termed semi-direct democracies or participatory democracies. Examples include Switzerland and some U.S. states, where frequent use is made of referendums and initiatives.
+
+The Swiss confederation is a semi-direct democracy.[188] At the federal level, citizens can propose changes to the constitution (federal popular initiative) or ask for a referendum to be held on any law voted by the parliament.[188] Between January 1995 and June 2005, Swiss citizens voted 31 times, to answer 103 questions (during the same period, French citizens participated in only two referendums).[188] Although in the past 120 years less than 250 initiatives have been put to referendum.[193]
+
+Examples include the extensive use of referendums in the US state of California, which is a state that has more than 20 million voters.[194]
+
+In New England, town meetings are often used, especially in rural areas, to manage local government. This creates a hybrid form of government, with a local direct democracy and a representative state government. For example, most Vermont towns hold annual town meetings in March in which town officers are elected, budgets for the town and schools are voted on, and citizens have the opportunity to speak and be heard on political matters.[195]
+
+The use of a lot system, a characteristic of Athenian democracy, is a feature of some versions of direct democracies. In this system, important governmental and administrative tasks are performed by citizens picked from a lottery.[196]
+
+Representative democracy involves the election of government officials by the people being represented. If the head of state is also democratically elected then it is called a democratic republic.[197] The most common mechanisms involve election of the candidate with a majority or a plurality of the votes. Most western countries have representative systems.[188]
+
+Representatives may be elected or become diplomatic representatives by a particular district (or constituency), or represent the entire electorate through proportional systems, with some using a combination of the two. Some representative democracies also incorporate elements of direct democracy, such as referendums.[198] A characteristic of representative democracy is that while the representatives are elected by the people to act in the people's interest, they retain the freedom to exercise their own judgement as how best to do so. Such reasons have driven criticism upon representative democracy,[199][200] pointing out the contradictions of representation mechanisms with democracy[201][202]
+
+Parliamentary democracy is a representative democracy where government is appointed by or can be dismissed by, representatives as opposed to a "presidential rule" wherein the president is both head of state and the head of government and is elected by the voters. Under a parliamentary democracy, government is exercised by delegation to an executive ministry and subject to ongoing review, checks and balances by the legislative parliament elected by the people.[203][204][205][206]
+
+In a parliamentary system, the prime minister may be dismissed by the legislature at any point in time for not meeting the expectations of the legislature. This is done through a vote of no confidence where the legislature decides whether or not to remove the prime minister from office with majority support for dismissal.[207] In some countries, the prime minister can also call an election at any point in time, typically when the prime minister believes that they are in good favour with the public as to get re-elected. In other parliamentary democracies, extra elections are virtually never held, a minority government being preferred until the next ordinary elections. An important feature of the parliamentary democracy is the concept of the "loyal opposition". The essence of the concept is that the second largest political party (or opposition) opposes the governing party (or coalition), while still remaining loyal to the state and its democratic principles.
+
+Presidential democracy is a system where the public elects the president through an election. The president serves as both the head of state and head of government controlling most of the executive powers. The president serves for a specific term and cannot exceed that amount of time. The legislature often has limited ability to remove a president from office. Elections typically have a fixed date and aren't easily changed. The president has direct control over the cabinet, specifically appointing the cabinet members.[207]
+
+The executive usually has the responsibility to execute or implement legislation and may have the limited legislative powers, such as a veto. However, a legislative branch passes legislation and budgets. This provides some measure of separation of powers. In consequence, however, the president and the legislature may end up in the control of separate parties, allowing one to block the other and thereby interfere with the orderly operation of the state. This may be the reason why presidential democracy is not very common outside the Americas, Africa, and Central and Southeast Asia.[207]
+
+A semi-presidential system is a system of democracy in which the government includes both a prime minister and a president. The particular powers held by the prime minister and president vary by country.[207]
+
+### Typology
+Many countries such as the United Kingdom, Spain, the Netherlands, Belgium, Scandinavian countries, Thailand, Japan and Bhutan turned powerful monarchs into constitutional monarchs (often gradually) with limited or symbolic roles. For example, in the predecessor states to the United Kingdom, constitutional monarchy began to emerge and has continued uninterrupted since the Glorious Revolution of 1688 and passage of the Bill of Rights 1689.[24][82] Strongly limited constitutional monarchies, such as the United Kingdom, have been referred to as crowned republics by writers such as H. G. Wells.[208]
+
+In other countries, the monarchy was abolished along with the aristocratic system (as in France, China, Russia, Germany, Austria, Hungary, Italy, Greece, and Egypt). An elected person, with or without significant powers, became the head of state in these countries.
+
+Elite upper houses of legislatures, which often had lifetime or hereditary tenure, were common in many states. Over time, these either had their powers limited (as with the British House of Lords) or else became elective and remained powerful (as with the Australian Senate).
+
+The term republic has many different meanings, but today often refers to a representative democracy with an elected head of state, such as a president, serving for a limited term, in contrast to states with a hereditary monarch as a head of state, even if these states also are representative democracies with an elected or appointed head of government such as a prime minister.[209]
+
+The Founding Fathers of the United States often criticised direct democracy, which in their view often came without the protection of a constitution enshrining inalienable rights; James Madison argued, especially in The Federalist No. 10, that what distinguished a direct democracy from a republic was that the former became weaker as it got larger and suffered more violently from the effects of faction, whereas a republic could get stronger as it got larger and combats faction by its very structure.[210]
+
+Professors Richard Ellis of Willamette University and Michael Nelson of Rhodes College argue that much constitutional thought, from Madison to Lincoln and beyond, has focused on "the problem of majority tyranny". They conclude, "The principles of republican government embedded in the Constitution represent an effort by the framers to ensure that the inalienable rights of life, liberty, and the pursuit of happiness would not be trampled by majorities."[211] What was critical to American values, John Adams insisted,[212] was that the government be "bound by fixed laws, which the people have a voice in making, and a right to defend." As Benjamin Franklin was exiting after writing the US Constitution, Elizabeth Willing Powel[213] asked him "Well, Doctor, what have we got—a republic or a monarchy?". He replied "A republic—if you can keep it."[214]
+
+A liberal democracy is a representative democracy which enshrines a liberal political philosophy, where the ability of the elected representatives to exercise decision-making power is subject to the rule of law, moderated by a constitution or laws that such as the protection of the rights and freedoms of individuals, and constrained on the extent to which the will of the majority can be exercised against the rights of minorities.
+
+Socialist thought has several different views on democracy. Social democracy, democratic socialism, and the dictatorship of the proletariat are some examples. Many democratic socialists and social democrats believe in a form of participatory, industrial, economic and/or workplace democracy combined with a representative democracy.
+
+Trotskyist groups have interpreted socialist democracy to be synonymous with multi-party socialist representation, autonomous union organizations, worker's control of production,[215] internal party democracy and the mass participation of the working masses.[216][217]
+
+Within Marxist orthodoxy there is a hostility to what is commonly called "liberal democracy", which is referred to as parliamentary democracy because of its centralised nature. Because of orthodox Marxists' desire to eliminate the political elitism they see in capitalism, Marxists, Leninists, and Trotskyists believe in direct democracy implemented through a system of communes (which are sometimes called soviets). This system can begin with workplace democracy and ultimately manifests itself as council democracy.
+
+Anarchists are split in this domain, depending on whether they believe that a majority-rule is tyrannic or not. To many anarchists, the only form of democracy considered acceptable is direct democracy. Pierre-Joseph Proudhon argued that the only acceptable form of direct democracy is one in which it is recognised that majority decisions are not binding on the minority, even when unanimous.[218] However, anarcho-communist Murray Bookchin criticised individualist anarchists for opposing democracy,[219] and says "majority rule" is consistent with anarchism.[220]
+
+Some anarcho-communists oppose the majoritarian nature of direct democracy, feeling that it can impede individual liberty and opt-in favour of a non-majoritarian form of consensus democracy, similar to Proudhon's position on direct democracy.[221]
+
+Sortition is the process of choosing decision-making bodies via a random selection. These bodies can be more representative of the opinions and interests of the people at large than an elected legislature or other decision-maker. The technique was in widespread use in Athenian Democracy and Renaissance Florence[222] and is still used in modern jury selection and citizens' assemblies.
+
+Consociational democracy, also called consociationalism, is a form of democracy based on power-sharing formula between elites representing the social groups within the society. In 1969, Arendt Lijphart argued this would stabilize democracies with factions.[223] A consociational democracy allows for simultaneous majority votes in two or more ethno-religious constituencies, and policies are enacted only if they gain majority support from both or all of them. The Qualified majority voting rule in European Council of Ministers is a consociational democracy approach for supranational democracies. This system in Treaty of Rome allocates votes to member states in part according to their population, but heavily weighted in favour of the smaller states. A consociational democracy requires consensus of representatives, while consensus democracy requires consensus of electorate.[needs update]
+
+Consensus democracy[224] requires consensus decision-making and supermajority to obtain a larger support than majority. In contrast, in majoritarian democracy minority opinions can potentially be ignored by vote-winning majorities.[225] Constitutions typically require consensus or supermajorities.[226]
+
+Inclusive democracy is a political theory and political project that aims for direct democracy in all fields of social life: political democracy in the form of face-to-face assemblies which are confederated, economic democracy in a stateless, moneyless and marketless economy, democracy in the social realm, i.e. self-management in places of work and education, and ecological democracy which aims to reintegrate society and nature. The theoretical project of inclusive democracy emerged from the work of political philosopher Takis Fotopoulos in "Towards An Inclusive Democracy" and was further developed in the journal Democracy & Nature and its successor The International Journal of Inclusive Democracy.
+
+A parpolity or participatory polity is a theoretical form of democracy that is ruled by a nested council structure. The guiding philosophy is that people should have decision-making power in proportion to how much they are affected by the decision. Local councils of 25–50 people are completely autonomous on issues that affect only them, and these councils send delegates to higher level councils who are again autonomous regarding issues that affect only the population affected by that council.
+
+A council court of randomly chosen citizens serves as a check on the tyranny of the majority, and rules on which body gets to vote on which issue. Delegates may vote differently from how their sending council might wish but are mandated to communicate the wishes of their sending council. Delegates are recallable at any time. Referendums are possible at any time via votes of lower-level councils, however, not everything is a referendum as this is most likely a waste of time. A parpolity is meant to work in tandem with a participatory economy.
+
+Cosmopolitan democracy, also known as global democracy or world federalism, is a political system in which democracy is implemented on a global scale, either directly or through representatives. An important justification for this kind of system is that the decisions made in national or regional democracies often affect people outside the constituency who, by definition, cannot vote. By contrast, in a cosmopolitan democracy, the people who are affected by decisions also have a say in them.[229]
+
+According to its supporters, any attempt to solve global problems is undemocratic without some form of cosmopolitan democracy. The general principle of cosmopolitan democracy is to expand some or all of the values and norms of democracy, including the rule of law; the non-violent resolution of conflicts; and equality among citizens, beyond the limits of the state. To be fully implemented, this would require reforming existing international organisations, e.g., the United Nations, as well as the creation of new institutions such as a World Parliament, which ideally would enhance public control over, and accountability in, international politics.
+
+Cosmopolitan democracy has been promoted, among others, by physicist Albert Einstein,[230] writer Kurt Vonnegut, columnist George Monbiot, and professors David Held and Daniele Archibugi.[231] The creation of the International Criminal Court in 2003 was seen as a major step forward by many supporters of this type of cosmopolitan democracy.
+
+Creative democracy is advocated by American philosopher John Dewey. The main idea about creative democracy is that democracy encourages individual capacity building and the interaction among the society. Dewey argues that democracy is a way of life in his work of "Creative Democracy: The Task Before Us"[232] and an experience built on faith in human nature, faith in human beings, and faith in working with others. Democracy, in Dewey's view, is a moral ideal requiring actual effort and work by people; it is not an institutional concept that exists outside of ourselves. "The task of democracy", Dewey concludes, "is forever that of creation of a freer and more humane experience in which all share and to which all contribute".
+
+Guided democracy is a form of democracy that incorporates regular popular elections, but which often carefully "guides" the choices offered to the electorate in a manner that may reduce the ability of the electorate to truly determine the type of government exercised over them. Such democracies typically have only one central authority which is often not subject to meaningful public review by any other governmental authority. Russian-style democracy has often been referred to as a "guided democracy".[233] Russian politicians have referred to their government as having only one center of power/ authority, as opposed to most other forms of democracy which usually attempt to incorporate two or more naturally competing sources of authority within the same government.[234]
+
+## Non-governmental democracy
+Aside from the public sphere, similar democratic principles and mechanisms of voting and representation have been used to govern other kinds of groups. Many non-governmental organisations decide policy and leadership by voting. Most trade unions and cooperatives are governed by democratic elections. Corporations are ultimately governed by their shareholders through shareholder democracy. Corporations may also employ systems such as workplace democracy to handle internal governance. Amitai Etzioni has postulated a system that fuses elements of democracy with sharia law, termed Islamocracy.[235] There is also a growing number of Democratic educational institutions such as Sudbury schools that are co-governed by students and staff.
+
+### Shareholder democracy
+Shareholder democracy is a concept relating to the governance of corporations by their shareholders. In the United States, shareholders are typically granted voting rights according to the one share, one vote principle. Shareholders may vote annually to elect the company's board of directors, who themselves may choose the company's executives. The shareholder democracy framework may be inaccurate for companies which have different classes of stock that further alter the distribution of voting rights.
+
+## Justification
+Several justifications for democracy have been postulated.[236]
+
+### Legitimacy
+Social contract theory argues that the legitimacy of government is based on consent of the governed, i.e. an election, and that political decisions must reflect the general will. Some proponents of the theory like Jean-Jacques Rousseau advocate for a direct democracy on this basis.[237]
+
+### Better decision-making
+Condorcet's jury theorem is logical proof that if each decision-maker has a better than chance probability of making the right decision, then having the largest number of decision-makers, i.e. a democracy, will result in the best decisions. This has also been argued by theories of the wisdom of the crowd. Democracy tends to improve conflict resolution.[238]
+
+### Economic success
+In Why Nations Fail, economists Daron Acemoglu and James A. Robinson argue that democracies are more economically successful because undemocratic political systems tend to limit markets and favor monopolies at the expense of the creative destruction which is necessary for sustained economic growth.
+
+A 2019 study by Acemoglu and others estimated that countries switching to democratic from authoritarian rule had on average a 20% higher GDP after 25 years than if they had remained authoritarian. The study examined 122 transitions to democracy and 71 transitions to authoritarian rule, occurring from 1960 to 2010.[239] Acemoglu said this was because democracies tended to invest more in health care and human capital, and reduce special treatment of regime allies.[240]
+
+A 2023 study analyzed the long-term effects of democracy on economic prosperity using new data on GDP per capita and democracy for a dataset between 1789 and 2019. The results indicate that democracy substantially increases economic development.[241]
+
+## Democracy promotion
+Democracy promotion, also referred to as democracy building, can be domestic policy to increase the quality of already existing democracy or a strand of foreign policy adopted by governments and international organizations that seek to support the spread of democracy as a system of government. In practice, it entails consolidating and building democratic institutions
+
+Democracy promotion can increase the quality of already existing democracies, reduce political apathy, and the chance of democratic backsliding. Democracy promotion measures include voting advice applications,[246] participatory democracy,[247] increasing youth suffrage, increasing civic education,[248] reducing barriers to entry for new political parties,[249] increasing proportionality[250] and reducing presidentialism.[251]
+
+## Democratic transitions
+A democratic transition describes a phase in a countries political system, often created as a result of an incomplete change from an authoritarian regime to a democratic one (or vice versa).[252][253]
+
+### Democratization
+Several philosophers and researchers have outlined historical and social factors seen as supporting the evolution of democracy. Other commentators have mentioned the influence of economic development.[256] In a related theory, Ronald Inglehart suggests that improved living-standards in modern developed countries can convince people that they can take their basic survival for granted, leading to increased emphasis on self-expression values, which correlates closely with democracy.[257][258]
+
+Douglas M. Gibler and Andrew Owsiak in their study argued about the importance of peace and stable borders for the development of democracy. It has often been assumed that democracy causes peace, but this study shows that, historically, peace has almost always predated the establishment of democracy.[259]
+
+Carroll Quigley concludes that the characteristics of weapons are the main predictor of democracy:[260][261] Democracy—this scenario—tends to emerge only when the best weapons available are easy for individuals to obtain and use.[262] By the 1800s, guns were the best personal weapons available, and in the United States of America (already nominally democratic), almost everyone could afford to buy a gun, and could learn how to use it fairly easily. Governments could not do any better: it became the age of mass armies of citizen soldiers with guns.[262] Similarly, Periclean Greece was an age of the citizen soldier and democracy.[263]
+
+Other theories stressed the relevance of education and of human capital—and within them of cognitive ability to increasing tolerance, rationality, political literacy and participation. Two effects of education and cognitive ability are distinguished:[264][need quotation to verify][265][266]
+
+- a cognitive effect (competence to make rational choices, better information-processing)
+- an ethical effect (support of democratic values, freedom, human rights etc.), which itself depends on intelligence.
+Evidence consistent with conventional theories of why democracy emerges and is sustained has been hard to come by. Statistical analyses have challenged modernisation theory by demonstrating that there is no reliable evidence for the claim that democracy is more likely to emerge when countries become wealthier, more educated, or less unequal.[267] In fact, empirical evidence shows that economic growth and education may not lead to increased demand for democratization as modernization theory suggests: historically, most countries attained high levels of access to primary education well before transitioning to democracy.[268] Rather than acting as a catalyst for democratization, in some situations education provision may instead be used by non-democratic regimes to indoctrinate their subjects and strengthen their power.[268]
+
+The assumed link between education and economic growth is called into question when analyzing empirical evidence. Across different countries, the correlation between education attainment and math test scores is very weak (.07). A similarly weak relationship exists between per-pupil expenditures and math competency (.26). Additionally, historical evidence suggests that average human capital (measured using literacy rates) of the masses does not explain the onset of industrialization in France from 1750 to 1850 despite arguments to the contrary.[269] Together, these findings show that education does not always promote human capital and economic growth as is generally argued to be the case. Instead, the evidence implies that education provision often falls short of its expressed goals, or, alternatively, that political actors use education to promote goals other than economic growth and development.
+
+Some scholars have searched for the "deep" determinants of contemporary political institutions, be they geographical or demographic.[270][271]
+
+An example of this is the disease environment. Places with different mortality rates had different populations and productivity levels around the world. For example, in Africa, the tsetse fly—which afflicts humans and livestock—reduced the ability of Africans to plough the land. This made Africa less settled. As a consequence, political power was less concentrated.[272] This also affected the colonial institutions European countries established in Africa.[273] Whether colonial settlers could live or not in a place made them develop different institutions which led to different economic and social paths. This also affected the distribution of power and the collective actions people could take. As a result, some African countries ended up having democracies and others autocracies.
+
+An example of geographical determinants for democracy is having access to coastal areas and rivers. This natural endowment has a positive relation with economic development thanks to the benefits of trade.[274] Trade brought economic development, which in turn, broadened power. Rulers wanting to increase revenues had to protect property-rights to create incentives for people to invest. As more people had more power, more concessions had to be made by the ruler and in many[quantify] places this process lead to democracy. These determinants defined the structure of the society moving the balance of political power.[275]
+
+Robert Michels asserts that although democracy can never be fully realised, democracy may be developed automatically in the act of striving for democracy:
+
+The peasant in the fable, when on his deathbed, tells his sons that a treasure is buried in the field. After the old man's death the sons dig everywhere in order to discover the treasure. They do not find it. But their indefatigable labor improves the soil and secures for them a comparative well-being. The treasure in the fable may well symbolise democracy.[276]
+Democracy in modern times has almost always faced opposition from the previously existing government, and many times it has faced opposition from social elites. The implementation of a democratic government from a non-democratic state is typically brought by peaceful or violent democratic revolution.
+
+### Autocratization
+Some democratic governments have experienced sudden state collapse and regime change to an undemocratic form of government. Domestic military coups or rebellions are the most common means by which democratic governments have been overthrown.[290] (See List of coups and coup attempts by country and List of civil wars.) Examples include the Spanish Civil War, the Coup of 18 Brumaire that ended the First French Republic, and the 28 May 1926 coup d'état which ended the First Portuguese Republic. Some military coups are supported by foreign governments, such as the 1954 Guatemalan coup d'état and the 1953 Iranian coup d'état. Other types of a sudden end to democracy include:
+
+- Invasion, for example the German occupation of Czechoslovakia, and the fall of South Vietnam.
+- Self-coup, in which the leader of the government extra-legally seizes all power or unlawfully extends the term in office. This can be done through:
+Suspension of the constitution by decree, such as with the 1992 Peruvian coup d'état
+An "electoral self-coup" using election fraud to obtain re-election of a previously fairly elected official or political party. For example, in the 1999 Ukrainian presidential election, 2003 Russian legislative election, and 2004 Russian presidential election.[290]
+- Suspension of the constitution by decree, such as with the 1992 Peruvian coup d'état
+- An "electoral self-coup" using election fraud to obtain re-election of a previously fairly elected official or political party. For example, in the 1999 Ukrainian presidential election, 2003 Russian legislative election, and 2004 Russian presidential election.[290]
+- Royal coup, in which a monarch not normally involved in government seizes all power. For example, the 6 January Dictatorship, begun in 1929 when King Alexander I of Yugoslavia dismissed parliament and started ruling by decree.[291]
+Democratic backsliding can end democracy in a gradual manner, by increasing emphasis on national security and eroding free and fair elections, freedom of expression, independence of the judiciary, rule of law. A famous example is the Enabling Act of 1933, which lawfully ended democracy in Weimar Germany and marked the transition to Nazi Germany.[292]
+
+Temporary or long-term political violence and government interference can prevent free and fair elections, which erode the democratic nature of governments. This has happened on a local level even in well-established democracies like the United States; for example, the Wilmington insurrection of 1898 and African-American disfranchisement after the Reconstruction era.
+
+### Debates on democracy
+Criticism of democracy, or debate on democracy and the different aspects of how to implement democracy best have been widely discussed. There are both internal critics (those who call upon the constitutional regime to be true to its own highest principles) and external ones who reject the values promoted by constitutional democracy.[293]
+
+Criticism of democracy has been a key part of democracy, its functions, and its development throughout history. Plato famously opposed democracy, arguing for a 'government of the best qualified'; James Madison extensively studied the historic attempts at and arguments on democracy in his preparation for the Constitutional Convention; and Winston Churchill remarked that "No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time."[294]
+
+## Importance of mass media
+The theory of democracy relies on the implicit assumption that voters are well informed about social issues, policies, and candidates so that they can make a truly informed decision. Since the late 20'th century there has been a growing concern that voters may be poorly informed because the news media are focusing more on entertainment and gossip and less on serious journalistic research on political issues.[298][299]
+
+The media professors Michael Gurevitch and Jay Blumler have proposed a number of functions that the mass media are expected to fulfill in a democracy:[300]
+
+- Surveillance of the sociopolitical environment
+- Meaningful agenda setting
+- Platforms for an intelligible and illuminating advocacy
+- Dialogue across a diverse range of views
+- Mechanisms for holding officials to account for how they have exercised power
+- Incentives for citizens to learn, choose, and become involved
+- A principled resistance to the efforts of forces outside the media to subvert their independence, integrity, and ability to serve the audience
+- A sense of respect for the audience member, as potentially concerned and able to make sense of his or her political environment
+This proposal has inspired a lot of discussions over whether the news media are actually fulfilling the requirements that a well functioning democracy requires.[301]
+Commercial mass media are generally not accountable to anybody but their owners, and they have no obligation to serve a democratic function.[301][302] They are controlled mainly by economic market forces. Fierce economic competition may force the mass media to divert themselves from any democratic ideals and focus entirely on how to survive the competition.[303][304]
+
+The tabloidization and popularization of the news media is seen in an increasing focus on human examples rather than statistics and principles. There is more focus on politicians as personalities and less focus on political issues in the popular media. Election campaigns are covered more as horse races and less as debates about ideologies and issues. The dominating media focus on spin, conflict, and competitive strategies has made voters perceive the politicians as egoists rather than idealists. This fosters mistrust and a cynical attitude to politics, less civic engagement, and less interest in voting.[305][306][307]
+The ability to find effective political solutions to social problems is hampered when problems tend to be blamed on individuals rather than on structural causes.[306]
+This person-centered focus may have far-reaching consequences not only for domestic problems but also for foreign policy when international conflicts are blamed on foreign heads of state rather than on political and economic structures.[308][309]
+A strong media focus on fear and terrorism has allowed military logic to penetrate public institutions, leading to increased surveillance and the erosion of civil rights.[310]
+
+The responsiveness[311] and accountability of the democratic system is compromised when lack of access to substantive, diverse, and undistorted information is handicapping the citizens' capability of evaluating the political process.[302][307]
+The fast pace and trivialization in the competitive news media is dumbing down the political debate. Thorough and balanced investigation of complex political issues does not fit into this format. The political communication is characterized by short time horizons, short slogans, simple explanations, and simple solutions. This is conducive to political populism rather than serious deliberation.[302][310]
+
+Commercial mass media are often differentiated along the political spectrum so that people can hear mainly opinions that they already agree with. Too much controversy and diverse opinions are not always profitable for the commercial news media.[312]
+Political polarization is emerging when different people read different news and watch different TV channels. This polarization has been worsened by the emergence of the social media that allow people to communicate mainly with groups of like-minded people, the so-called echo chambers.[313]
+Extreme political polarization may undermine the trust in democratic institutions, leading to erosion of civil rights and free speech and in some cases even reversion to autocracy.[314]
+
+Many media scholars have discussed non-commercial news media with public service obligations as a means to improve the democratic process by providing the kind of political contents that a free market does not provide.[315][316]
+The World Bank has recommended public service broadcasting in order to strengthen democracy in developing countries. These broadcasting services should be accountable to an independent regulatory body that is adequately protected from interference from political and economic interests.[317]
+Public service media have an obligation to provide reliable information to voters. Many countries have publicly funded radio and television stations with public service obligations, especially in Europe and Japan,[318] while such media are weak or non-existent in other countries including the US.[319]
+Several studies have shown that the stronger the dominance of commercial broadcast media over public service media, the less the amount of policy-relevant information in the media and the more focus on horse race journalism, personalities, and the pecadillos of politicians. Public service broadcasters are characterized by more policy-relevant information and more respect for journalistic norms and impartiality than the commercial media. However, the trend of deregulation has put the public service model under increased pressure from competition with commercial media.[318][320][321]
+
+The emergence of the internet and the social media has profoundly altered the conditions for political communication. The social media have given ordinary citizens easy access to voice their opinion and share information while bypassing the filters of the large news media. This is often seen as an advantage for democracy.[322] The new possibilities for communication have fundamentally changed the way social movements and protest movements operate and organize. The internet and social media have provided powerful new tools for democracy movements in developing countries and emerging democracies, enabling them to bypass censorship, voice their opinions, and organize protests.[323][324]
+
+A serious problem with the social media is that they have no truth filters. The established news media have to guard their reputation as trustworthy, while ordinary citizens may post unreliable information.[323] In fact, studies show that false stories are going more viral than true stories.[325][326]
+The proliferation of false stories and conspiracy theories may undermine public trust in the political system and public officials.[326][314]
+
+Reliable information sources are essential for the democratic process. Less democratic governments rely heavily on censorship, propaganda, and misinformation in order to stay in power, while independent sources of information are able to undermine their legitimacy.[327]
+
+## See also
+- Defensive democracy
+- Democracy in Chola Dynasty
+- Democratic peace theory
+- Empowered democracy
+- Energy democracy
+- Foucault–Habermas debate
+- Good governance
+- Horseshoe theory
+- Politics portal
+- Industrial democracy
+- Meritocracy
+- Parliament in the Making
+- Power to the people
+- Territorial peace theory
+- Spatial citizenship
+## Footnotes
+1. ^ The Fourteenth Amendment to the United States Constitution in 1868 altered the way each state is represented in the House of Representatives. It counted all residents for apportionment including slaves, overriding the three-fifths compromise, and reduced a state's apportionment if it wrongfully denied males over the age of 21 the right to vote; however, this was not enforced in practice. Some poor white men remained excluded at least until passage of the Voting Rights Act of 1965. For state elections, it was not until the U.S. Supreme Court ruled 6–3 in Harper v. Virginia Board of Elections (1966) that all state poll taxes were unconstitutional as violating the Equal Protection Clause of the Fourteenth Amendment. This removed a burden on the poor.
+
+2. ^ Portugal in 1974, Spain in 1975, Argentina in 1983, Bolivia, Uruguay in 1984, Brazil in 1985, and Chile in the early 1990s.
+
+3. ^ Other names include autocratization, democratic decline,[277] de-democratization,[278] democratic erosion,[279] democratic decay,[280] democratic recession,[281] democratic regression,[277] and democratic deconsolidation.[282] 
+
+## References
+1. ^ a b "Democracy". Oxford University Press. Retrieved 24 February 2021.
+
+2. ^ Schwartzberg, Melissa (2014). "Democracy". The Encyclopedia of Political Thought: 851–862. doi:10.1002/9781118474396.wbept0248. ISBN 978-1-4051-9129-6.
+
+3. ^ "Democracy | Definition, History, Meaning, Types, Examples, & Facts". Britannica. 16 August 2023. Retrieved 17 August 2023.
+
+4. ^ a b Przeworski, Adam (2024). "Who Decides What Is Democratic?". Journal of Democracy. 35 (3): 5–16. doi:10.1353/jod.2024.a930423. ISSN 1086-3214.
+
+5. ^ Dahl, Robert A.; Shapiro, Ian; Cheibub, Jose Antonio (2003). The Democracy Sourcebook. MIT Press. p. 31. ISBN 978-0-262-54147-3.
+
+6. ^ Møller, Jørgen; Skaaning, Svend-Erik (January 2013). "Regime Types and Democratic Sequencing". Journal of Democracy. 24 (1): 142–155. doi:10.1353/jod.2013.0010. ISSN 1045-5736. Archived from the original on 22 February 2024.
+
+7. ^ "Definition of DEMOCRACY". Merriam-Webster. Retrieved 5 July 2018.
+
+8. ^ Locke, John. Two Treatises on Government: a Translation into Modern English. Quote: "There is no practical alternative to majority political rule – i.e, to taking the consent of the majority as the act of the whole and binding every individual. It would be next to impossible to obtain the consent of every individual before acting collectively ... No rational people could desire and constitute a society that had to dissolve straightaway because the majority was unable to make the final decision and the society was incapable of acting as one body."There is no practical alternative to majority political rule %E2%80%93 i.e., to taking the consent of the majority as the act of the whole and binding every individual." Google Books.
+
+9. ^ Oxford English Dictionary: "democracy".
+
+10. ^ a b Watkins, Frederick (1970). "Democracy". Encyclopædia Britannica. Vol. 7 (Expo '70 hardcover ed.). William Benton. pp. 215–23. ISBN 978-0-85229-135-1.
+
+11. ^ Wilson, N.G. (2006). Encyclopedia of ancient Greece. New York: Routledge. p. 511. ISBN 978-0-415-97334-2.
+
+12. ^ Anderson, Christopher J.; Bol, Damien; Ananda, Aurelia (2021). "Humanity's Attitudes about Democracy and Political Leaders". Public Opinion Quarterly. 85 (4): 957–986. doi:10.1093/poq/nfab056. ISSN 0033-362X. PMC 8754486. PMID 35035302.
+
+13. ^ V-Dem Institute DEMOCRACY REPORT 2022: Autocratization Changing Nature? pp. 6, 13, 18: "Dictatorships are on the rise and harbor 70% of the world population – 5.4 billion people."
+
+14. ^ Economic Intelligence Unit Democracy Index, 2022, p. 4: "According to our measure of democracy, less than half (45.7%) of the world's population now live in a democracy of some sort, a significant decline from 2020 (49.4%)."
+
+15. ^ a b Staff writer (22 August 2007). "Liberty and justice for some". The Economist. Economist Group. Democracy can be seen as a set of practices and principles that institutionalise and thus ultimately protect freedom. Even if a consensus on precise definitions has proved elusive, most observers today would agree that, at a minimum, the fundamental features of a democracy include government based on majority rule and the consent of the governed, the existence of free and fair elections, the protection of minorities and respect for basic human rights. Democracy presupposes equality before the law, due process and political pluralism.
+
+16. ^ Popper, Karl (23 April 1988). "The open society and its enemies revisited", The Economist (2016 reprint).
+
+17. ^ Gagnon, Jean-Paul (1 June 2018). "2,234 Descriptions of Democracy". Democratic Theory. 5 (1): 92–113. doi:10.3167/dt.2018.050107. ISSN 2332-8894. S2CID 149825810.
+
+18. ^ "direct democracy | Definition, History, & Facts". www.britannica.com. Retrieved 2 February 2022.
+
+19. ^ Dahl, Robert A.; Shapiro, Ian; Cheibub, José Antônio (2003). The democracy sourcebook. Cambridge, Massachusetts: MIT Press. ISBN 978-0-262-54147-3. Details.
+
+20. ^ Hénaff, Marcel; Strong, Tracy B. (2001). Public space and democracy. Minneapolis: University of Minnesota Press. ISBN 978-0-8166-3388-3.
+
+21. ^ Nations, United. "Democracy". United Nations. Retrieved 17 August 2023.
+
+22. ^ Kimber, Richard (September 1989). "On democracy". Scandinavian Political Studies. 12 (3): 201, 199–219. doi:10.1111/j.1467-9477.1989.tb00090.x. Full text. Archived 17 October 2016 at the Wayback Machine
+
+23. ^ Diamond, Larry; Morlino, Leonardo (2005). Assessing the Quality of Democracy. JHU Press. ISBN 978-0-8018-8287-6 – via Google Books.
+
+24. ^ a b Kopstein, Jeffrey; Lichbach, Mark; Hanson, Stephen E., eds. (2014). Comparative Politics: Interests, Identities, and Institutions in a Changing Global Order (4, revised ed.). Cambridge University Press. pp. 37–39. ISBN 978-1-139-99138-4.
+
+25. ^ "Parliamentary sovereignty". UK Parliament. Retrieved 18 August 2014; "Independence". Courts and Tribunals Judiciary. Retrieved 9 November 2014.
+
+26. ^ Daily Express News (2 August 2013). "All-party meet vows to uphold Parliament supremacy". The New Indian Express. Express Publications (Madurai) Limited. Archived from the original on 27 March 2016. Retrieved 18 August 2013.
+
+27. ^ Barak, Aharon (2006). The Judge in a Democracy. Princeton University Press. ISBN 978-0-691-12017-1 – via Google Books.
+
+28. ^ Kelsen, Hans (October 1955). "Foundations of democracy". Ethics. 66 (1): 1–101. doi:10.1086/291036. JSTOR 2378551. S2CID 144699481.
+
+29. ^ Nussbaum, Martha (2000). Women and human development: the capabilities approach. Cambridge New York: Cambridge University Press. ISBN 978-0-521-00385-8.
+
+30. ^ Snyder, Richard; Samuels, David (2006), "Devaluing the vote in Latin America", in Diamond, Larry; Plattner, Marc F. (eds.), Electoral systems and democracy, Baltimore: Johns Hopkins University Press, p. 168, ISBN 978-0-8018-8475-7.
+
+31. ^ R. R. Palmer, The Age of the Democratic Revolution: Political History of Europe and America, 1760–1800 (1959)
+
+32. ^ Montesquieu, Spirit of Law, Bk. II, ch. 2–3.
+
+33. ^ Everdell, William R. (2000) [1983]. The end of kings: a history of republics and republicans (2nd ed.). Chicago: University of Chicago Press. ISBN 978-0-226-22482-4.
+
+34. ^ "Pericles' Funeral Oration". the-athenaeum.org.
+
+35. ^ Graeber 2013, p. 184.
+
+36. ^ Graeber 2013, pp. 168–169.
+
+37. ^ a b c Deudney, Daniel (9 November 2008). Bounding Power. Princeton University Press. ISBN 978-0-691-13830-5.
+
+38. ^ Thorhallsson, Baldur; Steinsson, Sverrir (2017), "Small State Foreign Policy", Oxford Research Encyclopedia of Politics, Oxford University Press, doi:10.1093/acrefore/9780190228637.013.484, ISBN 978-0-19-022863-7
+
+39. ^ de Montesquieu, Charles. "Book IX. Of Laws in the Relation They Bear to a Defensive Force". The Spirit of Laws. Constitution Society. Archived from the original on 22 December 2019. Retrieved 22 December 2019.
+
+40. ^ Graymont, Barbara (1972). The Iroquois in the American Revolution ([1st ed.] ed.). [Syracuse, N.Y.]: Syracuse University Press. ISBN 978-0-8156-0083-1. OCLC 194977.
+
+41. ^ Priestland, David (23 October 2021). "The Dawn of Everything by David Graeber and David Wengrow review – inequality is not the price of civilisation". The Guardian. ISSN 0261-3077. Retrieved 4 March 2024.
+
+42. ^ John Dunn, Democracy: the unfinished journey 508 BC – 1993 AD, Oxford University Press, 1994, ISBN 978-0-19-827934-1
+
+43. ^ Raaflaub, Ober & Wallace 2007, p. [page needed].
+
+44. ^ Luciano Canfora, La   democrazias:Storia di un'ideologia, Laterza  (2004) 2018 pp.12–13
+
+45. ^ R. Po-chia Hsia, Lynn Hunt, Thomas R. Martin, Barbara H. Rosenwein, and Bonnie G. Smith, The Making of the West, Peoples and Cultures, A Concise History, Volume I: To 1740 (Boston and New York: Bedford/St. Martin's, 2007), 44.
+
+46. ^ Kurt A. Raaflaub, Origins of Democracy in Ancient Greece, pp. 108, 109.
+
+47. ^ Aristotle Book 6
+
+48. ^ Grinin, Leonid E. (2004). The Early State, Its Alternatives and Analogues. Uchitel' Publishing House.
+
+49. ^ Davies, John K. (1977). "Athenian Citizenship: The Descent Group and the Alternatives". The Classical Journal. 73 (2): 105–121. ISSN 0009-8353. JSTOR 3296866.
+
+50. ^ "Women and Family in Athenian Law". www.stoa.org. Archived from the original on 1 March 2018. Retrieved 1 March 2018.
+
+51. ^ Manville, Philip Brook (14 July 2014). The Origins of Citizenship in Ancient Athens. Princeton University Press. ISBN 978-1-4008-6083-8.
+
+52. ^ Susan Lape, Reproducing Athens: Menander's Comedy, Democratic Culture, and the Hellenistic City, Princeton University Press, 2009, p. 4, ISBN 978-1-4008-2591-2
+
+53. ^ Raaflaub, Ober & Wallace 2007, p. 5.
+
+54. ^ Ober & Hedrick 1996, p. 107.
+
+55. ^ Clarke & Foweraker 2001, pp. 194–201.
+
+56. ^ Terrence A. Boring, Literacy in Ancient Sparta, Leiden Netherlands (1979). ISBN 978-90-04-05971-9
+
+57. ^ "Ancient Rome from the earliest times down to 476 A.D". Annourbis.com. Retrieved 22 August 2010.
+
+58. ^ Livy & De Sélincourt 2002, p. 34
+
+59. ^ Bindloss, Joe; Sarina Singh (2007). India: Lonely planet Guide. Lonely Planet. p. 556. ISBN 978-1-74104-308-2.
+
+60. ^ Hoiberg, Dale; Indu Ramchandani (2000). Students' Britannica India, Volumes 1-5. Popular Prakashan. p. 208. ISBN 978-0-85229-760-5.
+
+61. ^ Kulke, Hermann; Dietmar Rothermund (2004). A history of India. Routledge. p. 57. ISBN 978-0-415-32919-4.
+
+62. ^ Mann & Fields 1997.
+
+63. ^ Lightfoot, Sheryl R. (2021). "Decolonizing Self-Determination: Haudenosaunee Passports and Negotiated Sovereignty". European Journal of International Relations. 27 (4): 978. doi:10.1177/13540661211024713. ISSN 1354-0661. S2CID 237710260.
+
+64. ^ Communications. "Government". Haudenosaunee Confederacy. Retrieved 19 May 2022.
+
+65. ^ Dahl, Robert A. (1 October 2008). On Democracy: Second Edition. Yale University Press. ISBN 978-0-300-23332-2.
+
+66. ^ Fladmark, J. M.; Heyerdahl, Thor (17 November 2015). Heritage and Identity: Shaping the Nations of the North. Routledge. ISBN 978-1-317-74224-1.
+
+67. ^ O'Callaghan, Joseph F. (1989). "The Cortes and Taxation". The Cortes of Castile-Leon, 1188–1350: 130–151. doi:10.9783/9781512819571. ISBN 978-1-5128-1957-1. JSTOR j.ctv513b8x.12.
+
+68. ^ "Magna Carta: an introduction". The British Library. Archived from the original on 23 April 2021. Retrieved 28 January 2015. Magna Carta is sometimes regarded as the foundation of democracy in England. ...Revised versions of Magna Carta were issued by King Henry III (in 1216, 1217 and 1225), and the text of the 1225 version was entered onto the statute roll in 1297. ...The 1225 version of Magna Carta had been granted explicitly in return for a payment of tax by the whole kingdom, and this paved the way for the first summons of Parliament in 1265, to approve the granting of taxation.
+
+69. ^ "Citizen or Subject?". The National Archives. Retrieved 17 November 2013.
+
+70. ^ Jobson, Adrian (2012). The First English Revolution: Simon de Montfort, Henry III and the Barons' War. Bloomsbury. pp. 173–74. ISBN 978-1-84725-226-5.
+
+71. ^ "Simon de Montfort: The turning point for democracy that gets overlooked". BBC. 19 January 2015. Retrieved 19 January 2015; "The January Parliament and how it defined Britain". The Telegraph. 20 January 2015. Archived from the original on 10 January 2022. Retrieved 28 January 2015.
+
+72. ^ "Origins and growth of Parliament". The National Archives. Retrieved 17 November 2013.
+
+73. ^ Abramson, Scott F.; Boix, Carles (2019). "Endogenous Parliaments: The Domestic and International Roots of Long-Term Economic Growth and Executive Constraints in Europe". International Organization. 73 (4): 793–837. doi:10.1017/S0020818319000286. ISSN 0020-8183. S2CID 211428630.
+
+74. ^ Møller, Jørgen (2014). "Why Europe Avoided Hegemony: A Historical Perspective on the Balance of Power". International Studies Quarterly. 58 (4): 660–670. doi:10.1111/isqu.12153.
+
+75. ^ Cox, Gary W. (2017). "Political Institutions, Economic Liberty, and the Great Divergence". The Journal of Economic History. 77 (3): 724–755. doi:10.1017/S0022050717000729. ISSN 0022-0507.
+
+76. ^ Stasavage, David (11 May 2016). "Representation and Consent: Why They Arose in Europe and Not Elsewhere". Annual Review of Political Science. 19 (1): 145–162. doi:10.1146/annurev-polisci-043014-105648. ISSN 1094-2939. S2CID 14393625.
+
+77. ^ Lukowski, Jerzy; Zawadzki, Hubert (January 2019). A Concise History of Poland (3rd ed.). Cambridge University Press. ISBN 978-1-108-33399-3.
+
+78. ^ "From legal document to public myth: Magna Carta in the 17th century". The British Library. Archived from the original on 18 October 2017. Retrieved 16 October 2017; "Magna Carta: Magna Carta in the 17th Century". The Society of Antiquaries of London. Archived from the original on 25 September 2018. Retrieved 16 October 2017.
+
+79. ^ "Origins and growth of Parliament". The National Archives. Retrieved 7 April 2015.
+
+80. ^ "Rise of Parliament". The National Archives. Retrieved 7 April 2015.
+
+81. ^ "Putney debates". The British Library. Archived from the original on 22 December 2016. Retrieved 22 December 2016.
+
+82. ^ a b "Britain's unwritten constitution". British Library. Archived from the original on 8 December 2015. Retrieved 27 November 2015. The key landmark is the Bill of Rights (1689), which established the supremacy of Parliament over the Crown.... The Bill of Rights (1689) then settled the primacy of Parliament over the monarch's prerogatives, providing for the regular meeting of Parliament, free elections to the Commons, free speech in parliamentary debates, and some basic human rights, most famously freedom from 'cruel or unusual punishment'.
+
+83. ^ "Constitutionalism: America & Beyond". Bureau of International Information Programs (IIP), U.S. Department of State. Archived from the original on 24 October 2014. Retrieved 30 October 2014. The earliest, and perhaps greatest, victory for liberalism was achieved in England. The rising commercial class that had supported the Tudor monarchy in the 16th century led the revolutionary battle in the 17th and succeeded in establishing the supremacy of Parliament and, eventually, of the House of Commons. What emerged as the distinctive feature of modern constitutionalism was not the insistence on the idea that the king is subject to law (although this concept is an essential attribute of all constitutionalism). This notion was already well established in the Middle Ages. What was distinctive was the establishment of effective means of political control whereby the rule of law might be enforced. Modern constitutionalism was born with the political requirement that representative government depended upon the consent of citizen subjects... However, as can be seen through provisions in the 1689 Bill of Rights, the English Revolution was fought not just to protect the rights of property (in the narrow sense) but to establish those liberties which liberals believed essential to human dignity and moral worth. The "rights of man" enumerated in the English Bill of Rights gradually were proclaimed beyond the boundaries of England, notably in the American Declaration of Independence of 1776 and in the French Declaration of the Rights of Man in 1789.
+
+84. ^ North, Douglass C.; Weingast, Barry R. (1989). "Constitutions and Commitment: The Evolution of Institutions Governing Public Choice in Seventeenth-Century England". The Journal of Economic History. 49 (4): 803–832. doi:10.1017/S0022050700009451. ISSN 1471-6372. S2CID 3198200.
+
+85. ^ Locke, John (1988) [1689]. Laslett, Peter (ed.). Two Treatises of Government. Cambridge, NY: Cambridge University Press. Sec. 87, 123, 209, 222. ISBN 978-0-521-35448-6.
+
+86. ^ Locke, John. Two Treatises on Government: a Translation into Modern English. Quote: "Government has no other end, but the preservation of property. There is no practical alternative to majority political rule %E2%80%93 i.e., to taking the consent of the majority as the act of the whole and binding every individual." Google Books.
+
+87. ^ Curte, Merle (1937). "The Great Mr. Locke: America's Philosopher, 1783–1861". The Huntington Library Bulletin (11): 107–151. ISSN 1935-0708. JSTOR 3818115.
+
+88. ^ Tocqueville, Alexis de (2003). Democracy in America. Barnes & Noble. pp. 11, 18–19. ISBN 978-0-7607-5230-2.
+
+89. ^ Allen Weinstein and David Rubel (2002), The Story of America: Freedom and Crisis from Settlement to Superpower, DK Publishing, Inc., New York, ISBN 978-0-7894-8903-6, p. 61
+
+90. ^ Clifton E. Olmstead (1960), History of Religion in the United States, Prentice-Hall, Englewood Cliffs, NJ, pp. 63–65, 74–75, 102–05, 114–15
+
+91. ^ Christopher Fennell (1998), Plymouth Colony Legal Structure Archived 29 April 2012 at the Wayback Machine
+
+92. ^ Deacy, Susan (2008). Athena. London and New York: Routledge. pp. 145–49. ISBN 978-0-415-30066-7.
+
+93. ^ Chavetz, Josh (2007). Democracy's Privileged Few. Legislative Privilege and Democratic Norms in the British and American Constitutions. Yale University Press. p. 274.
+
+94. ^ "Getting the vote". The National Archives. Retrieved 22 August 2010.
+
+95. ^ "Record of Ignatius Sancho's vote in the general election, October 1774". British Library. Archived from the original on 30 September 2020. Retrieved 2 October 2020.
+
+96. ^ Chisholm, Hugh, ed. (1911). "Sweden". Encyclopædia Britannica. Vol. 26 (11th ed.). Cambridge University Press. pp. 188–221.
+
+97. ^ Gregory, Desmond (1985). The ungovernable rock: a history of the Anglo-Corsican Kingdom and its role in Britain's Mediterranean strategy during the Revolutionary War, 1793–1797. London: Fairleigh Dickinson University Press. p. 31. ISBN 978-0-8386-3225-3.
+
+98. ^ Donald Ratcliffe,  "The right to vote and the rise of democracy, 1787—1828". Journal of the Early Republic 33.2 (2013): 219–254.
+
+99. ^ Dinkin, Robert (1982). Voting in Revolutionary America: A Study of Elections in the Original Thirteen States, 1776–1789. US: Greenwood Publishing. pp. 37–42. ISBN 978-0-313-23091-2.
+
+100. ^ Ratcliffe, Donald (Summer 2013). "The Right to Vote and the Rise of Democracy, 1787–1828" (PDF). Journal of the Early Republic. 33 (2): 231. doi:10.1353/jer.2013.0033. S2CID 145135025. Archived (PDF) from the original on 2 June 2023.
+
+101. ^ Ratcliffe, Donald (Summer 2013). "The Right to Vote and the Rise of Democracy, 1787–1828" (PDF). Journal of the Early Republic. 33 (2): 225–229. doi:10.1353/jer.2013.0033. S2CID 145135025. Archived (PDF) from the original on 2 June 2023.
+
+102. ^ "Expansion of Rights and Liberties – The Right of Suffrage". Online Exhibit: The Charters of Freedom. National Archives. Archived from the original on 6 July 2016. Retrieved 21 April 2015.
+
+103. ^ Schultz, Jeffrey D. (2002). Encyclopedia of Minorities in American Politics: African Americans and Asian Americans. Oryx Press. p. 284. ISBN 978-1-57356-148-8. Retrieved 8 October 2015.
+
+104. ^ "The Bill Of Rights: A Brief History". ACLU. Retrieved 21 April 2015.
+
+105. ^ "The French Revolution II". Mars.wnec.edu. Archived from the original on 27 August 2008. Retrieved 22 August 2010.
+
+106. ^ Norman Davies (15 May 1991). The Third of May 1791 (PDF). Minda de Gunzburg Center for European Studies, Harvard University. Archived from the original (PDF) on 5 September 2019. Retrieved 5 September 2019.
+
+107. ^ Jan Ligeza (2017). Preambuła Prawa [The Preamble of Law] (in Polish). Polish Scientific Publishers PWN. p. 12. ISBN 978-83-945455-0-5.
+
+108. ^ William G. Shade, "The Second Party System". in Paul Kleppner, et al. Evolution of American Electoral Systems (1983) pp 77–111
+
+109. ^ Engerman, Stanley L.; Sokoloff, Kenneth L. (2005). "The Evolution of Suffrage Institutions in the New World" (PDF). pp. 14–16. Archived from the original (PDF) on 11 November 2020. Retrieved 12 October 2020.
+
+110. ^ Scher, Richard K. (2015). The Politics of Disenfranchisement: Why is it So Hard to Vote in America?. Routledge. p. viii–ix. ISBN 978-1-317-45536-3.
+
+111. ^ "Civil Rights in America: Racial Voting Rights" (PDF). A National Historic Landmarks Theme Study. 2009. Archived (PDF) from the original on 2 July 2015.
+
+112. ^ "Introduction – Social Aspects of the Civil War". Itd.nps.gov. Archived from the original on 14 July 2007. Retrieved 22 August 2010.
+
+113. ^ Gillette, William (1986). "Fifteenth Amendment: Framing and ratification". Encyclopedia of the American Constitution. Archived from the original on 10 June 2014. Retrieved 23 June 2013.
+
+114. ^ "Black voting rights, 15th Amendment still challenged after 150 years". USA Today. Retrieved 18 November 2020.
+
+115. ^ Transcript of Voting Rights Act (1965) US National Archives.
+
+116. ^ The Constitution: The 24th Amendment Time.
+
+117. ^ French National Assembly. "1848 " Désormais le bulletin de vote doit remplacer le fusil "". Retrieved 26 September 2009.
+
+118. ^ "Movement toward greater democracy in Europe Archived 4 August 2010 at the Wayback Machine". Indiana University Northwest.
+
+119. ^ Hasan Kayalı (1995) Elections in the Ott Empire (1995).pdf "Elections and the Electoral Process in the Ottoman Empire, 1876–1919" International Journal of Middle East Studies, Vol. 27, No. 3, pp 265–286
+
+120. ^ Reconstructing Gender in Middle East: Tradition, Identity, and Power. Columbia University Press. 1995. p. 101.
+
+121. ^ Nohlen, Dieter (2001). Elections in Asia and the Pacific: South East Asia, East Asia, and the South Pacific. Oxford University Press. p. 14.
+
+122. ^ Diamond, Larry (15 September 2015). "Timeline: Democracy in Recession". The New York Times. Retrieved 25 January 2016.
+
+123. ^ a b Kurlantzick, Joshua (11 May 2017). "Mini-Trumps Are Running for Election All Over the World". Bloomberg.com. Retrieved 16 May 2017.
+
+124. ^ Mounk, Yascha (January 2017). "The Signs of Deconsolidation". Journal of Democracy. Retrieved 16 May 2017.
+
+125. ^ "Age of Dictators: Totalitarianism in the inter-war period". Archived from the original on 7 September 2006. Retrieved 7 September 2006.
+
+126. ^ "Did the United States Create Democracy in Germany?: The Independent Review: The Independent Institute". Independent.org. Retrieved 22 August 2010.
+
+127. ^ "World | South Asia | Country profiles | Country profile: India". BBC News. 7 June 2010. Retrieved 22 August 2010.
+
+128. ^ Julian Go (2007). "A Globalizing Constitutionalism?, Views from the Postcolony, 1945–2000". In Arjomand, Saïd Amir (ed.). Constitutionalism and political reconstruction. Brill. pp. 92–94. ISBN 978-90-04-15174-1.
+
+129. ^ "How the Westminster Parliamentary System was exported around the World". University of Cambridge. 2 December 2013. Retrieved 16 December 2013.
+
+130. ^ "Age of democracies at the end of 2015". Our World in Data. Archived from the original on 15 February 2020. Retrieved 15 February 2020.
+
+131. ^ "Tables and Charts". Freedomhouse.org. 10 May 2004. Archived from the original on 13 July 2009. Retrieved 22 August 2010.
+
+132. ^ "List of Electoral Democracies". World Forum on Democracy. Archived from the original on 16 October 2013.
+
+133. ^ "General Assembly declares 15 September International Day of Democracy; Also elects 18 Members to Economic and Social Council". Un.org. Retrieved 22 August 2010.
+
+134. ^ Bingham, Adrian (25 June 2019). "'The last milestone' on the journey to full adult suffrage? 50 years of debates about the voting age". History & Policy. Retrieved 31 December 2022.
+
+135. ^ "Archives of Maryland, Volume 0138, Page 0051 – Constitutional Revision Study Documents of the Constitutional Convention Commission, 1968". msa.maryland.gov. Retrieved 3 January 2023.
+
+136. ^ Sanders, Mark (2000). Your Right To Vote. United States: Raintree Steck- Vaugh company.
+
+137. ^ Wall, John (October 2014). "Democratising democracy: the road from women's to children's suffrage" (PDF). The International Journal of Human Rights. 18 (6): 646–59. doi:10.1080/13642987.2014.944807. S2CID 144895426. Archived (PDF) from the original on 20 April 2017 – via Rutgers University.
+
+138. ^ a b "Freedom in the Word 2017". freedomhouse.org. 2016. Retrieved 16 May 2017.
+
+139. ^ "Biden Says Democracy Is Winning. It's Not That Simple". Bloomberg.com. 16 July 2023. Retrieved 19 July 2023.
+
+140. ^ "Freedom House: Democracy Scores for Most Countries Decline for 12th Consecutive Year", VOA News, 16 January 2018. Retrieved 21 January 2018.
+
+141. ^ "As populism rises, fragile democracies move to weaken their courts". Christian Science Monitor. 13 November 2018. ISSN 0882-7729. Retrieved 14 November 2018.
+
+142. ^ Nazifa Alizada, Rowan Cole, Lisa Gastaldi, Sandra Grahn, Sebastian Hellmeier, Palina Kolvani, Jean Lachapelle, Anna Lührmann, Seraphine F.    Maerz, Shreeya Pillai, and Staffan I. Lindberg. 2021. Autocratization Turns Viral. Democracy Report 2021. University of Gothenburg: V-Dem Institute. https://www.v-dem.net/media/filer_public/74/8c/748c68ad-f224-4cd7-87f9-8794add5c60f/dr_2021_updated.pdf Archived 14 September 2021 at the Wayback Machine
+
+143. ^ Greskovitz, Béla (2015). "The Hollowing and Backsliding of Democracy in East-Central Europe". Global Policy. 6 (1): 28–37. doi:10.1111/1758-5899.12225.
+
+144. ^ Rhodes-Purdy, Matthew; Madrid, Raúl L. (27 November 2019). "The perils of personalism". Democratization. 27 (2): 321–339. doi:10.1080/13510347.2019.1696310. ISSN 1351-0347. S2CID 212974380.
+
+145. ^ "Global overview of COVID-19: Impact on elections". www.idea.int. Retrieved 28 January 2021.
+
+146. ^ Repucci, Sarah; Slipowitz, Amy. "Democracy under Lockdown". Freedom House. Retrieved 28 January 2021.
+
+147. ^ Democracy Facing Global Challenges: V-Dem Annual Democracy Report 2019 (PDF) (Report). V-Dem Institute at the University of Gothenburg. May 2019. Archived from the original (PDF) on 5 June 2019. Retrieved 26 April 2021.
+
+148. ^ Mettler, Suzanne (2020). Four Threats: The Recurring Crises of American Democracy. New York: St. Martin's Press. ISBN 978-1-250-24442-0. OCLC 1155487679.
+
+149. ^ Farrell, Henry (14 August 2020). "History tells us there are four key threats to U.S. democracy". The Washington Post.
+
+150. ^ Lieberman, By Suzanne Mettler and Robert C. (10 August 2020). "The Fragile Republic". Foreign Affairs. Retrieved 15 August 2020.
+
+151. ^ Haggard, Stephan; Kaufman, Robert (2021). Backsliding: Democratic Regress in the Contemporary World. Cambridge University Press. doi:10.1017/9781108957809. ISBN 978-1-108-95780-9. S2CID 242013001. Retrieved 21 January 2021.
+
+152. ^ Malka, Ariel; Lelkes, Yphtach; Bakker, Bert N.; Spivack, Eliyahu (2020). "Who Is Open to Authoritarian Governance within Western Democracies?". Perspectives on Politics. 20 (3): 808–827. doi:10.1017/S1537592720002091. ISSN 1537-5927. S2CID 225207244.
+
+153. ^ "Aristotle, Nicomachean Ethics, Book VIII, Chapter 10 (1160a.31-1161a.9)". Internet Classics Archive. Retrieved 21 June 2018.
+
+154. ^ "Aristotle". Internet Encyclopedia of Philosophy.
+
+155. ^ a b c d e Deudney, Daniel H. (9 November 2008). Deudney, D.: Bounding Power: Republican Security Theory from the Polis to the Global Village. (eBook and Paperback). Princeton University Press. ISBN 978-0-691-13830-5. Retrieved 14 March 2017.
+
+156. ^ Springer, Simon (2011). "Public Space as Emancipation: Meditations on Anarchism, Radical Democracy, Neoliberalism and Violence". Antipode. 43 (2): 525–62. Bibcode:2011Antip..43..525S. doi:10.1111/j.1467-8330.2010.00827.x.
+
+157. ^ Joseph Schumpeter, (1950). Capitalism, Socialism, and Democracy. Harper Perennial. ISBN 978-0-06-133008-7.
+
+158. ^ Anthony Downs, (1957). An Economic Theory of Democracy. HarperCollins College. ISBN 978-0-06-041750-5.
+
+159. ^ Dahl, Robert, (1989). Democracy and its Critics. New Haven: Yale University Press. ISBN 978-0-300-04938-1
+
+160. ^ Dworkin, Ronald (2006). Is Democracy Possible Here? Princeton: Princeton University Press. ISBN 978-0-691-13872-5, p. 134.
+
+161. ^ Gutmann, Amy, and Dennis Thompson (2002). Why Deliberative Democracy? Princeton University Press. ISBN 978-0-691-12019-5
+
+162. ^ Joshua Cohen, "Deliberation and Democratic Legitimacy" in Essays on Reason and Politics: Deliberative Democracy Ed. James Bohman and William Rehg (The MIT Press: Cambridge) 1997, 72–73.
+
+163. ^ Ethan J. "Can Direct Democracy Be Made Deliberative?", Buffalo Law Review, Vol. 54, 2006
+
+164. ^ Warren, Mark E.; Pearse, Hilary (2008). Designing Deliberative Democracy: The British Columbia Citizens' Assembly. Cambridge University Press.
+
+165. ^ Suiter, Jane; Farrell, David M; O'Malley, Eoin (1 March 2016). "When do deliberative citizens change their opinions? Evidence from the Irish Citizens' Assembly". International Political Science Review. 37 (2): 198–212. doi:10.1177/0192512114544068. ISSN 0192-5121. S2CID 155953192.
+
+166. ^ Smith, Graham (2009). Democratic Innovations: Designing Institutions for Citizen Participation. Theories of Institutional Design. Cambridge: Cambridge University Press. ISBN 978-0-521-51477-4.
+
+167. ^ "Innovative Citizen Participation and New Democratic Institutions: Catching the Deliberative Wave | en | OECD". www.oecd.org. 9 June 2020. Retrieved 20 November 2020.
+
+168. ^ Geissel, Brigitte; Kneuer, Marianne; Lauth, Hans-Joachim (2016). "Measuring the quality of democracy: Introduction". International Political Science Review. 37 (5). Sage Publications: 571–579. doi:10.1177/0192512116669141. ISSN 0192-5121. JSTOR 26556872. S2CID 151808737. Retrieved 3 April 2023.
+
+169. ^ Greenwood, Shannon (6 December 2022). "Appendix A: Classifying democracies". Pew Research Center's Global Attitudes Project. Retrieved 27 December 2022.
+
+170. ^ Dobratz, B.A. (2015). Power, Politics, and Society: An Introduction to Political Sociology. Taylor & Francis. p. 47. ISBN 978-1-317-34529-9. Retrieved 30 April 2023.
+
+171. ^ Michie, J. (2014). Reader's Guide to the Social Sciences. Taylor & Francis. pp. 95–97. ISBN 978-1-135-93226-8. Retrieved 3 April 2023.
+
+172. ^ "Democracy data: how do researchers measure democracy?". Our World in Data. 17 June 2022. Retrieved 17 April 2023.
+
+173. ^ "The 'Varieties of Democracy' data: how do researchers measure democracy?". Our World in Data. 30 November 2022. Retrieved 3 April 2023.
+
+174. ^ "Breaking Down Democracy". Freedom House. Retrieved 3 April 2023.
+
+175. ^ Democracy and Autocracy, Why do Democracies Develop and Decline, Vol. 21(1) June 2023, Democracy and Autocracy Section, American Political Science Association
+
+176. ^ "Democracy Report 2023, Table 3, V-Dem Institute, 2023" (PDF).
+
+177. ^ Krauss, Alexander (2 January 2016). "The scientific limits of understanding the (potential) relationship between complex social phenomena: the case of democracy and inequality". Journal of Economic Methodology. 23 (1): 97–109. doi:10.1080/1350178X.2015.1069372. S2CID 51782149 – via CrossRef.
+
+178. ^ Dahl, Robert A., Ian Shapiro, José Antônio Cheibub, and Adam Przeworski. “Minimalist Conception of Democracy: A Defense.” Essay. In The Democracy Sourcebook, 12–17. Cambridge, MA, MA: MIT Press, 2003.
+
+179. ^ Schmitter, Philippe C. and Terry Lynn Karl. 1991. "What Democracy is.. . and is Not." Journal of Democracy 2 (3): 75-88
+
+180. ^ Esaiasson, Peter; Wlezien, Christopher (2017). "Advances in the Study of Democratic Responsiveness: An Introduction". Comparative Political Studies. 50 (6): 699–710. doi:10.1177/0010414016633226.
+
+181. ^ G.F. Gaus, C. Kukathas, Handbook of Political Theory, SAGE, 2004, pp. 143–45, ISBN 978-0-7619-6787-3, Google Books link
+
+182. ^ The Judge in a Democracy, Princeton University Press, 2006, p. 26, ISBN 978-0-691-12017-1, Google Books link
+
+183. ^ A. Barak, The Judge in a Democracy, Princeton University Press, 2006, p. 40, ISBN 978-0-691-12017-1, Google Books link
+
+184. ^ T.R. Williamson, Problems in American Democracy, Kessinger Publishing, 2004, p. 36, ISBN 978-1-4191-4316-8, Google Books link
+
+185. ^ U.K. Preuss, "Perspectives of Democracy and the Rule of Law". Journal of Law and Society, 18:3 (1991). pp. 353–64
+
+186. ^ Budge, Ian (2001). "Direct democracy". In Clarke, Paul A.B.; Foweraker, Joe (eds.). Encyclopedia of Political Thought. Taylor & Francis. ISBN 978-0-415-19396-2.
+
+187. ^ Beramendi, Virginia, and Jennifer Somalie. Angeyo. Direct Democracy: The International Idea Handbook. Stockholm, Sweden: International IDEA, 2008. Print.
+
+188. ^ a b c d e Vincent Golay and Mix et Remix, Swiss political institutions, Éditions loisirs et pédagogie, 2008. ISBN 978-2-606-01295-3.
+
+189. ^ Niels Barmeyer, Developing Zapatista Autonomy, Chapter Three: Who is Running the Show? The Workings of Zapatista Government.
+
+190. ^ Denham, Diana (2008). Teaching Rebellion: Stories from the Grassroots Mobilization in Oaxaca.
+
+191. ^ Zibechi, Raul (2013). Dispersing Power: Social Movements as Anti-State Forces in Latin America.
+
+192. ^ "A Very Different Ideology in the Middle East". Rudaw.
+
+193. ^ Serdült, Uwe (2014), Qvortrup, Matt (ed.), "Referendums in Switzerland", Referendums Around the World: The Continued Growth of Direct Democracy, London: Palgrave Macmillan UK, pp. 65–121, doi:10.1057/9781137314703_4, ISBN 978-1-137-31470-3, retrieved 17 June 2022
+
+194. ^ "Article on direct democracy by Imraan Buccus". Themercury.co.za. Archived from the original on 17 January 2010. Retrieved 22 August 2010.
+
+195. ^ "A Citizen's Guide To Vermont Town Meeting". July 2008. Archived from the original on 5 August 2012. Retrieved 12 October 2012.
+
+196. ^ Manin, Bernard (1997). Principles of Representative Government. Cambridge University Press. pp. 8–11. S2CID 153766786.
+
+197. ^ "Radical Revolution – The Thermidorean Reaction". Wsu.edu. 6 June 1999. Archived from the original on 3 February 1999. Retrieved 22 August 2010.
+
+198. ^ Black, Jeremy; Brewer, Paul; Shaw, Anthony; Chandler, Malcolm; Cheshire, Gerard; Cranfield, Ingrid; Ralph Lewis, Brenda; Sutherland, Joe; Vint, Robert (2003). World History. Bath, Somerset: Parragon Books. p. 341. ISBN 0-75258-227-5.
+
+199. ^ Köchler, Hans (1987). The Crisis of Representative Democracy. Frankfurt/M., Bern, New York. ISBN 978-3-8204-8843-2.
+
+200. ^ Urbinati, Nadia (1 October 2008). "2". Representative Democracy: Principles and Genealogy. University of Chicago Press. ISBN 978-0-226-84279-0.
+
+201. ^ Fenichel Pitkin, Hanna (September 2004). "Representation and democracy: uneasy alliance". Scandinavian Political Studies. 27 (3): 335–42. doi:10.1111/j.1467-9477.2004.00109.x. S2CID 154048078.
+
+202. ^ Aristotle. "Ch. 9". Politics. Vol. Book 4.
+
+203. ^ Keen, Benjamin, A History of Latin America. Boston: Houghton Mifflin, 1980.
+
+204. ^ Kuykendall, Ralph, Hawaii: A History. New York: Prentice Hall, 1948.
+
+205. ^ Brown, Charles H., The Correspondents' War. New York: Charles Scribner's Sons, 1967.
+
+206. ^ Taussig, Capt. J. K., "Experiences during the Boxer Rebellion," in Quarterdeck and Fo'c'sle. Chicago: Rand McNally & Company, 1963
+
+207. ^ a b c d O'Neil, Patrick H. Essentials of Comparative Politics. 3rd ed. New York: W.W. Norton 2010. Print
+
+208. ^ "64. The British Empire in 1914. Wells, H.G. 1922. A Short History of the World". www.bartleby.com. Retrieved 8 January 2022.
+
+209. ^ "Republic – Definition from the Merriam-Webster Online Dictionary". M-W.com. 25 April 2007. Retrieved 22 August 2010.
+
+210. ^ "The Federalist Papers : No. 10". Avalon Project. 29 December 1998. Retrieved 7 January 2022.
+
+211. ^ Richard J. Ellis and Michael Nelson, Debating the presidency (2009) p. 211
+
+212. ^ Novanglus, no. 7. 6 March 1775
+
+213. ^ Brockell, Gillian (19 December 2019). "'A republic, if you can keep it': Did Ben Franklin really say Impeachment Day's favorite quote?". The Washington Post. Retrieved 20 January 2021.
+
+214. ^ "The Founders' Constitution: Volume 1, Chapter 18, Introduction, "Epilogue: Securing the Republic"". Press-pubs.uchicago.edu. Retrieved 22 August 2010.
+
+215. ^ Wiles, Peter (14 June 2023). The Soviet Economy on the Brink of Reform: Essays in Honor of Alec Nove. Taylor & Francis. p. 31. ISBN 978-1-000-88190-5.
+
+216. ^ Mandel, Ernest (5 May 2020). Trotsky as Alternative. Verso Books. pp. 84–86. ISBN 978-1-78960-701-7.
+
+217. ^ Trotsky, Leon (1977). The Transitional Program for Socialist Revolution: Including The Death Agony of Capitalism and the Tasks of the Fourth International. Pathfinder Press. pp. 145–146. ISBN 978-0-87348-524-1.
+
+218. ^ Pierre-Joseph Proudhon. General Idea of the Revolution See also commentary by Graham, Robert. The General Idea of Proudhon's Revolution
+
+219. ^ Bookchin, Murray. Communalism: The Democratic Dimensions of Social Anarchism. Anarchism, Marxism and the Future of the Left: Interviews and Essays, 1993–1998, AK Press 1999, p. 155
+
+220. ^ Bookchin, Murray. Social Anarchism or Lifestyle Anarchism: An Unbridgeable Chasm
+
+221. ^ Graeber, David and Grubacic, Andrej. Anarchism, Or The Revolutionary Movement Of The Twenty-first Century
+
+222. ^ Dowlen, Oliver (2008). The Political Potential of Sortition: A study of the random selection of citizens for public office. Imprint Academic.
+
+223. ^ Arend, Lijphart (January 1969). "Consociational Democracy". World Politics. 21 (2): 207–225. doi:10.2307/2009820. JSTOR 2009820. S2CID 251572712.
+
+224. ^ McGann, Anthony J.; Latner, Michael (16 July 2013). "The Calculus of Consensus Democracy: Rethinking Patterns of Democracy Without Veto Players". Comparative Political Studies. 46 (7): 823–850. doi:10.1177/0010414012463883 – via CrossRef.
+
+225. ^ Kasuya, Yuko; Reilly, Benjamin (4 July 2023). "The shift to consensus democracy and limits of institutional design in Asia". The Pacific Review. 36 (4): 844–870. doi:10.1080/09512748.2022.2035426 – via CrossRef.
+
+226. ^ "Redirecting..." heinonline.org. {{cite web}}: Cite uses generic title (help)
+
+227. ^ Smooha, S. 'The model of ethnic democracy: Israel as a Jewish and democratic state', Nations and Nationalism, p. 475. Volume 8 Issue s4, 2002.
+
+228. ^ AbdolKarim Soroush :: عبدالکريم سروش
+
+229. ^ "Article on Cosmopolitan democracy by Daniele Archibugi" (PDF). Archived from the original (PDF) on 25 July 2011. Retrieved 22 August 2010.
+
+230. ^ "letter by Einstein – "To the General Assembly of the United Nations"". Archived from the original on 10 May 2013. Retrieved 2 July 2013., first published in United Nations World New York, October 1947, pp. 13–14
+
+231. ^ Daniele Archibugi & David Held, eds., Cosmopolitan Democracy. An Agenda for a New World Order, Polity Press, Cambridge, 1995; David Held, Democracy and the Global Order, Polity Press, Cambridge, 1995, Daniele Archibugi, The Global Commonwealth of Citizens. Toward Cosmopolitan Democracy, Princeton University Press, Princeton, 2008
+
+232. ^ "Creative Democracy – The Task Before Us" (PDF). Archived from the original (PDF) on 12 February 2015. Retrieved 12 February 2015.
+
+233. ^ Brown, Archie (2001). "From Democratization to "Guided Democracy&quot". Journal of Democracy. 12 (4): 35–41. doi:10.1353/jod.2001.0063. S2CID 201790528.
+
+234. ^ Putin's Rule: Its Main Features and the Current Diarchy Johnson's Russia List. By Peter Reddaway. 18 February 2009. Downloaded 28 April 2017.
+
+235. ^ Compare: Tibi, Bassam (2013). The Sharia State: Arab Spring and Democratization. Routledge. p. 161. ISBN 978-1-135-92468-3.
+
+236. ^ Gerring, John; Knutsen, Carl Henrik; Berge, Jonas (2022). "Does Democracy Matter?". Annual Review of Political Science. 25: 357–375. doi:10.1146/annurev-polisci-060820-060910. hdl:10852/100947.
+
+237. ^ Friend, Celeste (n.d.). "Social Contract Theory". Internet Encyclopedia of Philosophy. Retrieved 26 April 2022.
+
+238. ^ Dixon, William J. (1993). "Democracy and the Management of International Conflict". Journal of Conflict Resolution. 37: 42–68. doi:10.1177/0022002793037001002.
+
+239. ^ Daron Acemoglu; Suresh Naidu; Pascual Restrepo; James A. Robinson (February 2019). "Democracy Does Cause Growth" (PDF). Journal of Political Economy. 127 (1): 47–100. doi:10.1086/700936. hdl:1721.1/124287. S2CID 222452675.
+
+240. ^ Peter Dizikes (24 April 2019). "Democracy dividend". Technology Review MIT News. p. 03.
+
+241. ^ Pelke, Lars (2023). "Reanalysing the link between democracy and economic development". International Area Studies Review. 26 (4): 361–383. doi:10.1177/22338659231194945.
+
+242. ^ Donno, Daniela (2024), "International Democracy Promotion", The Oxford Handbook of Authoritarian Politics, Oxford University Press, ISBN 978-0-19-887199-6
+
+243. ^ Matanock, Aila M. (2020). "How International Actors Help Enforce Domestic Deals". Annual Review of Political Science. 23 (1): 357–383. doi:10.1146/annurev-polisci-050718-033504. ISSN 1094-2939.
+
+244. ^ Mesquita, Bruce Bueno de (Spring 2004). "Why Gun-Barrel Democracy Doesn't Work". Hoover Digest. 2. Archived from the original on 5 July 2008. Also see this page.
+
+245. ^ Meernik, James (1996). "United States Military Intervention and the Promotion of Democracy". Journal of Peace Research. 33 (4): 391–402. doi:10.1177/0022343396033004002. S2CID 51897214.
+
+246. ^ Germann, Micha; Gemenis, Kostas (2019). "Getting Out the Vote with Voting Advice Applications". Political Communication. 36: 149–170. doi:10.1080/10584609.2018.1526237. S2CID 149640396.
+
+247. ^ "Book Review: Against Elections: The Case for Democracy by David Van Reybrouck". 20 October 2016. Retrieved 10 March 2019.
+
+248. ^ Wong, Alia (5 October 2018). "Civics Education Helps Create Young Voters and Activists". The Atlantic. Retrieved 17 September 2020.
+
+249. ^ Tullock, Gordon (1965). "Entry Barriers in Politics". The American Economic Review. 55 (1/2): 458–466. JSTOR 1816288.
+
+250. ^ Karp, Jeffrey A.; Banducci, Susan A. (2008). "Political Efficacy and Participation in Twenty-Seven Democracies: How Electoral Systems Shape Political Behaviour". British Journal of Political Science. 38 (2): 311–334. doi:10.1017/S0007123408000161. hdl:10036/64393. S2CID 55486399.
+
+251. ^ Hawkins, Kirk Andrew; Carlin, Ryan E.; Littvay, Levente; Rovira Kaltwasser, Cristóbal (eds.). The ideational approach to populism: concept, theory, and analysis. p. 281. ISBN 978-1-315-19692-3. OCLC 1053623603.
+
+252. ^ Arugay, Aries A. (2021). "Democratic Transitions". The Palgrave Encyclopedia of Global Security Studies. Cham: Springer International Publishing. pp. 1–7. doi:10.1007/978-3-319-74336-3_190-1. ISBN 978-3-319-74336-3. S2CID 240235199.
+
+253. ^ Munck, G.L. (2001). "Democratic Transitions". International Encyclopedia of the Social & Behavioral Sciences. Elsevier. pp. 3425–3428. doi:10.1016/b0-08-043076-7/01135-9. ISBN 978-0-08-043076-8.
+
+254. ^ Arugay, Aries A. (2021). "Democratic Transitions". The Palgrave Encyclopedia of Global Security Studies. Cham: Springer International Publishing. pp. 1–7. doi:10.1007/978-3-319-74336-3_190-1. ISBN 978-3-319-74336-3. S2CID 240235199.
+
+255. ^ Lindenfors, Patrik; Wilson, Matthew; Lindberg, Staffan I. (2020). "The Matthew effect in political science: head start and key reforms important for democratization". Humanities and Social Sciences Communications. 7 (106). doi:10.1057/s41599-020-00596-7.
+
+256. ^ For example: Lipset, Seymour Martin. (1959). "Some Social Requisites of Democracy: Economic Development and Political Legitimacy". American Political Science Review. 53 (1): 69–105. doi:10.2307/1951731. JSTOR 1951731. S2CID 53686238.
+
+257. ^ Inglehart, Ronald. Welzel, Christian Modernisation, Cultural Change and Democracy: The Human Development Sequence, 2005. Cambridge: Cambridge University Press
+
+258. ^ Inglehart, Ronald F. (2018). Cultural Evolution: People's Motivations Are Changing, and Reshaping the World. Cambridge University Press. doi:10.1017/9781108613880. ISBN 978-1-108-61388-0.
+
+259. ^ Gibler, Douglas M.; Owsiak, Andrew (2017). "Democracy and the Settlement of International Borders, 1919–2001". Journal of Conflict Resolution. 62 (9): 1847–75. doi:10.1177/0022002717708599. S2CID 158036471.
+
+260. ^ Foreword, written by historian Harry J Hogan Archived 1 September 2013 at the Wayback Machine in 1982, to Quigley's Weapons Systems and Political Stability
+
+261. ^ see also Chester G Starr, Review of Weapons Systems and Political Stability, American Historical Review, Feb 1984, p. 98, available at carrollquigley.net
+
+262. ^ a b Carroll Quigley (1983). Weapons systems and political stability: a history. University Press of America. pp. 38–39. ISBN 978-0-8191-2947-5. Retrieved 20 May 2013.
+
+263. ^ Carroll Quigley (1983). Weapons systems and political stability: a history. University Press of America. p. 307. ISBN 978-0-8191-2947-5. Retrieved 20 May 2013.
+
+264. ^ Glaeser, E.; Ponzetto, G.; Shleifer, A. (2007). "Why does democracy need education?". Journal of Economic Growth. 12 (2): 77–99. doi:10.1007/s10887-007-9015-1. Retrieved 3 July 2017.
+
+265. ^ Deary, I.J.; Batty, G.D.; Gale, C.R. (2008). "Bright children become enlightened adults" (PDF). Psychological Science. 19 (1): 1–6. doi:10.1111/j.1467-9280.2008.02036.x. hdl:20.500.11820/a86dbef4-60eb-44fa-add3-513841cdf81b. PMID 18181782. S2CID 21297949.
+
+266. ^ Compare: Rindermann, H (2008). "Relevance of education and intelligence for the political development of nations: Democracy, rule of law and political liberty". Intelligence. 36 (4): 306–22. doi:10.1016/j.intell.2007.09.003. Political theory has described a positive linkage between education, cognitive ability and democracy. This assumption is confirmed by positive correlations between education, cognitive ability, and positively valued political conditions (N = 183–130). [...] It is shown that in the second half of the 20th century, education and intelligence had a strong positive impact on democracy, rule of law and political liberty independent from wealth (GDP) and chosen country sample. One possible mediator of these relationships is the attainment of higher stages of moral judgment fostered by cognitive ability, which is necessary for the function of democratic rules in society. The other mediators for citizens as well as for leaders could be the increased competence and willingness to process and seek information necessary for political decisions due to greater cognitive ability. There are also weaker and less stable reverse effects of the rule of law and political freedom on cognitive ability.
+
+267. ^ Albertus, Michael; Menaldo, Victor (2012). "Coercive Capacity and the Prospects for Democratisation". Comparative Politics. 44 (2): 151–69. doi:10.5129/001041512798838003. S2CID 153949862.
+
+268. ^ a b Paglayan, Agustina S. (February 2021). "The Non-Democratic Roots of Mass Education: Evidence from 200 Years". American Political Science Review. 115 (1): 179–198. doi:10.1017/S0003055420000647. ISSN 0003-0554.
+
+269. ^ Squicciarini, Mara and Voigtländer, Nico, Knowledge Elites and Modernization: Evidence from Revolutionary France (October 2016). NBER Working Paper No. w22779, Available at SSRN: https://ssrn.com/abstract=2861711
+
+270. ^ Acemoglu, Daron; Robinson, James A. (2006). Economic Origins of Dictatorship and Democracy. Cambridge University Press. ISBN 978-0-521-85526-6.
+
+271. ^ "Rainfall and Democracy".
+
+272. ^ Alsan, Marcella (2015). "The Effect of the TseTse Fly on African Development" (PDF). American Economic Review. 105 (1): 382–410. CiteSeerX 10.1.1.1010.2955. doi:10.1257/aer.20130604. Archived (PDF) from the original on 24 September 2015.
+
+273. ^ Acemoglu, Daron; Johnson, Simon; Robinson, James (2005). "Institutions as a fundamental cause of long-run growth". Handbook of Economic Growth. Vol. 1. pp. 385–472, Sections 1 to 4. doi:10.1016/S1574-0684(05)01006-3. ISBN 978-0-444-52041-8.
+
+274. ^ Mellinger, Andrew D., Jeffrey Sachs, and John L. Gallup. (1999). "Climate, Water Navigability, and Economic Development". Working Paper.
+
+275. ^ Acemoglu, Daron; Johnson, Simon; Robinson, James (2005). "Institutions as a fundamental cause of long-run growth". Handbook of Economic Growth. Vol. 1. pp. 385–472, Sections 5 to 10. doi:10.1016/S1574-0684(05)01006-3. ISBN 978-0-444-52041-8.
+
+276. ^ Robert Michels (1999) [1962 by Crowell-Collier]. Political Parties. Transaction Publishers. p. 243. ISBN 978-1-4128-3116-1. Retrieved 5 June 2013.
+
+277. ^ a b Mietzner, Marcus (2021). "Sources of resistance to democratic decline: Indonesian civil society and its trials". Democratization. 28 (1): 161–178. doi:10.1080/13510347.2020.1796649. S2CID 225475139.
+
+278. ^ Mudde, Cas and Kaltwasser, Cristóbal Rovira (2017) Populism: a Very Short Introduction. New York: Oxford University Press. pp.86-96. ISBN 978-0-19-023487-4
+
+279. ^ Laebens, Melis G.; Lührmann, Anna (2021). "What halts democratic erosion? The changing role of accountability". Democratization. 28 (5): 908–928. doi:10.1080/13510347.2021.1897109. S2CID 234870008.
+
+280. ^ Daly, Tom Gerald (2019). "Democratic Decay: Conceptualising an Emerging Research Field". Hague Journal on the Rule of Law. 11: 9–36. doi:10.1007/s40803-019-00086-2. S2CID 159354232.
+
+281. ^ Huq, Aziz Z (2021). "How (not) to explain a democratic recession". International Journal of Constitutional Law. 19 (2): 723–737. doi:10.1093/icon/moab058.
+
+282. ^ Chull Shin, Doh (2021). "Democratic deconsolidation in East Asia: exploring system realignments in Japan, Korea, and Taiwan". Democratization. 28 (1): 142–160. doi:10.1080/13510347.2020.1826438. S2CID 228959708.
+
+283. ^ Hyde, Susan D. (2020). "Democracy's backsliding in the international environment". Science. 369 (6508): 1192–1196. Bibcode:2020Sci...369.1192H. doi:10.1126/science.abb2434. PMID 32883862. S2CID 221472047.
+
+284. ^ Skaaning, Svend-Erik (2020). "Waves of autocratization and democratization: a critical note on conceptualization and measurement" (PDF). Democratization. 27 (8): 1533–1542. doi:10.1080/13510347.2020.1799194. S2CID 225378571. Archived (PDF) from the original on 6 February 2023. Retrieved 7 November 2022.
+
+285. ^ Lührmann, Anna; Lindberg, Staffan I. (2019). "A third wave of autocratization is here: what is new about it?". Democratization. 26 (7): 1095–1113. doi:10.1080/13510347.2019.1582029. S2CID 150992660. The decline of democratic regime attributes – autocratization
+
+286. ^ Cassani, Andrea; Tomini, Luca (2019). "What Autocratization Is". Autocratization in post-Cold War Political Regimes. Springer International Publishing. pp. 15–35. ISBN 978-3-030-03125-1.
+
+287. ^ Walder, D.; Lust, E. (2018). "Unwelcome Change: Coming to Terms with Democratic Backsliding". Annual Review of Political Science. 21 (1): 93–113. doi:10.1146/annurev-polisci-050517-114628. Backsliding entails deterioration of qualities associated with democratic governance, within any regime. In democratic regimes, it is a decline in the quality of democracy; in autocracies, it is a decline in democratic qualities of governance.
+
+288. ^ Lindberg, Staffan I. "The Nature of Democratic Backsliding in Europe". Carnegie Europe. Archived from the original on 13 April 2021. Retrieved 27 January 2021.
+
+289. ^ Rocha Menocal, Alina; Fritz, Verena; Rakner, Lise (June 2008). "Hybrid regimes and the challenges of deepening and sustaining democracy in developing countries1". South African Journal of International Affairs. 15 (1): 29–40. doi:10.1080/10220460802217934. ISSN 1022-0461. S2CID 55589140. Archived from the original on 21 January 2020.
+
+290. ^ a b Alan Siaroff (2009). Comparing Political Regimes: A Thematic Introduction to Comparative Politics. University of Toronto Press. p. 285. ISBN 978-1-4426-0012-6.
+
+291. ^ Edwin Leland James (7 January 1929). "King of Yugoslavia Assumes All Power". The New York Times. Retrieved 10 October 2023.
+
+292. ^ Pinfield, Nick (2015). A/AS Level History for AQA Democracy and Nazism: Germany, 1918–1945 Student Book. Cambridge University Press. p. 98.
+
+293. ^ Ober, Josiah (2005). "Democratic Athens as an Experimental System: History and the Project of Political Theory". Princeton/Stanford Working Papers in Classics Paper No. 110512. Rochester, NY. doi:10.2139/ssrn.1426841. S2CID 146975709. SSRN 1426841.
+
+294. ^ "Parliament Bill". api.parliament.uk. 11 November 1947. Retrieved 22 April 2018.
+
+295. ^ Dahl, Robert A. (1972). Polyarchy: Participation and Opposition. New Haven: Yale University Press. pp. 1–16. ISBN 978-0300015652.
+
+296. ^ Manin, Bernard (1997). The Principles of Representative Government. Cambridge: Cambridge University Press. pp. 2, 67–93, 132–160. ISBN 978-0521458917.
+
+297. ^ Thom Hartmann, "Time to Remove the Bananas...and Return Our Republic to Democracy," CommonDreams.org, 6 November 2002
+
+298. ^ MacChesney, Robert W (1999). Rich media, poor democracy: Communication politics in dubious times. University of Illinois Press.
+
+299. ^ Barnett, Steven (2002). "Will a crisis in journalism provoke a crisis in democracy?". The Political Quarterly. 73 (4): 400–408. doi:10.1111/1467-923X.00494.
+
+300. ^ Gurevitch, Michael; Blumler, Jay G. (1990). "Political Communication Systems and Democratic Values". In Lichtenberg, Judith (ed.). Democracy and the mass media: A collection of essays. Cambridge University Press. pp. 269–289.
+
+301. ^ a b Bucy, Erik P.; D'Angelo, Paul (1999). "The Crisis of Political Communication: Normative Critiques of News and Democratic Processes". Communication Yearbook. 22: 301–339.
+
+302. ^ a b c Blumler, Jay G. (2014). "Mediatization and Democracy". In Esser, Frank; Strömbäck, Jesper (eds.). Mediatization of politics: Understanding the transformation of Western democracies. Springer. pp. 31–41.
+
+303. ^ Donges, Patrick; Jarren, Otfried (2014). "Mediatization of Organizations: Changing Parties and Interest Groups?". In Esser, Frank; Strömbäck, Jesper (eds.). Mediatization of politics: Understanding the transformation of Western democracies. Springer. pp. 31–41.
+
+304. ^ Esser, Frank (2013). "Mediatization as a Challenge: Media Logic versus Political Logic". In Kriesi, Hanspeter; Esser, Frank; Bühlmann, Marc (eds.). Democracy in the Age of Globalization and Mediatization. Palgrave Macmillan. pp. 155–176.
+
+305. ^ Cappella, Joseph N.; Jamieson, Kathleen Hall (1997). Spiral of cynicism: The press and the public good. Oxford University Press.
+
+306. ^ a b Vreese, Claes H. de (2014). "Mediatization of News: The Role of Journalistic Framing". In Esser, Frank; Strömbäck, Jesper (eds.). Mediatization of politics: Understanding the transformation of Western democracies. Springer. pp. 137–155.
+
+307. ^ a b Esser, Frank; Matthes, Jörg (2013). "Mediatization Effects on Political News, Political Actors, Political Decisions, and Political Audiences". In Kriesi, Hanspeter; Esser, Frank; Bühlmann, Marc (eds.). Democracy in the Age of Globalization and Mediatization. Palgrave Macmillan. pp. 177–201.
+
+308. ^ Baum, Matthew A. (2003). Soft news goes to war. Public opinion and american foreign policy in the new media era. Princeton University Press.
+
+309. ^ Altheide, David L. (2002). Creating fear: News and the construction of crisis. Aldine de Gruyter. ISBN 978-1-138-52143-8.
+
+310. ^ a b Altheide, David L. (2014). Media edge: Media logic and social reality. Peter Lang.
+
+311. ^ Esaiasson, Peter; Wlezien, Christopher (2017). "Advances in the Study of Democratic Responsiveness: An Introduction". Comparative Political Studies. 50 (6): 699–710. doi:10.1177/0010414016633226. S2CID 155126179.
+
+312. ^ Nielsen, Rasmus Kleis (2016). "The Business of News". In Witschge, Tamara; Anderson, Christopher William; Domingo, David; Hermida, Alfred (eds.). The SAGE Handbook of Digital Journalism. Sage. pp. 51–67.
+
+313. ^ Cinelli, Matteo; Morales, Gianmarco De Francisci; Galeazzi, Alessandro; Quattrociocchi, Walter; Starnini, Michele (2021). "The echo chamber effect on social media". Proceedings of the National Academy of Sciences. 18 (9): e2023301118. Bibcode:2021PNAS..11823301C. doi:10.1073/pnas.2023301118. PMC 7936330. PMID 33622786.
+
+314. ^ a b McCoy, Jennifer; Somer, Murat (2019). "Toward a Theory of Pernicious Polarization and How It Harms Democracies: Comparative Evidence and Possible Remedies". The Annals of the American Academy of Political and Social Science. 681 (1): 234–271. doi:10.1177/0002716218818782. S2CID 150169330.
+
+315. ^ Cushion, Stephen (2012). The Democratic Value of News: Why Public Service Media Matter. Macmillan.
+
+316. ^ Cushion, Stephen; Franklin, Bob (2015). "Public Service Broadcasting: Markets and Vulnerable Values in Broadcast and Print Journalism". In Coleman, Stephen; Moss, Giles; Parry, Katy; Halperin, John; Ryan, Michael (eds.). Can the Media Serve Democracy?: Essays in Honour of Jay G. Blumler. Springer. pp. 65–75.
+
+317. ^ Buckley, Steve; Duer, Kreszentia; Mendel, Toby; Siochrú, Seán Ó (2008). Broadcasting, voice, and accountability: A public interest approach to policy, law, and regulation. World Bank and University of Michigan Press.
+
+318. ^ a b Gunther, Richard; Mugham, Anthony (2000). "The Political Impact of the Media: A Reassessment". In Gunther, Richard; Mugham, Anthony (eds.). Democracy and the Media: A Comparative Perspective. Cambridge University Press. pp. 402–448.
+
+319. ^ Pickard, Victor (2020). "The Public Media Option: Confronting Policy Failure in an Age of Misinformation". In Bennett, W. Lance; Livingston, Steven (eds.). The Disinformation Age: Politics, Technology, and Disruptive Communication in the United States. Cambridge University Press. pp. 238–258.
+
+320. ^ Udris, Linards; Lucht, Jens (2014). "Mediatization at the Structural Level: Independence from Politics, Dependence on the Market". In Esser, Frank; Strömbäck, Jesper (eds.). Mediatization of politics: Understanding the transformation of Western democracies. Springer. pp. 114–136.
+
+321. ^ Thoday, Jon (2018). "Public Service Television and the Crisis of Content". In Freedman, Des; Goblot, Vana (eds.). A Future for Public Service Television. MIT Press. pp. 29–39.
+
+322. ^ Schulz, Winfried (2014). "Mediatization and New Media". In Esser, Frank; Strömbäck, Jesper (eds.). Mediatization of politics: Understanding the transformation of Western democracies. Springer. pp. 114–136.
+
+323. ^ a b Zhuravskaya, Ekaterina; Petrova, Maria; Enikolopov, Ruben (2020). "Political effects of the internet and social media". Annual Review of Economics. 12: 415–438. doi:10.1146/annurev-economics-081919-050239. S2CID 219769484.
+
+324. ^ Voltmer, Katrin; Sorensen, Lone (2019). "Media, Power, Citizenship: The Mediatization of Democratic Change". In Voltmer, Katrin; et al. (eds.). Media, Communication and the Struggle for Democratic Change. Palgrave Macmillan. pp. 35–58.
+
+325. ^ Vosoughi, Soroush; Roy, Deb; Aral, Sinan (2018). "The spread of true and false news online" (PDF). Science. 359 (6380): 1146–1151. Bibcode:2018Sci...359.1146V. doi:10.1126/science.aap9559. PMID 29590045. S2CID 4549072. Archived from the original (PDF) on 29 April 2019. Retrieved 12 October 2021.
+
+326. ^ a b Prooijen, Jan-Willem van; Ligthart, Joline; Rosema, Sabine (2021). "The entertainment value of conspiracy theories". British Journal of Psychology. 113 (1): 25–48. doi:10.1111/bjop.12522. PMC 9290699. PMID 34260744.
+
+327. ^ Egorov, Georgy; Sonin, Konstantin (2020). The political economics of non-democracy. National Bureau of Economic Research. NBER Working Paper No. w27949.
+
+### Works cited
+- Clarke, P.; Foweraker, J. (2001). Encyclopedia of Democratic Thought. Taylor & Francis. ISBN 978-0-415-19396-2.
+- Graeber, David (2013). The Democracy Project : a history, a crisis, a movement. New York. ISBN 978-0-8129-9356-1. OCLC 769425385.{{cite book}}:  CS1 maint: location missing publisher (link)
+- Livy; De Sélincourt, A.; Ogilvie, R. M.; Oakley, S. P. (2002). The early history of Rome: books I-V of The history of Rome from its foundations. Penguin Classics. ISBN 978-0-14-044809-2.
+- Mann, Barbara A.; Fields, Jerry L. (1997). "A Sign in the Sky: Dating the League of the Haudenosaunee". American Indian Culture and Research Journal. 21 (2): 105–163. doi:10.17953/aicr.21.2.k36m1485r3062510 (inactive 15 September 2024).{{cite journal}}:  CS1 maint: DOI inactive as of September 2024 (link)
+- Ober, J.; Hedrick, C.W. (1996). Dēmokratia: a conversation on democracies, ancient and modern. Princeton University Press. ISBN 978-0-691-01108-0.
+- Raaflaub, Kurt A.; Ober, Josiah; Wallace, Robert W (2007). Origins of Democracy in Ancient Greece. University of California Press. ISBN 978-0-520-24562-4.
+## Further reading
+- Cartledge, Paul (2016). Democracy: A Life. Oxford University Press. ISBN 978-0199697670.
+- Provost, Claire; Kennard, Matt (2023). Silent Coup: How Corporations Overthrew Democracy. Bloomsbury Academic. ISBN 978-1350269989.
+- Biagini, Eugenio (general editor). 2021. A Cultural History of Democracy, 6 Volumes New York : Bloomsbury Academic.
+- Taylor, Astra (2019). Democracy May Not Exist, but We'll Miss It When It's Gone. Metropolitan Books. ISBN 978-1250179845.
+- Przeworski, Adam (2018) Why Bother With Elections? Cambridge, UK: Polity Press.
+- Munck, Gerardo L. (2016) "What is Democracy? A Reconceptualization of the Quality of Democracy". Democratization 23(1): 1–26.
+- Fuller, Roslyn (2015). Beasts and Gods: How Democracy Changed Its Meaning and Lost its Purpose. London: Zed Books. p. 371. ISBN 978-1-78360-542-2.
+## External links
+- Resources in your library
+- Democracy at the Stanford Encyclopedia of Philosophy
+- Podcast: Democracy Paradox, hundreds of interviews with democracy experts around the world
+- Classical Greece
+- Democracy
+- Elections
+- Types of democracy
+- Webarchive template wayback links
+- Wikipedia articles needing page number citations from July 2014
+- CS1 Polish-language sources (pl)
+- CS1: long volume value
+- CS1 errors: generic title
+- Articles with short description
+- Short description matches Wikidata
+- Use dmy dates from April 2022
+- Use British English from December 2015
+- Pages using sidebar with the child parameter
+- Articles containing Ancient Greek (to 1453)-language text
+- Articles containing Latin-language text
+- Articles containing potentially dated statements from 2022
+- All articles containing potentially dated statements
+- Wikipedia articles needing page number citations from August 2022
+- All articles with unsourced statements
+- Articles with unsourced statements from May 2024
+- Articles contradicting other articles
+- Wikipedia articles in need of updating from March 2024
+- All Wikipedia articles in need of updating
+- All articles with failed verification
+- Articles with failed verification from January 2023
+- All articles that may have off-topic sections
+- Wikipedia articles that may have off-topic sections from March 2024
+- Articles with excerpts
+- Wikipedia articles in need of updating from February 2024
+- Articles with unsourced statements from February 2024
+- Wikipedia articles needing factual verification from August 2018
+- Articles with unsourced statements from August 2018
+- CS1 maint: location missing publisher
+- CS1 maint: DOI inactive as of September 2024
+- Commons category link is on Wikidata
+- Articles containing French-language text
+- Articles containing Hebrew-language text

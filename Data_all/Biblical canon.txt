@@ -1,0 +1,619 @@
+# Biblical canon
+Texts regarded as part of the Bible
+
+
+
+A biblical canon is a set of texts (also called "books") which a particular Jewish or Christian religious community regards as part of the Bible.
+
+The English word canon comes from the Greek κανών kanōn, meaning "rule" or "measuring stick". The use of the word "canon" to refer to a set of religious scriptures was first used by David Ruhnken, in the 18th century.[1]
+
+Various biblical canons have developed through debate and agreement on the part of the religious authorities of their respective faiths and denominations. Some books, such as the Jewish–Christian gospels, have been excluded from various canons altogether, but many disputed books are considered to be biblical apocrypha or deuterocanonical by many, while some denominations may consider them fully canonical. Differences exist between the Hebrew Bible and Christian biblical canons, although the majority of manuscripts are shared in common.
+
+Different religious groups include different books in their biblical canons, in varying orders, and sometimes divide or combine books. The Jewish Tanakh (sometimes called the Hebrew Bible) contains 24 books divided into three parts: the five books of the Torah ("teaching"); the eight books of the Nevi'im ("prophets"); and the eleven books of Ketuvim ("writings"). It is composed mainly in Biblical Hebrew, with portions in Aramaic. The Septuagint (in Koine Greek), which closely resembles the Hebrew Bible but includes additional texts, is used as the Christian Greek Old Testament, at least in some liturgical contexts. The first part of Christian Bibles is the Old Testament, which contains, at minimum, the 24 books of the Hebrew Bible divided into 39 (Protestant) or 46 (Catholic [including deuterocanonical works]) books that are ordered differently. The second part is the New Testament, almost always containing 27 books: the four canonical gospels, Acts of the Apostles, 21 Epistles or letters and the Book of Revelation. The Catholic Church and Eastern Christian churches hold that certain deuterocanonical books and passages are part of the Old Testament canon. The Eastern Orthodox, Oriental Orthodox, and Assyrian churches may have differences in their lists of accepted books.
+
+Some Christian groups have other canonical books (open canon) which are considered holy scripture but not part of the Bible.[2]
+
+## Jewish canons
+### Rabbinic Judaism
+Rabbinic Judaism (Hebrew: יהדות רבנית) recognizes the twenty-four books of the Masoretic Text, commonly called the Tanakh (תַּנַ"ךְ) or Hebrew Bible.[3] Evidence suggests that the process of canonization occurred between 200 BC and 200 AD, and a popular position is that the Torah was canonized c. 400 BC, the Prophets c. 200 BC, and the Writings c. 100 AD[4] perhaps at a hypothetical Council of Jamnia—however, this position is increasingly criticised by modern scholars.[5][6][7][8][9][10] According to Marc Zvi Brettler, the Jewish scriptures outside the Torah and the Prophets were fluid, with different groups seeing authority in different books.[11]
+
+The Book of Deuteronomy includes a prohibition against adding or subtracting (4:2, 12:32) which might apply to the book itself (i.e. a "closed book", a prohibition against future scribal editing) or to the instruction received by Moses on Mount Sinai.[12] The book of 2 Maccabees, itself not a part of the Jewish canon, describes Nehemiah (c. 400 BC) as having "founded a library and collected books about the kings and prophets, and the writings of David, and letters of kings about votive offerings" (2:13–15).
+
+The Book of Nehemiah suggests that the priest-scribe Ezra brought the Torah back from Babylon to Jerusalem and the Second Temple (8–9) around the same time period. Both 1 and 2 Maccabees suggest that Judas Maccabeus (c. 167 BC) likewise collected sacred books (3:42–50, 2:13–15, 15:6–9), indeed some scholars argue that the Hasmonean dynasty (140 BCE to 37 BCE) fixed the Jewish canon.[13]
+
+### Samaritan canon
+Another version of the Torah, in the Samaritan alphabet, also exists. This text is associated with the Samaritans (Hebrew: שומרונים; Arabic: السامريون), a people of whom the Jewish Encyclopedia states: "Their history as a distinct community begins with the taking of Samaria by the Assyrians in 722 BC."[14]
+
+The Samaritan Pentateuch's relationship to the Masoretic Text is still disputed. Some differences are minor, such as the ages of different people mentioned in genealogy, while others are major, such as a commandment to be monogamous, which appears only in the Samaritan version. More importantly, the Samaritan text also diverges from the Masoretic in stating that Moses received the Ten Commandments on Mount Gerizim—not Mount Sinai—and that it is upon Mount Gerizim that sacrifices to God should be made—not in Jerusalem. Scholars nonetheless consult the Samaritan version when trying to determine the meaning of text of the original Pentateuch, as well as to trace the development of text-families. Some scrolls among the Dead Sea scrolls have been identified as proto-Samaritan Pentateuch text-type.[15]
+
+Samaritans consider the Torah to be inspired scripture, but do not accept any other parts of the Bible—probably a position also held by the Sadducees.[16] They did not expand their canon by adding any Samaritan compositions. There is a Samaritan Book of Joshua; however, this is a popular chronicle written in Arabic and is not considered to be scripture. Other non-canonical Samaritan religious texts include the Memar Markah ("Teaching of Markah") and the Defter (Prayerbook)—both from the 4th century or later.[17]
+
+The people of the remnants of the Samaritans in modern-day Israel/Palestine retain their version of the Torah as fully and authoritatively canonical.[14] They regard themselves as the true "guardians of the Law". This assertion is only re-enforced by the claim of the Samaritan community in Nablus (an area traditionally associated with the ancient city of Shechem) to possess the oldest existing copy of the Torah—one that they believe to have been penned by Abisha, a grandson of Aaron.[18]
+
+## Christian canons
+The canon of the Catholic Church was affirmed by the Council of Rome (AD 382), the Synod of Hippo (AD 393), two of the Councils of Carthage (AD 397 and 419), the Council of Florence (AD 1431–1449) and finally, as an article of faith, by the Council of Trent (AD 1545–1563). Those established the Catholic biblical canon consisting of 46 books in the Old Testament and 27 books in the New Testament for a total of 73 books.[19][20][a][22]
+
+The canons of the Church of England and English Presbyterians were decided definitively by the Thirty-Nine Articles (1563) and the Westminster Confession of Faith (1647), respectively. The Synod of Jerusalem (1672) established additional canons that are widely accepted throughout the Eastern Orthodox Church.
+
+Various forms of Jewish Christianity persisted until around the fifth century, and canonized very different sets of books, including Jewish–Christian gospels which have been lost to history. These and many other works are classified as New Testament apocrypha by Pauline denominations.
+
+The Old and New Testament canons did not develop independently of each other and most primary sources for the canon specify both Old and New Testament books. For the biblical scripture for both Testaments, canonically accepted in major traditions of Christendom, see § Canons of various traditions.
+
+### Purpose of canon
+For churches which espouse sola scriptura it is necessary and critical to have a clear and complete list of the canonical books.[23] For churches which espouse sacred Tradition or Magisterium as well as Scripture, the issue can be more organic, as the Bible is an artifact of the church rather than vice versa. 
+
+Theologian William J. Abraham has suggested that in the primitive church and patristic period the "primary purpose in canonizing Scripture was to provide an authorized list of books for use in worship. The primary setting envisaged for the use of Scripture was not that of the science of theology, or that of the debates of scholars, but the spiritual nourishment of the people of God...the factor which ultimately carried the day (for what was in the canon) was actual usage in the Church."[24]: 140 
+
+### Early Church
+The Early Church used the Old Testament, namely the Septuagint (LXX)[25] among Greek speakers, with a canon perhaps as found in the Bryennios List or Melito's canon. The Apostles did not otherwise leave a defined set of new scriptures; instead, the New Testament developed over time.
+
+Writings attributed to the apostles circulated among the earliest Christian communities.  Possible apostolicity was a strong argument used to suggest the canonical status of a book.[24]: 141 
+
+The Pauline epistles were circulating in collected forms by the end of the 1st century AD. Justin Martyr, in the early 2nd century, mentions the "memoirs of the Apostles", which Christians (Greek: Χριστιανός) called "gospels", and which were considered to be authoritatively equal to the Old Testament.[26]
+
+Marcion of Sinope was the first Christian leader in recorded history (though later considered heretical) to propose and delineate a uniquely Christian canon[27] (c. 140). This included 10 epistles from Paul, as well as an edited version of the Gospel of Luke, which today is known as the Gospel of Marcion. By doing this, he established a particular way of looking at religious texts that persists in Christian thought today.[28]
+
+After Marcion, Christians began to divide texts into those that aligned well with the "canon" (meaning a measuring line, rule, or principle) of accepted theological thought and those that promoted heresy. This played a major role in finalizing the structure of the collection of works called the Bible. It has been proposed that the initial impetus for the proto-orthodox Christian project of canonization flowed from opposition to the list produced by Marcion.[28]
+
+
+A four-gospel canon (the Tetramorph) was asserted by Irenaeus (c. 130 – c. 202 AD) in the following quote:[29]
+It is not possible that the gospels can be either more or fewer in number than they are. For, since there are four-quarters of the earth in which we live, and four universal winds, while the church is scattered throughout all the world, and the 'pillar and ground' of the church is the gospel and the spirit of life, it is fitting that she should have four pillars breathing out immortality on every side, and vivifying men afresh [...] Therefore the gospels are in accord with these things ... For the living creatures are quadriform and the gospel is quadriform [...] These things being so, all who destroy the form of the gospel are vain, unlearned, and also audacious; those [I mean] who represent the aspects of the gospel as being either more in number than as aforesaid, or, on the other hand, fewer.
+Irenaeus additionally quotes from passages of all the books that would later be put in the New Testament canon except the Letter to Philemon, II Peter, III John, and the Epistle of Jude in Against Heresies, refers to the Shepherd of Hermas as "scripture"[30] and appears to regard I Clement as authoritative.
+
+By the early 3rd century, Christian theologians like Origen of Alexandria may have been using—or at least were familiar with—the same 27 books found in modern New Testament editions, though there were still disputes over the canonicity of some of the writings (see also Antilegomena).[31] Likewise by 200, the Muratorian fragment shows that there existed a set of Christian writings somewhat similar to what is now the New Testament, which included four gospels and argued against objections to them.[32] Thus, while there was a good measure of debate in the Early Church over the New Testament canon, the major writings were accepted by almost all Christians by the middle of the 3rd century.[33]
+
+### Eastern Church
+Origen of Alexandria (184/85–253/54), an early scholar involved in the codification of the biblical canon, had a thorough education both in Christian theology and in pagan philosophy, but was posthumously condemned at the Second Council of Constantinople in 553 since some of his teachings were considered to be heresy. Origen's canon included all of the books in the current New Testament canon except for four books: James, 2nd Peter, and the 2nd and 3rd epistles of John.[34]
+
+He also included the Shepherd of Hermas which was later rejected. The religious scholar Bruce Metzger described Origen's efforts, saying "The process of canonization represented by Origen proceeded by way of selection, moving from many candidates for inclusion to fewer."[35]
+
+In his Easter letter of 367, Patriarch Athanasius of Alexandria gave a list of exactly the same books that would become the New Testament–27 book–proto-canon,[36] and used the phrase "being canonized" (kanonizomena) in regard to them.[37]
+
+In 331, Constantine I commissioned Eusebius to deliver fifty Bibles for the Church of Constantinople. Athanasius[38] recorded Alexandrian scribes around 340 preparing Bibles for Constans. Little else is known, though there is plenty of speculation. For example, it is speculated that this may have provided motivation for canon lists, and that Codex Vaticanus and Codex Sinaiticus are examples of these Bibles. Those codices contain almost a full version of the Septuagint; Vaticanus lacks only 1–3 Maccabees and Sinaiticus lacks 2–3 Maccabees, 1 Esdras, Baruch and Letter of Jeremiah.[39] Together with the Peshitta and Codex Alexandrinus, these are the earliest extant Christian Bibles.[40]
+
+There is no evidence among the canons of the First Council of Nicaea of any determination on the canon; however, Jerome (347–420), in his Prologue to Judith, makes the claim that the Book of Judith was "found by the Nicene Council to have been counted among the number of the Sacred Scriptures".[41]
+
+The Eastern Churches had, in general, a weaker feeling than those in the West for the necessity of making sharp delineations with regard to the canon. They were more conscious of the gradation of spiritual quality among the books that they accepted (for example, the classification of Eusebius, see also Antilegomena) and were less often disposed to assert that the books which they rejected possessed no spiritual quality at all. For example, the Trullan Synod of 691–692, which Pope Sergius I (in office 687–701) rejected[42] (see also Pentarchy), endorsed the following lists of canonical writings: the Apostolic Canons (c. 385), the Synod of Laodicea (c. 363), the Third Synod of Carthage (c. 397), and the 39th Festal Letter of Athanasius (367).[43] And yet, these lists do not agree. Similarly, the New Testament canons of the Syriac, Armenian, Egyptian Coptic and Ethiopian Churches all have minor differences, yet five of these Churches are part of the same communion and hold the same theological beliefs.[44]
+
+The Peshitta is the standard version of the Bible for churches in the Syriac tradition. Most of the deuterocanonical books of the Old Testament are found in the Syriac, and the Wisdom of Sirach is held to have been translated from the Hebrew and not from the Septuagint.[45] This New Testament, originally excluding certain disputed books (2 Peter, 2 John, 3 John, Jude, Revelation), had become a standard by the early 5th century. The five excluded books were added in the Harklean Version (616 AD) of Thomas of Harqel.[46]
+
+The standard United Bible Societies 1905 edition of the New Testament of the Peshitta was based on editions prepared by Syriacists Philip E. Pusey (d. 1880), George Gwilliam (d. 1914) and John Gwyn.[47] All twenty seven books of the common western New Testament are included in this British & Foreign Bible Society's 1905 Peshitta edition.
+
+### Western Church
+The first Council that accepted the present Catholic canon (the Canon of Trent of 1546) may have been the Synod of Hippo Regius, held in North Africa in 393. A brief summary of the acts was read at and accepted by the Council of Carthage (397) and also the Council of Carthage (419).[48] These Councils took place under the authority of Augustine of Hippo (354–430), who regarded the canon as already closed.[49]
+
+Augustine of Hippo declared without qualification that one is to "prefer those that are received by all Catholic Churches to those which some of them do not receive" (On Christian Doctrines 2.12). In the same passage, Augustine asserted that these dissenting churches should be outweighed by the opinions of "the more numerous and weightier churches", which would include Eastern Churches, the prestige of which Augustine stated moved him to include the Book of Hebrews among the canonical writings, though he had reservation about its authorship.[50]
+
+Philip Schaff says that "the council of Hippo in 393, and the third (according to another reckoning the sixth) council of Carthage in 397, under the influence of Augustine, who attended both, fixed the catholic canon of the Holy Scriptures, including the Apocrypha of the Old Testament, ... This decision of the transmarine church however, was subject to ratification; and the concurrence of the Roman see it received when Innocent I and Gelasius I (414 AD) repeated the same index of biblical books. This canon remained undisturbed till the sixteenth century, and was sanctioned by the council of Trent at its fourth session."[51] According to Lee Martin McDonald, the Revelation was added to the list in 419.[48] These councils were convened under the influence of Augustine of Hippo, who regarded the canon as already closed.[52][53][54]
+
+Pope Damasus I's Council of Rome in 382 (if the Decretum is correctly associated with it) issued a biblical canon identical to that mentioned above.[36] Likewise, Damasus' commissioning of the Latin Vulgate edition of the Bible, c. 383, proved instrumental in the fixation of the canon in the West.[55]
+
+In a letter (c. 405) to Exsuperius of Toulouse, a Gallic bishop, Pope Innocent I mentioned the sacred books that were already received in the canon.[56] When bishops and Councils spoke on the matter of the Biblican canon, however, they were not defining something new, but instead "were ratifying what had already become the mind of the Church".[57] Thus from the 4th century there existed unanimity in the West concerning the New Testament canon as it is today,[58] with the exception of the Book of Revelation. In the 5th century the East too, with a few exceptions, came to accept the Book of Revelation and thus came into harmony on the matter of the New Testament canon.[59]
+
+As the primary canon crystallised, non-canonical texts fell into relative disfavour and neglect.[60]
+
+Before the Protestant Reformation, the Council of Florence (1439–1443) took place. With the approval of this ecumenical council, Pope Eugenius IV (in office 1431–1447) issued several papal bulls (decrees) with a view to restoring the Eastern churches, which the Catholic Church considered as schismatic bodies, into communion with Rome. Catholic theologians regard these documents as infallible statements of Catholic doctrine. The Decretum pro Jacobitis contains a complete list of the books received by the Catholic Church as inspired, but omits the terms "canon" and "canonical". The Council of Florence therefore taught the inspiration of all the Scriptures, but did not formally pronounce itself on canonicity.[61][62]
+
+Luther proposed that the genuine mark of canonical material was that it preached Christ.[24]: 147  This allowed him to relegate books (including ones that may not have supported his theology) to a secondary status. 
+
+Martin Luther (1483–1546) moved seven Old Testament books (Tobit, Judith, 1–2 Maccabees, Book of Wisdom, Sirach, and Baruch) into a section he called the "Apocrypha, that are books which are not considered equal to the Holy Scriptures, but are useful and good to read".[63]
+
+All of these apocrypha are called anagignoskomena by the Eastern Orthodox Church per the Synod of Jerusalem.
+
+As with the Lutheran Churches,[64] the Anglican Communion accepts "the Apocrypha for instruction in life and manners, but not for the establishment of doctrine",[65] and many "lectionary readings in The Book of Common Prayer are taken from the Apocrypha", with these lessons being "read in the same ways as those from the Old Testament".[66] The Protestant Apocrypha contains three books (3 Esdras, 4 Esdras and the Prayer of Manasseh) that are accepted by many Eastern Orthodox Churches and Oriental Orthodox Churches as canonical, but are regarded as non-canonical by the Catholic Church and are therefore not included in modern Catholic Bibles.[67]
+
+Anabaptists use the Luther Bible, which contains the intertestamental books; Amish wedding ceremonies include "the retelling of the marriage of Tobias and Sarah in the Apocrypha".[68] The fathers of Anabaptism, such as Menno Simons, quoted "them [the Apocrypha] with the same authority and nearly the same frequency as books of the Hebrew Bible" and the texts regarding the martyrdoms under Antiochus IV in 1 Maccabees and 2 Maccabees are held in high esteem by the Anabaptists, who historically faced persecution.[69]
+
+Lutheran and Anglican lectionaries continue to include readings from the Apocrypha.[70]
+
+In response to Martin Luther's demands, the Council of Trent on 8 April 1546 approved the present Catholic Bible canon, which includes the deuterocanonical books, and the decision was confirmed by an anathema by vote (24 yea, 15 nay, 16 abstain).[71] The council confirmed the same list as produced at the Council of Florence in 1442,[72] Augustine's 397–419 Councils of Carthage,[51] and probably Damasus' 382 Council of Rome.[36][73] The Old Testament books that had been rejected by Luther were later termed "deuterocanonical", not indicating a lesser degree of inspiration, but a later time of final approval. The Sixto-Clementine Vulgate contained in the Appendix several books considered as apocryphal by the council: Prayer of Manasseh, 3 Esdras, and 4 Esdras.[74]
+
+Several Protestant confessions of faith identify the 27 books of the New Testament canon by name, including the French Confession of Faith (1559),[75] the Belgic Confession (1561), and the Westminster Confession of Faith (1647). The Second Helvetic Confession (1562), affirms "both Testaments to be the true Word of God" and appealing to Augustine's De Civitate Dei, it rejected the canonicity of the Apocrypha.[76] The Thirty-Nine Articles, issued by the Church of England in 1563, names the books of the Old Testament, but not the New Testament. The Belgic Confession[77] and the Westminster Confession named the 39 books in the Old Testament and, apart from the aforementioned New Testament books, expressly rejected the canonicity of any others.[78]
+
+The Lutheran Epitome of the Formula of Concord of 1577 declared that the prophetic and apostolic Scriptures comprised the Old and New Testaments alone.[79] Luther himself did not accept the canonicity of the Apocrypha although he believed that its books were "Not Held Equal to the Scriptures, but Are Useful and Good to Read".[80] Lutheran and Anglican lectionaries continue to include readings from the Apocrypha.[70]
+
+Various books that were never canonized by any church, but are known to have existed in antiquity, are similar to the New Testament and often claim apostolic authorship, are known as the New Testament apocrypha. Some of these writings have been cited as scripture by early Christians, but since the fifth century a widespread consensus has emerged limiting the New Testament to the 27 books of the modern canon.[81][82] Thus Roman Catholic, Eastern Orthodox and Protestant churches generally do not view these New Testament apocrypha as part of the Bible.[82]
+
+## Canons of various Christian traditions
+Final dogmatic articulations of the canons were made at the Council of Trent of 1546 for Roman Catholicism.[83]
+
+### Old Testament
+Another set of books, largely written during the intertestamental period, are called the deuterocanon ("second canon") by Catholics, the deuterocanon or anagignoskomena ("worthy of reading") by Eastern Orthodox Churches, and the biblical apocrypha ("hidden things") by Protestants. These are works recognized by the Catholic, Eastern Orthodox, and Oriental Orthodox Churches as being part of scripture (and thus deuterocanonical rather than apocryphal), but Protestants do not recognize them as divinely inspired. Some Protestant Bibles—especially the English King James Bible and the Lutheran Bible—include an "Apocrypha" section.
+
+Many denominations recognize deuterocanonical books as good, but not on the level of the other books of the Bible. Anglicanism considers the apocrypha worthy of being "read for example of life" but not to be used "to establish any doctrine".[84] Luther made a parallel statement in calling them "not considered equal to the Holy Scriptures, but [...] useful and good to read."[85]
+
+Additionally, while the books of Jubilees and Enoch are fairly well known among western scholars, 1, 2, and 3 Meqabyan are not. The three books of Meqabyan are often called the "Ethiopian Maccabees", but are completely different in content from the books of Maccabees that are known or have been canonized in other traditions. Finally, the Book of Joseph ben Gurion, or Pseudo-Josephus, is a history of the Jewish people thought to be based upon the writings of Josephus.[note 1] The Ethiopic version (Zëna Ayhud) has eight parts and is included in the Orthodox Tewahedo broader canon.[note 2][86]
+
+Some ancient copies of the Peshitta used in the Syriac tradition include 2 Baruch (divided into the Apocalypse of Baruch and the Letter of Baruch; some copies only include the Letter) and the non-canonical Psalms 152–155.
+
+The Ethiopian Tewahedo church accepts all of the deuterocanonical books of Catholicism and anagignoskomena of Eastern Orthodoxy except for the four Books of Maccabees.[87] It accepts the 39 protocanonical books along with the following books, called the "narrow canon".[88] The enumeration of books in the Ethiopic Bible varies greatly between different authorities and printings.[89]
+
+Protestants and Catholics[90] use the Masoretic Text of the Jewish Tanakh as the textual basis for their translations of the protocanonical books (those accepted as canonical by both Jews and all Christians), with various changes derived from a multiplicity of other ancient sources (such as the Septuagint, the Vulgate, the Dead Sea Scrolls, etc.), while generally using the Septuagint and Vulgate, now supplemented by the ancient Hebrew and Aramaic manuscripts, as the textual basis for the deuterocanonical books.
+
+Eastern Orthodoxy uses the Septuagint (translated in the 3rd century BCE) as the textual basis for the entire Old Testament in both protocanonical and deuteroncanonical books—to use both in the Greek for liturgical purposes, and as the basis for translations into the vernacular.[91][92] Most of the quotations (300 of 400) of the Old Testament in the New Testament, while differing more or less from the version presented by the Masoretic text, align with that of the Septuagint.[93]
+
+Marcionism rejects the Old Testament entirely; Marcion considered the Old Testament and New Testament gods to be different entities.
+
+The order of some books varies among canons.
+
+
+The table uses the spellings and names present in modern editions of the Bible, such as the New American Bible Revised Edition, Revised Standard Version and English Standard Version. The spelling and names in both the 1609–1610 Douay Old Testament (and in the 1582 Rheims New Testament) and the 1749 revision by Bishop Challoner (the edition currently in print used by many Catholics, and the source of traditional Catholic spellings in English) and in the Septuagint differ from those spellings and names used in modern editions that derive from the Hebrew Masoretic text.[100]
+
+The King James Version references some of these books by the traditional spelling when referring to them in the New Testament, such as "Esaias" (for Isaiah). In the spirit of ecumenism more recent Catholic translations (e.g., the New American Bible, Jerusalem Bible, and ecumenical translations used by Catholics, such as the Revised Standard Version Catholic Edition) use the same "standardized" (King James Version) spellings and names as Protestant Bibles (e.g., 1 Chronicles, as opposed to the Douay 1 Paralipomenon, 1–2 Samuel and 1–2 Kings, instead of 1–4 Kings) in the protocanonicals.
+
+The Talmud in Bava Batra 14b gives a different order for the books in Nevi'im and Ketuvim. This order is also quoted in Mishneh Torah Hilchot Sefer Torah 7:15. The order of the books of the Torah are universal through all denominations of Judaism and Christianity.
+
+1. ^ The canon followed by the Masoretic Text is adhered to by modern Jews and is known as the Protocanon among Christians, but "it is now recognized that only 2 Maccabees, and additions to Esther (13,1) were written in Greek. And the notion of Greek: diaspora/Hebrew: Palestine in matters of canon has been controverted by clear evidence of the circulation of the Septuagint in Palestine..." see: Sundberg Jr, Albert C. "The" Old Testament": A Christian Canon." The Catholic Biblical Quarterly (1968): 143-155, p.145.
+
+2. ^ The term "Protestant" is used loosely here to include most Western non-Roman Catholic churches but not Anglicans. Most Christians in this category include only the protocanon, but there are "churches that include the Apocrypha or Deuterocanonical writings in their Bibles [which] generally follow the R-H LXX edition", see: Lee Martin McDonald, "A Canonical History of the Old Testament Apocrypha." The Oxford Handbook of the Apocrypha (2021): 24, p.45.
+
+3. ^ Edmon L. Gallagher and John D. Meade. The biblical canon lists from early Christianity: Texts and analysis. (Oxford: OUP, 2017), pp.xx-xxii.
+
+4. ^ Articles of Religion 1571, The Church of England. Available at: https://www.churchofengland.org/prayer-and-worship/worship-texts-and-resources/book-common-prayer/articles-religion#VII (Accessed: 07 November 2023).
+
+5. ^ The Roman Catholic Canon as represented in this table reflects the Latin tradition. Some Eastern Rite churches who are in fellowship with the Roman Catholic Church may have different books in their canons.
+
+6. ^ Edmon L. Gallagher and John D. Meade. The biblical canon lists from early Christianity: Texts and analysis. (Oxford: OUP, 2017), pp.xx-xxii.
+
+7. ^ "The Old Testament, as it functions in the Russian Orthodox Church, contains the thirty-nine books which are part of what other traditions call the Protocanon, as well as eleven other books...[:] "2 Ездры" (3 Esdras in the Vulgate; 'Εσδρας Α' in the Septuagint), Tobit, Judith, Wisdom of Solomon, Sirach (Ecclesiasticus), Letter of Jeremiah, Baruch, 1, 2, and 3 Maccabees, and finally "3 Ездры" (4 Esdras in the Vulgate). To these books should be added the non-canonical sections of Daniel (i.e., Song of the Three Young Men, Susanna, Bel and the Dragon), Esther, Psalms (i.e., Ps 151), and the Prayer of Manasseh placed at the end of 2 Chronicles. These sections are not included separately, but as part of these respective books." See: Lénart J. De Regt, "Canon and Biblical Text in the Slavonic Tradition in Russia." The Bible Translator 67.2 (2016): 223-239, pp.223-224.
+
+8. ^ Anna Kharanauli, "The Georgian Canon." Textual history of the Bible; Volume 2A: The deuterocanonical scriptures: Overview articles (2020): 258-268.
+
+9. ^ The growth and development of the Armenian Biblical canon is complex. Extra-canonical Old Testament books appear in historical canon lists and recensions that are either exclusive to this tradition, or where they do exist elsewhere, never achieved the same status. See: Michael E. Stone, "Armenian Canon Lists I—the Council of Partaw (768 CE)." Harvard Theological Review 66.4 (1973): 479-486; Michael E. Stone, "Armenian Canon Lists II—The Stichometry of Anania of Shirak (c. 615-c. 690 CE.)." Harvard Theological Review 68.3-4 (1975): 253-260. Michael E. Stone, "Armenian Canon Lists III—The Lists of Mechitar of Ayrivankʿ (c. 1285 CE)." Harvard Theological Review 69.3-4 (1976): 289-300 Michael E. Stone, "Armenian Canon Lists IV—The List of Gregory of Tatʿew (14th Century)." Harvard Theological Review 72.3-4 (1979): 237-244;  Michael E. Stone, "Armenian Canon Lists V—Anonymous Texts." Harvard Theological Review 83.2 (1990): 141-161; Michael E. Stone, "Armenian Canon Lists VI—Hebrew Names and Other Attestations." Harvard Theological Review 94.4 (2001): 477-491. Michael E. Stone, "Armenian Canon Lists VII: The Poetic List of Aṙak 'el of Siwnik '(d. 1409)." Harvard Theological Review 104.3 (2011): 367-379.
+
+10. ^ "The disputed books are often grouped together at the end of their OT canon (cf. ms. Sinai Syr. 10) including 1-4 Maccabees, Judith, Wisdom, 3 Esdras, and Ben Sirach, but the Syrian canon varies in the three Bibles from which subsequent editions are based." See: Lee Martin McDonald, "A Canonical History of the Old Testament Apocrypha." The Oxford Handbook of the Apocrypha (2021): 24, p.45.
+
+11. ^ The Church of the East "persisted in using the shorter canon" and the Syriac Deuterocanonicals were not included in Lamsa's translation, though he admitted that "Apocryphal books are [usually] included in the text, they are looked upon as a sacred literature, even though they are not as_commonly used as the others." See: Ron Grove, Canon and community: authority in the history of religions University of California, Santa Barbara, 1983, p.160. It should also be noted that "...conversion to Christianity started after most books were translated, but before the translation of Ezra, Nehemiah and Chronicles... When later converts brought the last books, "there were those in the church who considered that the limits of the Old Testament in Syriac had already been defined" (Weitzman, 1999, p.261). These last books never attained the same status in the Church of the East as the earlier books of the Old Testament." See: Henk Prenger, "The History of the Church of the East." Biola ISCL 742 (2010), p,54
+
+12. ^ a b c d e f g h i j k l m n o p q r This book may be included in some of the modern published popular Protestant Bibles like the: CEB, ESV, KJV, MSG, NLT, NEB, NRSV, REB, and RSV publications as (Apocrypha/Deuterocanonical books) or included in CE (Catholic Edition) versions of these Bibles
+
+13. ^ a b The English Apocrypha includes the Prayer of Manasseh, 1 & 2 Esdras, the Additions to Esther, Tobit, Judith, 1 & 2 Maccabees, the Book of Wisdom, Sirach, Baruch, the Letter of Jeremiah, and the Additions to Daniel. The Lutheran Apocrypha omits from this list 1 & 2 Esdras. Some Protestant Bibles include 3 Maccabees as part of the Apocrypha. However, many churches within Protestantism—as it is presented here—reject the Apocrypha, do not consider it useful, and do not include it in their Bibles.
+
+14. ^ a b c The Prayer of Manasseh is included as part of the Book of Odes, which follows the Psalms in Eastern Orthodox Bibles. The rest of the Book of Odes consists of passages found elsewhere in the Bible. It may also be found at the end of 2 Chronicles (2 Paralipomenon)
+
+15. ^ a b c 2 Ezra, 3 Ezra, and 3 Maccabees are included in Bibles and have an elevated status within the Armenian scriptural tradition, but are considered "extra-canonical".
+
+16. ^ a b In many eastern Bibles, the Apocalypse of Ezra is not an exact match to the longer Latin Esdras–2 Esdras in KJV or 4 Esdras in the Vulgate—which includes a Latin prologue (5 Ezra) and epilogue (6 Ezra). However, a degree of uncertainty continues to exist here, and it is certainly possible that the full text—including the prologue and epilogue—appears in Bibles and Biblical manuscripts used by some of these eastern traditions. Also of note is the fact that many Latin versions are missing verses 7:36–7:106. (A more complete explanation of the various divisions of books associated with the scribe Ezra may be found in the Wikipedia article entitled "Esdras".)
+
+17. ^ Evidence strongly suggests that a Greek manuscript of 4 Ezra once existed; this furthermore implies a Hebrew origin for the text.
+
+18. ^ a b In Eastern Orthodox Churches, including the Georgian Orthodox Church, Ecumenical Councils are the highest written determining church authority on the lists of Biblical books. Canon 2 of the Quinisext Council, held in Trullo and affirmed by the Eastern Orthodox Churches, listed and affirmed biblical canon lists, such as the list in Canon 85 of the Canons of the Apostles. Trullo's Biblical Canon lists affirmed documents such as 1-3 Maccabees, but neither Slavonic 3 Esdra/Ezra (AKA Vulgate "4 Ezra/Esdras"), nor 4 Maccabees. Source: Canon 2, Council of Trullo, https://www.newadvent.org/fathers/3814.htm 
+Georgian Orthodox Bibles apparently tend to include Slavonic 3 Esdra/Ezra and 4 Maccabees (both apocryphal). Contemporary Georgian Orthodox Bibles may mark them and the Deuterocanonical Books (eg. 1-3 Maccabees) as "noncanonical." See eg. "The Old Testament in Modern Georgian Language" on the following Georgian Orthodox website: https://orthodoxy.ge/tserili/biblia/sarchevi.htm
+
+19. ^ An early fragment of 6 Ezra is known to exist in the Greek language, implying a possible Hebrew origin for 2 Esdras 15–16.
+
+20. ^ Esther's placement within the canon was questioned by Luther. Others, like Melito, omitted it from the canon altogether.
+
+21. ^ a b The Latin Vulgate, Douay–Rheims, and Revised Standard Version Catholic Edition place First and Second Maccabees after Malachi; other Catholic translations place them after Esther.
+
+22. ^ 2 and 3 Meqabyan, though relatively unrelated in content, are often counted as a single book.
+
+23. ^ Some sources place Zëna Ayhud within the "narrower canon".
+
+24. ^ a b A Syriac version of Josephus's Jewish War VI appears in some Peshitta manuscripts as the "Fifth Book of Maccabees", which is clearly a misnomer.
+
+25. ^ Several varying historical canon lists exist for the Orthodox Tewahedo tradition. In one particular list Archived 10 August 2006 at the Wayback Machine found in a British Library manuscript (Add MS 16188), a book of Assenath is placed within the canon. This most likely refers to the book more commonly known as Joseph and Asenath. An unknown book of Uzziah is also listed there, which may be connected to the lost Acts of Uzziah referenced in 2 Chronicles 26:22.
+
+26. ^ Some traditions use an alternative set of liturgical or metrical Psalms.
+
+27. ^ In many ancient manuscripts, a distinct collection known as the Odes of Solomon is found together with the similar Psalms of Solomon.
+
+28. ^ The book of Sirach is usually preceded by a non-canonical prologue written by the author's grandson.
+
+29. ^ In the Latin Vulgate and Douay-Rheims, chapter 51 of Ecclesiasticus appears separately as the "Prayer of Joshua, son of Sirach".
+
+30. ^ A shorter variant of the prayer by King Solomon in 1 Kings 8:22–52 appeared in some medieval Latin manuscripts and is found in some Latin Bibles at the end of or immediately following Ecclesiasticus. The two versions of the prayer in Latin may be viewed online for comparison at the following website: BibleGateway.com: Sirach 52 / 1 Kings 8:22–52; Vulgate
+
+31. ^ The "Martyrdom of Isaiah" is prescribed reading to honor the prophet Isaiah within the Armenian Apostolic liturgy. While this likely refers to the account of Isaiah's death within the Lives of the Prophets, it may be a reference to the account of his death found within the first five chapters of the Ascension of Isaiah, which is widely known by this name. The two narratives have similarities and may share a common source.
+
+32. ^ The Ascension of Isaiah has long been known to be a part of the Orthodox Tewahedo scriptural tradition. Though it is not currently considered canonical, various sources attest to the early canonicity—or at least "semi-canonicity"—of this book.
+
+33. ^ In some Latin versions, chapter 5 of Lamentations appears separately as the "Prayer of Jeremiah".
+
+34. ^ a b c Ethiopic Lamentations consists of eleven chapters, parts of which are considered to be non-canonical.
+
+35. ^ The canonical Ethiopic version of Baruch has five chapters, but is shorter than the LXX text.
+
+36. ^ a b Some Ethiopic translations of Baruch may include the traditional Letter of Jeremiah as the sixth chapter.
+
+37. ^ The "Letter to the Captives" found within Säqoqawä Eremyas—and also known as the sixth chapter of Ethiopic Lamentations—may contain different content from the Letter of Jeremiah (to those same captives) found in other traditions.
+
+38. ^ a b The Letter of Baruch is found in chapters 78–87 of 2 Baruch—the final ten chapters of the book. The letter had a wider circulation and often appeared separately from the first 77 chapters of the book, which is an apocalypse.
+
+39. ^ Included here for the purpose of disambiguation, 3 Baruch is widely rejected as a pseudepigraphon and is not part of any Biblical tradition. Two manuscripts exist—a longer Greek manuscript with Christian interpolations and a shorter Slavonic version. There is some uncertainty about which was written first.
+
+40. ^ Bel and the Dragon, Susanna, and The Prayer of Azariah and Song of the Three Holy Children.
+
+### New Testament
+Other New Testament works that are generally considered apocryphal nonetheless appear in some Bibles and manuscripts. For instance, the Epistle to the Laodiceans was included in numerous Latin Vulgate manuscripts, in the eighteen German Bibles prior to Luther's translation, and also a number of early English Bibles, such as Gundulf's Bible and John Wycliffe's English translation—even as recently as 1728, William Whiston considered this epistle to be genuinely Pauline. Likewise, the Third Epistle to the Corinthians[note 3] was once considered to be part of the Armenian Orthodox Bible,[101] but is no longer printed in modern editions. Within the Syriac Orthodox tradition, the Third Epistle to the Corinthians also has a history of significance. Both Aphrahat and Ephraem of Syria held it in high regard and treated it as if it were canonical.[102]
+
+The Didache,[note 4] The Shepherd of Hermas,[note 5] and other writings attributed to the Apostolic Fathers, were once considered scriptural by various early Church fathers. They are still being honored in some traditions, though they are no longer considered to be canonical. However, certain canonical books within the Orthodox Tewahedo traditions find their origin in the writings of the Apostolic Fathers as well as the Ancient Church Orders. The Orthodox Tewahedo churches recognize these eight additional New Testament books in its broader canon. They are as follows: the four books of Sinodos, the two books of the Covenant, Ethiopic Clement, and the Ethiopic Didascalia.[103]
+
+1. ^ Edmon L. Gallagher and John D. Meade. The biblical canon lists from early Christianity: Texts and analysis. (Oxford: OUP, 2017), pp.xx-xxii.
+
+2. ^ Edmon L. Gallagher and John D. Meade. The biblical canon lists from early Christianity: Texts and analysis. (Oxford: OUP, 2017), pp.xx-xxii.
+
+3. ^ The growth and development of the Armenian Biblical canon is complex. Extra-canonical New Testament books appear in historical canon lists and recensions that are either distinct to this tradition, or where they do exist elsewhere, never achieved the same status. Some of the books are not listed in this table. These include the Prayer of Euthalius, the Repose of St. John the Evangelist, the Doctrine of Addai (some sources replace this with the Acts of Thaddeus), a reading from the Gospel of James (some sources replace this with the Apocryphon of James), the Second Apostolic Canons, the Words of Justus, Dionysius Aeropagite, the Acts of Peter (some sources replace this with the Preaching of Peter), and a Poem by Ghazar. (Various sources also mention undefined Armenian canonical additions to the Gospels of Mark and John, however, these may refer to the general additions—Mark 16:9–20 and John 7:53–8:11—discussed elsewhere in these notes.) A possible exception here to canonical exclusivity is the Second Apostolic Canons, which share a common source—the Apostolic Constitutions—with certain parts of the Orthodox Tewahedo New Testament broader canon.  The correspondence between King Agbar and Jesus Christ, which is found in various forms—including within both the Doctrine of Addai and the Acts of Thaddeus—sometimes appears separately. It is noteworthy that the Prayer of Euthalius and the Repose of St. John the Evangelist appear in the appendix of the 1805 Armenian Zohrab Bible. However, some of the aforementioned books, though they are found within canon lists, have nonetheless never been discovered to be part of any Armenian Biblical manuscript. See: Michael E. Stone, "Armenian Canon Lists I—the Council of Partaw (768 CE)." Harvard Theological Review 66.4 (1973): 479-486; Michael E. Stone, "Armenian Canon Lists II—The Stichometry of Anania of Shirak (c. 615-c. 690 CE.)." Harvard Theological Review 68.3-4 (1975): 253-260. Michael E. Stone, "Armenian Canon Lists III—The Lists of Mechitar of Ayrivankʿ (c. 1285 CE)." Harvard Theological Review 69.3-4 (1976): 289-300 Michael E. Stone, "Armenian Canon Lists IV—The List of Gregory of Tatʿew (14th Century)." Harvard Theological Review 72.3-4 (1979): 237-244;  Michael E. Stone, "Armenian Canon Lists V—Anonymous Texts." Harvard Theological Review 83.2 (1990): 141-161; Michael E. Stone, "Armenian Canon Lists VI—Hebrew Names and Other Attestations." Harvard Theological Review 94.4 (2001): 477-491. Michael E. Stone, "Armenian Canon Lists VII: The Poetic List of Aṙak 'el of Siwnik '(d. 1409)." Harvard Theological Review 104.3 (2011): 367-379.
+
+4. ^ a b c d e f The Peshitta excludes 2 John, 3 John, 2 Peter, Jude, and Revelation, but certain Bibles of the modern Syriac traditions include later translations of those books. Still today, the official lectionary followed by the Syriac Orthodox Church and the Assyrian Church of the East, present lessons from only the twenty-two books of Peshitta, the version to which appeal is made for the settlement of doctrinal questions.  According to the official Catechism of the Assyrian Church of the East, the books of 2 John, 3 John, 2 Peter, Jude, and Revelation are not accepted as part of the New Testament canon.  See: Catechism [of] The Holy Apostolic Catholic Assyrian Church of the East, pgs. 23-24
+
+5. ^ Though widely regarded as non-canonical, the Gospel of James obtained early liturgical acceptance among some Eastern churches and remains a major source for many of Christendom's traditions related to Mary, the mother of Jesus.
+
+6. ^ a b c d The Diatessaron, Tatian's gospel harmony, became a standard text in some Syriac-speaking churches down to the 5th century, when it gave-way to the four separate gospels found in the Peshitta.
+
+7. ^ a b c d Parts of these four books are not found in the most reliable ancient sources; in some cases, are thought to be later additions; and have therefore not historically existed in every Biblical tradition. They are as follows: Mark 16:9–20, John 7:53–8:11, the Comma Johanneum, and portions of the Western version of Acts. To varying degrees, arguments for the authenticity of these passages—especially for the one from the Gospel of John—have occasionally been made.
+
+8. ^ Skeireins, a commentary on the Gospel of John in the Gothic language, was included in the Wulfila Bible. It exists today only in fragments.
+
+9. ^ a b The Acts of Paul and Thecla and the Third Epistle to the Corinthians are portions of the greater Acts of Paul narrative, which is part of a stichometric catalogue of New Testament canon found in the Codex Claromontanus, but has survived only in fragments. Some of the content within these individual sections may have developed separately, however.
+
+10. ^ The Third Epistle to the Corinthians always appears as a correspondence; it also includes a short letter from the Corinthians to Paul.
+
+11. ^ The Epistle to the Laodiceans is present in some western non-Roman Catholic translations and traditions. Especially of note is John Wycliffe's inclusion of the epistle in his English translation, and the Quakers' use of it to the point where they produced a translation and made pleas for its canonicity (Poole's Annotations, on Col. 4:16). The epistle is nonetheless widely rejected by the vast majority of Protestants.
+
+12. ^ a b c d These four works were questioned or "spoken against" by Martin Luther, and he changed the order of his New Testament to reflect this, but he did not leave them out, nor has any Lutheran body since. Traditional German Luther Bibles are still printed with the New Testament in this changed "Lutheran" order. The vast majority of Protestants embrace these four works as fully canonical.
+
+13. ^ The Apocalypse of Peter, though not listed in this table, is mentioned in the Muratorian fragment and is part of a stichometric catalogue of New Testament canon found in the Codex Claromontanus. It was also held in high regard by Clement of Alexandria.
+
+14. ^ Other known writings of the Apostolic Fathers not listed in this table are as follows: the seven Epistles of Ignatius, the Epistle of Polycarp, the Martyrdom of Polycarp, the Epistle to Diognetus, the fragment of Quadratus of Athens, the fragments of Papias of Hierapolis, the Reliques of the Elders Preserved in Irenaeus, and the Apostles' Creed.
+
+15. ^ Though they are not listed in this table, the Apostolic Constitutions were considered canonical by some including Alexius Aristenus, John of Salisbury, and to a lesser extent, Grigor Tat'evatsi. They are even classified as part of the New Testament canon within the body of the Constitutions itself. Moreover, they are the source for a great deal of the content in the Orthodox Tewahedo broader canon.
+
+16. ^ a b c d e These five writings attributed to the Apostolic Fathers are not currently considered canonical in any Biblical tradition, though they are more highly regarded by some more than others. Nonetheless, their early authorship and inclusion in ancient Biblical codices, as well as their acceptance to varying degrees by various early authorities, requires them to be treated as foundational literature for Christianity as a whole.
+
+17. ^ a b Ethiopic Clement and the Ethiopic Didascalia are distinct from and should not be confused with other ecclesiastical documents known in the west by similar names.
+
+## See also
+- Religion portal
+- Canon (fiction)
+- List of religious texts
+- Related to the Bible
+Biblical criticism
+Canonical criticism
+Jewish apocrypha
+List of Old Testament pseudepigrapha
+Non-canonical gospels include:
+Gospel of Barnabas
+Gospel of Bartholomew
+Gospel of Basilides
+Gospel of Thomas
+List of Gospels
+New Testament apocrypha
+Pseudepigrapha
+Non-canonical books referenced in the Bible
+- Biblical criticism
+- Canonical criticism
+- Jewish apocrypha
+- List of Old Testament pseudepigrapha
+- Non-canonical gospels include:
+Gospel of Barnabas
+Gospel of Bartholomew
+Gospel of Basilides
+Gospel of Thomas
+List of Gospels
+- Gospel of Barnabas
+- Gospel of Bartholomew
+- Gospel of Basilides
+- Gospel of Thomas
+- List of Gospels
+- New Testament apocrypha
+- Pseudepigrapha
+- Non-canonical books referenced in the Bible
+- Canons of other religions
+Islamic holy books
+Canonization of Islamic scripture
+Avesta or Zoroastrian scriptures
+Yazidi holy texts
+Hindu scriptures
+Sikh scriptures or Adi Granth aka Guru Granth Sahib
+Tripiṭaka or Buddhist canon
+Pāli Canon
+Mahayana Canons
+Chinese classics
+Thirteen Classics or Confucian canon
+Ruzang
+Daozang or Taoist canon
+- Islamic holy books
+- Canonization of Islamic scripture
+- Avesta or Zoroastrian scriptures
+- Yazidi holy texts
+- Hindu scriptures
+- Sikh scriptures or Adi Granth aka Guru Granth Sahib
+- Tripiṭaka or Buddhist canon
+Pāli Canon
+Mahayana Canons
+- Pāli Canon
+- Mahayana Canons
+- Chinese classics
+- Thirteen Classics or Confucian canon
+Ruzang
+- Ruzang
+- Daozang or Taoist canon
+## Notes
+1. ^ Josephus's The Jewish War and Antiquities of the Jews are highly regarded by Christians because they provide valuable insight into 1st century Judaism and early Christianity. Moreover, in Antiquities, Josephus made two extra-Biblical references to Jesus, which have played a crucial role in establishing him as a historical figure.
+
+2. ^ The Orthodox Tewahedo broader canon in its fullest form—which includes the narrower canon in its entirety, as well as nine additional books—is not known to exist at this time as one published compilation. Some books, though considered canonical, are nonetheless difficult to locate and are not even widely available in Ethiopia. While the narrower canon has indeed been published as one compilation, there may be no real emic distinction between the broader canon and the narrower canon, especially in so far as divine inspiration and scriptural authority are concerned. The idea of two such classifications may be nothing more than etic taxonomic conjecture.
+
+3. ^ The Third Epistle to the Corinthians can be found as a section within the Acts of Paul, which has survived only in fragments. A translation of the entire remaining Acts of Paul can be accessed online at Early Christian Writings.
+
+4. ^ Various translations of the Didache can be accessed online at Early Christian Writings.
+
+5. ^ A translation of the Shepherd of Hermas can be accessed online at the Internet Sacred Texts Archive.
+
+## References
+### Notes
+1. ^ The Council of Trent confirmed the identical list/canon of sacred scriptures already anciently approved by the Synod of Hippo (Synod of 393), Council of Carthage, 28 August 397, and Council of Florence, 4 February 1442;[21] – Bull of Union with the Copts seventh paragraph down.
+
+### Citations
+1. ^ McDonald & Sanders (2002), pp. 11–13, Introduction—"We should be clear, however, that the current use of the term 'canon' to refer to a collection of scripture books was introduced by David Ruhnken in 1768 in his Historia critica oratorum graecorum for lists of sacred scriptures. While it is tempting to think that such usage has its origins in antiquity in reference to a closed collection of scriptures, such is not the case."
+
+2. ^ Zaman, Luc (31 May 2008). Bible and Canon: A Modern Historical Inquiry. Brill. pp. 45–49. ISBN 978-90-04-16743-8. Retrieved 26 May 2024.
+
+3. ^ For the number of books of the Hebrew Bible see: Darshan, G. (2012). "The Twenty-Four Books of the Hebrew Bible and Alexandrian Scribal Methods". In Niehoff, M. R. (ed.). Homer and the Bible in the Eyes of Ancient Interpreters: Between Literary and Religious Concerns. Leiden: Brill. pp. 221–244.
+
+4. ^ McDonald & Sanders (2002), p. 4.
+
+5. ^ W. M., Christie (1925). "The Jamnia Period in Jewish History" (PDF). Journal of Theological Studies. os–XXVI (104): 347–364. doi:10.1093/jts/os-XXVI.104.347.
+
+6. ^ Lewis, Jack P. (April 1964). "What Do We Mean by Jabneh?". Journal of Bible and Religion. 32 (2). Oxford University Press: 125–132. JSTOR 1460205.
+
+7. ^ Freedman, David Noel, ed. (1992). Anchor Bible Dictionary, Vol. III. New York: Doubleday. pp. 634–637.
+
+8. ^ Lewis, Jack P. (2002). "Jamnia Revisited". In McDonald, L. M.; Sanders, J. A. (eds.). The Canon Debate. Hendrickson Publishers.
+
+9. ^ McDonald & Sanders (2002), p. 5.
+
+10. ^ Cited are Neusner's Judaism and Christianity in the Age of Constantine, pp. 128–145, and Midrash in Context: Exegesis in Formative Judaism, pp. 1–22.
+
+11. ^ Brettler, Marc Zvi (2005). How To Read The Bible. Jewish Publication Society. pp. 274–275. ISBN 978-0-8276-1001-9.
+
+12. ^ Blenkinsopp, Joseph (2002). "The Formation of the Hebrew Canon: Isaiah as a Test Case". In McDonald, L. M.; Sanders, J. A. (eds.). The Canon Debate. Hendrickson Publishers. p. 60.
+
+13. ^ Davies, Philip R. (2002). "The Jewish Scriptural Canon in Cultural Perspective". In McDonald, L. M.; Sanders, J. A. (eds.). The Canon Debate. Hendrickson Publishers. p. 50. With many other scholars, I conclude that the fixing of a canonical list was almost certainly the achievement of the Hasmonean dynasty.
+
+14. ^ a b "Samaritans". Jewish Encyclopedia. JewishEncyclopedia.com. 1906.
+
+15. ^ VanderKam, James C. (2002). "Questions of Canon through the Dead Sea Scrolls". In McDonald, L. M.; Sanders, J. A. (eds.). The Canon Debate. Hendrickson Publishers. p. 94. Citing private communication with Emanuel Tov on biblical manuscripts: Qumran scribe type c. 25%, proto-Masoretic Text c. 40%, pre-Samaritan texts c. 5%, texts close to the Hebrew model for the Septuagint c. 5% and nonaligned c. 25%.
+
+16. ^ "Sadducees". Jewish Encyclopedia. JewishEncyclopedia.com. 1906. With the destruction of the Temple and the state the Sadducees as a party no longer had an object for which to live. They disappear from history, though their views are partly maintained and echoed by the Samaritans, with whom they are frequently identified (see Hippolytus, "Refutatio Hæresium", ix. 29; Epiphanius, l.c. xiv.; and other Church Fathers, who ascribe to the Sadducees the rejection of the Prophets and the Hagiographa; comp. also Sanh. 90b, where "Ẓadduḳim" stands for "Kutim" [Samaritans]; Sifre, Num. 112; Geiger, l.c. pp. 128–129), and by the Karaites (see Maimonides, commentary on Ab. i. 3; Geiger, "Gesammelte Schriften", iii. 283–321; also Anan ben David; Karaites).
+
+17. ^ Bowman, John, ed. (1977). Samaritan Documents, Relating To Their History, Religion and Life. Pittsburgh Original Texts & Translations Series No. 2. Translated by Bowman, John.
+
+18. ^ Crown, Alan D. (October 1991). "The Abisha Scroll – 3,000 Years Old?". Bible Review.
+
+19. ^ Rüger 1989, p. 302.
+
+20. ^ "Canons and Decrees of the Council of Trent". www.bible-researcher.com. Archived from the original on 5 August 2011.
+
+21. ^ "Council of Basel 1431–45 A.D. Council Fathers". Papal Encyclicals. 14 December 1431. Archived from the original on 24 April 2013.
+
+22. ^ "Decree of Council of Rome (AD 382) on the Biblical Canon". Taylor Marshall. 19 August 2008. Retrieved 1 December 2019.
+
+23. ^ Wallace, Daniel B. (18 March 2012). "The Problem with Protestant Ecclesiology". Daniel B. Wallace.
+
+24. ^ a b c Abraham, William J. (31 January 2002). "The Epistemic Fortunes of Sola Scriptura". Canon and Criterion in Christian Theology: 139–161. doi:10.1093/0199250030.003.0006. ISBN 0-19-925003-0.
+
+25. ^ Sanders, J. A. (2002). "The Issue of Closure in the Canonical Process". In McDonald, L. M.; Sanders, J. A. (eds.). The Canon Debate. Hendrickson Publishers. p. 259. ... the so-called Septuagint was not in itself formally closed. Attributed to Albert Sundberg's 1964 Harvard dissertation.
+
+26. ^ Ferguson, Everett (2002). "Factors leading to the Selection and Closure of the New Testament Canon". In McDonald, L. M.; Sanders, J. A. (eds.). The Canon Debate. Hendrickson Publishers. pp. 302–303; cf. Justin Martyr. First Apology. 67.3.
+
+27. ^ Metzger (1997), p. 98. "The question whether the Church's canon preceded or followed Marcion's canon continues to be debated."
+
+28. ^ a b von Harnack, Adolf (1914). "Appendix VI". Origin of the New Testament.
+
+29. ^ Ferguson (2002), p. 301; cf. Irenaeus. Adversus Haereses. 3.11.8.
+
+30. ^ Metzger (1997), p. 155.
+
+31. ^ Both points taken from Noll, Mark A. (1997). Turning Points. Baker Academic. pp. 36–37.
+
+32. ^ de Jonge, H. J. (2003). "The New Testament Canon". In de Jonge, H. J.; Auwers, J. M. (eds.). The Biblical Canons. Leuven University Press. p. 315.
+
+33. ^ Ackroyd, P. R.; Evans, C. F., eds. (1970). The Cambridge History of the Bible, Vol. 1. Cambridge University Press. p. 308.
+
+34. ^ Prat, Ferdinand (1911). "Origen and Origenism". The Catholic Encyclopedia, Vol. 11. New York: Robert Appleton Company. According to Eusebius' Church History 6.25: a 22 book OT [though Eusebius does not name Minor Prophets, presumably just an oversight?] plus 1 deuterocanon ["And outside these are the Maccabees, which are entitled S<ph?>ar beth sabanai el."] and 4 Gospels but on the Apostle "Paul ... did not so much as write to all the churches that he taught; and even to those to which he wrote he sent but a few lines."
+
+35. ^ Metzger (1997), p. 141.
+
+36. ^ a b c Lindberg, Carter (2006). A Brief History of Christianity. Blackwell Publishing. p. 15. ISBN 1-4051-1078-3.
+
+37. ^ 
+Brakke, David (1994). "Canon Formation and Social Conflict in Fourth Century Egypt: Athanasius of Alexandria's Thirty Ninth Festal Letter". Harvard Theological Review. 87 (4): 395–419. doi:10.1017/s0017816000030200. S2CID 161779697.
+
+38. ^ Apol. Const. 4
+
+39. ^ Hengel, Martin (2004), Septuagint As Christian Scripture, A&C Black, p. 57, ISBN 978-0567082879
+
+40. ^ The Canon Debate, pp. 414–415, for the entire paragraph
+
+41. ^ Herbermann, Charles, ed. (1913). "Book of Judith" . Catholic Encyclopedia. New York: Robert Appleton Company.: Canonicity: "..."the Synod of Nicaea is said to have accounted it as Sacred Scripture" (Praef. in Lib.). It is true that no such declaration is to be found in the Canons of Nicaea, and it is uncertain whether St. Jerome is referring to the use made of the book in the discussions of the council, or whether he was misled by some spurious canons attributed to that council"
+
+42. ^ Ekonomou, Andrew J. (2007). Byzantine Rome and the Greek Popes. Lexington Books. p. 222. ISBN 978-0-73911977-8.
+
+43. ^ Schaff, Philip; Wace, Henry (eds.). "Council in Trullo". Nicene and Post-Nicene Fathers, Second Series, Vol. 14.
+
+44. ^ Metzger (1997).
+
+45. ^ Syriac Versions of the Bible by Thomas Nicol
+
+46. ^ Geoffrey W. Bromiley The International Standard Bible Encyclopedia: Q–Z 1995. p. 976 "Printed editions of the Peshitta frequently contain these books in order to fill the gaps. D. Harklean Version. The Harklean version is connected with the labors of Thomas of Harqel. When thousands were fleeing Khosrou's invading armies, ..."
+
+47. ^ Corpus scriptorum Christianorum Orientalium: Subsidia Catholic University of America, 1987 "37 ff. The project was founded by Philip E. Pusey who started the collation work in 1872. However, he could not see it to completion since he died in 1880. Gwilliam,
+
+48. ^ a b McDonald & Sanders (2002), Appendix D-2, Note 19. "Revelation was added later in 419 at the subsequent synod of Carthage."
+
+49. ^ Ferguson (2002), p. 320; Bruce, F. F. (1988). The Canon of Scripture. Intervarsity Press. p. 230.; cf. Augustine. De Civitate Dei. 22.8.
+
+50. ^ "Corey Keating, The Criteria Used for Developing the New Testament Canon" (PDF).
+
+51. ^ a b Schaff, Philip, "Chapter IX. Theological Controversies, and Development of the Ecumenical Orthodoxy", History of the Christian Church, CCEL
+
+52. ^ Ferguson, Everett. "Factors leading to the Selection and Closure of the New Testament Canon", in The Canon Debate, eds. L. M. McDonald & J. A. Sanders (Hendrickson, 2002) p. 320
+
+53. ^ F. F. Bruce, The Canon of Scripture (Intervarsity Press, 1988) p. 230
+
+54. ^ cf. Augustine, De Civitate Dei 22.8.
+
+55. ^ Bruce (1988), p. 225.
+
+56. ^ "Innocent I". Bible Research. Retrieved 21 May 2016.
+
+57. ^ Ferguson (2002), pp. 319–320.
+
+58. ^ Bruce (1988), p. 215.
+
+59. ^ Ackroyd & Evans (1970), p. 305; cf. Reid, George (1908). "Canon of the New Testament". Catholic Encyclopedia. Robert Appleton Company.
+
+60. ^ Rohmann, Dirk (2016). Christianity, Book-Burning and Censorship in Late Antiquity: Studies in Text Transmission. Arbeiten zur Kirchengeschichte. Vol. 135. Walter de Gruyter GmbH & Co KG. ISBN 9783110485554. Retrieved 11 April 2018. Prudentius [348–c. 410] ... intends to demonstrate the superiority of Christianity and was likely aware that at this time the Bible has not replaced other books as much as he wants to think. This passage also presents a possible hint that old Latin translations were replaced with a new canonical version, perhaps alluding to the Vulgate, written by Jerome at the end of the fourth century. By implication, this suggests that uncanonical texts were unlikely to be transcribed—an ideologically and authoritatively endorsed selection process that comes close to modern understandings of censorship.
+
+61. ^ Gigot, Francis Ernest Charles (1900). "The Canon of the Old Testament in the Christian Church: Section II. From the Middle of the Fifth Century to our Day". General Introduction to the Study of the Holy Scriptures. Vol. 1 of Introduction to the study of the Holy Scriptures (3 ed.). New York: Benziger. p. 71. Retrieved 1 February 2021. [...] the bull of Eugenius IV did not deal with the canonicity of the books which were not found in the Hebrew Text, but simply proclaimed their inspiration [...].
+
+62. ^ 
+Herbermann, Charles, ed. (1913). "Canon of the Old Testament" . Catholic Encyclopedia. New York: Robert Appleton Company. section titled "The Council of Florence 1442"
+
+63. ^ Fallows, Samuel; et al., eds. (1910) [1901]. The Popular and Critical Bible Encyclopædia and Scriptural Dictionary, Fully Defining and Explaining All Religious Terms, Including Biographical, Geographical, Historical, Archæological and Doctrinal Themes. The Howard-Severance co. p. 521.
+
+64. ^ Geisler, Norman L.; MacKenzie, Ralph E. (1995). Roman Catholics and Evangelicals: Agreements and Differences. Baker Publishing Group. p. 171. ISBN 978-0-8010-3875-4. Lutherans and Anglicans used it only for ethical / devotional matters but did not consider it authoritative in matters of faith.
+
+65. ^ Ewert, David (2010). A General Introduction to the Bible: From Ancient Tablets to Modern Translations. Zondervan. p. 104. ISBN 978-0310872436.
+
+66. ^ Thomas, Owen C.; Wondra, Ellen K. (2002). Introduction to Theology (3rd ed.). Church Publishing, Inc. p. 56. ISBN 978-0819218971.
+
+67. ^ Henze, Matthias; Boccaccini, Gabriele (2013). Fourth Ezra and Second Baruch: Reconstruction after the Fall. Brill Publishing. p. 383. ISBN 978-9004258815.
+
+68. ^ Wesner, Erik J. (8 April 2015). "The Bible". Amish America. Retrieved 23 May 2021.
+
+69. ^ deSilva, David A. (2018). Introducing the Apocrypha: Message, Context, and Significance. Baker Books. ISBN 978-1-4934-1307-2.
+
+70. ^ a b Readings from the Apocrypha. Forward Movement Publications. 1981. p. 5.
+
+71. ^ Metzger (1997), p. 246. "Finally on 8 April 1546, by a vote of 24 to 15, with 16 abstentions, the Council issued a decree (De Canonicis Scripturis) in which, for the first time in the history of the Church, the question of the contents of the Bible was made an absolute article of faith and confirmed by an anathema."
+
+72. ^ "Council of Basel 1431–45 A". Papalencyclicals.net. 14 December 1431. Retrieved 7 January 2015.
+
+73. ^ Cross, F.L.; Livingstone, E.A., eds. (1983), The Oxford Dictionary of the Christian Church (2nd ed.), Oxford University Press, p. 232
+
+74. ^ Praefatio, Biblia Sacra Vulgata, Deutsche Bibelgesellschaft, Stuttgart 1983, p. xx. ISBN 3-438-05303-9
+
+75. ^ Schaff, Philip. Creeds of the Evangelical Protestant Churches, French Confession of Faith, p. 361
+
+76. ^ The Second Helvetic Confession, Chapter 1, Of The Holy Scripture Being The True Word of God
+
+77. ^ Belgic Confession 4. Canonical Books of the Holy Scripture
+
+78. ^ The Westminster Confession rejected the canonicity of the Apocrypha stating that "The books commonly called Apocrypha, not being of divine inspiration, are no part of the canon of the Scripture, and therefore are of no authority in the Church of God, nor to be any otherwise approved, or made use of, than other human writings." Westminster Confession of Faith, 1646
+
+79. ^ "The Epitome of the Formula of Concord – Book of Concord". Archived from the original on 31 October 2020. Retrieved 19 August 2020.
+
+80. ^ Brecht, Martin. Martin Luther. Volume 3, p. 98 James L. Schaaf, trans. Philadelphia: Fortress Press, 1985–1993. ISBN 0-8006-2813-6
+
+81. ^ Van Liere, Frans (2014). An Introduction to the Medieval Bible. Cambridge University Press. pp. 68–69. ISBN 978-0521865784.
+
+82. ^ a b Ehrman, Bart D. (2003). Lost Christianities: Battles for Scripture and the Faiths We Never Knew. Oxford University Press. pp. 230–231. ISBN 978-0199756681.
+
+83. ^ Reid (1908).
+
+84. ^ The foundational Thirty-Nine Articles of Anglicanism, in Article VI, asserts that these disputed books are not (to be) used "to establish any doctrine," but "read for example of life." Although the biblical apocrypha are still used in Anglican Liturgy, ("Two of the hymns used in the American Prayer Book office of Morning Prayer, the Benedictus es and Benedicite, are taken from the Apocrypha. One of the offertory sentences in Holy Communion comes from an apocryphal book (Tob. 4: 8–9). Lessons from the Apocrypha are regularly appointed to read in the daily, Sunday, and special services of Morning and Evening Prayer. There are altogether 111 such lessons in the latest revised American Prayer Book Lectionary [The books used are: II Esdras, Tobit, Wisdom, Ecclesiasticus, Baruch, Three Holy Children, and I Maccabees.]" – The Apocrypha, Bridge of the Testaments Archived 5 February 2009 at the Wayback Machine), the modern trend has been to not even print the Old Testament Apocrypha in editions of Anglican-used Bibles.
+
+85. ^ Samuel Fallows; et al., eds. (1910) [1901]. The Popular and Critical Bible Encyclopædia and Scriptural Dictionary, Fully Defining and Explaining All Religious Terms, Including Biographical, Geographical, Historical, Archæological and Doctrinal Themes. The Howard-Severance company. p. 521.
+
+86. ^ "The Bible". Ethiopian Orthodox Tewahedo Church. 2003. Retrieved 20 January 2012.
+
+87. ^ According to some enumerations, including Ecclesiasticus, Judith, Tobit, 1 Esdras, 4 Ezra (not including chs. 1–2 or 15–16), Wisdom, the rest of Daniel, Baruch, and 1–2 Maccabees
+
+88. ^ These books are accounted pseudepigrapha by all other Christian groups, Protestant, Catholic, and Orthodox (Charlesworth's Old Testament Pseudepigrapha, Introduction)
+
+89. ^ "The Biblical Canon of the Ethiopian Orthodox Church Today". Islamic-awareness.org. Retrieved 14 August 2012.
+
+90. ^ Congregation for Divine Worship and the Discipline of the Sacraments (7 May 2001). "Liturgiam Authenticam" (in Latin and English). Vatican City. Retrieved 18 January 2012. Canon 24. 'Furthermore, it is not permissible that the translations be produced from other translations already made into other languages; rather, the new translations must be made directly from the original texts, namely ... the Hebrew, Aramaic, or Greek, as the case may be, as regards the texts of Sacred Scripture.'
+
+91. ^ Ware, Timothy (1993). The Orthodox Church: New Edition. Penguin Books. p. 368. ISBN 978-0-14-014656-1.
+
+92. ^ "Introduction". Orthodox Study Bible (Annotated ed.). Nashville, TN: Thomas Nelson. 2008. p. 1824. ISBN 978-0-7180-0359-3.
+
+93. ^ McLay, R. Timothy (2004). The Use of the Septuagint in New Testament Research. Wm. B. Eerdman's. p. 222. ISBN 978-0-8028-6091-0.
+
+94. ^ a b "Books of the Bible". United States Conference of Catholic Bishops. Retrieved 29 August 2020.
+
+95. ^ "The Deuterocanonical Books". Coptic Orthodox Diocese of Los Angeles. Retrieved 23 January 2012.
+
+96. ^ "The Bible". Ethiopian Orthodox Tewahedo Church. Retrieved 23 January 2012.
+
+97. ^ read at Easter Saturday vigil
+
+98. ^ "Are 1 and 2 Esdras non-canonical books?". Catholic Answers. Retrieved 29 August 2020.
+
+99. ^ a b The Apocrypha in Ecumenical Perspective : The Place of the Late Writings of the Old Testament Among the Biblical Writings and their Significance in the Eastern and Western Church Traditions, p. 160
+
+100. ^ Generally due to derivation from transliterations of names used in the Latin Vulgate in the case of Catholicism, and from transliterations of the Greek Septuagint in the case of the Orthodox (as opposed to derivation of translations, instead of transliterations, of Hebrew titles) such Ecclesiasticus (DRC) instead of Sirach (LXX) or Ben Sira (Hebrew), Paralipomenon (Greek, meaning "things omitted") instead of Chronicles, Sophonias instead of Zephaniah, Noe instead of Noah, Henoch instead of Enoch, Messias instead of Messiah, Sion instead of Zion, etc.
+
+101. ^ Saifullah, M. S. M. "Canons & Recensions of the Armenian Bible". Islamic Awareness. Retrieved 25 January 2012.
+
+102. ^ Metzger (1997), pp. 219, 223; cf. 7, 176, 182. Cited in Epp, Eldon Jay (2002). "Issues in the Interrelation of New Testament Textual Criticism and Canon". In McDonald, L. M.; Sanders, J. A. (eds.). The Canon Debate. Hendrickson Publishers. p. 492.
+
+103. ^ Cowley, R. W. (1974). "The Biblical Canon of the Ethiopian Orthodox Church Today". Ostkirchliche Studien. 23: 318–323.
+
+104. ^ a b c "The Canonization of Scripture | Coptic Orthodox Diocese of Los Angeles". Retrieved 2 April 2022.
+
+105. ^ Burris, Catherine; van Rompay, Lucas (2002). "Thecla in Syriac Christianity: Preliminary Observations". Hugoye: Journal of Syriac Studies. 5 (2): 225–236. doi:10.31826/9781463214104-012. Archived from the original on 1 July 2016. Retrieved 21 May 2016.
+
+106. ^ Carter, Nancy A. (2000), The Acts of Thecla: A Pauline Tradition Linked to Women, Conflict and Community in the Christian Church, archived from the original on 13 February 2012
+
+107. ^ Adrian Hastings, The Church in Africa, 1450-1950. Clarendon Press, 1995.
+
+### Bibliography
+- Beckwith, R. T. (1986). The Old Testament Canon of the New Testament Church and Its Background in Early Judaism. Eerdmans Publishing Company. ISBN 978-0-8028-3617-5.
+- Davis, L. D. (1983). The First Seven Ecumenical Councils (325-787): Their History and Theology. Liturgical Press. ISBN 978-0-8146-5616-7.
+- Ferguson, Everett. Encyclopedia of Early Christianity.
+- Fox, Robin Lane (1992). The Unauthorized Version: Truth and Fiction in the Bible. Penguin Books.
+- Gamble, Harry Y. (2002). The New Testament Canon: Its Making and Meaning. Wipf & Stock Publishers. ISBN 1-57910-909-8.
+- Jurgens, W. A. (1970). Faith of the Early Fathers. Collegeville, Minn.: Liturgical Press.
+- Lightfoot, Joseph; Harmer, John; Holmes, Michael, eds. (1992). The Apostolic Fathers. Barker Book House. ISBN 978-0-8010-5676-5.
+- McDonald, L. M.; Sanders, J. A. (2002). "Introduction". The Canon Debate. Hendrickson Publishers.
+- Metzger, Bruce M. (13 March 1997). The Canon of the New Testament: Its Origin, Development, and Significance. Oxford University Press. ISBN 0-19-826954-4.
+- Nersessian, V. (2001). "The Armenian Canon of the New Testament". The Bible in the Armenian Tradition. Los Angeles, CA: J. Paul Getty Museum. ISBN 978-0-89236-640-8.
+- Rüger, Hans Peter (July 1989). "The Extent of the Old Testament Canon1". The Bible Translator. 40 (3): 301–308. doi:10.1177/026009358904000301. S2CID 164995721.
+- Sundberg, Albert (1964). The Old Testament of the Early Church. Harvard Press.
+## Further reading
+- Armstrong, Karen (2007) The Bible: A Biography. Books that Changed the World Series. Atlantic Monthly Press. ISBN 0-87113-969-3
+- Barnstone, Willis (ed.) (1984). The Other Bible: Ancient Alternative Scriptures. HarperCollins. ISBN 978-0-7394-8434-0.
+- Childs, Brevard S. (1984). The New Testament as Canon: An Introduction. SCM Press. ISBN 0-334-02212-6.
+- Gallagher, Edmon L.; Meade, John D. (2017). The biblical canon lists from early Christianity: texts and analysis. Oxford, United Kingdom: Oxford University Press. ISBN 978-0-19-879249-9. OCLC 987346634.
+- Schneemelcher Wilhelm (ed). Hennecke Edgard, New Testament Apocrypha, 2 vol. Original title: Neutestamentliche Apokryphen
+- McDonald, Lee Martin (2009). Forgotten Scriptures. The Selection and Rejection of Early Religious Writings. Westminster John Knox Press. ISBN 978-0-664-23357-0.
+- McDonald, Lee Martin (2000). Early Christianity and Its Sacred Literature. Hendrickson Publishers. ISBN 1-56563-266-4.
+- McDonald, Lee Martin (2007). The Biblical Canon: Its Origin, Transmission, and Authority. 3rd ed. Hendrickson Publishers. ISBN 978-1-56563-925-6.
+- Pentiuc, Eugen J., ed. (2022). The Oxford Handbook of the Bible in Orthodox Christianity. Oxford University Press. ISBN 978-0-19-094868-9.
+- Souter, Alexander (1954). The Text and Canon of the New Testament. 2nd ed. Studies in Theology, No. 25. London: Duckworth.
+- Stonehouse, Ned Bernhard (1929). The Apocalypse in the Ancient Church: A Study in the History of the New Testament Canon. Oosterbaan & Le Cointre.
+- Taussig, Hal (2013). A New New Testament: A Bible for the 21st Century Combining Traditional and Newly Discovered Texts. Houghton Mifflin Harcourt.
+- Wall, Robert W.; Lemcio, Eugene E. (1992). The New Testament as Canon: A Reader in Canonical Criticism. JSOT Press. ISBN 1-85075-374-1.
+- Westcott, Brooke Foss. (1875). A General Survey of the History of the Canon of the New Testament. 4th ed. London: Macmillan.
+## External links
+-  Media related to Biblical canon at Wikimedia Commons
+- The Canon of Scripture – contains multiple links and articles
+- Cross Wire Bible Society Archived 5 March 2016 at the Wayback Machine
+- Old Testament Reading Room and New Testament Reading Room – Online resources referenced by Tyndale Seminary
+- Catholic Encyclopedia: Canon of the New Testament
+- Jewish Encyclopedia: Bible Canon
+- Table of Tanakh Books – includes Latin, English, Hebrew and abbreviated names (from Tel Aviv University).
+- The Bible in the Armenian Church (an essay, with full official canon at the end)
+- H. Schumacher, The Canon of the New Testament (London 1923), pp. 84–94.
+- Dale B. Martin, Introduction to New Testament History and Literature" course materials, Open Yale course, Yale University, archived from the original on 15 August 2010, retrieved 7 January 2016
+- WELS Topical Q&A: Canon – 66 Books in the Bible, by Wisconsin Evangelical Lutheran Synod (Confessional Lutheran perspective)
+- Bible
+- Christian terminology
+- Development of the Christian biblical canon
+- Webarchive template wayback links
+- CS1: long volume value
+- Articles incorporating a citation from the 1913 Catholic Encyclopedia with Wikisource reference
+- CS1 Latin-language sources (la)
+- Articles with short description
+- Short description is different from Wikidata
+- Use dmy dates from November 2020
+- Articles containing Ancient Greek (to 1453)-language text
+- Articles containing Hebrew-language text
+- Articles containing Arabic-language text
+- Pages using sidebar with the child parameter
+- Commons category link is on Wikidata
+- Articles containing Tagalog-language text
