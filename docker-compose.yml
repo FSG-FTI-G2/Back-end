@@ -1,4 +1,4 @@
-version: '3.8'
+# version: '3.8'
 
 services:
   apis:
@@ -53,6 +53,20 @@ services:
       QDRANT__HTTP__PORT: 6333
       QDRANT__GRPC__PORT: 6335
 
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - 2462:11434
+    container_name: ollama
+    pull_policy: always
+    tty: true
+    restart: always
+    environment:
+      - OLLAMA_KEEP_ALIVE=24h
+      - OLLAMA_HOST=0.0.0.0
+    networks:
+      - ollama-docker
+
 volumes:
   mongodb-data:
     driver: local
@@ -61,3 +75,6 @@ volumes:
   mino-data:
     driver: local
  
+networks:
+  ollama-docker:
+    external: false 
