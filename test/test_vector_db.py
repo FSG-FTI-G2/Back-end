@@ -1,15 +1,12 @@
-import os
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import unittest
 from app.providers.vector_db import QdrantProvider
 
-collection_name = 'Qdrants_Vector_Database'
+qdrant_collection_name = 'Qdrants_Vector_Database'
 class Qdrant_Test_Case(unittest.TestCase):
     
     def __init__(self, *args, **kwargs):
         super(Qdrant_Test_Case, self).__init__(*args, **kwargs)
-        self.qdrant = QdrantProvider(collection_name)
+        self.qdrant = QdrantProvider(qdrant_collection_name)
 
     def test_qdrant(self):
         self.qdrant.create_collection()
