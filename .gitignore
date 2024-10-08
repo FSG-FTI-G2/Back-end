@@ -161,5 +161,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/'
 
-# MinIO Storage
+# Utils folders
 storage/
+text_for_test_vectordb/

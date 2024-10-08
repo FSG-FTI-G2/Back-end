@@ -1,37 +1,26 @@
 import os
-from qdrant_client.http.models import PointStruct
-from nltk.tokenize import sent_tokenize
-from sentence_transformers import SentenceTransformer
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-import sys
-import unittest
-model = SentenceTransformer('all-mpnet-base-v2')
+from app.controllers.extraction_controller import extraction_vector, qdrant_client
 
-sys.path.insert(0,"P:\\FA24\\Dev\\Back-end\\app\\controllers")
-from Document_Vector_Extraction import TextProcessor
+folder_path = 'P:\\FA24\\Dev\\Back-end\\text_for_test_vectordb'
 
-qdrant_collection_name = 'Qdrants_Vector_Database_hihi'
-database_name = "Database_hihi"
-folder_path = 'P:\\FA24\\Dev\\Back-end\\text'
+query = "What events happen in 1788 to 1789 of 18th century?"
 
-model = SentenceTransformer('all-mpnet-base-v2')
+def add_document_extraction_to_vectordb(folder_path):
+    for file in os.listdir(folder_path):
+        file_path  = os.path.join(folder_path, file)
+        file_schema, text, summary = extraction_vector(file_path)
 
-payloads = []
-   
-input_text = "When I first visit Nha Trang"
-
-class Vector_Extraction(unittest.TestCase):
-    
-    def __init__(self, *args, **kwargs):
-        super(Vector_Extraction, self).__init__(*args, **kwargs)
-        self.text_processor = TextProcessor(database_name, qdrant_collection_name, folder_path)
-    
-    def test_search_vectors(self):
-        self.text_processor.process_all_files()
+        qdrant_client.add_vectors(file_schema, text, summary)
         
-        search_result = self.text_processor.search_vectors(input_text)
-        
-        for hit in search_result:
-            print(f"ID: {hit.id}, Score: {hit.score}, Payload: {hit.payload}")
+    results = qdrant_client.search_vector(input_text=query, with_payload=True, limit=3)
+    return results
+
+results = add_document_extraction_to_vectordb(folder_path)
+for result in results:
+    print(f"ID: {result.id}")
+    print(f"Score: {result.score}")
+    print("Payload:")
+    for key, value in result.payload.items():
+        print(f"  {key}: {value}")
+    print("\n" + "-" * 40 + "\n") 
             
-            self.assertEqual(hit.payload['file_name'], 'sample_test_file')

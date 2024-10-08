@@ -1,22 +1,13 @@
 from typing import Literal
-import sys
 from qdrant_client.http import models
 from qdrant_client.http.models import PointStruct
-from sentence_transformers import SentenceTransformer
-import numpy as np
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from app.providers.text_processing_utils import vector_embedding, chunk_text
 import uuid
-
-sys.path.insert(0,"P:\\FA24\\Dev\\Back-end\\app\\configs")
-from qdrant_vector_db import qdrant_client
-
-
-model = SentenceTransformer('all-mpnet-base-v2')
+from app.configs.qdrant_vector_db import qdrant_client
+from app.models.file import FileSchema
 
 VECTOR_SIZE = 768
 DISTANCE = "cosine"
-CHUNK_SIZE = 500
-CHUNK_OVERLAP=50
 
 class QdrantProvider:
     def __init__(self, collection_name):
@@ -35,7 +26,6 @@ class QdrantProvider:
                 distance=models.Distance[distance.upper()]
             )
         )
-
         print(f"Collection '{self.collection_name}' created successfully.")
 
     def list_collections(self):
@@ -45,29 +35,18 @@ class QdrantProvider:
     def drop_collection(self):
         qdrant_client.delete_collection(self.collection_name)
         print(f"Collection '{self.collection_name}' dropped successfully.")
-        
-    def vector_embedding(self, text):
-        return model.encode(text).tolist()
     
-    def create_random_vector(self, dimensions=VECTOR_SIZE):
-        return np.random.rand(dimensions).tolist()
-    
-    def chunk_text(self,text, chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP):
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
-        chunks = text_splitter.split_text(text)
-        return chunks
-    def add_vectors(self, unique_id, input_text, file_name, file_type):
-        chunks = self.chunk_text(input_text)
-        
+    def add_vectors(self, file_schema: FileSchema, input_text: str, summary):
+        chunks = chunk_text(input_text)
         points = []
         
-        for idx, chunk in enumerate(chunks):
-            vector = self.vector_embedding(chunk)
-    
+        for chunk in chunks:
+            vector = vector_embedding(chunk)
             metadata = {
-                "id": unique_id,
-                "file_name": file_name,
-                "file_type": file_type,
+                "id": file_schema.id,  
+                "file_name": file_schema.file_name,
+                "file_type": file_schema.type,
+                "summary": summary,  
             }
         
             point = PointStruct(
@@ -75,14 +54,13 @@ class QdrantProvider:
                 vector=vector,  
                 payload=metadata  
             )
-            
             points.append(point)
             
         qdrant_client.upsert(collection_name=self.collection_name, points=points)
         print(f"Vectors added successfully to collection '{self.collection_name}'.")
 
-    def search_vector(self, input_text: str, limit=3, with_payload=False):
-        query_vector = self.vector_embedding(input_text)
+    def search_vector(self, input_text: str, limit=3, with_payload=True):
+        query_vector = vector_embedding(input_text)
         
         search_result = qdrant_client.search(
             collection_name=self.collection_name,
@@ -92,20 +70,24 @@ class QdrantProvider:
         )
         return search_result
 
-    def update_vector(self, point_id, vector, payload=None):
-        point_struct = models.PointStruct(id=point_id, vector=vector, payload=payload)
+    def update_vector(self, file_schema: FileSchema, vector):
+        point_struct = models.PointStruct(id=file_schema.id, vector=vector, payload={
+            "file_name": file_schema.file_name,
+            "file_type": file_schema.type.value,
+            "summary": file_schema.summary,
+        })
         qdrant_client.upsert(
             collection_name=self.collection_name,
             points=[point_struct]
         )
-        print(f"Vector with ID '{point_id}' updated successfully.")
+        print(f"Vector with ID '{file_schema.id}' updated successfully.")
 
-    def delete_vector(self, point_id):
+    def delete_vector(self, file_schema: FileSchema):
         qdrant_client.delete_points(
             collection_name=self.collection_name,
-            point_ids=[point_id]
+            point_ids=[file_schema.id]
         )
-        print(f"Vector with ID '{point_id}' deleted successfully.")
+        print(f"Vector with ID '{file_schema.id}' deleted successfully.")
 
     def get_all_vectors(self):
         points, _ = qdrant_client.scroll(collection_name=self.collection_name)
