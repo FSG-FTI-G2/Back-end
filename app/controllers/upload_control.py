@@ -5,7 +5,6 @@ from app.models.file import FileSchema, FileType, FileStatus
 from app.providers import file_db
 import shutil
 import magic  # To detect file MIME type
-from bson import ObjectId
 from pymongo.errors import PyMongoError
 from minio import Minio
 from minio.error import S3Error
