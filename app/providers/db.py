@@ -51,6 +51,13 @@ class DatabaseProvider:
         # Return as list
         return list(data)
 
+    def create_index(self, field: str, unique: bool = False):
+        '''
+        Creates an index for a field in the collection
+        '''
+        # Create index for the field
+        self.collection.create_index(field, unique=unique)
+
     def get_by_id(self, id: str) -> dict[str, Any] | None:
         '''
         Returns a document by id, which support indexing

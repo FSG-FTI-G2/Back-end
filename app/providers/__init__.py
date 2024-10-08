@@ -4,6 +4,7 @@ from app.providers.vector_db import QdrantProvider
 
 encryptor = EncryptionProvider()
 
+file_db = DatabaseProvider("files")
 user_db = DatabaseProvider("users")
 file_db = DatabaseProvider("files")
 

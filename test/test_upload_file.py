@@ -1,55 +1,37 @@
 import unittest
-import os
 from fastapi.testclient import TestClient
 from main import app
-import shutil
+from app.models.file import FileSchema, FileStatus
+from io import BytesIO
 
 class TestUploadFile(unittest.TestCase):
     def setUp(self):
         self.client = TestClient(app)
-
-        self.upload_directory = os.path.join(os.path.dirname(__file__), "../upload_files")
-        os.makedirs(self.upload_directory, exist_ok=True)
-
-        self.valid_file_path = os.path.join(self.upload_directory, "test_image.jpg")
-        self.invalid_file_path = os.path.join(self.upload_directory, "test_document.txt")
         
-
-        if not os.path.exists(self.valid_file_path):
-            with open(self.valid_file_path, "wb") as f:
-                f.write(b"test image content" * 1024) 
-        
-
-        if not os.path.exists(self.invalid_file_path):
-            with open(self.invalid_file_path, "w") as f:
-                f.write("test document content")  
-
-
-        self.large_file_path = os.path.join(self.upload_directory, "large_file.pdf")
-        with open(self.large_file_path, "wb") as f:
-            f.write(b"x" * (21 * 1024 * 1024))  
-
-    def tearDown(self):
-        if os.path.exists(self.upload_directory):
-            shutil.rmtree(self.upload_directory)
+        # Tạo các tệp giả lập bằng io.BytesIO
+        self.valid_file = ("test.pdf", BytesIO(b"Test content for a PDF file"), "application/pdf")
+        self.invalid_file = ("test.exe", BytesIO(b"Test content for an EXE file"), "application/octet-stream")
+        self.large_file = ("large_file.pdf", BytesIO(b"Test content for a large PDF file" * 100000), "application/pdf")
 
     def test_upload_valid_file(self):
-        with open(self.valid_file_path, "rb") as f:
-            response = self.client.post("/api/v1/upload/", files={"file": f})
-            self.assertEqual(response.status_code, 200)
-            self.assertEqual(response.json(), {"message": "File uploaded successfully"})
+        response = self.client.post("/api/v1/upload", files={"file": self.valid_file})
+        self.assertEqual(response.status_code, 200)
+
+        # Fetch the file from the database and check its status
+        file_id = response.json()["file_id"]
+        file_data = FileSchema.find_by_id(file_id)
+        self.assertIsNotNone(file_data)
+        self.assertEqual(file_data.status, FileStatus.SUCCESS)
 
     def test_upload_invalid_extension(self):
-        with open(self.invalid_file_path, "rb") as f:
-            response = self.client.post("/api/v1/upload/", files={"file": f})
-            self.assertEqual(response.status_code, 400)
-            self.assertEqual(response.json(), {"detail": "File extension not allowed"})
+        response = self.client.post("/api/v1/upload", files={"file": self.invalid_file})
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.json(), {"detail": "Invalid file extension."})
 
     def test_upload_large_file(self):
-        with open(self.large_file_path, "rb") as f:
-            response = self.client.post("/api/v1/upload/", files={"file": f})
-            self.assertEqual(response.status_code, 400)
-            self.assertEqual(response.json(), {"detail": "File exceeds 20MB size limit"})
+        response = self.client.post("/api/v1/upload", files={"file": self.large_file})
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.json(), {"detail": "File exceeds 20MB size limit."})
 
 if __name__ == "__main__":
     unittest.main()
