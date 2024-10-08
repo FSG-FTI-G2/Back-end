@@ -166,3 +166,4 @@ storage/
 text_for_test_vectordb/
 uploads/
 ollama/
+temp/
