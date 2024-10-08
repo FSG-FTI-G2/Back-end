@@ -38,6 +38,15 @@ docker volume create mongodbdata
 docker run --rm -d --name mongodb -p 27017:27017 -v mongodbdata:/data/db mongodb/mongodb-community-server:latest
 ```
 
+- Run MinIO locally.
+
+```sh
+# Create Docker volume
+docker volume create miniodata
+# Start MinIO container
+docker run --rm -d --name minio -p 9000:9000 -p 9001:9001 -v miniodata:/data -e MINIO_ROOT_USER=user -e MINIO_ROOT_PASSWORD=user_123123 minio/minio server --console-address ":9001" /data
+```
+
 - Start Uvicorn Server
 
 ```sh

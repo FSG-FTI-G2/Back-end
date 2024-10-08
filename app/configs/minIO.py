@@ -1,11 +1,9 @@
 import os
-from app.providers.minIO_client import Minio_Client
-from io import BytesIO
+from minio import Minio
 
-if __name__ == "__main__":
-    minio_client = Minio_Client(
-        endpoint=os.environ.get("ENDPOINT", "127.0.0.1:9000"),
-        access_key=os.environ.get("ACCESS_KEY"),
-        secret_key=os.environ.get("SECRET_KEY"),
-        secure=False 
-    )
+minio_client = Minio(
+    endpoint=f"{os.environ.get('MINIO_HOST')}:{os.environ.get('MINIO_PORT')}",
+    access_key=os.environ.get("MINIO_ACCESS_KEY"),
+    secret_key=os.environ.get("MINIO_SECRET_KEY"),
+    secure=False
+)
