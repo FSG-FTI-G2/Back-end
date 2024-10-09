@@ -1,10 +1,9 @@
-import os
 from io import BytesIO
 import asyncio
-from fastapi import UploadFile
 from app.models.user import UserSchema
 from app.models.file import FileSchema, FileType, FileStatus
 from app.providers import file_storage, state
+import time
 
 MAX_FILE_SIZE = 20 * 1024 * 1024  # 20MB
 
@@ -39,7 +38,6 @@ async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSch
     if not __file_validator(filename, filebyte):
         __update_status(user.id, filename, FileStatus.ERROR)
         return
-    print(f"Validated file: {filename}")
     # Create a file schema
     file_schema = FileSchema(
         user_id=user.id,
@@ -49,7 +47,6 @@ async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSch
         status=FileStatus.UPLOADING
     )
     file_schema.create()
-    print(f"Uploading file: {filename}")
     try:
         # Read file content
         # Upload to MinIO
@@ -58,6 +55,7 @@ async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSch
         __update_status(user.id, filename,
                         FileStatus.PROCESSING, file_schema)
         # TODO: Add extraction logic here
+        await asyncio.sleep(5)
         # Update file status to success
         __update_status(user.id, filename,
                         FileStatus.SUCCESS, file_schema)
@@ -68,10 +66,10 @@ async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSch
         return
 
 
-def upload_files_controller(files: list[tuple[str, bytes]], user: UserSchema):
+async def upload_files_controller(files: list[tuple[str, bytes]], user: UserSchema):
     # Upload files in parallel
     for filename, filebyte in files:
-        asyncio.run(__upload_file_controller(filename, filebyte, user))
+        await __upload_file_controller(filename, filebyte, user)
 
 
 def upload_file_status_controller(user_id: str) -> tuple[bool, dict[str, str]]:

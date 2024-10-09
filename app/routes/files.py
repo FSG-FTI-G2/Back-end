@@ -1,4 +1,5 @@
 from typing import Annotated
+import asyncio
 from fastapi import APIRouter, UploadFile, File, Depends, BackgroundTasks, WebSocket, WebSocketDisconnect
 from app.middlewares.middleware import auth_user_middleware
 from app.controllers.upload_controller import upload_files_controller, upload_file_status_controller
@@ -26,7 +27,7 @@ async def upload_file(
     return response(code=200, message="Files are being uploaded.")
 
 
-@router.websocket("/")
+@router.websocket("/ws")
 async def upload_file_progress(
     websocket: WebSocket,
     user: Annotated[UserSchema, Depends(auth_user_middleware)]
@@ -35,6 +36,7 @@ async def upload_file_progress(
     try:
         is_completed = False
         while not is_completed:
+            await asyncio.sleep(1)
             is_completed, status = upload_file_status_controller(user.id)
             await websocket.send_json(response(status_code=200, message="File upload status.", data={
                 "status": status,
