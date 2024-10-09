@@ -41,18 +41,17 @@ class TestUploadFile(unittest.TestCase):
 
     def __upload_files(self):
         response = self.client.post(
-            self.upload_route, files={"files": self.valid_file}).json()
+            self.upload_route, files=[
+                ("files", self.valid_file),
+                ("files", self.invalid_file),
+                ("files", self.large_file),
+            ]).json()
         self.assertEqual(response.get("code"), 200)
-        response = self.client.post(
-            self.upload_route, files={"files": self.invalid_file}).json()
-        self.assertEqual(response.get("code"), 200)
-        response = self.client.post(
-            self.upload_route, files={"files": self.large_file}).json()
-        self.assertEqual(response.get("code"), 200)
+        return response.get("data", {}).get("progress_id")
 
     # TODO: Update WebSocket test later
-    def __view_upload_progress(self):
-        with self.client.websocket_connect("/ws") as ws:
+    def __view_upload_progress(self, progress_id: str):
+        with self.client.websocket_connect(self.upload_route + progress_id) as ws:
             while True:
                 status = ws.receive_json()
                 logger.debug(f"Received status: {status}")
@@ -61,7 +60,9 @@ class TestUploadFile(unittest.TestCase):
                     break
 
     def test_upload_files(self):
-        self.__upload_files()
+        progress_id = self.__upload_files()
+
+        self.__view_upload_progress(progress_id)
 
         # Check file status. This Id is hardcoded because we know the user id
         files = FileSchema.find_by_user_id("66fd11f320f63c42f143f0c4", 10, 0)

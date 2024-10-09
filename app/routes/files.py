@@ -1,4 +1,5 @@
 from typing import Annotated
+import uuid
 import asyncio
 from fastapi import APIRouter, UploadFile, File, Depends, BackgroundTasks, WebSocket, WebSocketDisconnect
 from app.middlewares.middleware import auth_user_middleware
@@ -21,28 +22,29 @@ async def upload_file(
     files_byte = [await file.read() for file in files]
     files_data = list(zip(files_name, files_byte))
     # Initialize file state for tracking upload status
-    state.set(user.id, {})
+    upload_progress_id = str(uuid.uuid4())
+    state.set(upload_progress_id, {})
     # Upload files in background
-    background_tasks.add_task(upload_files_controller, files_data, user)
-    return response(code=200, message="Files are being uploaded.")
+    background_tasks.add_task(upload_files_controller,
+                              files_data, user, upload_progress_id)
+    return response(code=200, message="Files are being uploaded.", data={
+        "progress_id": upload_progress_id
+    })
 
 
-@router.websocket("/ws")
-async def upload_file_progress(
-    websocket: WebSocket,
-    user: Annotated[UserSchema, Depends(auth_user_middleware)]
-):
+@router.websocket("/{id}")
+async def upload_file_progress(websocket: WebSocket, id: str):
     await websocket.accept()
     try:
         is_completed = False
         while not is_completed:
             await asyncio.sleep(1)
-            is_completed, status = upload_file_status_controller(user.id)
-            await websocket.send_json(response(status_code=200, message="File upload status.", data={
+            is_completed, status = upload_file_status_controller(id)
+            await websocket.send_json(response(code=200, message="File upload status.", data={
                 "status": status,
                 "is_completed": is_completed
-            }))
+            }, native=True))
     except WebSocketDisconnect:
         # Remove user state on disconnect
-        state.remove(user.id)
+        state.remove(id)
         await websocket.close()

@@ -24,19 +24,19 @@ def __file_validator(filename: str, filebyte: bytes):
     return True
 
 
-def __update_status(user_id: str, filename: str, status: FileStatus, schema: FileSchema = None):
+def __update_status(id: str, filename: str, status: FileStatus, schema: FileSchema = None):
     # Update file state
-    state.get(user_id)[filename] = status.value
+    state.get(id)[filename] = status.value
     # Update file schema
     if schema is not None:
         schema.status = status
         schema.update()
 
 
-async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSchema):
+async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSchema, progress_id: str):
     # Validate file
     if not __file_validator(filename, filebyte):
-        __update_status(user.id, filename, FileStatus.ERROR)
+        __update_status(progress_id, filename, FileStatus.ERROR)
         return
     # Create a file schema
     file_schema = FileSchema(
@@ -52,28 +52,28 @@ async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSch
         # Upload to MinIO
         file_storage.upload_file(filename, BytesIO(filebyte))
         # Update file status to processing
-        __update_status(user.id, filename,
+        __update_status(progress_id, filename,
                         FileStatus.PROCESSING, file_schema)
         # TODO: Add extraction logic here
         await asyncio.sleep(5)
         # Update file status to success
-        __update_status(user.id, filename,
+        __update_status(progress_id, filename,
                         FileStatus.SUCCESS, file_schema)
         return
     except Exception:
         # Update file status to error
-        __update_status(user.id, filename, FileStatus.ERROR, file_schema)
+        __update_status(progress_id, filename, FileStatus.ERROR, file_schema)
         return
 
 
-async def upload_files_controller(files: list[tuple[str, bytes]], user: UserSchema):
+async def upload_files_controller(files: list[tuple[str, bytes]], user: UserSchema, progress_id: str):
     # Upload files in parallel
     for filename, filebyte in files:
-        await __upload_file_controller(filename, filebyte, user)
+        await __upload_file_controller(filename, filebyte, user, progress_id)
 
 
-def upload_file_status_controller(user_id: str) -> tuple[bool, dict[str, str]]:
-    status = state.get(user_id)
+def upload_file_status_controller(progress_id: str) -> tuple[bool, dict[str, str]]:
+    status = state.get(progress_id)
     is_finished = all(
         [status.get(filename) in [FileStatus.SUCCESS.value, FileStatus.ERROR.value] for filename in status])
     return is_finished, status
