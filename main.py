@@ -2,7 +2,6 @@ import os
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import ORJSONResponse
 from app.configs.dotenv import load_enviroment_variables
 from app.configs.docs import FASTAPI_DOC_CONFIG
 from app.routes import router

@@ -12,7 +12,7 @@ class ResponseModel(BaseModel):
     timestamp: int = Field(None, alias="timestamp")
 
 
-def response(code: int, message: str, data: Optional[Any] = None, error: Optional[Any] = None) -> dict:
+def response(code: int, message: str, data: Optional[Any] = None, error: Optional[Any] = None):
     return ORJSONResponse(
         status_code=code,
         content={
