@@ -1,14 +1,40 @@
-from typing import Annotated
+from typing import Annotated, Optional
 import uuid
 import asyncio
 from fastapi import APIRouter, UploadFile, File, Depends, BackgroundTasks, WebSocket, WebSocketDisconnect
 from app.middlewares.middleware import auth_user_middleware
 from app.controllers.upload_controller import upload_files_controller, upload_file_status_controller
+from app.controllers.files_control import get_files_control
 from app.providers import state
 from app.models.user import UserSchema
 from app.utils.response import response
 
 router = APIRouter()
+
+
+@router.get("/")
+async def get_files(
+    page_size: int = 10,
+    page_index: int = 0,
+    search: Optional[str] = None,
+    file_type: Optional[str] = None,
+    status: Optional[str] = None,
+    user: UserSchema = Depends(auth_user_middleware)
+):
+    files, total_pages = await get_files_control(
+        user=user,
+        page_size=page_size,
+        page_index=page_index,
+        search=search,
+        file_type=file_type,
+        status=status
+    )
+    return response(code=200, message="Get files successfully.", data={
+        "files": [file.model_dump() for file in files],
+        "total_pages": total_pages,
+        "page_index": page_index,
+        "page_size": page_size
+    })
 
 
 @router.post("/")

@@ -38,9 +38,14 @@ class FileSchema(BaseSchema):
     status: FileStatus = Field(FileStatus.PENDING, alias="status")
 
     @staticmethod
-    def find_by_user_id(user_id: str, page_size: int, page_index: int) -> list['FileSchema']:
+    def page_count(page_size: int) -> int:
+        return file_db.page_count(page_size)
+
+    @staticmethod
+    def find_by_user_id(user_id: str, page_size: int, page_index: int, query: dict = {}) -> list['FileSchema']:
         # Find by user_id
-        data = file_db.query({"user_id": user_id}, page_size, page_index)
+        data = file_db.query(
+            {"user_id": user_id, **query}, page_size, page_index)
         # Validate the data
         return [FileSchema.model_validate(item) for item in data]
 
