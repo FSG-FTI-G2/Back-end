@@ -4,7 +4,7 @@ import asyncio
 from fastapi import APIRouter, UploadFile, File, Depends, BackgroundTasks, WebSocket, WebSocketDisconnect
 from app.middlewares.middleware import auth_user_middleware
 from app.controllers.upload_controller import upload_files_controller, upload_file_status_controller
-from app.controllers.files_control import get_files_control
+from app.controllers.files_control import get_files_control, delete_file_control
 from app.providers import state
 from app.models.user import UserSchema
 from app.utils.response import response
@@ -26,8 +26,8 @@ async def get_files(
         page_size=page_size,
         page_index=page_index,
         search=search,
-        file_type=file_type,
-        status=status
+        type=file_type.split(",") if file_type else file_type,
+        status=status.split(",") if status else status
     )
     return response(code=200, message="Get files successfully.", data={
         "files": [file.model_dump() for file in files],
@@ -74,3 +74,12 @@ async def upload_file_progress(websocket: WebSocket, id: str):
         # Remove user state on disconnect
         state.remove(id)
         await websocket.close()
+
+
+@router.delete("/{id}")
+async def delete_file(
+    id: str,
+    _: Annotated[UserSchema, Depends(auth_user_middleware)]
+):
+    await delete_file_control(id)
+    return response(code=200, message="Deleted file successfully")
