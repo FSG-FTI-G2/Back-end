@@ -1,7 +1,8 @@
 from typing import Optional
 from fastapi import HTTPException
-from app.models.file import FileSchema, FileType, FileStatus
+from app.models.file import FileSchema
 from app.models.user import UserSchema
+from app.providers import file_storage
 
 
 # Function to query files
@@ -10,8 +11,8 @@ async def get_files_control(
     page_size: int = 10,
     page_index: int = 0,
     search: Optional[str] = None,
-    file_type: Optional[str] = None,
-    status: Optional[str] = None,
+    type: Optional[list[str]] = None,
+    status: Optional[list[str]] = None,
 ):
     # Validate pagination parameters
     if page_size < 0 or page_index < 0:
@@ -26,21 +27,12 @@ async def get_files_control(
         query["file_name"] = {"$regex": search, "$options": "i"}
 
     # Add file_type filter if provided and ensure the value is properly validated
-    if file_type:
-        if file_type.upper() in FileType.__members__:
-            # Ensure exact match of file_type
-            query["type"] = file_type.lower()
-        else:
-            raise HTTPException(
-                status_code=400, detail="Invalid file_type provided.")
+    if type:
+        query["type"] = {"$in": [t.lower() for t in type]}
 
     # Add status filter if provided and ensure the value is properly validated
     if status:
-        if status.upper() in FileStatus.__members__:
-            query["status"] = file_type.lower()  # Ensure exact match of status
-        else:
-            raise HTTPException(
-                status_code=400, detail="Invalid status provided.")
+        query["status"] = {"$in": [stat.lower() for stat in status]}
 
     # Query database for files
     files = FileSchema.find_by_user_id(
@@ -49,3 +41,18 @@ async def get_files_control(
 
     # Return paginated results
     return files, total_pages
+
+
+async def delete_file_control(id: str):
+    # Find file by id
+    file = FileSchema.find_by_id(id)
+    if not file:
+        raise HTTPException(
+            status_code=400,
+            detail="File not found"
+        )
+    # Delete file in database
+    file.delete()
+    # Delete in storage
+    file_storage.delete_file(file.file_path)
+    # TODO: Delete vector in vector database

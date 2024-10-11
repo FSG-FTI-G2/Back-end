@@ -1,9 +1,10 @@
+import uuid
+import os
 from io import BytesIO
 import asyncio
 from app.models.user import UserSchema
 from app.models.file import FileSchema, FileType, FileStatus
 from app.providers import file_storage, state
-import time
 
 MAX_FILE_SIZE = 20 * 1024 * 1024  # 20MB
 
@@ -38,19 +39,22 @@ async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSch
     if not __file_validator(filename, filebyte):
         __update_status(progress_id, filename, FileStatus.ERROR)
         return
+    # Create specific filepath
+    _name, _ext = os.path.splitext(filename)
+    filepath = f"{_name}_{uuid.uuid4().hex[:5]}{_ext}"
     # Create a file schema
     file_schema = FileSchema(
         user_id=user.id,
         type=FileType[__get_filetype(filename)],
         file_name=filename,
-        file_path=filename,
+        file_path=filepath,
         status=FileStatus.UPLOADING
     )
     file_schema.create()
     try:
         # Read file content
         # Upload to MinIO
-        file_storage.upload_file(filename, BytesIO(filebyte))
+        file_storage.upload_file(filepath, BytesIO(filebyte))
         # Update file status to processing
         __update_status(progress_id, filename,
                         FileStatus.PROCESSING, file_schema)

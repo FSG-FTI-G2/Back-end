@@ -10,8 +10,8 @@ encryptor.secret = "some_secret"
 
 
 # Create default user
-USERNAME = "admin"
-PASSWORD = "admin1111"
+USERNAME = "test"
+PASSWORD = "test123"
 UserSchema(
     username=USERNAME,
     password=encryptor.hash(PASSWORD),
