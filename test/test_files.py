@@ -20,6 +20,7 @@ class TestUploadFile(unittest.TestCase):
         # Define routes
         self.login_route = "/api/v1/auth/login"
         self.files_route = "/api/v1/files/"
+        self.static_route = "/static/"
 
         self.client = TestClient(app)
 
@@ -72,6 +73,17 @@ class TestUploadFile(unittest.TestCase):
         self.assertEqual(response.get("data", {}).get("total_pages"), 0)
         files = response.get("data", {}).get("files")
         self.assertEqual(len(files), 1)
+        return files
+
+    def __read_file_by_id(self, file_id: str):
+        response = self.client.get(self.files_route + file_id).json()
+        self.assertEqual(response.get("code"), 200)
+        file = response.get("data", {})
+        self.assertIsNotNone(file)
+
+    def __check_static_file(self, file_path: str):
+        response = self.client.get(self.static_route + file_path).json()
+        self.assertEqual(response.get("code"), 200)
 
     def __delete_files(self):
         files = self.client.get(self.files_route).json().get(
@@ -82,7 +94,15 @@ class TestUploadFile(unittest.TestCase):
             self.assertEqual(response.get("code"), 200)
 
     def test_files_apis(self):
+        # Upload files
         progress_id = self.__upload_files()
+        # View upload progress
         self.__view_upload_progress(progress_id)
-        self.__read_filtered_files()
+        # Read filtered files
+        files = self.__read_filtered_files()
+        # Read file by ID
+        self.__read_file_by_id(file_id=files[0]["id"])
+        # Check static file
+        self.__check_static_file(file_path=files[0]["file_path"])
+        # Delete files
         self.__delete_files()
