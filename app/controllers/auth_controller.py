@@ -1,8 +1,8 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from app.models.user import UserSchema
 from app.providers import encryptor
 
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+ACCESS_TOKEN_EXPIRE_DAYS = 30
 
 
 def create_access_token(data: dict, expires_delta: timedelta = None) -> str:
@@ -10,9 +10,10 @@ def create_access_token(data: dict, expires_delta: timedelta = None) -> str:
     Create jwt access token
     '''
     if expires_delta:
-        expire = datetime.now() + expires_delta
+        expire = datetime.now(tz=timezone.utc) + expires_delta
     else:
-        expire = datetime.now() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        expire = datetime.now(tz=timezone.utc) + \
+            timedelta(days=ACCESS_TOKEN_EXPIRE_DAYS)
     data.update({"exp": expire})
     return encryptor.encrypt(data)
 

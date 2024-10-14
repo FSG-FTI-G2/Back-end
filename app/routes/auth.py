@@ -2,11 +2,11 @@ from typing import Annotated
 from fastapi import APIRouter, HTTPException, Depends
 from fastapi.security import OAuth2PasswordRequestForm
 from app.models.user import UserSchema
-from app.controllers.auth_control import (
+from app.controllers.auth_controller import (
     authenticate_user,
     create_access_token,
 )
-from app.middlewares.middleware import auth_user_middleware
+from app.middlewares.auth_middleware import auth_user_middleware
 from app.utils.response import response
 
 router = APIRouter()
