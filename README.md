@@ -51,7 +51,7 @@ docker run --rm -d --name minio -p 9000:9000 -p 9001:9001 -v miniodata:/data -e 
 
 ```sh
 # Start application
-uvicorn main:app --port 7860
+c
 
 # Start application with reload detector
 uvicorn main:app --port 7860 --reload

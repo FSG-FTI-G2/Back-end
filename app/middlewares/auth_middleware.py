@@ -3,7 +3,6 @@ import datetime
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from app.models.user import UserSchema
-from jose import JWTError, jwt
 from app.providers import encryptor
 
 

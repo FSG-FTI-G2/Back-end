@@ -50,6 +50,16 @@ class FileSchema(BaseSchema):
         return [FileSchema.model_validate(item) for item in data]
 
     @staticmethod
+    def find_by_file_name(user_id: str, file_name: str) -> Union['FileSchema', None]:
+        # Find by file_name
+        data = file_db.query({"user_id": user_id, "file_name": file_name})
+        # If data is None, return None
+        if len(data) == 0:
+            return None
+        # Validate
+        return FileSchema.model_validate(data[0])
+
+    @staticmethod
     def find_by_id(id: str) -> Union['FileSchema', None]:
         # Find by id
         data = file_db.get_by_id(id)

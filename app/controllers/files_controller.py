@@ -1,8 +1,10 @@
 from typing import Optional
+import os
 from fastapi import HTTPException
 from app.models.file import FileSchema
 from app.models.user import UserSchema
 from app.providers import file_storage
+from app.utils.utilities import is_temp_file_exists, save_temp_file
 
 
 # Function to query files
@@ -56,3 +58,25 @@ async def delete_file_control(id: str):
     # Delete in storage
     file_storage.delete_file(file.file_path)
     # TODO: Delete vector in vector database
+
+
+def retrieve_file(file_id_or_name: str, user: UserSchema):
+    """
+    Check if the file exists in the temp directory. If not, download it from MinIO.
+    """
+    file = FileSchema.find_by_id(file_id_or_name)
+    if not file:
+        # In case file_id_or_name is not an id, try to find by file name
+        file = FileSchema.find_by_file_name(user.id, file_id_or_name)
+        if not file:
+            raise HTTPException(
+                status_code=404, detail="File not found."
+            )
+
+    # Download file from storag if file does not exist in temp directory
+    if not is_temp_file_exists(file.file_path):
+        file_data = file_storage.download_file(file.file_path)
+        # Save file to temp directory
+        save_temp_file(file_data, file.file_path)
+
+    return file
