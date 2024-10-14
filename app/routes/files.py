@@ -2,9 +2,9 @@ from typing import Annotated, Optional
 import uuid
 import asyncio
 from fastapi import APIRouter, UploadFile, File, Depends, BackgroundTasks, WebSocket, WebSocketDisconnect
-from app.middlewares.middleware import auth_user_middleware
+from app.middlewares.auth_middleware import auth_user_middleware
 from app.controllers.upload_controller import upload_files_controller, upload_file_status_controller
-from app.controllers.files_control import get_files_control, delete_file_control
+from app.controllers.files_controller import get_files_control, delete_file_control, retrieve_file
 from app.providers import state
 from app.models.user import UserSchema
 from app.utils.response import response
@@ -83,3 +83,12 @@ async def delete_file(
 ):
     await delete_file_control(id)
     return response(code=200, message="Deleted file successfully")
+
+
+@router.get("/{file_id_or_name}")
+async def get_file_by_id_or_name(
+    file_id_or_name: str,
+    user: Annotated[UserSchema, Depends(auth_user_middleware)]
+):
+    file = retrieve_file(file_id_or_name, user)
+    return response(code=200, message="Download file successfully.", data=file.model_dump())

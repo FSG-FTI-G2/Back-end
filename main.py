@@ -2,12 +2,12 @@ import os
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import ORJSONResponse
 from fastapi.staticfiles import StaticFiles
 from app.configs.dotenv import load_enviroment_variables
 from app.configs.docs import FASTAPI_DOC_CONFIG
 from app.routes import router
 from app.utils.response import response
+from app.utils.utilities import TEMP_PATH
 
 # Load environment variables
 load_enviroment_variables()
@@ -25,8 +25,8 @@ app.add_middleware(
 )
 
 # Mount to Static File Server
-app.mount(
-    "/static", StaticFiles(directory=os.path.join(os.getcwd(), 'temp')), name="static")
+app.mount("/static", StaticFiles(directory=TEMP_PATH), name="static")
+
 
 # Include routes
 app.include_router(router)
