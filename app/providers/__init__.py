@@ -3,6 +3,7 @@ from .memory import MemoryStateProvider
 from .db import DatabaseProvider
 # from app.providers.vector_db import QdrantProvider
 from .minio import MinioProvider
+from .LLM import LLMProvider
 
 encryptor = EncryptionProvider()
 state = MemoryStateProvider()
@@ -15,3 +16,5 @@ llm_config_db = DatabaseProvider("llm_config")
 # qdrant_client.create_collection()
 
 file_storage = MinioProvider("files")
+
+llm = LLMProvider()
