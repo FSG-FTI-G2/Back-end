@@ -9,5 +9,4 @@ router = APIRouter(prefix="/api/v1")
 # Include routes
 router.include_router(auth_router, prefix="/auth", tags=["auth"])
 router.include_router(files_router, prefix="/files", tags=["files"])
-router.include_router(
-    router_switch_llm, prefix="/switch-llm", tags=["switch_llm"])
+router.include_router(router_switch_llm, prefix="/llm", tags=["llm"])

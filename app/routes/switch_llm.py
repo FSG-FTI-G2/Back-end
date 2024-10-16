@@ -1,24 +1,30 @@
-from fastapi import APIRouter, Depends
-from pydantic import BaseModel
-from app.controllers.switch_llm_control import SwitchLLMControl
-from app.models.llm_config import SelectedModel
+from typing import Annotated
+from fastapi import APIRouter, Depends, HTTPException
+from app.middlewares.auth_middleware import auth_user_middleware
+from app.controllers.switch_llm_control import get_user_llm_config, update_user_llm_config
+from app.models.user import UserSchema
+from app.models.llm_config import SelectedModel, ModelConfigTypes
+from app.utils.response import response
 
 router = APIRouter()
 
-@router.get("/llm", response_model=dict)
-def get_llm_config(user_id: str):
-    llm_config = SwitchLLMControl.get_user_llm_config(user_id)
-    return {"user_id": user_id, "selected_model": llm_config.selected_model, 
-            "config": llm_config.config}
+
+@router.get("/")
+def get_llm_config(user: Annotated[UserSchema, Depends(auth_user_middleware)]):
+    llm_config = get_user_llm_config(user)
+    if not llm_config:
+        raise HTTPException(
+            status_code=404,
+            detail=f"LLM Configuration not found: {user.user_id}"
+        )
+    return response(200, "LLM Configuration found.", llm_config.model_dump())
 
 
-@router.post("/llm/switch", response_model=str)
-def switch_llm_model(user_id: str, model_type: SelectedModel, config_data: dict):
-    response = SwitchLLMControl.switch_llm_model(user_id, model_type, config_data)
-    return response
-
-
-@router.delete("/llm/delete", response_model=str)
-def delete_llm_config(user_id: str):
-    response = SwitchLLMControl.delete_user_llm_config(user_id)
-    return response
+@router.post("/")
+def update_llm_model(
+    selected_model: SelectedModel,
+    model_config: ModelConfigTypes,
+    user: Annotated[UserSchema, Depends(auth_user_middleware)]
+):
+    llm_config = update_user_llm_config(user, selected_model, model_config)
+    return response(200, "LLM Configuration updated.", llm_config.model_dump())

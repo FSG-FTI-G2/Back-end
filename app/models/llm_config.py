@@ -43,11 +43,17 @@ class ModelGoogleGeminiConfig(BaseModel):
     api_key: Optional[str] = Field(None, alias="api_key",
                                    description="API Key for Google Gemini Model")
 
+
 class ModelOllamaConfig(BaseModel):
     endpoint: Optional[str] = Field(None, alias="endpoint",
                                     description="Endpoint of the Ollama Model")
     name_model: Optional[str] = Field(None, alias="name_model",
                                       description="Name of the Ollama Model")
+
+
+ModelConfigTypes = Union[ModelOpenAIConfig, ModelAzureOpenAIConfig,
+                         ModelGoogleGeminiConfig, ModelOllamaConfig]
+
 
 class ModelConfig(BaseModel):
     # llama: ModelLlamaConfig = ModelLlamaConfig()
