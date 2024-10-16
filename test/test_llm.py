@@ -1,37 +1,62 @@
 import unittest
-from unittest.mock import patch
-from llama_index.embeddings.openai import OpenAIEmbedding
-from llama_index.embeddings.gemini import GeminiEmbedding
-from llama_index.embeddings.ollama import OllamaEmbedding
-from app.providers.LLM import LLMProvider
-from app.configs.llm import GPTClient, GeminiClient, OllamaClient
+from pydantic import BaseModel, Field
+from app.providers import llm
+import logging
+import sys
+
+
+logger = logging.getLogger(__name__)
+logger.level = logging.DEBUG
+stream_handler = logging.StreamHandler(sys.stdout)
+logger.addHandler(stream_handler)
+
+
+class OutputFormat(BaseModel):
+    answer: str = Field(..., description="Answer of question")
+    thought: str = Field(..., description="Thought of the model")
+
 
 class TestLLMProvider(unittest.TestCase):
-    def setUp(self):
-        self.provider = LLMProvider()
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
 
-    # @patch('os.environ.get')
-    # def test_set_openai_model(self, mock_get_env):
-    #     self.provider.set_model("openai")
-    #     self.assertEqual(self.provider.model_name, "openai")
-    #     self.assertEqual(self.provider.llm, GPTClient)
-    #     self.assertIsInstance(self.provider.embed_model, OpenAIEmbedding)
+    def __structure_llm(self, question: str, history: list):
+        response = llm.structured_response(
+            question, parser=OutputFormat, history=history)
+        logger.info(f"Response: {response}")
+        return response
 
-    @patch('os.environ.get', return_value='dummy_api_key')
-    def test_set_gemini_model(self, mock_get_env):
-        self.provider.set_model("gemini")
-        self.assertEqual(self.provider.model_name, "gemini")
-        self.assertEqual(self.provider.llm, GeminiClient)
-        self.assertIsInstance(self.provider.embed_model, GeminiEmbedding)
+    def __unstructure_llm(self, question: str, history: list):
+        response = llm.response(question, history=history)
+        logger.info(f"Response: {response}")
+        return response
 
-    def test_set_ollama_model(self):
-        self.provider.set_model("ollama")
-        self.assertEqual(self.provider.model_name, "ollama")
-        self.assertEqual(self.provider.llm, OllamaClient)
-        self.assertIsInstance(self.provider.embed_model, OllamaEmbedding)
+    def test_structure_llm(self):
+        history = []
 
-    def test_invalid_model(self):
-        llm, embed_model = self.provider.set_model("invalid_model")
-        self.assertIsNone(llm)
-        self.assertIsNone(embed_model)
+        # Test structured_response, question 1
+        question = "What is the capital of France?"
+        answer = self.__structure_llm(question, history)
+        self.assertIsInstance(answer, OutputFormat)
+        logger.info(f"Answer: {answer.answer}")
 
+        # Test structured_response, question 2
+        question = "What question I just asked?"
+        answer = self.__structure_llm(question, history)
+        self.assertIsInstance(answer, OutputFormat)
+        logger.info(f"Answer: {answer.answer}")
+
+    def test_unstructure_llm(self):
+        history = []
+
+        # Test response, question 1
+        question = "What is the capital of Vietnam?"
+        answer = self.__unstructure_llm(question, history)
+        self.assertIsInstance(answer, str)
+        logger.info(f"Answer: {answer}")
+
+        # Test response, question 2
+        question = "What question I just asked?"
+        answer = self.__unstructure_llm(question, history)
+        self.assertIsInstance(answer, str)
+        logger.info(f"Answer: {answer}")
