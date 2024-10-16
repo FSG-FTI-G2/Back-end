@@ -11,6 +11,7 @@ state = MemoryStateProvider()
 file_db = DatabaseProvider("files")
 user_db = DatabaseProvider("users")
 llm_config_db = DatabaseProvider("llm_config")
+message_db = DatabaseProvider("messages")
 
 # qdrant_client = QdrantProvider('Qdrants_Vector_Database')
 # qdrant_client.create_collection()
