@@ -104,19 +104,26 @@ class DatabaseProvider:
     def update(
         self,
         id: str | list[str],
-        data: dict[str, Any]
+        data: dict[str, Any],
+        native_query: bool = False
     ) -> int:
         '''
         Updates a document by id or multiple documents by ids
         '''
+        # Get updating query
+        if native_query:
+            updating_query = data
+        else:
+            updating_query = {"$set": data}
+        # Update document
         if isinstance(id, str):
             # Update document by ObjectId
             result = self.collection.update_one(
-                {"_id": ObjectId(id)}, {"$set": data})
+                {"_id": ObjectId(id)}, updating_query)
         else:
             # Update multiple documents by ObjectId
             result = self.collection.update_many(
-                {"_id": {"$in": [ObjectId(oid=i) for i in id]}}, {"$set": data})
+                {"_id": {"$in": [ObjectId(oid=i) for i in id]}}, updating_query)
         # Return the number of documents modified
         return result.modified_count
 
