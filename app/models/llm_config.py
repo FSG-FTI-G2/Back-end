@@ -9,15 +9,16 @@ class SelectedModel(str, Enum):
     '''
     Enum for LLM Selected Model Type
     '''
-    Llama = "llama"
+    # Llama = "llama"
     OpenAI = "openai"
     AzureOpenAI = "azure_openai"
     GoogleGemini = "google_gemini"
+    Ollama = "ollama"
 
 
-class ModelLlamaConfig(BaseModel):
-    version: Optional[str] = Field(None, alias="version",
-                                   description="Version of the model")
+# class ModelLlamaConfig(BaseModel):
+#     version: Optional[str] = Field(None, alias="version",
+#                                    description="Version of the model")
 
 
 class ModelOpenAIConfig(BaseModel):
@@ -37,15 +38,29 @@ class ModelAzureOpenAIConfig(BaseModel):
 
 
 class ModelGoogleGeminiConfig(BaseModel):
+    name_model: Optional[str] = Field(None, alias="name_model",
+                                      description="Name of the Google Gemini Model")
     api_key: Optional[str] = Field(None, alias="api_key",
                                    description="API Key for Google Gemini Model")
 
 
+class ModelOllamaConfig(BaseModel):
+    endpoint: Optional[str] = Field(None, alias="endpoint",
+                                    description="Endpoint of the Ollama Model")
+    name_model: Optional[str] = Field(None, alias="name_model",
+                                      description="Name of the Ollama Model")
+
+
+ModelConfigTypes = Union[ModelOpenAIConfig, ModelAzureOpenAIConfig,
+                         ModelGoogleGeminiConfig, ModelOllamaConfig]
+
+
 class ModelConfig(BaseModel):
-    llama: ModelLlamaConfig = ModelLlamaConfig()
+    # llama: ModelLlamaConfig = ModelLlamaConfig()
     openai: ModelOpenAIConfig = ModelOpenAIConfig()
     azure_openai: ModelAzureOpenAIConfig = ModelAzureOpenAIConfig()
     google_gemini: ModelGoogleGeminiConfig = ModelGoogleGeminiConfig()
+    ollama: ModelOllamaConfig = ModelOllamaConfig()
 
 
 # Create index for user_id
