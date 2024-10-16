@@ -1,4 +1,7 @@
+from .db import DatabaseProvider
 from .encryption import EncryptionProvider
+from app.providers.vector_db import QdrantProvider
+from .minio import MinioProvider
 from .memory import MemoryStateProvider
 from .db import DatabaseProvider
 # from app.providers.vector_db import QdrantProvider
@@ -13,8 +16,8 @@ user_db = DatabaseProvider("users")
 llm_config_db = DatabaseProvider("llm_config")
 message_db = DatabaseProvider("messages")
 
-# qdrant_client = QdrantProvider('Qdrants_Vector_Database')
-# qdrant_client.create_collection()
+qdrant_client = QdrantProvider('Qdrants_Vector_Database')
+qdrant_client.create_collection()
 
 file_storage = MinioProvider("files")
 
