@@ -3,6 +3,7 @@ from app.providers import qdrant_client
 from io import BytesIO
 from docx import Document 
 from PyPDF2 import PdfReader 
+from app.utils.text_processing_utils import chunk_text
 
 
 def extraction_features(text: str, file_schema: FileSchema):
@@ -15,19 +16,21 @@ def extraction_features(text: str, file_schema: FileSchema):
     - text (str): The text content extracted from the file.
     - file_schema (FileSchema): The schema containing file information and metadata.
     """
+    chunks = chunk_text(text)
     
-    # Create the payload dictionary containing metadata to be stored in Qdrant
-    payloads = {
-        "id": file_schema.id,  # File ID
-        "user_id": file_schema.user_id,  # ID of the user who uploaded the file
-        "file_name": file_schema.file_name,  # Name of the file
-        "file_type": file_schema.type,  # Type of the file (e.g., PDF, DOCX, TXT)
-        "file_path": file_schema.file_path,  # Path where the file is stored
-        "summary": " ",  # Placeholder for file summary, can be generated later
-    }
+    for content in chunks:
+        # Create the payload dictionary containing metadata to be stored in Qdrant
+        payloads = {
+            "id": file_schema.id,  # File ID
+            "user_id": file_schema.user_id,  # ID of the user who uploaded the file
+            "file_name": file_schema.file_name,  # Name of the file
+            "file_type": file_schema.type,  # Type of the file (e.g., PDF, DOCX, TXT)
+            "file_path": file_schema.file_path,  # Path where the file is stored
+            "content": content
+        }
     
-    # Add the extracted text and its metadata (payloads) to Qdrant
-    qdrant_client.add_vectors(text, payloads)
+        # Add the extracted text and its metadata (payloads) to Qdrant
+        qdrant_client.add_vectors(text, payloads)
 
 
 def extraction_file_content(file_type: FileType, file_content: BytesIO):

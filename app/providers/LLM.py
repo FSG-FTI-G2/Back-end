@@ -6,7 +6,7 @@ from fastapi import HTTPException
 from llama_index.core.llms import ChatMessage, LLM, MessageRole
 from typing import Dict, Any
 from app.utils.prompt_template import RolePrompt, get_prompt_by_role
-from app.configs.llm import GPTClient, GeminiClient
+from app.configs.llm import GPTClient, GeminiClient, OllamaClient
 
 
 _T = TypeVar("T", bound=BaseModel)
@@ -31,7 +31,7 @@ class LLMModel(str, enum.Enum):
 
 
 DEFAULT_MODEL = LLMModel.GEMINI
-DEFAULT_ROLE = RolePrompt.STUDENT
+DEFAULT_ROLE = RolePrompt.EXPERT
 
 
 class LLMProvider:
@@ -42,8 +42,8 @@ class LLMProvider:
             return GPTClient
         elif model == LLMModel.GEMINI:
             return GeminiClient
-        # elif model == LLMModel.OLLAMA:
-        #     return OllamaClient
+        elif model == LLMModel.OLLAMA:
+            return OllamaClient
         else:
             raise HTTPException(
                 status_code=400, detail="Invalid model name")
