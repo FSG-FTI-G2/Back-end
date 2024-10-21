@@ -3,23 +3,34 @@ from pydantic import Field
 from llama_index.core.llms import ChatMessage
 from app.models.base import BaseSchema
 from app.providers import message_db
+from app.utils.prompt_template import RolePrompt
 
 
 class MessageSchema(BaseSchema):
     title: str = Field(None, alias="title")
     user_id: str = Field(None, alias="user_id")
     messages: List[ChatMessage] = Field(default_factory=list, alias="messages")
+    role_prompt: RolePrompt = Field(
+        default=RolePrompt.STUDENT, alias="role_prompt")
 
     @staticmethod
     def find_messages_by_user_id(user_id: str, page_size: int, page_index: int) -> List['MessageSchema']:
-        data = message_db.query({"user_id": user_id}, page_size, page_index)
+        data = message_db.query({"user_id": user_id}, exclude=[
+                                "messages"], page_size=page_size, page_index=page_index)
         return [MessageSchema.model_validate(item) for item in data]
+
+    @staticmethod
+    def find_message_by_id(message_id: str, user_id: str) -> 'MessageSchema':
+        data = message_db.query({"_id": message_id, "user_id": user_id})
+        if len(data) > 0:
+            return MessageSchema.model_validate(data[0])
+        return None
 
     def search_in_messages(self, keyword: str, page_size: int, page_index: int) -> List[ChatMessage]:
         data = message_db.query(
             {"messages.content": {"$regex": keyword, "$options": "i"}},
-            page_size,
-            page_index
+            page_size=page_size,
+            page_index=page_index
         )
         return [MessageSchema.model_validate(item) for item in data]
 

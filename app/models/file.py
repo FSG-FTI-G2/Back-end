@@ -45,7 +45,7 @@ class FileSchema(BaseSchema):
     def find_by_user_id(user_id: str, page_size: int, page_index: int, query: dict = {}) -> list['FileSchema']:
         # Find by user_id
         data = file_db.query(
-            {"user_id": user_id, **query}, page_size, page_index)
+            {"user_id": user_id, **query}, page_size=page_size, page_index=page_index)
         # Validate the data
         return [FileSchema.model_validate(item) for item in data]
 

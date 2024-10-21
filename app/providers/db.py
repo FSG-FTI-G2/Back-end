@@ -73,6 +73,7 @@ class DatabaseProvider:
     def query(
         self,
         filter: dict,
+        exclude: list[str] = [],
         page_size: int = DEFAULT_PAGE_SIZE,
         page_index: int = DEFAULT_PAGE_INDEX
     ) -> list[dict[str, Any]]:
@@ -80,7 +81,7 @@ class DatabaseProvider:
         Returns documents based on a query
         '''
         # Skip and limit for pagination
-        cursor = self.collection.find(filter).skip(
+        cursor = self.collection.find(filter, {field: 0 for field in exclude}).skip(
             page_size * page_index).limit(page_size)
         # Convert ObjectId to string
         data = map(lambda x: {**x, "_id": str(x["_id"])}, cursor)
