@@ -1,6 +1,5 @@
 import unittest
 from fastapi.testclient import TestClient
-from bson import ObjectId
 from main import app
 from llama_index.core.llms import MessageRole, ChatMessage
 from app.models.message import MessageSchema
@@ -13,14 +12,17 @@ class TestViewHistory(unittest.TestCase):
 
         # Request login to get token
         response = self.client.post("/api/v1/auth/login", data={
-            "username": "test",
-            "password": "test123",
+            "username": "admin",
+            "password": "admin1111",
         }).json()
         token = response.get("data", {}).get("token")
         self.client.headers.update({"Authorization": f"Bearer {token}"})
 
+        # Get user_id from me
+        response = self.client.get("/api/v1/auth/me").json().get("data")
+
         # Tạo cuộc trò chuyện qua endpoint POST để có unique_id
-        user_id = "6708c6cc1a071354f0cccb08"
+        user_id = response.get("id")
         title = "Test Message"
         messages = [
             ChatMessage(role=MessageRole.USER, content="Hello! Hihi Hahaa?"),

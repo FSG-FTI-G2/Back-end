@@ -14,16 +14,15 @@ class MessageSchema(BaseSchema):
         default=RolePrompt.STUDENT, alias="role_prompt")
 
     @staticmethod
-    def find_messages_by_user_id(user_id: str, page_size: int, page_index: int) -> List['MessageSchema']:
-        data = message_db.query({"user_id": user_id}, exclude=[
-                                "messages"], page_size=page_size, page_index=page_index)
+    def find_messages_by_user_id(user_id: str) -> List['MessageSchema']:
+        data = message_db.query({"user_id": user_id}, exclude=["messages"])
         return [MessageSchema.model_validate(item) for item in data]
 
     @staticmethod
-    def find_message_by_id(message_id: str, user_id: str) -> 'MessageSchema':
-        data = message_db.query({"_id": message_id, "user_id": user_id})
-        if len(data) > 0:
-            return MessageSchema.model_validate(data[0])
+    def find_message_by_id(message_id: str) -> 'MessageSchema':
+        data = message_db.get_by_id(message_id)
+        if data is not None:
+            return MessageSchema.model_validate(data)
         return None
 
     def search_in_messages(self, keyword: str, page_size: int, page_index: int) -> List[ChatMessage]:

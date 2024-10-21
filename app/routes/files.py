@@ -7,7 +7,7 @@ from app.controllers.upload_controller import upload_files_controller, upload_fi
 from app.controllers.files_controller import get_files_control, delete_file_control, retrieve_file
 from app.providers import state
 from app.models.user import UserSchema
-from app.utils.response import response
+from app.utils.response import response, pagination_data
 
 router = APIRouter()
 
@@ -29,12 +29,12 @@ async def get_files(
         type=file_type.split(",") if file_type else file_type,
         status=status.split(",") if status else status
     )
-    return response(code=200, message="Get files successfully.", data={
-        "files": [file.model_dump() for file in files],
-        "total_pages": total_pages,
-        "page_index": page_index,
-        "page_size": page_size
-    })
+    return response(code=200, message="Get files successfully.", data=pagination_data(
+        data=[file.model_dump() for file in files],
+        total_pages=total_pages,
+        page_index=page_index,
+        page_size=page_size
+    ))
 
 
 @router.post("/")
