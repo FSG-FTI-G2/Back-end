@@ -1,5 +1,6 @@
 import enum
-from typing import TypeVar, Type, TypedDict, Literal, List
+from typing import TypeVar, Type, TypedDict, Literal, List, Generator, Callable, Coroutine
+from typing_extensions import deprecated
 from pydantic import BaseModel
 from fastapi import HTTPException
 from llama_index.core.llms import ChatMessage, LLM, MessageRole
@@ -56,7 +57,7 @@ class LLMProvider:
     def __prune_history(self, history: list[ChatMessage], max_history: int) -> list[ChatMessage]:
         return history[-max_history:]
 
-    def structured_response(
+    async def structured_response(
         self,
         question: str,
         parser: Type[_T],
@@ -74,20 +75,57 @@ class LLMProvider:
         # Prune the history
         if max_history:
             history = self.__prune_history(history, max_history)
+        history.append(ChatMessage.from_str(question))
 
         # Chat with the LLM
-        history.append(ChatMessage.from_str(question))
-        output = sllm.chat([self.__system_message(role), *history])
+        output = await sllm.achat([self.__system_message(role), *history])
         history.append(output.message)
         return output.raw
 
-    def response(
+    @deprecated("Structured streaming is not supported yet by Llama-Index")
+    def stream_structured_response(
+        self,
+        question: str,
+        parser: Type[_T],
+        history: list[ChatMessage] = [],
+        role: RolePrompt = DEFAULT_ROLE,
+        model_name: LLMModel = DEFAULT_MODEL,
+        max_history: int = None,
+        callback: Callable = None
+    ) -> Generator:
+        # Select the LLM
+        selected_llm = self.__get_llm_model(model_name)
+
+        # Convert the LLM to a structured LLM
+        sllm = selected_llm.as_structured_llm(output_cls=parser)
+
+        # Prune the history
+        if max_history:
+            history = self.__prune_history(history, max_history)
+        history.append(ChatMessage.from_str(question))
+
+        # Chat with the LLM
+        historical = False
+        gen = sllm.stream_chat([self.__system_message(role), *history])
+        for output in gen:
+            if historical:
+                history[-1].content = output.message.content
+            else:
+                history.append(output.message)
+                historical = True
+            yield output.raw
+
+        # Callback
+        if callback:
+            callback()
+
+    async def response(
         self,
         question: str,
         history: list[ChatMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
-        max_history: int = None
+        max_history: int = None,
     ) -> str:
         # Select the LLM
         selected_llm = self.__get_llm_model(model_name)
@@ -95,10 +133,42 @@ class LLMProvider:
         # Prune the history
         if max_history:
             history = self.__prune_history(history, max_history)
+        history.append(ChatMessage.from_str(question))
 
         # Chat with the LLM
-        history.append(ChatMessage.from_str(question))
-        output = selected_llm.chat(
+        output = await selected_llm.achat(
             [self.__system_message(role), *history])
         history.append(output.message)
-        return self.__parse_gemini_raw_response(output.raw)
+        return output.message.content
+
+    def stream_response(
+        self,
+        question: str,
+        history: list[ChatMessage] = [],
+        role: RolePrompt = DEFAULT_ROLE,
+        model_name: LLMModel = DEFAULT_MODEL,
+        max_history: int = None,
+        callback: Callable = None
+    ) -> Generator:
+        # Select the LLM
+        selected_llm = self.__get_llm_model(model_name)
+
+        # Prune the history
+        if max_history:
+            history = self.__prune_history(history, max_history)
+        history.append(ChatMessage.from_str(question))
+
+        # Chat with the LLM
+        historical = False
+        gen = selected_llm.stream_chat([self.__system_message(role), *history])
+        for output in gen:
+            if historical:
+                history[-1].content = output.message.content
+            else:
+                history.append(output.message)
+                historical = True
+            yield output.message.content
+
+        # Callback
+        if callback:
+            callback()

@@ -1,7 +1,7 @@
 import time
-from typing import Optional, Any
+from typing import Optional, Any, Generator
 from pydantic import BaseModel, Field
-from fastapi.responses import ORJSONResponse
+from fastapi.responses import ORJSONResponse, StreamingResponse
 
 
 class ResponseModel(BaseModel):
@@ -34,4 +34,16 @@ def response(code: int, message: str, data: Optional[Any] = None, error: Optiona
     return ORJSONResponse(
         status_code=code,
         content=content
+    )
+
+
+def __yield_response(generator: Generator):
+    for item in generator:
+        yield f"data: {item}\n\n"
+
+
+def streaming_response(generator: Generator, media_type: str = "text/event-stream") -> StreamingResponse:
+    return StreamingResponse(
+        content=generator,
+        media_type=media_type
     )

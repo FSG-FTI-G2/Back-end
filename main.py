@@ -1,5 +1,6 @@
 import os
 import uvicorn
+import nest_asyncio
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -8,6 +9,7 @@ from app.configs.docs import FASTAPI_DOC_CONFIG
 from app.routes import router
 from app.utils.response import response
 from app.utils.utilities import TEMP_PATH
+nest_asyncio.apply()
 
 # Load environment variables
 load_enviroment_variables()
