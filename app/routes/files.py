@@ -72,7 +72,7 @@ async def upload_file_progress(websocket: WebSocket, id: str):
             }, native=True))
     except WebSocketDisconnect:
         # Remove user state on disconnect
-        state.remove(id)
+        state.delete(id)
         await websocket.close()
 
 

@@ -1,11 +1,16 @@
-from typing import AsyncGenerator
+from typing import Any
 import asyncio
 from pydantic import BaseModel, Field
 from fastapi import HTTPException
+from qdrant_client.http.models import Payload
 from app.models.user import UserSchema
 from app.models.message import MessageSchema
-from app.providers import llm
+from app.providers import llm, embedder, vector_db
 from app.utils.prompt_template import RolePrompt
+from app.utils.logger import get_logger
+
+logger = get_logger("CHAT", color=1)
+err_logger = get_logger("CHAT", color=1, type="error")
 
 
 async def get_all_history(user: UserSchema) -> list[MessageSchema]:
@@ -24,6 +29,13 @@ class GetTitleOutput(BaseModel):
                        description="The summarized messages to be used as title")
 
 
+def __format_context(data: list[Payload]) -> str:
+    context = "--- Context ---\n"
+    for d in data:
+        context += f"File: {d['file_name']}\nContent: {d['content']}\n\n"
+    return context + "--- End of Context ---"
+
+
 async def add_message(message: str, message_id: str | None, role: RolePrompt, user: UserSchema) -> MessageSchema:
     # Create message if message_id is None
     if message_id is None:
@@ -38,20 +50,31 @@ async def add_message(message: str, message_id: str | None, role: RolePrompt, us
         if message_instance.user_id != user.id:
             raise HTTPException(status_code=403, detail="Forbidden")
 
-    # TODO: Implement extract features, query, prompting
+    # Embed message
+    embedded_message = embedder.embed(message)[0]
+
+    # Retrieve the vector of the message
+    contexts = vector_db.search_vector(user.id, embedded_message)
+    for context in contexts:
+        logger(f"Context: {context}")
 
     await llm.response(
         question=message,
+        context=__format_context([c.payload for c in contexts]),
         history=message_instance.messages,
         role=message_instance.role_prompt,
     )
 
     # Check if message not have title
-    if not message_instance.title:
-        # Generate title
-        title_response = await llm.structured_response(
-            f"Recent message: {message_instance.messages[-1].content}", GetTitleOutput, role=RolePrompt.GENERAL)
-        message_instance.title = title_response.title
+    try:
+        if not message_instance.title:
+            # Generate title
+            title_response = await llm.structured_response(
+                f"Recent message: {message_instance.messages[-1].content}", GetTitleOutput, role=RolePrompt.GENERAL)
+            message_instance.title = title_response.title
+    except Exception as e:
+        err_logger(f"Error when create chat title: {e}")
+        message_instance.title = "New Chat"
 
     # Save message
     message_instance.update()

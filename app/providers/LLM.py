@@ -63,6 +63,7 @@ class LLMProvider:
         self,
         question: str,
         parser: Type[_T],
+        context: str = None,
         history: list[ChatMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
@@ -78,9 +79,11 @@ class LLMProvider:
         if max_history:
             history = self.__prune_history(history, max_history)
         history.append(ChatMessage.from_str(question))
+        new_message = ChatMessage.from_str(
+            f"{context or ''}\Prompt: {question}")
 
         # Chat with the LLM
-        output = await sllm.achat([self.__system_message(role), *history])
+        output = await sllm.achat([self.__system_message(role), *history[:-1], new_message])
         history.append(output.message)
         logger(f"Structured response: {output.raw}")
         return output.raw
@@ -90,6 +93,7 @@ class LLMProvider:
         self,
         question: str,
         parser: Type[_T],
+        context: str = None,
         history: list[ChatMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
@@ -106,10 +110,13 @@ class LLMProvider:
         if max_history:
             history = self.__prune_history(history, max_history)
         history.append(ChatMessage.from_str(question))
+        new_message = ChatMessage.from_str(
+            f"{context or ''}\Prompt: {question}")
 
         # Chat with the LLM
         historical = False
-        gen = sllm.stream_chat([self.__system_message(role), *history])
+        gen = sllm.stream_chat(
+            [self.__system_message(role), *history[-1], new_message])
         for output in gen:
             if historical:
                 history[-1].content = output.message.content
@@ -125,6 +132,7 @@ class LLMProvider:
     async def response(
         self,
         question: str,
+        context: str = None,
         history: list[ChatMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
@@ -137,10 +145,12 @@ class LLMProvider:
         if max_history:
             history = self.__prune_history(history, max_history)
         history.append(ChatMessage.from_str(question))
+        new_message = ChatMessage.from_str(
+            f"{context or ''}\Prompt: {question}")
 
         # Chat with the LLM
         output = await selected_llm.achat(
-            [self.__system_message(role), *history])
+            [self.__system_message(role), *history[:-1], new_message])
         history.append(output.message)
         logger(f"Response: {output.message.content}")
         return output.message.content
@@ -148,6 +158,7 @@ class LLMProvider:
     def stream_response(
         self,
         question: str,
+        context: str = None,
         history: list[ChatMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
@@ -161,10 +172,13 @@ class LLMProvider:
         if max_history:
             history = self.__prune_history(history, max_history)
         history.append(ChatMessage.from_str(question))
+        new_message = ChatMessage.from_str(
+            f"{context or ''}\Prompt: {question}")
 
         # Chat with the LLM
         historical = False
-        gen = selected_llm.stream_chat([self.__system_message(role), *history])
+        gen = selected_llm.stream_chat(
+            [self.__system_message(role), *history[:-1], new_message])
         for output in gen:
             if historical:
                 history[-1].content = output.message.content
