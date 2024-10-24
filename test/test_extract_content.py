@@ -7,13 +7,13 @@ from app.controllers.extraction_controller import extraction_file_content
 
 
 class TestExtractFileContent(unittest.TestCase):
-
     def setUp(self):
         # TXT file
         self.txt_file_name = "example.txt"
         self.txt_file_type = FileType.TXT
-        self.txt_file_stream = BytesIO(b"This is an example of a text file content.")
-        
+        self.txt_file_stream = BytesIO(
+            b"This is an example of a text file content.")
+
         # DOCX file by creating local for test
         self.docx_file_name = "example.docx"
         self.docx_file_type = FileType.DOCX
@@ -61,24 +61,31 @@ class TestExtractFileContent(unittest.TestCase):
 
     def test_txt_file_content(self):
         """Test for TXT file content extraction."""
-        content = extraction_file_content(self.txt_file_type, self.txt_file_stream)
+        content = extraction_file_content(
+            self.txt_file_type, self.txt_file_stream)
         expected_content = "This is an example of a text file content."
-        self.assertEqual(content, expected_content, "TXT file content did not match.")
+        self.assertEqual(content, expected_content,
+                         "TXT file content did not match.")
 
     def test_docx_file_content(self):
         """Test for DOCX file content extraction."""
-        content = extraction_file_content(self.docx_file_type, self.docx_file_stream)
+        content = extraction_file_content(
+            self.docx_file_type, self.docx_file_stream)
         expected_content = "This is a test DOCX file content."
-        self.assertEqual(content, expected_content, "DOCX file content did not match.")
+        self.assertEqual(content, expected_content,
+                         "DOCX file content did not match.")
 
     def test_pdf_file_content(self):
         """Test for PDF file content extraction from the generated PDF file."""
-        content = extraction_file_content(self.pdf_file_type, self.pdf_file_stream)
-        print(content)  # Print the extracted text from the PDF file for verification
+        content = extraction_file_content(
+            self.pdf_file_type, self.pdf_file_stream)
+        # Print the extracted text from the PDF file for verification
+        print(content)
 
         # Set up assertions to check expected content
         expected_content = "Sample PDF Document"
-        self.assertIn(expected_content, content, "Expected content not found in PDF.")
+        self.assertIn(expected_content, content,
+                      "Expected content not found in PDF.")
 
         expected_lines = [
             "This is a test PDF file created for testing purposes.",
@@ -88,4 +95,5 @@ class TestExtractFileContent(unittest.TestCase):
             "3. Conclusion",
         ]
         for line in expected_lines:
-            self.assertIn(line, content, f"Expected line '{line}' not found in PDF content.")
+            self.assertIn(
+                line, content, f"Expected line '{line}' not found in PDF content.")

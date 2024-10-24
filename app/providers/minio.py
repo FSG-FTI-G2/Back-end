@@ -2,6 +2,10 @@ from typing import List
 from io import BytesIO
 from minio.error import S3Error
 from app.configs.minIO import minio_client
+from app.utils.logger import get_logger
+
+
+logger = get_logger("MINIO", color=93)
 
 
 class MinioProvider:
@@ -34,6 +38,7 @@ class MinioProvider:
             data=file_data,
             length=file_data.getbuffer().nbytes
         )
+        logger(f"File uploaded `{self.bucket_name}/{object_name}`")
         return result.version_id
 
     def list_files(self) -> List[str]:
@@ -47,6 +52,7 @@ class MinioProvider:
             bucket_name=self.bucket_name,
             object_name=object_name,
         )
+        logger(f"File downloaded `{self.bucket_name}/{object_name}`")
         return BytesIO(response.read())
 
     def delete_file(self, object_name: str) -> None:
@@ -54,3 +60,4 @@ class MinioProvider:
             bucket_name=self.bucket_name,
             object_name=object_name
         )
+        logger(f"File deleted `{self.bucket_name}/{object_name}`")

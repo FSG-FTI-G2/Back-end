@@ -9,10 +9,14 @@ from app.configs.docs import FASTAPI_DOC_CONFIG
 from app.routes import router
 from app.utils.response import response
 from app.utils.utilities import TEMP_PATH
+from app.utils.auto_migrate import auto_migrate
 nest_asyncio.apply()
 
 # Load environment variables
 load_enviroment_variables()
+
+# Auto migrate database
+auto_migrate()
 
 # Define app instance
 app = FastAPI(**FASTAPI_DOC_CONFIG)

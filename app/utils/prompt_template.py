@@ -8,7 +8,6 @@ class RolePrompt(str, enum.Enum):
 
 
 def get_prompt_by_role(role: RolePrompt | str):
-    
     if role == RolePrompt.STUDENT:
         return student_prompt_template
     elif role == RolePrompt.EXPERT:

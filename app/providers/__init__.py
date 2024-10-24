@@ -1,23 +1,25 @@
-from .db import DatabaseProvider
-from .encryption import EncryptionProvider
-# from app.providers.vector_db import QdrantProvider
-from .minio import MinioProvider
 from .memory import MemoryStateProvider
+from .encryption import EncryptionProvider
 from .db import DatabaseProvider
 from .minio import MinioProvider
+from .embedding import VectorEmbedder
+from .vector_db import QdrantProvider
 from .LLM import LLMProvider
 
-encryptor = EncryptionProvider()
+# Utilities Providers
 state = MemoryStateProvider()
+encryptor = EncryptionProvider()
 
+# Database Providers
 file_db = DatabaseProvider("files")
 user_db = DatabaseProvider("users")
 llm_config_db = DatabaseProvider("llm_config")
 message_db = DatabaseProvider("messages")
 
-# qdrant_client = QdrantProvider('Qdrants_Vector_Database')
-# qdrant_client.create_collection()
-
+# File Storage Providers
 file_storage = MinioProvider("files")
 
+# AI Related Providers
+embedder = VectorEmbedder()
+vector_db = QdrantProvider()
 llm = LLMProvider()

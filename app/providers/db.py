@@ -1,6 +1,10 @@
 from typing import Any
 from bson import ObjectId
 from app.configs.mongodb import db
+from app.utils.logger import get_logger
+
+
+logger = get_logger("MONGODB", color=92)
 
 
 DEFAULT_PAGE_SIZE = 10
@@ -34,6 +38,7 @@ class DatabaseProvider:
         '''
         # Create index for the field
         self.collection.create_index(field, unique=unique)
+        logger(f"Index created `{self.collection_name}:{field}`")
 
     def get_all(
         self,
@@ -46,17 +51,11 @@ class DatabaseProvider:
         # Skip and limit for pagination
         cursor = self.collection.find().skip(
             page_size * page_index).limit(page_size)
+        logger(f"Retrieved all documents `{self.collection_name}`")
         # Convert ObjectId to string
         data = map(lambda x: {**x, "_id": str(x["_id"])}, cursor)
         # Return as list
         return list(data)
-
-    def create_index(self, field: str, unique: bool = False):
-        '''
-        Creates an index for a field in the collection
-        '''
-        # Create index for the field
-        self.collection.create_index(field, unique=unique)
 
     def get_by_id(self, id: str) -> dict[str, Any] | None:
         '''
@@ -64,6 +63,7 @@ class DatabaseProvider:
         '''
         # Find document by ObjectId
         data = self.collection.find_one({"_id": ObjectId(oid=id)})
+        logger(f"Retrieved document `{self.collection_name}:{id}`")
         # Convert ObjectId to string
         if data:
             data["_id"] = str(data["_id"])
@@ -83,6 +83,7 @@ class DatabaseProvider:
         # Skip and limit for pagination
         cursor = self.collection.find(filter, {field: 0 for field in exclude}).skip(
             page_size * page_index).limit(page_size)
+        logger(f"Queried documents `{self.collection_name}`")
         # Convert ObjectId to string
         data = map(lambda x: {**x, "_id": str(x["_id"])}, cursor)
         # Return as list
@@ -97,6 +98,7 @@ class DatabaseProvider:
         '''
         # Insert document
         result = self.collection.insert_one(data)
+        logger(f"Document inserted `{self.collection_name}`")
         # Increment running count
         self.running_count += 1
         # Return the inserted id
@@ -125,6 +127,7 @@ class DatabaseProvider:
             # Update multiple documents by ObjectId
             result = self.collection.update_many(
                 {"_id": {"$in": [ObjectId(oid=i) for i in id]}}, updating_query)
+        logger(f"Document updated `{self.collection_name}:{id}`")
         # Return the number of documents modified
         return result.modified_count
 
@@ -142,6 +145,7 @@ class DatabaseProvider:
             # Delete multiple documents by ObjectId
             result = self.collection.delete_many(
                 {"_id": {"$in": [ObjectId(oid=i) for i in id]}})
+        logger(f"Document deleted `{self.collection_name}:{id}`")
         # Decrement running count
         self.running_count -= result.deleted_count
         # Return the number of documents deleted

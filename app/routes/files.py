@@ -65,7 +65,7 @@ async def upload_file_progress(websocket: WebSocket, id: str):
         is_completed = False
         while not is_completed:
             await asyncio.sleep(1)
-            is_completed, status = upload_file_status_controller(id)
+            is_completed, status = await upload_file_status_controller(id)
             await websocket.send_json(response(code=200, message="File upload status.", data={
                 "status": status,
                 "is_completed": is_completed
@@ -79,9 +79,9 @@ async def upload_file_progress(websocket: WebSocket, id: str):
 @router.delete("/{id}")
 async def delete_file(
     id: str,
-    _: Annotated[UserSchema, Depends(auth_user_middleware)]
+    user: Annotated[UserSchema, Depends(auth_user_middleware)]
 ):
-    await delete_file_control(id)
+    await delete_file_control(id, user)
     return response(code=200, message="Deleted file successfully")
 
 
