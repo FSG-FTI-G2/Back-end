@@ -3,7 +3,7 @@ import os
 from fastapi import HTTPException
 from app.models.file import FileSchema
 from app.models.user import UserSchema
-from app.providers import file_storage
+from app.providers import file_storage, vector_db
 from app.utils.utilities import is_temp_file_exists, save_temp_file
 
 
@@ -45,7 +45,7 @@ async def get_files_control(
     return files, total_pages
 
 
-async def delete_file_control(id: str):
+async def delete_file_control(id: str, user: UserSchema):
     # Find file by id
     file = FileSchema.find_by_id(id)
     if not file:
@@ -57,7 +57,8 @@ async def delete_file_control(id: str):
     file.delete()
     # Delete in storage
     file_storage.delete_file(file.file_path)
-    # TODO: Delete vector in vector database
+    # Delete vector in vector database
+    vector_db.delete_vectors_by_filter(user.id, "id", file.id)
 
 
 def retrieve_file(file_id_or_name: str, user: UserSchema):

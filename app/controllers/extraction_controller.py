@@ -1,39 +1,46 @@
-from app.models.file import FileSchema, FileType
-from app.providers import qdrant_client
 from io import BytesIO
-from docx import Document 
-from PyPDF2 import PdfReader 
+from docx import Document
+from PyPDF2 import PdfReader
+from app.models.user import UserSchema
+from app.models.file import FileSchema, FileType
+from app.providers import vector_db, embedder
 
 
-def extraction_features(text: str, file_schema: FileSchema):
+async def extraction_features(text: str, file_schema: FileSchema, user: UserSchema):
     """
     Add features extracted from a file into Qdrant. This function takes the extracted
     text content and additional metadata from the file (via `FileSchema`) and stores
     them in the vector database (Qdrant) along with the payloads.
-    
+
     Args:
     - text (str): The text content extracted from the file.
     - file_schema (FileSchema): The schema containing file information and metadata.
     """
-    
-    # Create the payload dictionary containing metadata to be stored in Qdrant
-    payloads = {
-        "id": file_schema.id,  # File ID
-        "user_id": file_schema.user_id,  # ID of the user who uploaded the file
-        "file_name": file_schema.file_name,  # Name of the file
-        "file_type": file_schema.type,  # Type of the file (e.g., PDF, DOCX, TXT)
-        "file_path": file_schema.file_path,  # Path where the file is stored
-        "summary": " ",  # Placeholder for file summary, can be generated later
-    }
-    
+    chunks = embedder.chunk_text(text)
+
+    # Create a list of payloads to store metadata for each text chunk
+    payloads = []
+    for content in chunks:
+        # Create the payload dictionary containing metadata to be stored in Qdrant
+        payload = {
+            "id": file_schema.id,
+            "file_name": file_schema.file_name,
+            "file_type": file_schema.type,
+            "content": content
+        }
+        payloads.append(payload)
+
+    # Embed the text chunks using the embedding
+    embed_chunks = embedder.embed(chunks)
+
     # Add the extracted text and its metadata (payloads) to Qdrant
-    qdrant_client.add_vectors(text, payloads)
+    vector_db.add_vectors(user.id, embed_chunks, payloads)
 
 
-def extraction_file_content(file_type: FileType, file_content: BytesIO):
+async def extraction_file_content(file_type: FileType, file_content: BytesIO):
     """
     Reads and extracts text content from a file stream based on the file type (TXT, DOCX, or PDF).
-    
+
     Args:
     - file_type (FileType): The type of file (TXT, DOCX, PDF).
     - file_content (BytesIO): The byte stream of the file content to be read.
@@ -71,3 +78,8 @@ def extraction_file_content(file_type: FileType, file_content: BytesIO):
         for page in reader.pages:
             content += page.extract_text() + "\n"
         return content
+
+    # Handling for unsupported file types
+    else:
+        raise ValueError(
+            "Unsupported file type. Please provide a TXT, DOCX, or PDF file.")

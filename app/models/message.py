@@ -6,6 +6,10 @@ from app.providers import message_db
 from app.utils.prompt_template import RolePrompt
 
 
+# Create a index for user_id
+message_db.create_index("user_id")
+
+
 class MessageSchema(BaseSchema):
     title: Optional[str] = Field(None, alias="title")
     user_id: str = Field(None, alias="user_id")

@@ -1,15 +1,17 @@
 import enum
-from typing import TypeVar, Type, TypedDict, Literal, List, Generator, Callable, Coroutine
+from typing import TypeVar, Type, TypedDict, Literal, List, Generator, Callable
 from typing_extensions import deprecated
 from pydantic import BaseModel
 from fastapi import HTTPException
 from llama_index.core.llms import ChatMessage, LLM, MessageRole
 from typing import Dict, Any
 from app.utils.prompt_template import RolePrompt, get_prompt_by_role
-from app.configs.llm import GPTClient, GeminiClient
+from app.configs.llm import GPTClient, GeminiClient, OllamaClient
+from app.utils.logger import get_logger
 
 
 _T = TypeVar("T", bound=BaseModel)
+logger = get_logger("LLM", color=96)
 
 
 class GeminiNativeResponse(TypedDict):
@@ -31,7 +33,7 @@ class LLMModel(str, enum.Enum):
 
 
 DEFAULT_MODEL = LLMModel.GEMINI
-DEFAULT_ROLE = RolePrompt.STUDENT
+DEFAULT_ROLE = RolePrompt.EXPERT
 
 
 class LLMProvider:
@@ -42,8 +44,8 @@ class LLMProvider:
             return GPTClient
         elif model == LLMModel.GEMINI:
             return GeminiClient
-        # elif model == LLMModel.OLLAMA:
-        #     return OllamaClient
+        elif model == LLMModel.OLLAMA:
+            return OllamaClient
         else:
             raise HTTPException(
                 status_code=400, detail="Invalid model name")
@@ -80,6 +82,7 @@ class LLMProvider:
         # Chat with the LLM
         output = await sllm.achat([self.__system_message(role), *history])
         history.append(output.message)
+        logger(f"Structured response: {output.raw}")
         return output.raw
 
     @deprecated("Structured streaming is not supported yet by Llama-Index")
@@ -139,6 +142,7 @@ class LLMProvider:
         output = await selected_llm.achat(
             [self.__system_message(role), *history])
         history.append(output.message)
+        logger(f"Response: {output.message.content}")
         return output.message.content
 
     def stream_response(

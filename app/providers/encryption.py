@@ -1,8 +1,8 @@
 from typing import AnyStr, Dict
 import os
-from fastapi import HTTPException, status
 import bcrypt
 from jose import jwt, JWTError
+from fastapi import HTTPException, status
 
 
 class EncryptionProvider:
