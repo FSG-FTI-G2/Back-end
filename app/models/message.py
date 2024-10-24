@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from pydantic import Field
 from llama_index.core.llms import ChatMessage
 from app.models.base import BaseSchema
@@ -7,9 +7,10 @@ from app.utils.prompt_template import RolePrompt
 
 
 class MessageSchema(BaseSchema):
-    title: str = Field(None, alias="title")
+    title: Optional[str] = Field(None, alias="title")
     user_id: str = Field(None, alias="user_id")
-    messages: List[ChatMessage] = Field(default_factory=list, alias="messages")
+    messages: List[ChatMessage] = Field(
+        default_factory=list, alias="messages")
     role_prompt: RolePrompt = Field(
         default=RolePrompt.STUDENT, alias="role_prompt")
 
@@ -53,10 +54,10 @@ class MessageSchema(BaseSchema):
     def get_all_messages(self) -> List[ChatMessage]:
         return [ChatMessage.model_validate(msg) for msg in self.messages]
 
-    def add_message(self, message: str | ChatMessage, add_manual: bool = False) -> None:
-        # Add message if not added manually
+    def add_message(self, message: str | ChatMessage = None) -> None:
+        # Add message if not None
         # Else, the message are add in LLMProvider by reference
-        if add_manual:
+        if message:
             if isinstance(message, str):
                 self.messages.append(ChatMessage.from_str(message))
             else:

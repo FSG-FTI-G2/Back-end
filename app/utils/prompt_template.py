@@ -2,6 +2,7 @@ import enum
 
 
 class RolePrompt(str, enum.Enum):
+    GENERAL = "general"
     STUDENT = "student"
     EXPERT = "expert"
 
@@ -13,6 +14,8 @@ def get_prompt_by_role(role: RolePrompt | str):
         return student_prompt_template
     elif role == RolePrompt.EXPERT:
         return expert_prompt_template
+    elif role == RolePrompt.GENERAL:
+        return general_prompt_template
     return general_prompt_template
 
 
