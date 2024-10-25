@@ -5,6 +5,7 @@ from .minio import MinioProvider
 from .embedding import VectorEmbedder
 from .vector_db import QdrantProvider
 from .LLM import LLMProvider
+from .kafka import KafkaProvider
 
 # Utilities Providers
 state = MemoryStateProvider()
@@ -23,3 +24,5 @@ file_storage = MinioProvider("files")
 embedder = VectorEmbedder()
 vector_db = QdrantProvider()
 llm = LLMProvider()
+
+kafka_provider = KafkaProvider()
