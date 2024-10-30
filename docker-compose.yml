@@ -67,7 +67,7 @@ services:
     networks:
       - ollama-docker
 
-
+  # docker run -d --rm --name redis -p 6379:6379 redis:7-alpine
   redis:
     image: redis:7-alpine
     ports:
