@@ -1,13 +1,14 @@
+import os
 from celery import Celery
 from tasks.echo import echo
 from tasks.embedding import embed_model
 
-CELERY_BACKEND = f"redis://redis:6379/0"
+CELERY_BROKER_URL = f"redis://{os.environ.get('REDIS_HOST', 'localhost')}:{os.environ.get('REDIS_PORT', 6379)}/0"
 
 app = Celery(
     'tasks',
-    broker=CELERY_BACKEND,
-    backend=CELERY_BACKEND
+    broker=CELERY_BROKER_URL,
+    backend=CELERY_BROKER_URL
 )
 
 
