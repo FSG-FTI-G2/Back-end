@@ -1,5 +1,5 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from app.configs.embedding_config import model_embedding
+from .celery_provider import CeleryProvider
 from app.utils.logger import get_logger
 
 logger = get_logger("EMBEDDING", color=94)
@@ -11,15 +11,15 @@ DEFAULT_CHUNK_OVERLAP = 200
 
 class VectorEmbedder:
     def __init__(self, chunk_size: int = DEFAULT_CHUNK_SIZE, chunk_overlap: int = DEFAULT_CHUNK_OVERLAP):
-        self.model = model_embedding
+        self.model = CeleryProvider[list[list[float]]]()
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size, chunk_overlap=chunk_overlap
         )
 
-    def embed(self, text: str | list[str], batch_size: int = 8) -> list[list[float]]:
-        if isinstance(text, str):
-            text = [text]
-        embeddings = self.model.encode(text, batch_size=batch_size).tolist()
+    def embed(self, text: str | list[str]) -> list[list[float]]:
+        task_id = self.model.execute("embed", text)
+        result = self.model.get_result(task_id, wait_until_complete=True)
+        embeddings = result["result"]
         logger(f"Text embedded `{len(embeddings)}, {len(embeddings[0])}`")
         return embeddings
 
