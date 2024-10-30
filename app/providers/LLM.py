@@ -1,19 +1,18 @@
 import enum
-from typing import TypeVar, Type, TypedDict, Literal, List, Generator, Callable
-from typing_extensions import deprecated
+from typing import TypeVar, Type, TypedDict, Literal, List, Generator, Callable, Dict
 from pydantic import BaseModel
+from typing_extensions import deprecated
 from fastapi import HTTPException
-from llama_index.core.llms import ChatMessage, LLM, MessageRole
-from typing import Dict, Any
+from langchain.schema import BaseMessage, AIMessage, HumanMessage, SystemMessage
+from langchain.llms import BaseLLM
 from app.utils.prompt_template import RolePrompt, get_prompt_by_role
 from app.configs.llm import GPTClient, GeminiClient, OllamaClient
 from app.utils.logger import get_logger
 
-
 _T = TypeVar("T", bound=BaseModel)
 logger = get_logger("LLM", color=96)
 
-
+# Define the response schema for Gemini
 class GeminiNativeResponse(TypedDict):
     content: Dict[Literal["parts"], List[Dict[Literal["text"], str]]]
     finish_reason: int
@@ -25,76 +24,89 @@ class GeminiNativeResponse(TypedDict):
     usage_metadata: Dict[Literal["prompt_token_count"] |
                          Literal["candidates_token_count"] | Literal["total_token_count"], int]
 
-
+# Enum for model selection
 class LLMModel(str, enum.Enum):
     GPT = "gpt"
     GEMINI = "gemini"
     OLLAMA = "ollama"
 
-
+# Default settings
 DEFAULT_MODEL = LLMModel.GEMINI
 DEFAULT_ROLE = RolePrompt.EXPERT
 
+# Wrappers for each client to standardize the response format
+class GPTClientWrapper(BaseLLM):
+    async def agenerate(self, messages: List[BaseMessage]) -> str:
+        prompt = "\n".join([msg.content for msg in messages])
+        return await GPTClient().generate(prompt)
 
+class GeminiClientWrapper(BaseLLM):
+    async def agenerate(self, messages: List[BaseMessage]) -> str:
+        prompt = "\n".join([msg.content for msg in messages])
+        return await GeminiClient().generate(prompt)
+
+class OllamaClientWrapper(BaseLLM):
+    async def agenerate(self, messages: List[BaseMessage]) -> str:
+        prompt = "\n".join([msg.content for msg in messages])
+        return await OllamaClient().generate(prompt)
+
+# Main provider class for LLM selection and structured response handling
 class LLMProvider:
     def __init__(self): ...
 
-    def __get_llm_model(self, model: LLMModel) -> LLM:
+    def __get_llm_model(self, model: LLMModel) -> BaseLLM:
         if model == LLMModel.GPT:
-            return GPTClient
+            return GPTClientWrapper()
         elif model == LLMModel.GEMINI:
-            return GeminiClient
+            return GeminiClientWrapper()
         elif model == LLMModel.OLLAMA:
-            return OllamaClient
+            return OllamaClientWrapper()
         else:
-            raise HTTPException(
-                status_code=400, detail="Invalid model name")
+            raise HTTPException(status_code=400, detail="Invalid model name")
 
-    def __parse_gemini_raw_response(self, raw: GeminiNativeResponse) -> str:
-        return raw["content"]["parts"][0]["text"]
+    def __system_message(self, role: RolePrompt) -> SystemMessage:
+        return SystemMessage(content=get_prompt_by_role(role))
 
-    def __system_message(self, role: RolePrompt) -> ChatMessage:
-        return ChatMessage.from_str(get_prompt_by_role(role), role=MessageRole.SYSTEM)
-
-    def __prune_history(self, history: list[ChatMessage], max_history: int) -> list[ChatMessage]:
-        return history[-max_history:]
+    def __prune_history(self, history: List[BaseMessage], max_history: int) -> List[BaseMessage]:
+        return history[-max_history:] if max_history else history
 
     async def structured_response(
         self,
         question: str,
         parser: Type[_T],
         context: str = None,
-        history: list[ChatMessage] = [],
+        history: List[BaseMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
         max_history: int = None
     ) -> _T:
-        # Select the LLM
+        # Select the LLM model
         selected_llm = self.__get_llm_model(model_name)
 
-        # Convert the LLM to a structured LLM
-        sllm = selected_llm.as_structured_llm(output_cls=parser)
-
-        # Prune the history
+        # Prune the history if needed
         if max_history:
             history = self.__prune_history(history, max_history)
-        history.append(ChatMessage.from_str(question))
-        new_message = ChatMessage.from_str(
-            f"{context or ''}\Prompt: {question}")
+        
+        # Add the new question to history
+        history.append(HumanMessage(content=question))
+        new_message = HumanMessage(content=f"{context or ''} Prompt: {question}")
 
-        # Chat with the LLM
-        output = await sllm.achat([self.__system_message(role), *history[:-1], new_message])
-        history.append(output.message)
-        logger(f"Structured response: {output.raw}")
-        return output.raw
+        # Format the messages and send to LLM
+        messages = [self.__system_message(role), *history[:-1], new_message]
+        output = await selected_llm.agenerate(messages=messages)
+        
+        # Parse and return the structured response
+        history.append(AIMessage(content=output))
+        logger(f"Structured response: {output}")
+        return parser.parse_raw(output)
 
-    @deprecated("Structured streaming is not supported yet by Llama-Index")
+    @deprecated("Structured streaming is not supported yet by LangChain")
     def stream_structured_response(
         self,
         question: str,
         parser: Type[_T],
         context: str = None,
-        history: list[ChatMessage] = [],
+        history: List[BaseMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
         max_history: int = None,
@@ -103,29 +115,27 @@ class LLMProvider:
         # Select the LLM
         selected_llm = self.__get_llm_model(model_name)
 
-        # Convert the LLM to a structured LLM
-        sllm = selected_llm.as_structured_llm(output_cls=parser)
-
-        # Prune the history
+        # Prune the history if needed
         if max_history:
             history = self.__prune_history(history, max_history)
-        history.append(ChatMessage.from_str(question))
-        new_message = ChatMessage.from_str(
-            f"{context or ''}\Prompt: {question}")
+        
+        # Prepare new message and history
+        history.append(HumanMessage(content=question))
+        new_message = HumanMessage(content=f"{context or ''} Prompt: {question}")
 
-        # Chat with the LLM
+        # Send to LLM with streaming
+        messages = [self.__system_message(role), *history[:-1], new_message]
+        gen = selected_llm.stream(messages=messages)
+
         historical = False
-        gen = sllm.stream_chat(
-            [self.__system_message(role), *history[-1], new_message])
         for output in gen:
             if historical:
-                history[-1].content = output.message.content
+                history[-1] = AIMessage(content=output)
             else:
-                history.append(output.message)
+                history.append(AIMessage(content=output))
                 historical = True
-            yield output.raw
+            yield output
 
-        # Callback
         if callback:
             callback()
 
@@ -133,60 +143,64 @@ class LLMProvider:
         self,
         question: str,
         context: str = None,
-        history: list[ChatMessage] = [],
+        history: List[BaseMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
         max_history: int = None,
     ) -> str:
-        # Select the LLM
+        # Select the LLM model
         selected_llm = self.__get_llm_model(model_name)
 
-        # Prune the history
+        # Prune history if needed
         if max_history:
             history = self.__prune_history(history, max_history)
-        history.append(ChatMessage.from_str(question))
-        new_message = ChatMessage.from_str(
-            f"{context or ''}\Prompt: {question}")
+        
+        # Add question to history and create message
+        history.append(HumanMessage(content=question))
+        new_message = HumanMessage(content=f"{context or ''} Prompt: {question}")
 
-        # Chat with the LLM
-        output = await selected_llm.achat(
-            [self.__system_message(role), *history[:-1], new_message])
-        history.append(output.message)
-        logger(f"Response: {output.message.content}")
-        return output.message.content
+        # Send to LLM and get response
+        messages = [self.__system_message(role), *history[:-1], new_message]
+        output = await selected_llm.agenerate(messages=messages)
+        
+        # Update history and log
+        history.append(AIMessage(content=output))
+        logger(f"Response: {output}")
+        return output
 
     def stream_response(
         self,
         question: str,
         context: str = None,
-        history: list[ChatMessage] = [],
+        history: List[BaseMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
         model_name: LLMModel = DEFAULT_MODEL,
         max_history: int = None,
         callback: Callable = None
     ) -> Generator:
-        # Select the LLM
+        # Select the LLM model
         selected_llm = self.__get_llm_model(model_name)
 
-        # Prune the history
+        # Prune history if needed
         if max_history:
             history = self.__prune_history(history, max_history)
-        history.append(ChatMessage.from_str(question))
-        new_message = ChatMessage.from_str(
-            f"{context or ''}\Prompt: {question}")
+        
+        # Add question to history and create message
+        history.append(HumanMessage(content=question))
+        new_message = HumanMessage(content=f"{context or ''} Prompt: {question}")
 
-        # Chat with the LLM
+        # Stream response from LLM
+        messages = [self.__system_message(role), *history[:-1], new_message]
+        gen = selected_llm.stream(messages=messages)
+
         historical = False
-        gen = selected_llm.stream_chat(
-            [self.__system_message(role), *history[:-1], new_message])
         for output in gen:
             if historical:
-                history[-1].content = output.message.content
+                history[-1] = AIMessage(content=output)
             else:
-                history.append(output.message)
+                history.append(AIMessage(content=output))
                 historical = True
-            yield output.message.content
+            yield output
 
-        # Callback
         if callback:
             callback()
