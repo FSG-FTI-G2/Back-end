@@ -53,6 +53,8 @@ services:
       QDRANT__HTTP__PORT: 6333
       QDRANT__GRPC__PORT: 6335
 
+  # docker run -d --name ollama --gpus all -p 11434:11434 ollama/ollama:latest
+  # docker exec -it ollama ollama run llama3.2
   ollama:
     image: ollama/ollama:latest
     ports:
