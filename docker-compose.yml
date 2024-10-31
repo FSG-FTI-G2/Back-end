@@ -1,120 +1,167 @@
-version: '3.8'
+volumes:
+  # docker volume create chatbot-redis-data
+  chatbot-redis-data:
+    driver: local
+
+  # docker volume create chatbot-mongodb-data
+  chatbot-mongodb-data:
+    driver: local
+
+  # docker volume create chatbot-qdrant-data
+  chatbot-qdrant-data:
+    driver: local
+
+  # docker volume create chatbot-mino-data
+  chatbot-mino-data:
+    driver: local
+ 
+networks:
+  # docker network create chatbot-networks
+  chatbot-networks:
+    driver: bridge
 
 services:
-  apis:
-    build: .
-    image: apis
-    container_name: apis-container
+  # Redis
+  # docker run -d --name chatbot-redis \
+  # --network chatbot-networks -p 6379:6379 -v chatbot-redis-data:/data \
+  # redis:7-alpine
+  chatbot-redis:
+    image: redis:7-alpine
+    container_name: chatbot-redis
     ports:
-      - "7860:7860"
-    env_file:
-      - .env
-    environment:
-      - MONGO_HOST=mongodb
-      - QDRANT_HOST=qdrant
-      - MINIO_HOST=minio
-    develop:
-      watch:
-        - path: .
-          action: sync
-          target: /app
-    command: ["--reload"]
+      - "6379:6379"
+    volumes:
+      - chatbot-redis-data:/data
+    networks:
+      - chatbot-networks
 
-  minio:
+  # Celery
+  # docker build -t chatbot-celery-worker ./celery
+  # docker run -d --name chatbot-celery-worker --gpus all \
+  # --network chatbot-networks -e REDIS_HOST=chatbot-redis \
+  # chatbot-celery-worker
+  chatbot-celery:
+    build: ./celery
+    image: chatbot-celery-worker
+    container_name: chatbot-celery
+    networks:
+      - chatbot-networks
+    environment:
+      - REDIS_HOST=chatbot-redis
+    depends_on:
+      - chatbot-redis
+    # GPU support. If you don't have GPU, remove the following lines
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+
+  # MongoDB
+  # docker run -d --name chatbot-mongodb \
+  # --network chatbot-networks -p 27017:27017 -v chatbot-mongodb-data:/data/db \
+  # mongodb/mongodb-community-server:latest
+  chatbot-mongodb:
+    image: mongodb/mongodb-community-server:latest
+    container_name: chatbot-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - chatbot-mongodb-data:/data/db
+    networks:
+      - chatbot-networks
+
+  # Minio
+  # docker run -d --name chatbot-minio \
+  # --network chatbot-networks -p 9000:9000 -p 9001:9001 -v chatbot-mino-data:/data \
+  # -e MINIO_ROOT_USER=admin -e MINIO_ROOT_PASSWORD=admin123 minio/minio \
+  # server --console-address ":9001" /data
+  chatbot-minio:
     image: minio/minio
-    container_name: minio
+    container_name: chatbot-minio
     ports:
       - "9000:9000"
       - "9001:9001"
     volumes:
-      - mino-data:/data
+      - chatbot-mino-data:/data
     environment:
-      MINIO_ROOT_USER: user
-      MINIO_ROOT_PASSWORD: user_123123
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: admin123
+    networks:
+      - chatbot-networks
     command: server --console-address ":9001" /data
 
-  mongodb:
-    image: mongodb/mongodb-community-server:latest
-    container_name: mongodb-container
-    ports:
-      - "27017:27017"
-    volumes:
-      - mongodb-data:/data/db
-
-  qdrant:
+  # Qdrant
+  # docker run -d --name chatbot-qdrant \
+  # --network chatbot-networks -p 6333:6333 -p 6334:6334 -v chatbot-qdrant-data:/qdrant/storage \
+  # qdrant/qdrant:latest
+  chatbot-qdrant:
     image: qdrant/qdrant:latest
-    container_name: qdrant-container
+    container_name: chatbot-qdrant
     ports:
       - "6333:6333"
-      - "6334:6334" 
+      - "6334:6334"
     volumes:
-      - qdrant-storage:/qdrant/storage
-    environment:
-      QDRANT__HTTP__PORT: 6333
-      QDRANT__GRPC__PORT: 6335
+      - chatbot-qdrant-data:/qdrant/storage
+    networks:
+      - chatbot-networks
 
-  # docker run -d --name ollama --gpus all -p 11434:11434 ollama/ollama:latest
-  # docker exec -it ollama ollama run llama3.2
-  ollama:
+  # Ollama
+  # docker run -d --name chatbot-ollama \
+  # --network chatbot-networks -p 11434:11434 ollama/ollama:latest
+  # docker exec ollama ollama run llama3.2
+  chatbot-ollama:
     image: ollama/ollama:latest
+    container_name: chatbot-ollama
     ports:
-      - 2462:11434
-    container_name: ollama
-    pull_policy: always
-    tty: true
-    restart: always
+      - "11434:11434"
+    networks:
+      - chatbot-networks
     environment:
       - OLLAMA_KEEP_ALIVE=24h
-      - OLLAMA_HOST=0.0.0.0
+    command: ollama run llama3.2
+    # GPU support. If you don't have GPU, remove the following lines
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+
+  # App Services
+  # docker build -t chatbot-app-image .
+  # docker run -d --name chatbot-app --gpus all \
+  # --network chatbot-networks -p 7860:7860 chatbot-app-image
+  chatbot-app:
+    build: .
+    image: chatbot-app-image
+    container_name: chatbot-app
+    ports:
+      - "7860:7860"
     networks:
-      - ollama-docker
-
-  # docker run -d --rm --name redis -p 6379:6379 redis:7-alpine
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-    networks:
-      - mynetwork
-
-  zookeeper:
-    image: wurstmeister/zookeeper
-    container_name: zookeeper
-    ports:
-      - "2181:2181"
-  kafka:
-    image: wurstmeister/kafka
-    container_name: kafka
-    ports:
-      - "9092:9092"
-    environment:
-      KAFKA_ADVERTISED_HOST_NAME: localhost
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-
-  worker:
-    build:
-      context: ./celery_task
-      dockerfile: Dockerfile
-    container_name: worker
+      - chatbot-networks
     env_file:
       - .env
-    volumes:
-      - ./celery_task:/app
+    environment:
+      - REDIS_HOST=chatbot-redis
+      - MONGODB_HOST=chatbot-mongodb
+      - QDRANT_HOST=chatbot-qdrant
+      - MINIO_HOST=chatbot-minio
+      - OLLAMA_HOST=chatbot-ollama
     depends_on:
-      - redis
-      - kafka
-    networks:
-      - mynetwork
-
-volumes:
-  mongodb-data:
-    driver: local
-  qdrant-storage:
-    driver: local
-  mino-data:
-    driver: local
- 
-networks:
-  ollama-docker:
-    external: false 
-  mynetwork:
+      - chatbot-celery
+      - chatbot-mongodb
+      - chatbot-qdrant
+      - chatbot-minio
+      - chatbot-ollama
+    # GPU support. If you don't have GPU, remove the following lines
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
