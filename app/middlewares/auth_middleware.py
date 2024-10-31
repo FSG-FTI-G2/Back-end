@@ -2,7 +2,7 @@ from typing import Annotated
 import datetime
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
-from app.models.user import UserSchema
+from app.models.user_schema import UserSchema
 from app.providers import encryptor
 
 

@@ -3,8 +3,8 @@ import asyncio
 from pydantic import BaseModel, Field
 from fastapi import HTTPException
 from qdrant_client.http.models import Payload
-from app.models.user import UserSchema
-from app.models.message import MessageSchema
+from app.models.user_schema import UserSchema
+from app.models.message_schema import MessageSchema
 from app.providers import llm, embedder, vector_db
 from app.utils.prompt_template import RolePrompt
 from app.utils.logger import get_logger

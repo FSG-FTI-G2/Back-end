@@ -1,7 +1,7 @@
 import unittest
 from fastapi.testclient import TestClient
 from main import app
-from app.models.user import UserSchema
+from app.models.user_schema import UserSchema
 from app.providers import encryptor
 
 

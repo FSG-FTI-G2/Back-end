@@ -1,7 +1,7 @@
 from typing import List, Optional
 from pydantic import Field
 from llama_index.core.llms import ChatMessage
-from app.models.base import BaseSchema
+from app.models.base_schema import BaseSchema
 from app.providers import message_db
 from app.utils.prompt_template import RolePrompt
 

@@ -1,9 +1,9 @@
-from .memory import MemoryStateProvider
-from .encryption import EncryptionProvider
-from .db import DatabaseProvider
-from .minio import MinioProvider
-from .embedding import VectorEmbedder
-from .vector_db import QdrantProvider
+from .memory_provider import MemoryStateProvider
+from .encryption_provider import EncryptionProvider
+from .db_provider import DatabaseProvider
+from .minio_provider import MinioProvider
+from .embedding_provider import VectorEmbedder
+from .vectordb_provider import QdrantProvider
 from .celery_provider import CeleryProvider
 from .llm_provider import LLMProvider
 
@@ -22,7 +22,7 @@ file_storage = MinioProvider("files")
 
 # AI Related Providers
 embedder = VectorEmbedder()
-vector_db = QdrantProvider()
+vectordb_provider = QdrantProvider()
 llm = LLMProvider()
 
 celery = CeleryProvider()

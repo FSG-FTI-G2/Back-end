@@ -2,7 +2,7 @@ import unittest
 from fastapi.testclient import TestClient
 from main import app
 from llama_index.core.llms import MessageRole, ChatMessage
-from app.models.message import MessageSchema
+from app.models.message_schema import MessageSchema
 
 
 class TestViewHistory(unittest.TestCase):

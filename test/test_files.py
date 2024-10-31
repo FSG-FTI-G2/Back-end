@@ -4,7 +4,7 @@ import logging
 from io import BytesIO
 from fastapi.testclient import TestClient
 from main import app
-from app.models.file import FileType, FileStatus
+from app.models.file_schema import FileType, FileStatus
 
 
 logger = logging.getLogger(__name__)

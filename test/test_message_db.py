@@ -1,6 +1,6 @@
 import unittest
 from llama_index.core.llms import ChatMessage, MessageRole
-from app.models.message import MessageSchema
+from app.models.message_schema import MessageSchema
 
 
 class TestMessageSchema(unittest.TestCase):

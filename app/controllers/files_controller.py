@@ -1,8 +1,8 @@
 from typing import Optional
 import os
 from fastapi import HTTPException
-from app.models.file import FileSchema
-from app.models.user import UserSchema
+from app.models.file_schema import FileSchema
+from app.models.user_schema import UserSchema
 from app.providers import file_storage, vector_db
 from app.utils.utilities import is_temp_file_exists, save_temp_file
 

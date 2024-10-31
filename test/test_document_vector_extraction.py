@@ -1,5 +1,5 @@
 import os
-from app.models.file import FileSchema
+from app.models.file_schema import FileSchema
 from app.providers import qdrant_client
 import unittest
 from app.controllers.extraction_controller import extraction_features

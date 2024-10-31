@@ -1,5 +1,5 @@
-from app.models.user import UserSchema
-from app.models.llm_config import (
+from app.models.user_schema import UserSchema
+from app.models.llm_config_schema import (
     LLMConfigSchema,
     SelectedModel,
     ModelConfigTypes

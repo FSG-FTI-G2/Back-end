@@ -1,8 +1,8 @@
 from io import BytesIO
 from docx import Document
 from PyPDF2 import PdfReader
-from app.models.user import UserSchema
-from app.models.file import FileSchema, FileType
+from app.models.user_schema import UserSchema
+from app.models.file_schema import FileSchema, FileType
 from app.providers import vector_db, embedder
 
 

@@ -1,5 +1,5 @@
 import unittest
-from app.providers.vector_db import QdrantProvider
+from app.providers.vectordb_provider import QdrantProvider
 
 qdrant_collection_name = 'Qdrants_Vector_Database'
 class Qdrant_Test_Case(unittest.TestCase):

@@ -1,7 +1,7 @@
 '''
 Migration script for databases
 '''
-from app.models.user import UserSchema
+from app.models.user_schema import UserSchema
 from app.providers import encryptor, vector_db
 from app.utils.logger import get_logger
 

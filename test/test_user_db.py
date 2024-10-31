@@ -1,5 +1,5 @@
 import unittest
-from app.models.user import UserSchema
+from app.models.user_schema import UserSchema
 
 class UserDbTestCase(unittest.TestCase):
     def __init__(self, *args, **kwargs) -> None:

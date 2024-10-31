@@ -1,6 +1,6 @@
 from typing import Optional, Union
 from pydantic import Field
-from app.models.base import BaseSchema
+from app.models.base_schema import BaseSchema
 from app.providers import user_db
 
 

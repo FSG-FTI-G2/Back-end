@@ -1,7 +1,7 @@
 from typing import List
 from io import BytesIO
 from minio.error import S3Error
-from app.configs.minIO import minio_client
+from app.configs.minio_config import minio_client
 from app.utils.logger import get_logger
 
 

@@ -1,6 +1,6 @@
 import uuid
 from qdrant_client.http import models
-from app.configs.qdrant_vector_db import qdrant_client
+from app.configs.qdrant_config import qdrant_client
 from app.utils.logger import get_logger
 
 DEFAULT_VECTOR_SIZE = 768

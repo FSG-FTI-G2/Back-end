@@ -1,6 +1,6 @@
 import unittest
 from pydantic import BaseModel, Field
-from app.providers.db import DatabaseProvider
+from app.providers.db_provider import DatabaseProvider
 
 
 class TestSchema(BaseModel):
