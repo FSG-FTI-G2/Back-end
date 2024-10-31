@@ -4,8 +4,8 @@ from .db import DatabaseProvider
 from .minio import MinioProvider
 from .embedding import VectorEmbedder
 from .vector_db import QdrantProvider
-from .LLM import LLMProvider
 from .celery_provider import CeleryProvider
+from .llm_provider import LLMProvider
 
 # Utilities Providers
 state = MemoryStateProvider()
@@ -17,6 +17,7 @@ user_db = DatabaseProvider("users")
 llm_config_db = DatabaseProvider("llm_config")
 message_db = DatabaseProvider("messages")
 
+# File Storage Providers
 file_storage = MinioProvider("files")
 
 # AI Related Providers

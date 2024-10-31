@@ -18,7 +18,7 @@ def auto_migrate():
     logger("⚙️ Auto migrating database...")
 
     # Create Admin User as default user
-    admin = UserSchema.find_by_username("admin")
+    admin = UserSchema.find_by_username(USERNAME)
     if not admin:
         admin = UserSchema(
             username=USERNAME,
