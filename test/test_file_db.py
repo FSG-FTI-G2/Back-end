@@ -1,5 +1,5 @@
 import unittest
-from app.models.file import FileSchema, FileStatus
+from app.models.file_schema import FileSchema, FileStatus
 
 
 class FileDbTestCase(unittest.TestCase):

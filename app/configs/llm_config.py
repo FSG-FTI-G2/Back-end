@@ -5,25 +5,25 @@ from langchain_openai import ChatOpenAI, AzureChatOpenAI
 
 gpt = ChatOpenAI(
     model="gpt-4o",
-    openai_api_key=os.environ.get("OPENAI_API_KEY")
+    openai_api_key=os.environ.get("LLM_OPENAI_API_KEY", "dummysecret")
 )
 
 azure_gpt = AzureChatOpenAI(
     api_version="2020-08-01",
     model="gpt-4o",
-    azure_endpoint=os.environ.get("AZURE_ENDPOINT", "dummyendpoint"),
-    api_key=os.environ.get("AZURE_API_KEY", "dummyapisecret")
+    azure_endpoint=os.environ.get("LLM_AZURE_ENDPOINT", "dummysecret"),
+    api_key=os.environ.get("LLM_AZURE_API_KEY", "dummysecret")
 )
 
 
 gemini = GoogleGenerativeAI(
     model="gemini-pro",
-    google_api_key=os.environ.get("GOOGLE_API_KEY")
+    google_api_key=os.environ.get("LLM_GOOGLE_API_KEY", "dummysecret")
 )
 
 
 ollama = OllamaLLM(
-    base_url=f"http://{os.environ.get('OLLAMA_HOST', 'localhost')}:{os.environ.get('OLLAMA_PORT', 11434)}",
+    base_url=os.environ.get('LLM_OLLAMA_HOST', 'localhost'),
     model="llama3.2",
     request_timeout=120.0,
 )

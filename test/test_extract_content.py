@@ -2,7 +2,7 @@ import unittest
 from io import BytesIO
 from docx import Document
 from PyPDF2 import PdfWriter
-from app.models.file import FileType
+from app.models.file_schema import FileType
 from app.controllers.extraction_controller import extraction_file_content
 
 

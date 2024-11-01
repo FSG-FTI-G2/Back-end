@@ -1,9 +1,8 @@
 from typing import Optional
-import os
 from fastapi import HTTPException
-from app.models.file import FileSchema
-from app.models.user import UserSchema
-from app.providers import file_storage, vector_db
+from app.models.file_schema import FileSchema
+from app.models.user_schema import UserSchema
+from app.providers import file_storage, vectordb_provider
 from app.utils.utilities import is_temp_file_exists, save_temp_file
 
 
@@ -58,7 +57,7 @@ async def delete_file_control(id: str, user: UserSchema):
     # Delete in storage
     file_storage.delete_file(file.file_path)
     # Delete vector in vector database
-    vector_db.delete_vectors_by_filter(user.id, "id", file.id)
+    vectordb_provider.delete_vectors_by_filter(user.id, "id", file.id)
 
 
 def retrieve_file(file_id_or_name: str, user: UserSchema):

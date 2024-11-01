@@ -6,7 +6,7 @@ from app.middlewares.auth_middleware import auth_user_middleware
 from app.controllers.upload_controller import upload_files_controller, upload_file_status_controller
 from app.controllers.files_controller import get_files_control, delete_file_control, retrieve_file
 from app.providers import state
-from app.models.user import UserSchema
+from app.models.user_schema import UserSchema
 from app.utils.response import response, pagination_data
 
 router = APIRouter()

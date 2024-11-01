@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta, timezone
-from app.models.user import UserSchema
+from app.models.user_schema import UserSchema
 from app.providers import encryptor
 
 ACCESS_TOKEN_EXPIRE_DAYS = 30

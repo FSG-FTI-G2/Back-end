@@ -1,11 +1,10 @@
-from typing import Any
 import asyncio
 from pydantic import BaseModel, Field
 from fastapi import HTTPException
 from qdrant_client.http.models import Payload
-from app.models.user import UserSchema
-from app.models.message import MessageSchema
-from app.providers import llm, embedder, vector_db
+from app.models.user_schema import UserSchema
+from app.models.message_schema import MessageSchema
+from app.providers import llm, embedder, vectordb_provider
 from app.utils.prompt_template import RolePrompt
 from app.utils.logger import get_logger
 
@@ -54,7 +53,7 @@ async def add_message(message: str, message_id: str | None, role: RolePrompt, us
     embedded_message = embedder.embed(message)[0]
 
     # Retrieve the vector of the message
-    contexts = vector_db.search_vector(user.id, embedded_message)
+    contexts = vectordb_provider.search_vector(user.id, embedded_message)
     for context in contexts:
         logger(f"Context: {context}")
 

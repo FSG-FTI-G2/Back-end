@@ -1,9 +1,9 @@
 from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException
 from app.middlewares.auth_middleware import auth_user_middleware
-from app.controllers.switch_llm_control import get_user_llm_config, update_user_llm_config
-from app.models.user import UserSchema
-from app.models.llm_config import SelectedModel, ModelConfigTypes
+from app.controllers.switch_llm_controller import get_user_llm_config, update_user_llm_config
+from app.models.user_schema import UserSchema
+from app.models.llm_config_schema import SelectedModel, ModelConfigTypes
 from app.utils.response import response
 
 router = APIRouter()

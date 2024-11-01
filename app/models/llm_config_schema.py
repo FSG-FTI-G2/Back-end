@@ -1,7 +1,7 @@
 from typing import Optional, Union
 from enum import Enum
 from pydantic import Field, BaseModel
-from app.models.base import BaseSchema
+from app.models.base_schema import BaseSchema
 from app.providers import llm_config_db
 
 

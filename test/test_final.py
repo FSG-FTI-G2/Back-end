@@ -1,5 +1,5 @@
 import os
-from app.models.file import FileSchema, FileType
+from app.models.file_schema import FileSchema, FileType
 from app.providers import qdrant_client
 from io import BytesIO
 import unittest

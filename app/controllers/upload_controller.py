@@ -2,8 +2,8 @@ import uuid
 import os
 from io import BytesIO
 import asyncio
-from app.models.user import UserSchema
-from app.models.file import FileSchema, FileType, FileStatus
+from app.models.user_schema import UserSchema
+from app.models.file_schema import FileSchema, FileType, FileStatus
 from app.providers import file_storage, state
 from app.controllers.extraction_controller import extraction_file_content, extraction_features
 from app.utils.logger import get_logger

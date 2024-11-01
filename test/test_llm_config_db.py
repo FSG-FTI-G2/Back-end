@@ -1,5 +1,5 @@
 import unittest
-from app.models.llm_config import (
+from app.models.llm_config_schema import (
     LLMConfigSchema,
     SelectedModel,
     ModelLlamaConfig,

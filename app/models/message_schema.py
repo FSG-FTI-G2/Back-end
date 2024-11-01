@@ -1,7 +1,7 @@
 from typing import List, Optional
 from pydantic import Field
-from llama_index.core.llms import ChatMessage
-from app.models.base import BaseSchema
+from langchain.schema import BaseMessage, AIMessage, HumanMessage
+from app.models.base_schema import BaseSchema
 from app.providers import message_db
 from app.utils.prompt_template import RolePrompt
 
@@ -13,7 +13,7 @@ message_db.create_index("user_id")
 class MessageSchema(BaseSchema):
     title: Optional[str] = Field(None, alias="title")
     user_id: str = Field(None, alias="user_id")
-    messages: List[ChatMessage] = Field(
+    messages: List[AIMessage | HumanMessage] = Field(
         default_factory=list, alias="messages")
     role_prompt: RolePrompt = Field(
         default=RolePrompt.STUDENT, alias="role_prompt")
@@ -30,7 +30,7 @@ class MessageSchema(BaseSchema):
             return MessageSchema.model_validate(data)
         return None
 
-    def search_in_messages(self, keyword: str, page_size: int, page_index: int) -> List[ChatMessage]:
+    def search_in_messages(self, keyword: str, page_size: int, page_index: int) -> List[BaseMessage]:
         data = message_db.query(
             {"messages.content": {"$regex": keyword, "$options": "i"}},
             page_size=page_size,
@@ -55,15 +55,21 @@ class MessageSchema(BaseSchema):
     def delete(self) -> int:
         return message_db.delete(self.id)
 
-    def get_all_messages(self) -> List[ChatMessage]:
-        return [ChatMessage.model_validate(msg) for msg in self.messages]
+    def get_all_messages(self) -> List[BaseMessage]:
+        messages = []
+        for message in self.messages:
+            if message.type == "ai":
+                messages.append(AIMessage.model_validate(message))
+            else:
+                messages.append(HumanMessage.model_validate(message))
+        return messages
 
-    def add_message(self, message: str | ChatMessage = None) -> None:
+    def add_message(self, message: str | BaseMessage = None) -> None:
         # Add message if not None
         # Else, the message are add in LLMProvider by reference
         if message:
             if isinstance(message, str):
-                self.messages.append(ChatMessage.from_str(message))
+                self.messages.append(BaseMessage.from_str(message))
             else:
                 self.messages.append(message)
         # Cập nhật message vào cơ sở dữ liệu

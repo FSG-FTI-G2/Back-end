@@ -1,6 +1,6 @@
 from typing import Any
 from bson import ObjectId
-from app.configs.mongodb import db
+from app.configs.mongodb_config import db
 from app.utils.logger import get_logger
 
 

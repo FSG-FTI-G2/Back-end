@@ -1,7 +1,7 @@
 from typing import Annotated
 from fastapi import APIRouter, HTTPException, Depends
 from fastapi.security import OAuth2PasswordRequestForm
-from app.models.user import UserSchema
+from app.models.user_schema import UserSchema
 from app.controllers.auth_controller import (
     authenticate_user,
     create_access_token,

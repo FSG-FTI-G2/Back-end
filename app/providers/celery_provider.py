@@ -1,21 +1,19 @@
-from typing import TypedDict, Literal, Generic, TypeVar, Any, Callable
+from typing import TypedDict, Literal, Any, Callable
 import time
 import asyncio
 from celery.result import AsyncResult
 from app.configs.celery_config import celery_client
 
-_T = TypeVar('T', bound=Any)
 
-
-class TaskResult(TypedDict, Generic[_T]):
+class TaskResult(TypedDict):
     '''
     Task result
     '''
     status: Literal['PENDING', 'SUCCESS', 'FAILURE', 'RETRY', 'REVOKED']
-    result: _T
+    result: Any
 
 
-class CeleryProvider(Generic[_T]):
+class CeleryProvider:
     '''
     Celery provider for executing asynchronous tasks
     '''
@@ -29,23 +27,23 @@ class CeleryProvider(Generic[_T]):
         task = celery_client.send_task(task_name, args=args, kwargs=kwargs)
         return task.id
 
-    def get_result(self, task_id: str, wait_until_complete: bool = False) -> TaskResult[_T]:
+    def get_result(self, task_id: str, wait_until_complete: bool = False) -> TaskResult:
         '''
         Get the status of the task
         '''
         task = AsyncResult(task_id, app=celery_client)
         if wait_until_complete:
-            return TaskResult[_T](
+            return TaskResult(
                 status='SUCCESS',
                 result=task.get()
             )
 
-        return TaskResult[_T](
+        return TaskResult(
             status=task.status,
             result=task.result
         )
 
-    async def async_on_progress(self, task_id: str, on_progress: Callable[[], TaskResult], interval: float = 1.0) -> None:
+    async def async_on_progress(self, task_id: str, on_progress: Callable[[TaskResult], Any], interval: float = 1.0) -> None:
         '''
         Listen for task progress
         '''

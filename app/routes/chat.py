@@ -1,7 +1,7 @@
 from typing import Annotated, Optional
 from pydantic import BaseModel
 from fastapi import APIRouter, Depends, HTTPException
-from app.models.user import UserSchema
+from app.models.user_schema import UserSchema
 from app.middlewares.auth_middleware import auth_user_middleware
 from app.controllers.chat_controller import get_all_history, get_messages_by_id, add_message, delete_message
 from app.utils.prompt_template import RolePrompt
