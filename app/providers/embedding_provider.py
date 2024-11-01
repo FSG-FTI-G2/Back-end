@@ -11,7 +11,7 @@ DEFAULT_CHUNK_OVERLAP = 200
 
 class VectorEmbedder:
     def __init__(self, chunk_size: int = DEFAULT_CHUNK_SIZE, chunk_overlap: int = DEFAULT_CHUNK_OVERLAP):
-        self.model = CeleryProvider[list[list[float]]]()
+        self.model = CeleryProvider()
         self.text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size, chunk_overlap=chunk_overlap
         )

@@ -1,8 +1,9 @@
 import unittest
 from fastapi.testclient import TestClient
 from main import app
-from llama_index.core.llms import MessageRole, ChatMessage
+from langchain.schema import BaseMessage
 from app.models.message_schema import MessageSchema
+from app.providers.llm_provider import MessageRole
 
 
 class TestViewHistory(unittest.TestCase):
@@ -25,10 +26,10 @@ class TestViewHistory(unittest.TestCase):
         user_id = response.get("id")
         title = "Test Message"
         messages = [
-            ChatMessage(role=MessageRole.USER, content="Hello! Hihi Hahaa?"),
-            ChatMessage(role=MessageRole.ASSISTANT,
+            BaseMessage(role=MessageRole.USER, content="Hello! Hihi Hahaa?"),
+            BaseMessage(role=MessageRole.ASSISTANT,
                         content="I would like to haha hihi."),
-            ChatMessage(role=MessageRole.USER,
+            BaseMessage(role=MessageRole.USER,
                         content="Sure! We offer a variety of services, including..."),
         ]
         message = MessageSchema(

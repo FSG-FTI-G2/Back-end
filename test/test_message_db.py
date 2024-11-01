@@ -1,6 +1,7 @@
 import unittest
-from llama_index.core.llms import ChatMessage, MessageRole
+from langchain.schema import BaseMessage
 from app.models.message_schema import MessageSchema
+from app.providers.llm_provider import MessageRole
 
 
 class TestMessageSchema(unittest.TestCase):
@@ -18,7 +19,7 @@ class TestMessageSchema(unittest.TestCase):
         return message_schema
 
     def __add_message(self, schema: MessageSchema):
-        new_message = ChatMessage(role=MessageRole.USER,
+        new_message = BaseMessage(role=MessageRole.USER,
                                   content="Hello, this is a test message.")
         schema.add_message(new_message, add_manual=True)
 

@@ -3,7 +3,7 @@ from docx import Document
 from PyPDF2 import PdfReader
 from app.models.user_schema import UserSchema
 from app.models.file_schema import FileSchema, FileType
-from app.providers import vector_db, embedder
+from app.providers import vectordb_provider, embedder
 
 
 async def extraction_features(text: str, file_schema: FileSchema, user: UserSchema):
@@ -34,7 +34,7 @@ async def extraction_features(text: str, file_schema: FileSchema, user: UserSche
     embed_chunks = embedder.embed(chunks)
 
     # Add the extracted text and its metadata (payloads) to Qdrant
-    vector_db.add_vectors(user.id, embed_chunks, payloads)
+    vectordb_provider.add_vectors(user.id, embed_chunks, payloads)
 
 
 async def extraction_file_content(file_type: FileType, file_content: BytesIO):

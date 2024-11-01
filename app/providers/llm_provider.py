@@ -14,6 +14,11 @@ _T = TypeVar("T", bound=BaseModel)
 logger = get_logger("LLM", color=96)
 
 
+class MessageRole(enum.Enum):
+    USER = "user"
+    ASSISTANT = "assistant"
+
+
 # Enum for model selection
 class LLMModel(str, enum.Enum):
     GPT = "gpt"
@@ -57,6 +62,12 @@ class ModelWrapper:
             # Else, return a model, however, enable structured prompt modifier
             self.structure_prompt_modifier = parser
         return self
+    
+    def __assign_first_str_field(model_instance: BaseModel, value: str):
+        for field_name, field in model_instance.model_fields.items():
+            if field.type_ == str:
+                setattr(model_instance, field_name, value)
+                break  # Stop after the first str field is assigned
 
     async def __ainvoke(self, messages: List[BaseMessage]) -> str | BaseModel:
         # Modify the last message if needed
@@ -80,6 +91,9 @@ class ModelWrapper:
             except Exception as e:
                 logger(f"{self.model.__class__.__name__} error: {e}. Retrying...")
                 self.max_retry -= 1
+        
+        if self.structure_prompt_modifier:
+            return self.__assign_first_str_field(self.structure_prompt_modifier, FAILED_RESPONSE)
         return FAILED_RESPONSE
     
     def __invoke(self, messages: List[BaseMessage]) -> str | BaseModel:
@@ -104,6 +118,9 @@ class ModelWrapper:
             except Exception as e:
                 logger(f"{self.model.__class__.__name__} error: {e}. Retrying...")
                 self.max_retry -= 1
+
+        if self.structure_prompt_modifier:
+            return self.__assign_first_str_field(self.structure_prompt_modifier, FAILED_RESPONSE)
         return FAILED_RESPONSE
 
 

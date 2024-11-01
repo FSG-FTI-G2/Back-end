@@ -2,7 +2,7 @@
 Migration script for databases
 '''
 from app.models.user_schema import UserSchema
-from app.providers import encryptor, vector_db
+from app.providers import encryptor, vectordb_provider
 from app.utils.logger import get_logger
 
 logger = get_logger("MIGRATE", color=1)
@@ -26,4 +26,4 @@ def auto_migrate():
         ).create()
 
     # Create Qdrant collection by user id
-    vector_db.create_collection(admin.id)
+    vectordb_provider.create_collection(admin.id)

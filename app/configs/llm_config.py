@@ -23,7 +23,7 @@ gemini = GoogleGenerativeAI(
 
 
 ollama = OllamaLLM(
-    base_url=f"http://{os.environ.get('LLM_OLLAMA_HOST', 'localhost')}:{os.environ.get('LLM_OLLAMA_HOST', 11434)}",
+    base_url=os.environ.get('LLM_OLLAMA_HOST', 'localhost'),
     model="llama3.2",
     request_timeout=120.0,
 )

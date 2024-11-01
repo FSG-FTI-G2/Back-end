@@ -14,6 +14,14 @@ volumes:
   # docker volume create chatbot-mino-data
   chatbot-mino-data:
     driver: local
+
+  # docker volume create chatbot-ollama-model
+  chatbot-ollama-model:
+    driver: local
+
+  # docker volume create chatbot-celery-cache
+  chatbot-celery-cache:
+    driver: local
  
 networks:
   # docker network create chatbot-networks
@@ -24,9 +32,9 @@ services:
   # Redis
   # docker run -d --name chatbot-redis \
   # --network chatbot-networks -p 6379:6379 -v chatbot-redis-data:/data \
-  # redis:7-alpine
+  # redis/redis-stack-server:latest
   chatbot-redis:
-    image: redis:7-alpine
+    image: redis/redis-stack-server:latest
     container_name: chatbot-redis
     ports:
       - "6379:6379"
@@ -48,6 +56,9 @@ services:
       - chatbot-networks
     environment:
       - REDIS_HOST=chatbot-redis
+      - HF_HOME=/cache/huggingface
+    volumes:
+      - chatbot-celery-cache:/cache/huggingface
     depends_on:
       - chatbot-redis
     # GPU support. If you don't have GPU, remove the following lines
@@ -70,6 +81,7 @@ services:
       - "27017:27017"
     volumes:
       - chatbot-mongodb-data:/data/db
+      - ./docker/mongodb-config:/data/configdb
     networks:
       - chatbot-networks
 
@@ -87,8 +99,8 @@ services:
     volumes:
       - chatbot-mino-data:/data
     environment:
-      MINIO_ROOT_USER: admin
-      MINIO_ROOT_PASSWORD: admin123
+      MINIO_ROOT_USER: adminuser
+      MINIO_ROOT_PASSWORD: adminuser
     networks:
       - chatbot-networks
     command: server --console-address ":9001" /data
@@ -117,11 +129,14 @@ services:
     container_name: chatbot-ollama
     ports:
       - "11434:11434"
+    volumes:
+      - chatbot-ollama-model:/root/.ollama
+      - ./docker/ollama-entrypoint.sh:/entrypoint.sh
     networks:
       - chatbot-networks
     environment:
       - OLLAMA_KEEP_ALIVE=24h
-    command: ollama run llama3.2
+    entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]
     # GPU support. If you don't have GPU, remove the following lines
     runtime: nvidia
     deploy:
@@ -150,7 +165,9 @@ services:
       - MONGODB_HOST=chatbot-mongodb
       - QDRANT_HOST=chatbot-qdrant
       - MINIO_HOST=chatbot-minio
-      - OLLAMA_HOST=chatbot-ollama
+      - LLM_OLLAMA_HOST=chatbot-ollama
+      - MINIO_ACCESS_KEY=adminuser
+      - MINIO_SECRET_KEY=adminuser
     depends_on:
       - chatbot-celery
       - chatbot-mongodb
