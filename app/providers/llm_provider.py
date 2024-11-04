@@ -9,6 +9,7 @@ from langchain.schema import BaseMessage, AIMessage, HumanMessage, SystemMessage
 from app.utils.prompt_template import RolePrompt, get_prompt_by_role
 from app.configs.llm_config import gpt, azure_gpt, gemini, ollama
 from app.utils.logger import get_logger
+import sys
 
 _T = TypeVar("T", bound=BaseModel)
 logger = get_logger("LLM", color=96)
@@ -28,7 +29,6 @@ class LLMModel(str, enum.Enum):
 
 
 # Default settings
-DEFAULT_MODEL = LLMModel.OLLAMA
 DEFAULT_ROLE = RolePrompt.GENERAL
 
 PROMPT_STRUCTURE_TEMPLATE = '''
@@ -42,13 +42,13 @@ Do not include any other information in the output.
 FAILED_RESPONSE = "Sorry, I can't answer your question at the moment. Please try again later."
 
 
-
 # Wrappers for each client to standardize the response format
 class ModelWrapper:
     '''
     Model Wrapper for control response format and output for any LLM model.\n
     This class fixed the drawback of LangChain
     '''
+
     def __init__(self, model: Runnable, max_retry: int = 1):
         self.model = model
         self.structure_prompt_modifier: _T = None
@@ -62,7 +62,7 @@ class ModelWrapper:
             # Else, return a model, however, enable structured prompt modifier
             self.structure_prompt_modifier = parser
         return self
-    
+
     def __assign_first_str_field(model_instance: BaseModel, value: str):
         for field_name, field in model_instance.model_fields.items():
             if field.type_ == str:
@@ -83,7 +83,7 @@ class ModelWrapper:
                 result = json.loads(result)
             return self.structure_prompt_modifier.model_validate(result)
         return result
-    
+
     async def ainvoke(self, messages: List[BaseMessage]) -> str | BaseModel:
         while self.max_retry > 0:
             try:
@@ -91,26 +91,26 @@ class ModelWrapper:
             except Exception as e:
                 logger(f"{self.model.__class__.__name__} error: {e}. Retrying...")
                 self.max_retry -= 1
-        
+
         if self.structure_prompt_modifier:
             return self.__assign_first_str_field(self.structure_prompt_modifier, FAILED_RESPONSE)
         return FAILED_RESPONSE
-    
+
     def __invoke(self, messages: List[BaseMessage]) -> str | BaseModel:
         # Modify the last message if needed
         if self.structure_prompt_modifier:
             messages[-1].content += PROMPT_STRUCTURE_TEMPLATE.format(
                 schema=self.structure_prompt_modifier.model_json_schema())
-            
+
         result = self.model.invoke(messages)
-        
+
         # If the model is structured, parse the output
         if self.structure_prompt_modifier:
             if isinstance(result, str):
                 result = json.loads(result)
             return self.structure_prompt_modifier.model_validate(result)
         return result
-    
+
     def invoke(self, messages: List[BaseMessage]) -> str | BaseModel:
         while self.max_retry > 0:
             try:
@@ -124,6 +124,13 @@ class ModelWrapper:
         return FAILED_RESPONSE
 
 
+GPT = ModelWrapper(gpt)
+AZURE_GPT = ModelWrapper(azure_gpt)
+GEMINI = ModelWrapper(gemini)
+OLLAMA = ModelWrapper(ollama)
+
+DEFAULT_MODEL = OLLAMA
+
 
 # Main provider class for LLM selection and structured response handling
 class LLMProvider:
@@ -131,13 +138,13 @@ class LLMProvider:
 
     def __get_llm_model(self, model: LLMModel) -> ModelWrapper:
         if model == LLMModel.GPT:
-            return ModelWrapper(gpt)
+            return GPT
         elif model == LLMModel.AZURE_GPT:
-            return ModelWrapper(azure_gpt)
+            return AZURE_GPT
         elif model == LLMModel.GEMINI:
-            return ModelWrapper(gemini, max_retry=2)
+            return GEMINI
         elif model == LLMModel.OLLAMA:
-            return ModelWrapper(ollama, max_retry=5)
+            return OLLAMA
         else:
             raise HTTPException(status_code=400, detail="Invalid model name")
 
@@ -154,12 +161,10 @@ class LLMProvider:
         context: str = None,
         history: List[BaseMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
-        model_name: LLMModel = DEFAULT_MODEL,
+        model: ModelWrapper = DEFAULT_MODEL,
         max_history: int = None
     ) -> _T:
-        # Select the LLM model
-        selected_llm = self.__get_llm_model(model_name)
-        structured_llm = selected_llm.with_structured_output(parser)
+        structured_llm = model.with_structured_output(parser)
 
         # Prune the history if needed
         if max_history:
@@ -187,13 +192,10 @@ class LLMProvider:
         context: str = None,
         history: List[BaseMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
-        model_name: LLMModel = DEFAULT_MODEL,
+        model: ModelWrapper = DEFAULT_MODEL,
         max_history: int = None,
         callback: Callable = None
     ) -> Generator:
-        # Select the LLM
-        selected_llm = self.__get_llm_model(model_name)
-
         # Prune the history if needed
         if max_history:
             history = self.__prune_history(history, max_history)
@@ -205,7 +207,7 @@ class LLMProvider:
 
         # Send to LLM with streaming
         messages = [self.__system_message(role), *history[:-1], new_message]
-        gen = selected_llm.stream(messages=messages)
+        gen = model.stream(messages=messages)
 
         historical = False
         for output in gen:
@@ -225,12 +227,9 @@ class LLMProvider:
         context: str = None,
         history: List[BaseMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
-        model_name: LLMModel = DEFAULT_MODEL,
+        model: ModelWrapper = DEFAULT_MODEL,
         max_history: int = None,
     ) -> str:
-        # Select the LLM model
-        selected_llm = self.__get_llm_model(model_name)
-
         # Prune history if needed
         if max_history:
             history = self.__prune_history(history, max_history)
@@ -242,7 +241,7 @@ class LLMProvider:
 
         # Send to LLM and get response
         messages = [self.__system_message(role), *history[:-1], new_message]
-        output = await selected_llm.ainvoke(messages=messages)
+        output = await model.ainvoke(messages=messages)
 
         # Update history and log
         history.append(AIMessage(content=output))
@@ -256,13 +255,10 @@ class LLMProvider:
         context: str = None,
         history: List[BaseMessage] = [],
         role: RolePrompt = DEFAULT_ROLE,
-        model_name: LLMModel = DEFAULT_MODEL,
+        model: ModelWrapper = DEFAULT_MODEL,
         max_history: int = None,
         callback: Callable = None
     ) -> Generator:
-        # Select the LLM model
-        selected_llm = self.__get_llm_model(model_name)
-
         # Prune history if needed
         if max_history:
             history = self.__prune_history(history, max_history)
@@ -274,7 +270,7 @@ class LLMProvider:
 
         # Stream response from LLM
         messages = [self.__system_message(role), *history[:-1], new_message]
-        gen = selected_llm.stream(messages=messages)
+        gen = model.stream(messages=messages)
 
         historical = False
         for output in gen:
