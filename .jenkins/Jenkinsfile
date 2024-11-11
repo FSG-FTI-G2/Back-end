@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+    environment {
+        AZURE_VM_IP = "40.76.136.177"
+        REPO_URL = "git@github.com:FSG-FTI-G2/Back-end.git"
+        REPO_DIR = "~/llm-ailab/be"
+    }
+    stages {
+        stage("Clone the repository") {
+            steps {
+                git branch: 'develop', url: "${REPO_URL}", credentialsId: '6c3c8bc1-ec09-4163-970e-eff6fba9e11d'
+            }
+        }
+        stage("Run Docker compose") {
+            steps {
+                script {
+                    withCredentials([
+                        usernamePassword(
+                            credentialsId: "2481f9a8-975f-40fa-bca2-dbdf1b479dac",
+                            usernameVariable: "AZURE_USER",
+                            passwordVariable: "AZURE_PASSWORD"
+                        )
+                    ]) {
+                        sshCommand remote: [
+                            name: "Azure VM",  host: "${env.AZURE_VM_IP}", user: "${AZURE_USER}", password: "${AZURE_PASSWORD}", allowAnyHosts: true
+                        ], command: """
+                        # Clone the repository
+                        if [ -d "${REPO_DIR}" ]; then
+                            cd ${REPO_DIR} && git pull
+                        else
+                            git clone ${REPO_URL} ${REPO_DIR} && cd ${REPO_DIR}
+                        fi
+
+                        # Run Docker compose
+                        docker compose -f ${REPO_DIR}/azure/docker-compose.yml down || true
+                        docker compose -f ${REPO_DIR}/azure/docker-compose.yml up -d
+                        """
+                    }
+                }
+            }
+        }
+    }
+}
