@@ -1,0 +1,29 @@
+'''
+Migration script for databases
+'''
+from app.models.user_schema import UserSchema
+from app.providers import encryptor, vectordb_provider
+from app.utils.logger import get_logger
+
+logger = get_logger("MIGRATE", color=1)
+
+# ---------------------------------------------------------
+# Variables
+# ---------------------------------------------------------
+USERNAME = "admin"
+PASSWORD = "admin1111"
+
+
+def auto_migrate():
+    logger("⚙️ Auto migrating database...")
+
+    # Create Admin User as default user
+    admin = UserSchema.find_by_username(USERNAME)
+    if not admin:
+        admin = UserSchema(
+            username=USERNAME,
+            password=encryptor.hash(PASSWORD),
+        ).create()
+
+    # Create Qdrant collection by user id
+    vectordb_provider.create_collection(admin.id)

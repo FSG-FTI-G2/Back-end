@@ -1,0 +1,70 @@
+import unittest
+from pydantic import BaseModel, Field
+from app.providers.db_provider import DatabaseProvider
+
+
+class TestSchema(BaseModel):
+    id: str = Field(None, alias="_id")
+    name: str = Field(None, alias="name")
+    email: str = Field(None, alias="email")
+    projects: list = Field(None, alias="projects")
+
+
+class DbTestCase(unittest.TestCase):
+    def __init__(self, *args, **kwargs):
+        super(DbTestCase, self).__init__(*args, **kwargs)
+        self.test_db = DatabaseProvider("test")
+
+    def __insert(self):
+        object = TestSchema(
+            name="Test User",
+            email="test.example@gmail.com",
+            projects=["Test Project", "Example Project"],
+        )
+        result = self.test_db.create(
+            object.model_dump(exclude_none=True, mode="json", by_alias=True))
+        self.assertIsInstance(result, str)
+        return result
+
+    def __update(self, id):
+        # Update user name
+        new_object_data = TestSchema(
+            name="Updated User",
+        )
+        result = self.test_db.update(
+            id, new_object_data.model_dump(exclude_none=True, mode="json", by_alias=True))
+        self.assertEqual(result, 1)
+        # Validate the update
+        result = self.test_db.get_by_id(id)
+        self.assertEqual(result["name"], "Updated User")
+
+    def __select(self, id):
+        result = self.test_db.get_by_id(id)
+        data = TestSchema.model_validate(result)
+        self.assertEqual(data.id, id)
+        result = self.test_db.get_by_id("626bccb9697a12204fb22ea3")
+        self.assertIsNone(result)
+
+    def __select_all(self):
+        result = self.test_db.get_all()
+        result = [TestSchema.model_validate(item) for item in result]
+        self.assertIsInstance(result, list)
+
+    def __query_all(self):
+        result = self.test_db.query({
+            "email": "test.example@gmail.com"
+        })
+        result = [TestSchema.model_validate(item) for item in result]
+        self.assertIsInstance(result, list)
+
+    def __delete(self, id):
+        result = self.test_db.delete(id)
+        self.assertEqual(result, 1)
+
+    def test_database(self):
+        created_id = self.__insert()
+        self.__update(created_id)
+        self.__select(created_id)
+        self.__query_all()
+        self.__select_all()
+        self.__delete(created_id)
