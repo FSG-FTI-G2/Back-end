@@ -1,69 +1,85 @@
-# Document Retrieval APIs
+# FinTech Bot Document Retrieval
 
-### Quick start
+### 🚀 How to run
 
-> ⚠️ Get the .env file before run
-
-1. Start with Docker Compose
-
-- Start Application
+1. Running locally
 
 ```sh
-docker compose up
+docker compose -f docker-compose.yml up -d
 ```
 
-- Develop synthensis
+2. Running in server
+
+- Connect to server via SSH (Linux)
 
 ```sh
-docker compose watch
+ssh <username>@<vm_ip_address>
 ```
 
-2. Run Application Locally
-
-- Run Qdrant VectorDB locally. [Detail](https://qdrant.tech/documentation/quickstart/)
+- Create an ssh key with (Server)
+  - name: `finbot.ssh`.
+  - passphase: ` `.
 
 ```sh
-# Create Docker volume
-docker volume create qdrantdata
-# Start Qdrant container
-docker run --rm -d --name qdrant -p 6333:6333 -p 6334:6334 -v qdrantdata:/qdrant/storage:z qdrant/qdrant
+# Create a key
+# This action will create 2 keys:
+# - Private key
+# - Public key .pub
+ssh-keygen -t ed25519 -C "your-email@example.com"
+# Show the public key
+cat ~/.ssh/finbot.ssh.pub
 ```
 
-- Run MongoDB locally. [Detail](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-community-with-docker/)
+- Config the Github Deploy keys
+
+> Go to repository > Settings > Deploy keys > Add deploy key
+
+- Clone the repository in server
 
 ```sh
-# Create Docker volume
-docker volume create mongodbdata
-# Start Mongodb container
-docker run --rm -d --name mongodb -p 27017:27017 -v mongodbdata:/data/db mongodb/mongodb-community-server:latest
+git clone --single-branch -b develop git@github.com:FSG-FTI-G2/Back-end.git be
 ```
 
-- Run MinIO locally.
+3. Running in server with CI/CD
+
+- Create an ssh in server (Above step)
+
+- Start Jenkins
 
 ```sh
-# Create Docker volume
-docker volume create miniodata
-# Start MinIO container
-docker run --rm -d --name minio -p 9000:9000 -p 9001:9001 -v miniodata:/data -e MINIO_ROOT_USER=user -e MINIO_ROOT_PASSWORD=user_123123 minio/minio server --console-address ":9001" /data
+docker compose -f .jenkins/docker-compose.yml up -d
+# Open Jenkins in http://localhost:8080
+# Show the initialize jenkins password
+docker exec -it chatbot-jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-- Start Uvicorn Server
+- Create `ngrok` port-forward
 
 ```sh
-# Start application
-uvicorn main:app --port 7860
-# Start application with reload detector
-uvicorn main:app --port 7860 --reload
+ngrok http 8080
 ```
 
-### Run test
+- (Optional) Run Jenkins in Server
 
 ```sh
-python -m unittest discover -s ./test -p 'test_*.py'
+# Create volume
+docker volume create chatbot-jenkins-data
+# Run container
+docker run -d --name chatbot-jenkins -p 8443:8080 -p 50000:50000 --restart on-failure -v chatbot-jenkins-data:/var/jenkins_home jenkins/jenkins:lts-jdk17
 ```
 
-### Containers
+- Config url to Github webhooks
 
-- FastAPI APIs
-- MongoDB
-- Qdrant
+> Go to repository > Settings > Webhooks > Add webhook
+
+Enter url: `<your-url>/github-webhook/`
+
+- Config Credentials in Jenkins
+
+> Go to Dashboard > Manage Jenkins > Credentials > Domain global > Add Credentials > SSH Username with private key > Enter the form
+
+> **Form**: ID: `finbot.ssh`,
+
+- Open Jenkins and create a pipeline
+
+- Run the Pipeline
