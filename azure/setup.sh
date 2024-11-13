@@ -1,31 +1,50 @@
-# Setup server manually scripts
+#!/bin/bash
 
-# 0. Change directory
-# cd /home/fpt_mbi_idp_vm1/.ssh
+# Set default versions if not provided
+DEFAULT_DOCKER_VERSION="latest"
+DEFAULT_NVIDIA_TOOLKIT_VERSION="1.12.1"
 
-# 1. Create ssh key
-# ssh-keygen -t rsa -b 4096 -C "quangminh57dng@gmail.com"
+# Prompt for versions with default values
+read -p "Enter Docker version (default: $DEFAULT_DOCKER_VERSION): " DOCKER_VERSION
+DOCKER_VERSION=${DOCKER_VERSION:-$DEFAULT_DOCKER_VERSION}
 
-# 2. Enter name: "fsg.fti.g2", no passphrase
+read -p "Enter NVIDIA Container Toolkit version (default: $DEFAULT_NVIDIA_TOOLKIT_VERSION): " NVIDIA_TOOLKIT_VERSION
+NVIDIA_TOOLKIT_VERSION=${NVIDIA_TOOLKIT_VERSION:-$DEFAULT_NVIDIA_TOOLKIT_VERSION}
 
-# 3. Show the ssh.pub
-# cat fsg.fti.g2.pub
+# Function to install Docker
+install_docker() {
+    echo "Installing Docker..."
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sh get-docker.sh
+    rm get-docker.sh
+    echo "Docker installed successfully."
+}
 
-# 5. Verify ssh key
-# eval "$(ssh-agent -s)"
-# ssh-add fsg.fti.g2
-# ssh -T git@github.com
+# Function to install NVIDIA Container Toolkit
+install_nvidia_toolkit() {
+    echo "Installing NVIDIA Container Toolkit version $NVIDIA_TOOLKIT_VERSION..."
+    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+    curl -s -L https://nvidia.github.io/libnvidia-container/gpgkey | sudo apt-key add -
+    curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+    sudo apt update
+    sudo apt install -y nvidia-container-toolkit=$NVIDIA_TOOLKIT_VERSION*
+    sudo systemctl restart docker
+    echo "NVIDIA Container Toolkit installed successfully."
+}
 
-# 6. Change directory
-cd /home/fpt_mbi_idp_vm1/llm-ailab
+# Check if Docker is installed and install if necessary
+if ! command -v docker &> /dev/null; then
+    echo "Docker is not installed. Installing Docker..."
+    install_docker
+else
+    echo "Docker is already installed."
+fi
 
-# 7. Clone the repository
-git clone --single-branch --branch develop git@github.com:FSG-FTI-G2/Back-end.git be
-cd be
-
-# 8. Restart Docker for nvidia container toolkit
-sudo nvidia-ctk runtime configure --runtime=docker
-sudo systemctl restart docker
-
-# Docker compose
-docker compose -f ./azure/docker-compose.yml up
+# Check if NVIDIA Container Toolkit is installed with the specified version
+NVIDIA_TOOLKIT_INSTALLED_VERSION=$(dpkg -l | grep nvidia-container-toolkit | awk '{print $3}')
+if [[ "$NVIDIA_TOOLKIT_INSTALLED_VERSION" != "$NVIDIA_TOOLKIT_VERSION" ]]; then
+    echo "NVIDIA Container Toolkit version $NVIDIA_TOOLKIT_VERSION is not installed. Installing..."
+    install_nvidia_toolkit
+else
+    echo "NVIDIA Container Toolkit version $NVIDIA_TOOLKIT_VERSION is already installed."
+fi

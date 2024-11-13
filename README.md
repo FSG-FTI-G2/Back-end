@@ -1,5 +1,7 @@
 # FinTech Bot Document Retrieval
 
+> The `.env` file is super secret, only Admin can be access. To run below, you must included the `.env` file in the project directory.
+
 ### 🚀 How to run
 
 1. Running locally
@@ -10,76 +12,137 @@ docker compose -f docker-compose.yml up -d
 
 2. Running in server
 
-- Connect to server via SSH (Linux)
+- Initialize `.env` file in server (First time)
 
 ```sh
-ssh <username>@<vm_ip_address>
+# Create deployment directory
+mkdir -p ~/deployment
+# Copy env file
+scp .env <username>@<server_host>:~/deployment/.env
 ```
 
-- Create an ssh key with (Server)
+- Connect to server via SSH
+
+```sh
+ssh <username>@<server_host>
+```
+
+- Create an ssh key (First time)
   - name: `finbot.ssh`.
   - passphase: ` `.
 
 ```sh
+# Change directory to .ssh
+cd ~/.ssh
 # Create a key
-# This action will create 2 keys:
-# - Private key
-# - Public key .pub
 ssh-keygen -t ed25519 -C "your-email@example.com"
 # Show the public key
 cat ~/.ssh/finbot.ssh.pub
+# Grant permision for ssh
+eval "$(ssh-agent -s)"
+ssh -i ~/.ssh/finbot.ssh -T git@github.com
 ```
 
-- Config the Github Deploy keys
+- Config the Github Deploy keys (First time)
 
 > Go to repository > Settings > Deploy keys > Add deploy key
 
-- Clone the repository in server
+- Clone the repository in server (First time)
 
 ```sh
-git clone --single-branch -b develop git@github.com:FSG-FTI-G2/Back-end.git be
+# Change directory
+cd ~/deployment
+# Clone repository
+git clone --single-branch -b develop git@github.com:FSG-FTI-G2/Back-end.git finbot
+```
+
+- Run server
+
+```sh
+# Change directory
+cd ~/deployment/finbot
+# Docker compose
+docker compose -f docker-compose.yml up -d
 ```
 
 3. Running in server with CI/CD
 
-- Create an ssh in server (Above step)
+- Extended from above option (First time)
+
+  - Initialize `.env` file in server
+  - Create an ssh key
+
+- Copy `.jenkins` directory to server
+
+```sh
+cd ~/deployment
+scp -r .jenkins <username>@<server_host>:~/deployment/.jenkins
+```
+
+- Connect to server via SSH
+
+```sh
+ssh <username>@<server_host>
+```
 
 - Start Jenkins
 
 ```sh
-docker compose -f .jenkins/docker-compose.yml up -d
-# Open Jenkins in http://localhost:8080
-# Show the initialize jenkins password
-docker exec -it chatbot-jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+cd ~/deployment/.jenkins
+bash jenkins-start.sh
 ```
 
-- Create `ngrok` port-forward
+- Open Jenkins and Setup
 
-```sh
-ngrok http 8080
-```
-
-- (Optional) Run Jenkins in Server
-
-```sh
-# Create volume
-docker volume create chatbot-jenkins-data
-# Run container
-docker run -d --name chatbot-jenkins -p 8443:8080 -p 50000:50000 --restart on-failure -v chatbot-jenkins-data:/var/jenkins_home jenkins/jenkins:lts-jdk17
-```
+  - Enter `initialAdminPassword`
+  - Install plugins
+  - Go to Manages Jenkins > Plugins > Available plugins > Search `SSH Pipeline Plugin` and install
 
 - Config url to Github webhooks
 
-> Go to repository > Settings > Webhooks > Add webhook
+> Go to repository > Settings > Webhooks > Add webhook > Enter url `http://<server_host>:8443/github-webhook/`
 
-Enter url: `<your-url>/github-webhook/`
+- Create Github Access Token
 
-- Config Credentials in Jenkins
+> Go to `https://github.com/settings/tokens` > Generate new token (Classic) > Name: `finbot-jenkins`, `repo` option.
 
-> Go to Dashboard > Manage Jenkins > Credentials > Domain global > Add Credentials > SSH Username with private key > Enter the form
+- Config Jenkins credentials
 
-> **Form**: ID: `finbot.ssh`,
+> Go to Manage Jenkins > Credentials > global > Add Credentials > Username with password > Username: `<github-id>`, Password: `access-token`, ID: `finbot-github-accesstoken`
 
-- Open Jenkins and create a pipeline
+> Go to Manage Jenkins > Credentials > global > Add Credentials > Username with password > Username: `<server_username>`, Password: `<server_password>`, ID: `finbot-azure-ssh`
 
-- Run the Pipeline
+> Go to Manage Jenkins > Credentials > global > Add Credentials > Secret text > Secret: `<server_host>`, ID: `finbot-azure-hostip`
+
+- Create a pipeline
+
+  - New Item, name: `finbot-pipeline`
+  - Select Pipeline option
+  - Select `GitHub hook trigger for GITScm polling` in Build Triggers
+  - Select `Pipeline script from SCM` in Pipeline Definition
+  - Select `Git` in Pipeline SCM
+  - Enter repository url `https://github.com/FSG-FTI-G2/Back-end.git`
+  - Select created Credentials
+  - Branch `*/develop`
+  - Script Path `.jenkins/Jenkinsfile`
+
+### 🖥️ Server Setup
+
+- Copy server setup script
+
+```sh
+scp azure/setup.sh <username>@<server_host>:~/setup.sh
+```
+
+- Connect to server via SSH
+
+```sh
+ssh <username>@<server_host>
+```
+
+- Run installation
+
+```sh
+chmod +x setup.sh
+bash ~/setup.sh
+```

@@ -1,52 +1,39 @@
 pipeline {
     agent any
     environment {
-        AZURE_VM_IP = "40.76.136.177"
+        // Define the environment variables
         REPO_URL = "git@github.com:FSG-FTI-G2/Back-end.git"
-        REPO_DIR = "~/llm-ailab/be"
-        LOCAL_CLONE_DIR = "be"
+        REPO_DIR = "~/deployment/finbot"
     }
     stages {
-        stage("Clone repository") {
-            steps {
-                script {
-                    git branch: 'main', credentialsId: '6c3c8bc1-ec09-4163-970e-eff6fba9e11d', url: "${env.REPO_URL}"
-                }
+        stage("Connect to VM via SSH") {
+            environment {
+                HOST_IP = credentials("finbot-azure-hostip")
             }
-        }
-        stage("Copy files to Azure VM") {
             steps {
-                script {
-                    withCredentials([
-                        sshUserPrivateKey(
-                            credentialsId: '6c3c8bc1-ec09-4163-970e-eff6fba9e11d', // Replace with the ID of the SSH key you added
-                            keyFileVariable: 'SSH_KEY'
-                        )
-                    ]) {
-                        sh "scp -i ${SSH_KEY} -r ${env.LOCAL_CLONE_DIR} ${env.AZURE_VM_IP}:${env.REPO_DIR}"
-                    }
-                }
-            }
-        }
-        
-        stage("Run Docker Compose") {
-            steps {
-                withCredentials([usernamePassword(credentialsId: "2481f9a8-975f-40fa-bca2-dbdf1b479dac", usernameVariable: "AZURE_USER", passwordVariable: "AZURE_PASSWORD")]) {
-                    sshCommand remote: [
-                        name: "Azure VM",
-                        host: "${env.AZURE_VM_IP}",
-                        user: "${AZURE_USER}",
-                        password: "${AZURE_PASSWORD}",
-                        allowAnyHosts: true
-                    ], command: """
-                    # Navigate to the repository directory on the VM
-                    cd ${REPO_DIR}
+                sshCommand remote: [
+                    host: '${env.HOST_IP}',
+                    name: 'Server',
+                    credentialsId: 'finbot-azure-ssh',
+                    allowAnyHosts: true
+                ], command: """
+                # Check if the repository directory exists
+                if [ -d $REPO_DIR ]; then
+                    echo "Repository directory exists, pull the latest changes"
+                    cd $REPO_DIR
+                    git pull origin develop
+                else
+                    echo "Repository directory does not exist, clone the repository"
+                    git clone --single-branch --branch develop $REPO_URL $REPO_DIR
+                    cd $REPO_DIR
+                fi
 
-                    # Run Docker Compose on the VM
-                    docker compose -f ${REPO_DIR}/azure/docker-compose.yml down || true
-                    docker compose -f ${REPO_DIR}/azure/docker-compose.yml up -d
-                    """
-                }
+                # Copy the .env file to the repository directory
+                cp ~/aiengineer/.env $REPO_DIR/.env
+
+                # Start the application
+                docker compose -f docker-compose.yml up -d
+                """
             }
         }
     }
