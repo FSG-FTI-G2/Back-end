@@ -53,7 +53,7 @@ docker run -d --name chatbot-app -p $FASTAPI:7860 -e MINIO_ACCESS_KEY=adminuser 
 
 # ---- After scripts ----
 # Install Ollama model
-docker exec chatbot-ollama /entrypoint.sh /entrypoint.sh
+docker exec -it chatbot-ollama ollama pull llama3.2
 
 # ---- Print Ports ----
 echo "🚀 Startup Ports"
