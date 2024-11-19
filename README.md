@@ -40,7 +40,7 @@ ssh-keygen -t ed25519 -C "your-email@example.com"
 cat ~/.ssh/finbot.ssh.pub
 # Grant permision for ssh
 eval "$(ssh-agent -s)"
-ssh -i ~/.ssh/finbot.ssh -T git@github.com
+ssh-add ~/.ssh/finbot.ssh
 ```
 
 - Config the Github Deploy keys (First time)
@@ -61,6 +61,8 @@ git clone --single-branch -b develop git@github.com:FSG-FTI-G2/Back-end.git finb
 ```sh
 # Change directory
 cd ~/deployment/finbot
+# Copy env file
+cp ~/deployment/.env ~/deployment/finbot/.env
 # Docker compose
 docker compose -f docker-compose.yml up -d
 ```

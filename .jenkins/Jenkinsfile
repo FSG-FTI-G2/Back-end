@@ -29,7 +29,7 @@ pipeline {
                 fi
 
                 # Copy the .env file to the repository directory
-                cp ~/aiengineer/.env $REPO_DIR/.env
+                cp ~/deployment/.env $REPO_DIR/.env
 
                 # Start the application
                 docker compose -f docker-compose.yml up -d

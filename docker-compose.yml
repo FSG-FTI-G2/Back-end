@@ -124,7 +124,7 @@ services:
   # Ollama
   # docker run -d --name chatbot-ollama \
   # --network chatbot-networks -p 11434:11434 ollama/ollama:latest
-  # docker exec ollama ollama run llama3.2
+  # docker exec ollama ollama pull llama3.2
   chatbot-ollama:
     image: ollama/ollama:latest
     container_name: chatbot-ollama
@@ -170,11 +170,11 @@ services:
       - MINIO_ACCESS_KEY=adminuser
       - MINIO_SECRET_KEY=adminuser
     depends_on:
-      - chatbot-celery
+      # - chatbot-celery
       - chatbot-mongodb
       - chatbot-qdrant
       - chatbot-minio
-      - chatbot-ollama
+      # - chatbot-ollama
     # GPU support. If you don't have GPU, remove the following lines
     runtime: nvidia
     deploy:
