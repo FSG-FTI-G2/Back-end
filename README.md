@@ -65,6 +65,17 @@ cd ~/deployment/finbot
 cp ~/deployment/.env ~/deployment/finbot/.env
 # Docker compose
 docker compose -f docker-compose.yml up -d
+# Or - Start script
+bash aws/start.sh
+```
+
+- Stop server
+
+```sh
+# Docker compose
+docker compose -f docker-compose.yml down
+# Or - Stop script
+bash aws/stop.sh
 ```
 
 3. Running in server with CI/CD

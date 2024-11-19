@@ -1,6 +1,9 @@
 # Run the server with Docker
 # This scripts help docker using gpu
 
+# ---- Environment ----
+source ~/deployment/.env
+
 # ---- Ports ----
 get_free_port() {
     local port=$1
@@ -42,18 +45,18 @@ docker run -d --name chatbot-celery-worker --gpus all -e HF_HOME=/cache/huggingf
 # MongoDB
 docker run -d --name chatbot-mongodb -p $MONGODB:27017 -v chatbot-mongodb-data:/data/db -v ~/deployment/finbot/.docker/mongodb-config:/data/configdb mongodb/mongodb-community-server:latest
 # MinIO
-docker run -d --name chatbot-minio -p $MINIO:9000 -p $MINIO_CONSOLE:9001 -v chatbot-mino-data:/data -e MINIO_ROOT_USER=adminuser -e MINIO_ROOT_PASSWORD=adminuser minio/minio server --console-address ":9001" /data
+docker run -d --name chatbot-minio -p $MINIO:9000 -p $MINIO_CONSOLE:9001 -v chatbot-mino-data:/data -e MINIO_ROOT_USER=$MINIO_ACCESS_KEY -e MINIO_ROOT_PASSWORD=$MINIO_SECRET_KEY minio/minio server --console-address ":$MINIO_CONSOLE" /data
 # Qdrant
 docker run -d --name chatbot-qdrant -p $QDRANT:6333 -p $QDRANT_GRPC:6334 -v chatbot-qdrant-data:/qdrant/storage qdrant/qdrant:latest
 # Ollama
-docker run -d --name chatbot-ollama --gpus all -p $OLAMA:1143 -v chatbot-ollama-model:/root/.ollama -v ~/deployment/finbot/.docker/ollama-entrypoint.sh:/entrypoint.sh -e OLLAMA_KEEP_ALIVE=24h ollama/ollama:latest
+docker run -d --name chatbot-ollama --gpus all -p $OLAMA:11434 -v chatbot-ollama-model:/root/.ollama -v ~/deployment/finbot/.docker/ollama-entrypoint.sh:/entrypoint.sh -e OLLAMA_KEEP_ALIVE=24h ollama/ollama:latest
 # FastAPI
 docker build -t chatbot-app-image ~/deployment/finbot
-docker run -d --name chatbot-app -p $FASTAPI:7860 -e MINIO_ACCESS_KEY=adminuser -e MINIO_SECRET_KEY=adminuser chatbot-app-image
+docker run -d --name chatbot-app -p $FASTAPI:7860 -e MINIO_ACCESS_KEY=$MINIO_ACCESS_KEY -e MINIO_SECRET_KEY=$MINIO_SECRET_KEY chatbot-app-image
 
 # ---- After scripts ----
 # Install Ollama model
-docker exec -it chatbot-ollama ollama pull llama3.2
+docker exec -it chatbot-ollama ollama pull $LLM_OLLAMA_MODEL
 
 # ---- Print Ports ----
 echo "🚀 Startup Ports"
