@@ -51,11 +51,15 @@ docker run -d --name chatbot-ollama --gpus all -p $OLAMA:1143 -v chatbot-ollama-
 docker build -t chatbot-app-image ~/deployment/finbot
 docker run -d --name chatbot-app -p $FASTAPI:7860 -e MINIO_ACCESS_KEY=adminuser -e MINIO_SECRET_KEY=adminuser chatbot-app-image
 
+# ---- After scripts ----
+# Install Ollama model
+docker exec chatbot-ollama /entrypoint.sh /entrypoint.sh
+
 # ---- Print Ports ----
 echo "🚀 Startup Ports"
 echo "Redis: $REDIS"
 echo "MongoDB: $MONGODB"    
-echo "MinIO: $MINIO"
-echo "Qdrant: $QDRANT"
+echo "MinIO: $MINIO; Console: $MINIO_CONSOLE"
+echo "Qdrant: $QDRANT, gRPC: $QDRANT_GRPC"
 echo "Ollama: $OLAMA"
 echo "FastAPI: $FASTAPI"
