@@ -104,27 +104,27 @@ services:
       - chatbot-networks
 
   # Ollama
-  chatbot-ollama:
-    image: ollama/ollama:latest
-    container_name: chatbot-ollama
-    ports:
-      - "11434:11434"
-    volumes:
-      - chatbot-ollama-model:/root/.ollama
-      - ./.docker/ollama-entrypoint.sh:/entrypoint.sh
-    networks:
-      - chatbot-networks
-    environment:
-      - OLLAMA_KEEP_ALIVE=24h
-    entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]
-    # GPU support. If you don't have GPU, remove the following lines
-    runtime: nvidia
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              capabilities: [gpu]
+  # chatbot-ollama:
+  #   image: ollama/ollama:latest
+  #   container_name: chatbot-ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - chatbot-ollama-model:/root/.ollama
+  #     - ./.docker/ollama-entrypoint.sh:/entrypoint.sh
+  #   networks:
+  #     - chatbot-networks
+  #   environment:
+  #     - OLLAMA_KEEP_ALIVE=24h
+  #   entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]
+  #   # GPU support. If you don't have GPU, remove the following lines
+  #   runtime: nvidia
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             capabilities: [gpu]
 
   # App Services
   chatbot-app:
@@ -148,4 +148,4 @@ services:
       - chatbot-mongodb
       - chatbot-qdrant
       - chatbot-minio
-      - chatbot-ollama
+      # - chatbot-ollama

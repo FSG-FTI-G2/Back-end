@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "finbot"
+version = "0.1.0"
+description = "Finbot"
+authors = ["Ming Doan <quangminh57dng@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.1"
+nest-asyncio = "^1.6.0"
+celery = "^5.4.0"
+python-dotenv = "^1.0.1"
+langchain = "^0.3.8"
+langchain-ollama = "^0.2.0"
+langchain-openai = "^0.2.9"
+langchain-google-genai = "^2.0.5"
+minio = "^7.2.11"
+pymongo = "^4.10.1"
+qdrant-client = "^1.12.1"
+pypdf2 = "^3.0.1"
+python-docx = "^1.1.2"
+python-jose = "^3.3.0"
+bcrypt = "^4.2.1"
+python-multipart = "^0.0.17"
+
+[tool.poetry.dev-dependencies]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,10 +1,12 @@
-FROM python:3.10-slim-bookworm
+FROM python:3.11.10-slim-bookworm
 
 WORKDIR /app
 
-COPY requirements.txt /app/requirements.txt
+RUN pip install poetry && poetry config virtualenvs.create false
 
-RUN pip install --no-cache-dir -r requirements.txt
+COPY pyproject.toml poetry.lock /app/
+
+RUN poetry install --no-dev
 
 COPY . /app
 
