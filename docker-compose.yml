@@ -1,39 +1,36 @@
 # Docker compose for running services locally
 volumes:
-  # docker volume create chatbot-redis-data
+  # Redis
   chatbot-redis-data:
     driver: local
 
-  # docker volume create chatbot-mongodb-data
+  # MongoDB
   chatbot-mongodb-data:
     driver: local
 
-  # docker volume create chatbot-qdrant-data
+  # Qdrant
   chatbot-qdrant-data:
     driver: local
 
-  # docker volume create chatbot-mino-data
+  # Minio
   chatbot-mino-data:
     driver: local
 
-  # docker volume create chatbot-ollama-model
+  # Ollama
   chatbot-ollama-model:
     driver: local
 
-  # docker volume create chatbot-celery-cache
+  # Celery
   chatbot-celery-cache:
     driver: local
  
 networks:
-  # docker network create chatbot-networks
+  # Chatbot Networks
   chatbot-networks:
     driver: bridge
 
 services:
   # Redis
-  # docker run -d --name chatbot-redis \
-  # --network chatbot-networks -p 6379:6379 -v chatbot-redis-data:/data \
-  # redis/redis-stack-server:latest
   chatbot-redis:
     image: redis/redis-stack-server:latest
     container_name: chatbot-redis
@@ -45,10 +42,6 @@ services:
       - chatbot-networks
 
   # Celery
-  # docker build -t chatbot-celery-worker ./celery
-  # docker run -d --name chatbot-celery-worker --gpus all \
-  # --network chatbot-networks -e REDIS_HOST=chatbot-redis \
-  # chatbot-celery-worker
   chatbot-celery:
     build: ./celery
     image: chatbot-celery-worker
@@ -72,9 +65,6 @@ services:
               capabilities: [gpu]
 
   # MongoDB
-  # docker run -d --name chatbot-mongodb \
-  # --network chatbot-networks -p 27017:27017 -v chatbot-mongodb-data:/data/db \
-  # mongodb/mongodb-community-server:latest
   chatbot-mongodb:
     image: mongodb/mongodb-community-server:latest
     container_name: chatbot-mongodb
@@ -87,10 +77,6 @@ services:
       - chatbot-networks
 
   # Minio
-  # docker run -d --name chatbot-minio \
-  # --network chatbot-networks -p 9000:9000 -p 9001:9001 -v chatbot-mino-data:/data \
-  # -e MINIO_ROOT_USER=admin -e MINIO_ROOT_PASSWORD=admin123 minio/minio \
-  # server --console-address ":9001" /data
   chatbot-minio:
     image: minio/minio
     container_name: chatbot-minio
@@ -99,17 +85,13 @@ services:
       - "9001:9001"
     volumes:
       - chatbot-mino-data:/data
-    environment:
-      MINIO_ROOT_USER: adminuser
-      MINIO_ROOT_PASSWORD: adminuser
+    env_file:
+      - .env
     networks:
       - chatbot-networks
     command: server --console-address ":9001" /data
 
   # Qdrant
-  # docker run -d --name chatbot-qdrant \
-  # --network chatbot-networks -p 6333:6333 -p 6334:6334 -v chatbot-qdrant-data:/qdrant/storage \
-  # qdrant/qdrant:latest
   chatbot-qdrant:
     image: qdrant/qdrant:latest
     container_name: chatbot-qdrant
@@ -122,9 +104,6 @@ services:
       - chatbot-networks
 
   # Ollama
-  # docker run -d --name chatbot-ollama \
-  # --network chatbot-networks -p 11434:11434 ollama/ollama:latest
-  # docker exec ollama ollama pull llama3.2
   chatbot-ollama:
     image: ollama/ollama:latest
     container_name: chatbot-ollama
@@ -148,9 +127,6 @@ services:
               capabilities: [gpu]
 
   # App Services
-  # docker build -t chatbot-app-image .
-  # docker run -d --name chatbot-app --gpus all \
-  # --network chatbot-networks -p 7860:7860 chatbot-app-image
   chatbot-app:
     build: .
     image: chatbot-app-image
@@ -167,19 +143,9 @@ services:
       - QDRANT_HOST=chatbot-qdrant
       - MINIO_HOST=chatbot-minio
       - LLM_OLLAMA_HOST=chatbot-ollama
-      - MINIO_ACCESS_KEY=adminuser
-      - MINIO_SECRET_KEY=adminuser
     depends_on:
-      # - chatbot-celery
+      - chatbot-celery
       - chatbot-mongodb
       - chatbot-qdrant
       - chatbot-minio
-      # - chatbot-ollama
-    # GPU support. If you don't have GPU, remove the following lines
-    runtime: nvidia
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              capabilities: [gpu]
+      - chatbot-ollama

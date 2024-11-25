@@ -78,9 +78,8 @@ async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSch
 
 async def upload_files_controller(files: list[tuple[str, bytes]], user: UserSchema, progress_id: str):
     # Upload files in parallel
-    coro = [__upload_file_controller(filename, filebyte, user, progress_id)
-            for filename, filebyte in files]
-    await asyncio.gather(*coro)
+    for filename, filebyte in files:
+        await __upload_file_controller(filename, filebyte, user, progress_id)
 
 
 async def upload_file_status_controller(progress_id: str) -> tuple[bool, dict[str, str]]:
