@@ -5,6 +5,7 @@ from qdrant_client.http.models import Payload
 from app.models.user_schema import UserSchema
 from app.models.message_schema import MessageSchema
 from app.providers import llm, embedder, vectordb_provider
+from app.controllers.switch_llm_controller import load_model_config_by_user
 from app.utils.prompt_template import RolePrompt
 from app.utils.logger import get_logger
 
@@ -49,6 +50,12 @@ async def add_message(message: str, message_id: str | None, role: RolePrompt, us
         if message_instance.user_id != user.id:
             raise HTTPException(status_code=403, detail="Forbidden")
 
+    # Get model
+    model = load_model_config_by_user(user)
+    if not model:
+        raise HTTPException(
+            status_code=400, detail="Model is not selected or missing configuration")
+
     # Embed message
     embedded_message = embedder.embed(message)[0]
 
@@ -62,6 +69,7 @@ async def add_message(message: str, message_id: str | None, role: RolePrompt, us
         context=__format_context([c.payload for c in contexts]),
         history=message_instance.messages,
         role=message_instance.role_prompt,
+        model=model
     )
 
     # Check if message not have title
@@ -69,7 +77,11 @@ async def add_message(message: str, message_id: str | None, role: RolePrompt, us
         if not message_instance.title:
             # Generate title
             title_response = await llm.structured_response(
-                f"Recent message: {message_instance.messages[-1].content}", GetTitleOutput, role=RolePrompt.GENERAL)
+                f"Recent message: {message_instance.messages[-1].content}",
+                GetTitleOutput,
+                role=RolePrompt.GENERAL,
+                model=model
+            )
             message_instance.title = title_response.title
     except Exception as e:
         err_logger(f"Error when create chat title: {e}")

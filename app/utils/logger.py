@@ -1,19 +1,9 @@
 '''
 Logger utility module
 ---
-Color mapping:
-    - 96: Cyan
-    - 95: Header
-    - 94: Blue
-    - 93: Yellow
-    - 92: Green
-    - 91: Red
-    - 90: Grey
-    - 0: Reset
-    - 1: Bold
-    - 4: Underline
+Color mapping: https://sentry.io/answers/print-colored-text-to-terminal-with-python/
 '''
-
+import traceback
 import logging
 
 # Uvicorn logger instances
@@ -27,7 +17,7 @@ def get_logger(prefix: str, color: int, type: str = "info"):
     Create a logger with a specific prefix and color
     """
     if type == "error":
-        return lambda message: __error_logger.error(f"\033[{color}m[{prefix}]\033[0m {message}")
+        return lambda message: __error_logger.error(f"\033[{color}m[{prefix}]\033[0m {message}\n\033[90m{traceback.format_exc()}\033[0m")
     elif type == "warning":
         return lambda message: __warning_logger.warning(f"\033[{color}m[{prefix}]\033[0m {message}")
     else:

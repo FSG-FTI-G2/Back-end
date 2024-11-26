@@ -3,7 +3,6 @@ from pydantic import BaseModel, Field
 from app.providers import llm
 import logging
 import sys
-import asyncio
 
 
 logger = logging.getLogger(__name__)
