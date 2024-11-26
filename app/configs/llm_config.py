@@ -1,3 +1,14 @@
+'''
+Add a new LLM services:
+1. configs/llm_config.py: Create a function of creation and default model instance.
+2. providers/llm_provider.py:
+    - Add model to LLMModel enum.
+    - Create a default Model Wrapper model instance
+4. controllers/switch_llm_controller.py:
+    - load_model_config_by_user: Add a new model to the selected model condition.
+    - update_user_llm_config: Add a new model to the selected model condition.
+'''
+
 import os
 from langchain_ollama.llms import OllamaLLM
 from langchain_google_genai import GoogleGenerativeAI

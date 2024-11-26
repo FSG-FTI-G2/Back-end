@@ -48,6 +48,16 @@ async def http_exception_handler(_, exc):
     )
 
 
+@app.exception_handler(Exception)
+async def exception_handler(_, exc):
+    return response(
+        code=500,
+        message="Internal Server Error",
+        data=None,
+        error=str(exc)
+    )
+
+
 # Run app
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=int(

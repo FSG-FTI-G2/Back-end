@@ -1,15 +1,13 @@
-from typing import TypeVar, Type, List, Generator, Callable
-from typing_extensions import deprecated
+from typing import TypeVar, Type, List
 from pydantic import BaseModel
 import enum
 import json
-from fastapi import HTTPException
 from langchain_core.runnables import Runnable
 from langchain.schema import BaseMessage, AIMessage, HumanMessage, SystemMessage
 from app.utils.prompt_template import RolePrompt, get_prompt_by_role
 from app.configs.llm_config import gpt, azure_gpt, gemini, ollama
 from app.utils.logger import get_logger
-import sys
+
 
 _T = TypeVar("T", bound=BaseModel)
 logger = get_logger("LLM", color=96)
@@ -63,7 +61,7 @@ class ModelWrapper:
             self.structure_prompt_modifier = parser
         return self
 
-    def __assign_first_str_field(model_instance: BaseModel, value: str):
+    def __assign_first_str_field(self, model_instance: BaseModel, value: str):
         for field_name, field in model_instance.model_fields.items():
             if field.type_ == str:
                 setattr(model_instance, field_name, value)
@@ -136,18 +134,6 @@ DEFAULT_MODEL = OLLAMA
 class LLMProvider:
     def __init__(self): ...
 
-    def __get_llm_model(self, model: LLMModel) -> ModelWrapper:
-        if model == LLMModel.GPT:
-            return GPT
-        elif model == LLMModel.AZURE_GPT:
-            return AZURE_GPT
-        elif model == LLMModel.GEMINI:
-            return GEMINI
-        elif model == LLMModel.OLLAMA:
-            return OLLAMA
-        else:
-            raise HTTPException(status_code=400, detail="Invalid model name")
-
     def __system_message(self, role: RolePrompt) -> SystemMessage:
         return SystemMessage(content=get_prompt_by_role(role))
 
@@ -181,45 +167,9 @@ class LLMProvider:
 
         # Parse and return the structured response
         history.append(AIMessage(content=str(output)))
-        logger(f"Structured response: {output}")
+        logger(
+            f"Structured response: {output} ~ [{model.model.__class__.__name__}]")
         return output
-
-    @deprecated("Structured streaming is not supported yet by LangChain")
-    def stream_structured_response(
-        self,
-        question: str,
-        parser: Type[_T],
-        context: str = None,
-        history: List[BaseMessage] = [],
-        role: RolePrompt = DEFAULT_ROLE,
-        model: ModelWrapper = DEFAULT_MODEL,
-        max_history: int = None,
-        callback: Callable = None
-    ) -> Generator:
-        # Prune the history if needed
-        if max_history:
-            history = self.__prune_history(history, max_history)
-
-        # Prepare new message and history
-        history.append(HumanMessage(content=question))
-        new_message = HumanMessage(
-            content=f"{context or ''} Prompt: {question}")
-
-        # Send to LLM with streaming
-        messages = [self.__system_message(role), *history[:-1], new_message]
-        gen = model.stream(messages=messages)
-
-        historical = False
-        for output in gen:
-            if historical:
-                history[-1] = AIMessage(content=output)
-            else:
-                history.append(AIMessage(content=output))
-                historical = True
-            yield output
-
-        if callback:
-            callback()
 
     async def response(
         self,
@@ -245,41 +195,5 @@ class LLMProvider:
 
         # Update history and log
         history.append(AIMessage(content=output))
-        logger(f"Response: {output}")
+        logger(f"Response: {output} ~ [{model.model.__class__.__name__}]")
         return output
-
-    @deprecated("Streaming is not supported yet by LangChain")
-    def stream_response(
-        self,
-        question: str,
-        context: str = None,
-        history: List[BaseMessage] = [],
-        role: RolePrompt = DEFAULT_ROLE,
-        model: ModelWrapper = DEFAULT_MODEL,
-        max_history: int = None,
-        callback: Callable = None
-    ) -> Generator:
-        # Prune history if needed
-        if max_history:
-            history = self.__prune_history(history, max_history)
-
-        # Add question to history and create message
-        history.append(HumanMessage(content=question))
-        new_message = HumanMessage(
-            content=f"{context or ''} Prompt: {question}")
-
-        # Stream response from LLM
-        messages = [self.__system_message(role), *history[:-1], new_message]
-        gen = model.stream(messages=messages)
-
-        historical = False
-        for output in gen:
-            if historical:
-                history[-1] = AIMessage(content=output)
-            else:
-                history.append(AIMessage(content=output))
-                historical = True
-            yield output
-
-        if callback:
-            callback()
