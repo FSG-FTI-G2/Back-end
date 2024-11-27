@@ -28,7 +28,7 @@ def __file_validator(filename: str, filebyte: bytes):
     return True
 
 
-async def __update_status(id: str, filename: str, status: FileStatus, schema: FileSchema = None):
+def __update_status(id: str, filename: str, status: FileStatus, schema: FileSchema = None):
     # Update file state
     state.get(id)[filename] = status.value
     # Update file schema
@@ -37,14 +37,14 @@ async def __update_status(id: str, filename: str, status: FileStatus, schema: Fi
         schema.update()
 
 
-async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSchema, progress_id: str):
+def __upload_file_controller(filename: str, filebyte: bytes, user: UserSchema, progress_id: str):
     # Validate file
     if not __file_validator(filename, filebyte):
-        await __update_status(progress_id, filename, FileStatus.ERROR)
+        __update_status(progress_id, filename, FileStatus.ERROR)
         return
     # Create specific filepath
     _name, _ext = os.path.splitext(filename)
-    filepath = f"{_name}_{uuid.uuid4().hex[:5]}{_ext}"
+    filepath = f"{_name.replace(' ', '_')}_{uuid.uuid4().hex[:5]}{_ext}"
     # Create a file schema
     file_schema = FileSchema(
         user_id=user.id,
@@ -58,27 +58,27 @@ async def __upload_file_controller(filename: str, filebyte: bytes, user: UserSch
         # Upload to MinIO
         file_storage.upload_file(filepath, BytesIO(filebyte))
         # Update file status to processing
-        await __update_status(progress_id, filename,
-                              FileStatus.PROCESSING, file_schema)
+        __update_status(progress_id, filename,
+                        FileStatus.PROCESSING, file_schema)
         # Extract content from file
-        content = await extraction_file_content(file_schema.type, BytesIO(filebyte))
+        content = extraction_file_content(file_schema.type, BytesIO(filebyte))
         # Extract features and upload to vector database
-        await extraction_features(content, file_schema, user)
+        extraction_features(content, file_schema, user)
         # Update file status to success
-        await __update_status(progress_id, filename,
-                              FileStatus.SUCCESS, file_schema)
+        __update_status(progress_id, filename,
+                        FileStatus.SUCCESS, file_schema)
         return
     except Exception as e:
         # Update file status to error
-        await __update_status(progress_id, filename, FileStatus.ERROR, file_schema)
+        __update_status(progress_id, filename, FileStatus.ERROR, file_schema)
         logger(f"Error uploading file {filename}: {str(e)}")
         return
 
 
-async def upload_files_controller(files: list[tuple[str, bytes]], user: UserSchema, progress_id: str):
+def upload_files_controller(files: list[tuple[str, bytes]], user: UserSchema, progress_id: str):
     # Upload files in parallel
     for filename, filebyte in files:
-        await __upload_file_controller(filename, filebyte, user, progress_id)
+        __upload_file_controller(filename, filebyte, user, progress_id)
 
 
 async def upload_file_status_controller(progress_id: str) -> tuple[bool, dict[str, str]]:

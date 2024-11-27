@@ -50,7 +50,12 @@ class ModelWrapper:
     def __init__(self, model: Runnable, max_retry: int = 1):
         self.model = model
         self.structure_prompt_modifier: _T = None
-        self.max_retry = max_retry
+        self.config_max_retry = max_retry
+        self.max_retry = self.config_max_retry
+
+    def __reset(self) -> None:
+        self.structure_prompt_modifier = None
+        self.max_retry = self.config_max_retry
 
     def with_structured_output(self, parser: Type[_T]) -> 'ModelWrapper':
         # If the model has a method with_structured_output, use it
@@ -63,9 +68,10 @@ class ModelWrapper:
 
     def __assign_first_str_field(self, model_instance: BaseModel, value: str):
         for field_name, field in model_instance.model_fields.items():
-            if field.type_ == str:
+            if field.annotation == str:
                 setattr(model_instance, field_name, value)
                 break  # Stop after the first str field is assigned
+        return model_instance
 
     async def __ainvoke(self, messages: List[BaseMessage]) -> str | BaseModel:
         # Modify the last message if needed
@@ -79,7 +85,10 @@ class ModelWrapper:
         if self.structure_prompt_modifier:
             if isinstance(result, str):
                 result = json.loads(result)
-            return self.structure_prompt_modifier.model_validate(result)
+            result = self.structure_prompt_modifier.model_validate(result)
+            self.__reset()
+
+        print("🤡", result)
         return result
 
     async def ainvoke(self, messages: List[BaseMessage]) -> str | BaseModel:
@@ -106,7 +115,10 @@ class ModelWrapper:
         if self.structure_prompt_modifier:
             if isinstance(result, str):
                 result = json.loads(result)
-            return self.structure_prompt_modifier.model_validate(result)
+            result = self.structure_prompt_modifier.model_validate(result)
+            self.__reset()
+
+        print("🤡", result)
         return result
 
     def invoke(self, messages: List[BaseMessage]) -> str | BaseModel:

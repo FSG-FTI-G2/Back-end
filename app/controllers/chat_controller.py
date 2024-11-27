@@ -1,7 +1,8 @@
+import re
 import asyncio
 from pydantic import BaseModel, Field
 from fastapi import HTTPException
-from qdrant_client.http.models import Payload
+from qdrant_client.http.models import Payload, ScoredPoint
 from app.models.user_schema import UserSchema
 from app.models.message_schema import MessageSchema
 from app.providers import llm, embedder, vectordb_provider
@@ -31,9 +32,27 @@ class GetTitleOutput(BaseModel):
 
 def __format_context(data: list[Payload]) -> str:
     context = "--- Context ---\n"
-    for d in data:
-        context += f"File: {d['file_name']}\nContent: {d['content']}\n\n"
+    for i, d in enumerate(data):
+        context += f"No. {i+1}\nFile: {d['file_name']}\nContent: {d['content']}\n\n"
     return context + "--- End of Context ---"
+
+
+def __find_citation_metadata(content: str, data: list[ScoredPoint]) -> dict[str, dict]:
+    # Find `[No.]`s in content
+    citations = re.findall(r"\[\d+\]", content)
+
+    # Find citation in context
+    metadata = {}
+    for citation in citations:
+        no = int(citation[1:-1]) - 1
+        if no < 0 or no >= len(data):
+            continue
+        metadata[citation] = {
+            "document": data[no].payload['id'],
+            "chunk": data[no].id
+        }
+
+    return metadata
 
 
 async def add_message(message: str, message_id: str | None, role: RolePrompt, user: UserSchema) -> MessageSchema:
@@ -71,6 +90,11 @@ async def add_message(message: str, message_id: str | None, role: RolePrompt, us
         role=message_instance.role_prompt,
         model=model
     )
+
+    # Find and assign citation metadata to the last message
+    metadata = __find_citation_metadata(
+        message_instance.messages[-1].content, contexts)
+    message_instance.messages[-1].additional_kwargs['citation'] = metadata
 
     # Check if message not have title
     try:

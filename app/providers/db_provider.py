@@ -43,13 +43,14 @@ class DatabaseProvider:
     def get_all(
         self,
         page_size: int = DEFAULT_PAGE_SIZE,
-        page_index: int = DEFAULT_PAGE_INDEX
+        page_index: int = DEFAULT_PAGE_INDEX,
+        exclude: list[str] = [],
     ) -> list[dict[str, Any]]:
         '''
         Returns all documents in the collection
         '''
         # Skip and limit for pagination
-        cursor = self.collection.find().skip(
+        cursor = self.collection.find(projection={field: 0 for field in exclude}).skip(
             page_size * page_index).limit(page_size)
         logger(f"Retrieved all documents `{self.collection_name}`")
         # Convert ObjectId to string
@@ -57,12 +58,17 @@ class DatabaseProvider:
         # Return as list
         return list(data)
 
-    def get_by_id(self, id: str) -> dict[str, Any] | None:
+    def get_by_id(
+        self,
+        id: str,
+        exclude: list[str] = [],
+    ) -> dict[str, Any] | None:
         '''
         Returns a document by id, which support indexing
         '''
         # Find document by ObjectId
-        data = self.collection.find_one({"_id": ObjectId(oid=id)})
+        data = self.collection.find_one({"_id": ObjectId(oid=id)}, projection={
+                                        field: 0 for field in exclude})
         logger(f"Retrieved document `{self.collection_name}:{id}`")
         # Convert ObjectId to string
         if data:
@@ -81,7 +87,7 @@ class DatabaseProvider:
         Returns documents based on a query
         '''
         # Skip and limit for pagination
-        cursor = self.collection.find(filter, {field: 0 for field in exclude}).skip(
+        cursor = self.collection.find(filter, projection={field: 0 for field in exclude}).skip(
             page_size * page_index).limit(page_size)
         logger(f"Queried documents `{self.collection_name}`")
         # Convert ObjectId to string
