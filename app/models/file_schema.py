@@ -36,23 +36,26 @@ class FileSchema(BaseSchema):
     file_path: str = Field(None, alias="file_path")
     thumbnail: Optional[str] = Field(None, alias="thumbnail")
     status: FileStatus = Field(FileStatus.PENDING, alias="status")
+    contents: Optional[dict[str, str]] = Field(
+        default_factory=dict, alias="contents")
 
     @staticmethod
     def page_count(page_size: int) -> int:
         return file_db.page_count(page_size)
 
     @staticmethod
-    def find_by_user_id(user_id: str, page_size: int, page_index: int, query: dict = {}) -> list['FileSchema']:
+    def find_by_user_id(user_id: str, page_size: int, page_index: int, query: dict = {}, exclude: list[str] = []) -> list['FileSchema']:
         # Find by user_id
         data = file_db.query(
-            {"user_id": user_id, **query}, page_size=page_size, page_index=page_index)
+            {"user_id": user_id, **query}, page_size=page_size, page_index=page_index, exclude=exclude)
         # Validate the data
         return [FileSchema.model_validate(item) for item in data]
 
     @staticmethod
-    def find_by_file_name(user_id: str, file_name: str) -> Union['FileSchema', None]:
+    def find_by_file_name(user_id: str, file_name: str, exclude: list[str] = []) -> Union['FileSchema', None]:
         # Find by file_name
-        data = file_db.query({"user_id": user_id, "file_name": file_name})
+        data = file_db.query(
+            {"user_id": user_id, "file_name": file_name}, exclude=exclude)
         # If data is None, return None
         if len(data) == 0:
             return None
@@ -60,9 +63,9 @@ class FileSchema(BaseSchema):
         return FileSchema.model_validate(data[0])
 
     @staticmethod
-    def find_by_id(id: str) -> Union['FileSchema', None]:
+    def find_by_id(id: str, exclude: list[str] = []) -> Union['FileSchema', None]:
         # Find by id
-        data = file_db.get_by_id(id)
+        data = file_db.get_by_id(id, exclude=exclude)
         # If data is None, return None
         if data is None:
             return None

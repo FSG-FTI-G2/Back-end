@@ -37,7 +37,7 @@ async def get_files_control(
 
     # Query database for files
     files = FileSchema.find_by_user_id(
-        user.id, page_size, page_index, query=query)
+        user.id, page_size, page_index, query=query, exclude=["contents"])
     total_pages = FileSchema.page_count(page_size)
 
     # Return paginated results

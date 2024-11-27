@@ -6,7 +6,7 @@ from app.models.file_schema import FileSchema, FileType
 from app.providers import vectordb_provider, embedder
 
 
-async def extraction_features(text: str, file_schema: FileSchema, user: UserSchema):
+def extraction_features(text: str, file_schema: FileSchema, user: UserSchema):
     """
     Add features extracted from a file into Qdrant. This function takes the extracted
     text content and additional metadata from the file (via `FileSchema`) and stores
@@ -34,10 +34,14 @@ async def extraction_features(text: str, file_schema: FileSchema, user: UserSche
     embed_chunks = embedder.embed(chunks)
 
     # Add the extracted text and its metadata (payloads) to Qdrant
-    vectordb_provider.add_vectors(user.id, embed_chunks, payloads)
+    vector_ids = vectordb_provider.add_vectors(user.id, embed_chunks, payloads)
+
+    # Update file contents with the vector IDs
+    for i, vector_id in enumerate(vector_ids):
+        file_schema.contents[vector_id] = chunks[i]
 
 
-async def extraction_file_content(file_type: FileType, file_content: BytesIO):
+def extraction_file_content(file_type: FileType, file_content: BytesIO):
     """
     Reads and extracts text content from a file stream based on the file type (TXT, DOCX, or PDF).
 

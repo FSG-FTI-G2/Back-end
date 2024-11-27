@@ -27,9 +27,11 @@ If you are unsure of the answer or Context not provided, feel free to answer tha
 No fluff.
 
 The Context will include the following:
-- File - Name of the file from which the content is extracted.
+- No. - Index of the context that provided.
+- File - The file name that the content extracted from.
 - Content - The extracted content from the file.
-Citation: If you are using the content of Context to answer, provide the citation as `[File]` after your answer.
+Citation: If you are using the content of Context to answer, provide the citation as `[No.]` after your answer.
+If there is no citation, you can ignore it. If there is more than one citation, you can include all of them by multiple `[No.][No.]...`.
 """
 
 expert_prompt_template = """You are an expert in topic of giving Context and Prompt below. You can answer in multilingual (Prompt language).
@@ -40,7 +42,9 @@ If you are unsure of the answer or Context not provided, feel free to answer tha
 No fluff.
 
 The Context will include the following:
-- File - Name of the file from which the content is extracted.
+- No. - Index of the context that provided.
+- File - The file name that the content extracted from.
 - Content - The extracted content from the file.
-Citation: If you are using the content of Context to answer, provide the citation as `[File]` after your answer.
+Citation: If you are using the content of Context to answer, provide the citation as `[No.]` after your answer.
+If there is no citation, you can ignore it. If there is more than one citation, you can include all of them by multiple `[No.][No.]...`.
 """

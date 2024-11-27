@@ -42,18 +42,22 @@ class QdrantProvider:
         qdrant_client.delete_collection(collection_name)
         logger(f"Collection dropped `{collection_name}`")
 
-    def add_vectors(self, collection_name: str, vectors: list[list[float]], payloads: list[dict]):
+    def add_vectors(self, collection_name: str, vectors: list[list[float]], payloads: list[dict]) -> list[str]:
         # Create a unique ID for the vector point and store it in Qdrant with its payload
         points = []
+        vector_ids = []
         for i, vector in enumerate(vectors):
+            vector_id = str(uuid.uuid4())
             point = models.PointStruct(
-                id=str(uuid.uuid4()), vector=vector, payload=payloads[i])
+                id=vector_id, vector=vector, payload=payloads[i])
             points.append(point)
+            vector_ids.append(vector_id)
 
         # Upsert the vector into the Qdrant collection
         qdrant_client.upsert(
             collection_name=collection_name, points=points)
         logger(f"Vector added `{collection_name}`")
+        return vector_ids
 
     def search_vector(self, collection_name: str, vector: list[float], limit=3, with_payload=True):
         # Perform the search query in Qdrant with the provided parameters

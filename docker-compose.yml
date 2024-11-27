@@ -127,25 +127,25 @@ services:
               capabilities: [gpu]
 
   # App Services
-  chatbot-app:
-    build: .
-    image: chatbot-app-image
-    container_name: chatbot-app
-    ports:
-      - "7860:7860"
-    networks:
-      - chatbot-networks
-    env_file:
-      - .env
-    environment:
-      - REDIS_HOST=chatbot-redis
-      - MONGODB_HOST=chatbot-mongodb
-      - QDRANT_HOST=chatbot-qdrant
-      - MINIO_HOST=chatbot-minio
-      - LLM_OLLAMA_HOST=chatbot-ollama
-    depends_on:
-      - chatbot-celery
-      - chatbot-mongodb
-      - chatbot-qdrant
-      - chatbot-minio
-      - chatbot-ollama
+  # chatbot-app:
+  #   build: .
+  #   image: chatbot-app-image
+  #   container_name: chatbot-app
+  #   ports:
+  #     - "7860:7860"
+  #   networks:
+  #     - chatbot-networks
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - REDIS_HOST=chatbot-redis
+  #     - MONGODB_HOST=chatbot-mongodb
+  #     - QDRANT_HOST=chatbot-qdrant
+  #     - MINIO_HOST=chatbot-minio
+  #     - LLM_OLLAMA_HOST=chatbot-ollama
+  #   depends_on:
+  #     - chatbot-celery
+  #     - chatbot-mongodb
+  #     - chatbot-qdrant
+  #     - chatbot-minio
+  #     - chatbot-ollama
