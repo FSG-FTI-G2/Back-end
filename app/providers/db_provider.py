@@ -45,13 +45,19 @@ class DatabaseProvider:
         page_size: int = DEFAULT_PAGE_SIZE,
         page_index: int = DEFAULT_PAGE_INDEX,
         exclude: list[str] = [],
+        sort_by: dict[str, int] = {}
     ) -> list[dict[str, Any]]:
         '''
         Returns all documents in the collection
         '''
+        sort_options = [(field, direction)
+                        for field, direction in sort_by.items() if direction in [-1, 1]]
         # Skip and limit for pagination
         cursor = self.collection.find(projection={field: 0 for field in exclude}).skip(
             page_size * page_index).limit(page_size)
+        # Sort documents
+        if len(sort_options) > 0:
+            cursor = cursor.sort(sort_options)
         logger(f"Retrieved all documents `{self.collection_name}`")
         # Convert ObjectId to string
         data = map(lambda x: {**x, "_id": str(x["_id"])}, cursor)
@@ -81,14 +87,20 @@ class DatabaseProvider:
         filter: dict,
         exclude: list[str] = [],
         page_size: int = DEFAULT_PAGE_SIZE,
-        page_index: int = DEFAULT_PAGE_INDEX
+        page_index: int = DEFAULT_PAGE_INDEX,
+        sort_by: dict[str, int] = {}
     ) -> list[dict[str, Any]]:
         '''
         Returns documents based on a query
         '''
+        sort_options = [(field, direction)
+                        for field, direction in sort_by.items() if direction in [-1, 1]]
         # Skip and limit for pagination
         cursor = self.collection.find(filter, projection={field: 0 for field in exclude}).skip(
             page_size * page_index).limit(page_size)
+        # Sort documents
+        if len(sort_options) > 0:
+            cursor = cursor.sort(sort_options)
         logger(f"Queried documents `{self.collection_name}`")
         # Convert ObjectId to string
         data = map(lambda x: {**x, "_id": str(x["_id"])}, cursor)

@@ -3,6 +3,7 @@ from .auth import router as auth_router
 from .switch_llm import router as router_switch_llm
 from .files import router as files_router
 from .chat import router as chat_router
+from .feedback_record import router as feedback_record_router
 
 
 router = APIRouter(prefix="/api/v1")
@@ -12,3 +13,5 @@ router.include_router(auth_router, prefix="/auth", tags=["auth"])
 router.include_router(files_router, prefix="/files", tags=["files"])
 router.include_router(router_switch_llm, prefix="/llm", tags=["llm"])
 router.include_router(chat_router, prefix="/chat", tags=["chat"])
+router.include_router(feedback_record_router,
+                      prefix="/feedback", tags=["feedback"])
