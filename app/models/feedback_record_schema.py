@@ -59,3 +59,15 @@ class FeedbackRecordSchema(BaseSchema):
             exclude_none=True, mode="json", by_alias=True))
         self.id = created_id
         return self
+
+    def update(self):
+        # Modify the updated_at
+        super().update()
+        # Update the file
+        feedback_record_db.update(self.id, self.model_dump(
+            exclude={"id"}, exclude_none=True, mode="json", by_alias=True))
+        return self
+
+    def delete(self):
+        # Delete the file
+        return feedback_record_db.delete(self.id)

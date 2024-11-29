@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from fastapi import APIRouter, Depends
 from app.models.user_schema import UserSchema
 from app.middlewares.auth_middleware import auth_user_middleware
-from app.controllers.feedback_controller import get_feedbacks_control, SORT_BY, update_feedback_control
+from app.controllers.feedback_controller import get_feedbacks_control, SORT_BY, update_feedback_control, delete_feedback_control
 from app.utils.response import response, pagination_data
 
 
@@ -42,10 +42,23 @@ class FeedbackModifierInput(BaseModel):
     evaluation: int
 
 
-@router.put("/")
+@router.post("/")
 async def update_feedback_record(
-    user: Annotated[UserSchema, Depends(auth_user_middleware)],
-    data: FeedbackModifierInput
+    data: FeedbackModifierInput,
+    user: UserSchema = Depends(auth_user_middleware),
 ):
     updated_count = await update_feedback_control(user, data.feedback_records_id, data.evaluation)
     return response(code=200, message=f"Update {updated_count} feedback records successfully.")
+
+
+class FeedbackDeletionInput(BaseModel):
+    feedback_records_id: list[str]
+
+
+@router.put("/")
+async def delete_feedback_record(
+    user: Annotated[UserSchema, Depends(auth_user_middleware)],
+    data: FeedbackDeletionInput
+):
+    deleted_count = await delete_feedback_control(user, data.feedback_records_id)
+    return response(code=200, message=f"Delete {deleted_count} feedback records successfully.")

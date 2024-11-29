@@ -71,3 +71,22 @@ async def update_feedback_control(
 
     # Return updated feedback records
     return len(feedbacks)
+
+
+async def delete_feedback_control(
+    user: UserSchema,
+    feedback_records_id: list[str]
+):
+    # Query database for feedback records
+    feedbacks: list[FeedbackRecordSchema] = []
+    for feedback_id in feedback_records_id:
+        feedback = FeedbackRecordSchema.find_by_id(feedback_id)
+        if feedback and feedback.user_id == user.id:
+            feedbacks.append(feedback)
+
+    # Delete feedback records
+    for feedback in feedbacks:
+        feedback.delete()
+
+    # Return number of deleted feedback records
+    return len(feedbacks)
