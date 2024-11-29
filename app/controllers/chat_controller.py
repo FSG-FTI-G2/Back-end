@@ -5,6 +5,7 @@ from fastapi import HTTPException
 from qdrant_client.http.models import Payload, ScoredPoint
 from app.models.user_schema import UserSchema
 from app.models.message_schema import MessageSchema
+from app.models.feedback_record_schema import FeedbackRecordSchema, DocumentReference
 from app.providers import llm, embedder, vectordb_provider
 from app.controllers.switch_llm_controller import load_model_config_by_user
 from app.utils.prompt_template import RolePrompt
@@ -113,6 +114,20 @@ async def add_message(message: str, message_id: str | None, role: RolePrompt, us
 
     # Save message
     message_instance.update()
+
+    # Create feedback record
+    FeedbackRecordSchema(
+        user_id=user.id,
+        message_id=message_instance.id,
+        message_index=len(message_instance.messages) - 1,
+        question=message,
+        answer=message_instance.messages[-1].content,
+        documents=[DocumentReference(
+            document=metadata[citation]["document"],
+            chunk=metadata[citation]["chunk"]
+        ) for citation in metadata],
+        evaluation=0
+    ).create()
 
     return message_instance
 

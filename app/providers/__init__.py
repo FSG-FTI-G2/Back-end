@@ -16,6 +16,7 @@ file_db = DatabaseProvider("files")
 user_db = DatabaseProvider("users")
 llm_config_db = DatabaseProvider("llm_config")
 message_db = DatabaseProvider("messages")
+feedback_record_db = DatabaseProvider("feedback_records")
 
 # File Storage Providers
 file_storage = MinioProvider("files")

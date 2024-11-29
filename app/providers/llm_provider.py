@@ -87,8 +87,6 @@ class ModelWrapper:
                 result = json.loads(result)
             result = self.structure_prompt_modifier.model_validate(result)
             self.__reset()
-
-        print("🤡", result)
         return result
 
     async def ainvoke(self, messages: List[BaseMessage]) -> str | BaseModel:
@@ -117,8 +115,6 @@ class ModelWrapper:
                 result = json.loads(result)
             result = self.structure_prompt_modifier.model_validate(result)
             self.__reset()
-
-        print("🤡", result)
         return result
 
     def invoke(self, messages: List[BaseMessage]) -> str | BaseModel:
