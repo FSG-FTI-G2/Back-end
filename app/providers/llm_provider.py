@@ -80,6 +80,8 @@ class ModelWrapper:
                 schema=self.structure_prompt_modifier.model_json_schema())
 
         result = await self.model.ainvoke(messages)
+        if isinstance(result, AIMessage):
+            result = result.content
 
         # If the model is structured, parse the output
         if self.structure_prompt_modifier:
@@ -108,6 +110,8 @@ class ModelWrapper:
                 schema=self.structure_prompt_modifier.model_json_schema())
 
         result = self.model.invoke(messages)
+        if isinstance(result, AIMessage):
+            result = result.content
 
         # If the model is structured, parse the output
         if self.structure_prompt_modifier:

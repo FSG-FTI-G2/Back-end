@@ -34,6 +34,7 @@ services:
   chatbot-redis:
     image: redis/redis-stack-server:latest
     container_name: chatbot-redis
+    restart: on-failure:2
     ports:
       - "6379:6379"
     volumes:
@@ -46,6 +47,7 @@ services:
     build: ./celery
     image: chatbot-celery-worker
     container_name: chatbot-celery
+    restart: on-failure:2
     networks:
       - chatbot-networks
     environment:
@@ -68,6 +70,7 @@ services:
   chatbot-mongodb:
     image: mongodb/mongodb-community-server:latest
     container_name: chatbot-mongodb
+    restart: on-failure:2
     ports:
       - "27017:27017"
     volumes:
@@ -80,6 +83,7 @@ services:
   chatbot-minio:
     image: minio/minio
     container_name: chatbot-minio
+    restart: on-failure:2
     ports:
       - "9000:9000"
       - "9001:9001"
@@ -95,6 +99,7 @@ services:
   chatbot-qdrant:
     image: qdrant/qdrant:latest
     container_name: chatbot-qdrant
+    restart: on-failure:2
     ports:
       - "6333:6333"
       - "6334:6334"
@@ -104,48 +109,49 @@ services:
       - chatbot-networks
 
   # Ollama
-  chatbot-ollama:
-    image: ollama/ollama:latest
-    container_name: chatbot-ollama
-    ports:
-      - "11434:11434"
-    volumes:
-      - chatbot-ollama-model:/root/.ollama
-      - ./.docker/ollama-entrypoint.sh:/entrypoint.sh
-    networks:
-      - chatbot-networks
-    environment:
-      - OLLAMA_KEEP_ALIVE=24h
-    entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]
-    # GPU support. If you don't have GPU, remove the following lines
-    runtime: nvidia
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              capabilities: [gpu]
-
-  # App Services
-  # chatbot-app:
-  #   build: .
-  #   image: chatbot-app-image
-  #   container_name: chatbot-app
+  # chatbot-ollama:
+  #   image: ollama/ollama:latest
+  #   container_name: chatbot-ollama
   #   ports:
-  #     - "7860:7860"
+  #     - "11434:11434"
+  #   volumes:
+  #     - chatbot-ollama-model:/root/.ollama
+  #     - ./.docker/ollama-entrypoint.sh:/entrypoint.sh
   #   networks:
   #     - chatbot-networks
-  #   env_file:
-  #     - .env
   #   environment:
-  #     - REDIS_HOST=chatbot-redis
-  #     - MONGODB_HOST=chatbot-mongodb
-  #     - QDRANT_HOST=chatbot-qdrant
-  #     - MINIO_HOST=chatbot-minio
-  #     - LLM_OLLAMA_HOST=chatbot-ollama
-  #   depends_on:
-  #     - chatbot-celery
-  #     - chatbot-mongodb
-  #     - chatbot-qdrant
-  #     - chatbot-minio
-  #     - chatbot-ollama
+  #     - OLLAMA_KEEP_ALIVE=24h
+  #   entrypoint: ["/usr/bin/bash", "/entrypoint.sh"]
+  #   # GPU support. If you don't have GPU, remove the following lines
+  #   runtime: nvidia
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             capabilities: [gpu]
+
+  # App Services
+  chatbot-app:
+    build: .
+    image: chatbot-app-image
+    container_name: chatbot-app
+    restart: on-failure:2
+    ports:
+      - "7860:7860"
+    networks:
+      - chatbot-networks
+    env_file:
+      - .env
+    environment:
+      - REDIS_HOST=chatbot-redis
+      - MONGODB_HOST=chatbot-mongodb
+      - QDRANT_HOST=chatbot-qdrant
+      - MINIO_HOST=chatbot-minio
+      # - LLM_OLLAMA_HOST=chatbot-ollama
+    depends_on:
+      - chatbot-celery
+      - chatbot-mongodb
+      - chatbot-qdrant
+      - chatbot-minio
+      # - chatbot-ollama
