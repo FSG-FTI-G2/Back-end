@@ -80,7 +80,8 @@ async def add_message(message: str, message_id: str | None, role: RolePrompt, us
     embedded_message = embedder.embed(message)[0]
 
     # Retrieve the vector of the message
-    contexts = vectordb_provider.search_vector(user.id, embedded_message)
+    contexts = vectordb_provider.search_vector(
+        user.id, embedded_message, limit=5)
     for context in contexts:
         logger(f"Context: {context}")
 
